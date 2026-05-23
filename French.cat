@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7df3-9d67-8662-2400" name="French" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7df3-9d67-8662-2400" name="French" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="3" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Infanterie de Ligne" hidden="false" id="ef1d-38d5-e0bb-c21c" sortIndex="0">
       <profiles>
@@ -60,168 +60,217 @@
         <categoryLink targetId="1e1a-f413-82fb-9b4b" id="e25f-db13-ec6c-0301" primary="true" name="Force Units"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Cmd Heirarchy" hidden="false" id="e385-c540-71e4-325e" step="0" defaultAmount="1">
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Generic" hidden="false" id="7a7b-8f81-bf98-821e">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="General de Division" hidden="false" id="1a8a-9f6b-e3b4-e347">
-              <categoryLinks>
-                <categoryLink targetId="29a8-716b-03d0-81b6" id="66f1-66aa-0bd4-db60" primary="false" name="Formation Commander"/>
-              </categoryLinks>
-              <profiles>
-                <profile name="General de Division" typeId="6987-694f-f295-dfcc" typeName="Cmd Unit" hidden="false" id="b93d-d283-7ae1-f566">
-                  <characteristics>
-                    <characteristic name="Cmd" typeId="3f6f-22a9-cefd-3241">+1</characteristic>
-                    <characteristic name="Move" typeId="c8a2-e021-6111-0985">-</characteristic>
-                    <characteristic name="Thr-LR" typeId="0900-c08b-8d47-0cce">+0</characteristic>
-                    <characteristic name="Thr-SR" typeId="ebdb-1995-0d62-f20c">+2</characteristic>
-                    <characteristic name="Thr-C" typeId="8d4f-1b05-bf2f-5cc8">+1</characteristic>
-                    <characteristic name="Coh" typeId="b551-4153-d995-ab03">+1</characteristic>
-                    <characteristic name="Trait" typeId="41df-24a7-8a0a-76b9"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Cohesion" typeId="5ef7-3935-7fce-e7f4" value="1"/>
-                <cost name="Threat" typeId="f92a-621f-b8d3-3020" value="3"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="General de Brigade Cavalerie" hidden="false" id="5647-f5c1-6b44-c754">
-              <categoryLinks>
-                <categoryLink targetId="29a8-716b-03d0-81b6" id="7e3c-66d3-d27b-563f" primary="false" name="Formation Commander"/>
-              </categoryLinks>
-              <profiles>
-                <profile name="General de Brigade/de Division Cavalerie" typeId="6987-694f-f295-dfcc" typeName="Cmd Unit" hidden="false" id="4169-58b0-1259-6214">
-                  <characteristics>
-                    <characteristic name="Cmd" typeId="3f6f-22a9-cefd-3241">+1</characteristic>
-                    <characteristic name="Move" typeId="c8a2-e021-6111-0985">-</characteristic>
-                    <characteristic name="Thr-LR" typeId="0900-c08b-8d47-0cce">+0</characteristic>
-                    <characteristic name="Thr-SR" typeId="ebdb-1995-0d62-f20c">+0</characteristic>
-                    <characteristic name="Thr-C" typeId="8d4f-1b05-bf2f-5cc8">+1</characteristic>
-                    <characteristic name="Coh" typeId="b551-4153-d995-ab03">+1</characteristic>
-                    <characteristic name="Trait" typeId="41df-24a7-8a0a-76b9"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Cohesion" typeId="5ef7-3935-7fce-e7f4" value="1"/>
-                <cost name="Threat" typeId="f92a-621f-b8d3-3020" value="1"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="General de Brigade Parc d&apos;Artillerie" hidden="false" id="c83b-1e65-5267-7568">
-              <categoryLinks>
-                <categoryLink targetId="29a8-716b-03d0-81b6" id="9c3a-2c6a-111e-2788" primary="false" name="Formation Commander"/>
-              </categoryLinks>
-              <profiles>
-                <profile name="General de Brigade Parc d&apos;Artillerie" typeId="6987-694f-f295-dfcc" typeName="Cmd Unit" hidden="false" id="d088-344d-7104-63ab">
-                  <characteristics>
-                    <characteristic name="Cmd" typeId="3f6f-22a9-cefd-3241">+1</characteristic>
-                    <characteristic name="Move" typeId="c8a2-e021-6111-0985">-</characteristic>
-                    <characteristic name="Thr-LR" typeId="0900-c08b-8d47-0cce">+2</characteristic>
-                    <characteristic name="Thr-SR" typeId="ebdb-1995-0d62-f20c">+1</characteristic>
-                    <characteristic name="Thr-C" typeId="8d4f-1b05-bf2f-5cc8">+0</characteristic>
-                    <characteristic name="Coh" typeId="b551-4153-d995-ab03">+1</characteristic>
-                    <characteristic name="Trait" typeId="41df-24a7-8a0a-76b9"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Cohesion" typeId="5ef7-3935-7fce-e7f4" value="1"/>
-                <cost name="Threat" typeId="f92a-621f-b8d3-3020" value="3"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Commander" hidden="false" id="6ab9-3c97-1c06-f80d">
-          <categoryLinks>
-            <categoryLink targetId="b77d-993e-0ee9-095b" id="cd79-cd30-41bf-f1c8" primary="false" name="Force Commander"/>
-            <categoryLink targetId="704e-91a0-972d-afe2" id="8129-cc0d-9d0d-8176" primary="false" name="Army Commander"/>
-            <categoryLink targetId="29a8-716b-03d0-81b6" id="65c7-11b8-0193-4d3b" primary="false" name="Formation Commander"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Napoleon" hidden="false" id="ae07-febc-cd60-6b6e">
-              <profiles>
-                <profile name="Napoleon" typeId="6987-694f-f295-dfcc" typeName="Cmd Unit" hidden="false" id="b651-bad1-e8c1-0cde">
-                  <characteristics>
-                    <characteristic name="Cmd" typeId="3f6f-22a9-cefd-3241">+3</characteristic>
-                    <characteristic name="Move" typeId="c8a2-e021-6111-0985">24 | 18 | 9</characteristic>
-                    <characteristic name="Thr-LR" typeId="0900-c08b-8d47-0cce">+3</characteristic>
-                    <characteristic name="Thr-SR" typeId="ebdb-1995-0d62-f20c">+3</characteristic>
-                    <characteristic name="Thr-C" typeId="8d4f-1b05-bf2f-5cc8">+3</characteristic>
-                    <characteristic name="Coh" typeId="b551-4153-d995-ab03">+3</characteristic>
-                    <characteristic name="Trait" typeId="41df-24a7-8a0a-76b9">Peerless (1797-1815); Les Grognards At least one Garde des Consuls/Garde Imperiale Formation is Required 1799-1815; Charmed Death; Dispatch ADCs; Grand Battery; Fate of an Empire If Napoleon dies, the French lose, 1805-1815.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Cohesion" typeId="5ef7-3935-7fce-e7f4" value="3"/>
-                <cost name="Threat" typeId="f92a-621f-b8d3-3020" value="9"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Peerless" id="8d12-261e-ff0e-c309" hidden="false" type="rule" targetId="eee5-e63b-aaf3-e973"/>
-                <infoLink name="Charmed Death" id="4ef7-b498-c269-d868" hidden="false" type="rule" targetId="aa54-af6b-495c-ff26"/>
-                <infoLink name="Dispatch ADCs" id="8ab7-ab73-54b5-7181" hidden="false" type="rule" targetId="59d6-4129-6e78-ff87"/>
-                <infoLink name="Grand Battery" id="4cea-1beb-2a67-4816" hidden="false" type="rule" targetId="708e-451c-8172-299c"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Arrighi" hidden="false" id="25e4-39c3-df9d-4ea8">
-              <profiles>
-                <profile name="Arrighi" typeId="6987-694f-f295-dfcc" typeName="Cmd Unit" hidden="false" id="89f3-5e08-4c38-54c6">
-                  <characteristics>
-                    <characteristic name="Cmd" typeId="3f6f-22a9-cefd-3241">+1</characteristic>
-                    <characteristic name="Move" typeId="c8a2-e021-6111-0985">24 | 18 | 9</characteristic>
-                    <characteristic name="Thr-LR" typeId="0900-c08b-8d47-0cce">+0</characteristic>
-                    <characteristic name="Thr-SR" typeId="ebdb-1995-0d62-f20c">+2</characteristic>
-                    <characteristic name="Thr-C" typeId="8d4f-1b05-bf2f-5cc8">+1</characteristic>
-                    <characteristic name="Coh" typeId="b551-4153-d995-ab03">+2</characteristic>
-                    <characteristic name="Trait" typeId="41df-24a7-8a0a-76b9">Aide-de-Camp; Mass Cavalry; Charmed Death; Flirts with Death (1799)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Cohesion" typeId="5ef7-3935-7fce-e7f4" value="2"/>
-                <cost name="Threat" typeId="f92a-621f-b8d3-3020" value="3"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Augereau" hidden="false" id="5c98-3656-8f86-6d39">
-              <profiles>
-                <profile name="Augereau" typeId="6987-694f-f295-dfcc" typeName="Cmd Unit" hidden="false" id="6934-1b37-ef03-a6e7">
-                  <characteristics>
-                    <characteristic name="Cmd" typeId="3f6f-22a9-cefd-3241">+1</characteristic>
-                    <characteristic name="Move" typeId="c8a2-e021-6111-0985">24 | 18 | 9</characteristic>
-                    <characteristic name="Thr-LR" typeId="0900-c08b-8d47-0cce">+0</characteristic>
-                    <characteristic name="Thr-SR" typeId="ebdb-1995-0d62-f20c">+1</characteristic>
-                    <characteristic name="Thr-C" typeId="8d4f-1b05-bf2f-5cc8">+1</characteristic>
-                    <characteristic name="Coh" typeId="b551-4153-d995-ab03">+2</characteristic>
-                    <characteristic name="Trait" typeId="41df-24a7-8a0a-76b9">Some Very Good Years: +2 Cmd 1792-1803; Marechal d&apos;Empire (1804-1815)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Cohesion" typeId="5ef7-3935-7fce-e7f4" value="2"/>
-                <cost name="Threat" typeId="f92a-621f-b8d3-3020" value="2"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Marechal d&apos;Empire" id="37e6-240b-52a9-24ac" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="48b8-3c40-9b60-eebd"/>
-            <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="d31a-c4d8-a241-9657"/>
-            <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="9370-63fe-6311-5f2c"/>
-            <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="a8f5-95d8-d077-08c2"/>
-            <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="dbef-e009-c08d-f329"/>
-            <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="af76-b4b1-0d01-5c3e"/>
-          </selectionEntries>
-        </selectionEntry>
-      </selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Commander" hidden="false" id="e385-c540-71e4-325e" step="0" defaultAmount="1" collective="true">
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="65a4-6045-b0a1-bcfb-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65a4-6045-b0a1-bcfb-max" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a49-08e1-a770-7728" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a6c-c8f4-518b-0aad" includeChildSelections="false"/>
       </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Generic or Historical Figure" id="27db-842e-8541-9f28" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ff8-1948-827f-3f3d" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Generic" id="84e0-ee3e-62bc-ec3d" hidden="false" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="General de Brigade Cavalerie" hidden="false" id="2e0d-6e0c-4ae3-3e06">
+                  <categoryLinks>
+                    <categoryLink name="Formation Commander" hidden="false" id="3236-372b-f873-7b10" targetId="29a8-716b-03d0-81b6" primary="false"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="General de Brigade/de Division Cavalerie" typeId="pt-CmdUnit" typeName="Cmd Unit" hidden="false" id="c697-223e-2944-ad93">
+                      <characteristics>
+                        <characteristic name="Cmd" typeId="ct-CmdUnit-Cmd"/>
+                        <characteristic name="Move" typeId="ct-CmdUnit-Move"/>
+                        <characteristic name="Thr-LR" typeId="ct-CmdUnit-Thr-LR"/>
+                        <characteristic name="Thr-SR" typeId="ct-CmdUnit-Thr-SR"/>
+                        <characteristic name="Thr-C" typeId="ct-CmdUnit-Thr-C"/>
+                        <characteristic name="Coh" typeId="ct-CmdUnit-Coh"/>
+                        <characteristic name="Trait" typeId="ct-CmdUnit-Trait"/>
+                        <characteristic name="Availability Formation" typeId="ct-CmdUnit-Avail-Formation"/>
+                        <characteristic name="Force Force" typeId="ct-CmdUnit-Avail-Force"/>
+                        <characteristic name="Availability Army" typeId="ct-CmdUnit-Avail-Army"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Cohesion" typeId="5ef7-3935-7fce-e7f4" value="1"/>
+                    <cost name="Threat" typeId="f92a-621f-b8d3-3020" value="1"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2272-38e9-b9ff-deab"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="General de Brigade Parc d&apos;Artillerie" hidden="false" id="79e3-6b45-126d-c610">
+                  <categoryLinks>
+                    <categoryLink name="Formation Commander" hidden="false" id="31df-c48b-20f6-a9d5" targetId="29a8-716b-03d0-81b6" primary="false"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="General de Brigade Parc d&apos;Artillerie" typeId="pt-CmdUnit" typeName="Cmd Unit" hidden="false" id="2443-f1a6-c351-8107">
+                      <characteristics>
+                        <characteristic name="Cmd" typeId="ct-CmdUnit-Cmd"/>
+                        <characteristic name="Move" typeId="ct-CmdUnit-Move"/>
+                        <characteristic name="Thr-LR" typeId="ct-CmdUnit-Thr-LR"/>
+                        <characteristic name="Thr-SR" typeId="ct-CmdUnit-Thr-SR"/>
+                        <characteristic name="Thr-C" typeId="ct-CmdUnit-Thr-C"/>
+                        <characteristic name="Coh" typeId="ct-CmdUnit-Coh"/>
+                        <characteristic name="Trait" typeId="ct-CmdUnit-Trait"/>
+                        <characteristic name="Availability Formation" typeId="ct-CmdUnit-Avail-Formation"/>
+                        <characteristic name="Force Force" typeId="ct-CmdUnit-Avail-Force"/>
+                        <characteristic name="Availability Army" typeId="ct-CmdUnit-Avail-Army"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Cohesion" typeId="5ef7-3935-7fce-e7f4" value="1"/>
+                    <cost name="Threat" typeId="f92a-621f-b8d3-3020" value="3"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cf3-ebef-aa74-0f1a"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="General de Division" hidden="false" id="0c2a-00ba-07bd-4959">
+                  <categoryLinks>
+                    <categoryLink name="Formation Commander" hidden="false" id="b908-dea9-469a-4814" targetId="29a8-716b-03d0-81b6" primary="false"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="General de Division" typeId="pt-CmdUnit" typeName="Cmd Unit" hidden="false" id="f98f-6b5f-32d6-69e9">
+                      <characteristics>
+                        <characteristic name="Cmd" typeId="ct-CmdUnit-Cmd"/>
+                        <characteristic name="Move" typeId="ct-CmdUnit-Move"/>
+                        <characteristic name="Thr-LR" typeId="ct-CmdUnit-Thr-LR"/>
+                        <characteristic name="Thr-SR" typeId="ct-CmdUnit-Thr-SR"/>
+                        <characteristic name="Thr-C" typeId="ct-CmdUnit-Thr-C"/>
+                        <characteristic name="Coh" typeId="ct-CmdUnit-Coh"/>
+                        <characteristic name="Trait" typeId="ct-CmdUnit-Trait"/>
+                        <characteristic name="Availability Formation" typeId="ct-CmdUnit-Avail-Formation"/>
+                        <characteristic name="Force Force" typeId="ct-CmdUnit-Avail-Force"/>
+                        <characteristic name="Availability Army" typeId="ct-CmdUnit-Avail-Army"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Cohesion" typeId="5ef7-3935-7fce-e7f4" value="1"/>
+                    <cost name="Threat" typeId="f92a-621f-b8d3-3020" value="3"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f60a-c599-8c1a-2b5b"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Historical Commander" id="2db8-2f1c-5107-691a" hidden="false" sortIndex="2">
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Arrighi" hidden="false" id="339d-8a56-d50a-bc71">
+                  <profiles>
+                    <profile name="Arrighi" typeId="pt-CmdUnit" typeName="Cmd Unit" hidden="false" id="6169-1ac6-f485-86c1">
+                      <characteristics>
+                        <characteristic name="Cmd" typeId="ct-CmdUnit-Cmd"/>
+                        <characteristic name="Move" typeId="ct-CmdUnit-Move"/>
+                        <characteristic name="Thr-LR" typeId="ct-CmdUnit-Thr-LR"/>
+                        <characteristic name="Thr-SR" typeId="ct-CmdUnit-Thr-SR"/>
+                        <characteristic name="Thr-C" typeId="ct-CmdUnit-Thr-C"/>
+                        <characteristic name="Coh" typeId="ct-CmdUnit-Coh"/>
+                        <characteristic name="Trait" typeId="ct-CmdUnit-Trait"/>
+                        <characteristic name="Availability Formation" typeId="ct-CmdUnit-Avail-Formation"/>
+                        <characteristic name="Force Force" typeId="ct-CmdUnit-Avail-Force"/>
+                        <characteristic name="Availability Army" typeId="ct-CmdUnit-Avail-Army"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Cohesion" typeId="5ef7-3935-7fce-e7f4" value="2"/>
+                    <cost name="Threat" typeId="f92a-621f-b8d3-3020" value="3"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a82d-47c7-3c82-a979"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink name="Force Commander" hidden="false" id="038a-953e-e885-fccb" targetId="b77d-993e-0ee9-095b" primary="false"/>
+                    <categoryLink name="Army Commander" hidden="false" id="63b6-2ece-2b98-ab40" targetId="704e-91a0-972d-afe2" primary="false"/>
+                    <categoryLink name="Formation Commander" hidden="false" id="b17f-5d86-3b38-b302" targetId="29a8-716b-03d0-81b6" primary="false"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Augereau" hidden="false" id="165a-6f66-e098-8c52">
+                  <profiles>
+                    <profile name="Augereau" typeId="pt-CmdUnit" typeName="Cmd Unit" hidden="false" id="9021-a2f3-c0f8-f4d7">
+                      <characteristics>
+                        <characteristic name="Cmd" typeId="ct-CmdUnit-Cmd"/>
+                        <characteristic name="Move" typeId="ct-CmdUnit-Move"/>
+                        <characteristic name="Thr-LR" typeId="ct-CmdUnit-Thr-LR"/>
+                        <characteristic name="Thr-SR" typeId="ct-CmdUnit-Thr-SR"/>
+                        <characteristic name="Thr-C" typeId="ct-CmdUnit-Thr-C"/>
+                        <characteristic name="Coh" typeId="ct-CmdUnit-Coh"/>
+                        <characteristic name="Trait" typeId="ct-CmdUnit-Trait"/>
+                        <characteristic name="Availability Formation" typeId="ct-CmdUnit-Avail-Formation"/>
+                        <characteristic name="Force Force" typeId="ct-CmdUnit-Avail-Force"/>
+                        <characteristic name="Availability Army" typeId="ct-CmdUnit-Avail-Army"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Cohesion" typeId="5ef7-3935-7fce-e7f4" value="2"/>
+                    <cost name="Threat" typeId="f92a-621f-b8d3-3020" value="2"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Marechal d&apos;Empire" id="860c-ebbc-6fc0-a9e1" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3794-f74b-f10e-c1e4"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink name="Army Commander" hidden="false" id="5998-944d-43da-2004" targetId="704e-91a0-972d-afe2" primary="false"/>
+                    <categoryLink name="Force Commander" hidden="false" id="ca57-abfa-678a-dfa5" targetId="b77d-993e-0ee9-095b" primary="false"/>
+                    <categoryLink name="Formation Commander" hidden="false" id="8b45-02d7-ed3c-0182" targetId="29a8-716b-03d0-81b6" primary="false"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Napoleon" hidden="false" id="a787-f633-1263-fe89">
+                  <profiles>
+                    <profile name="Napoleon" typeId="pt-CmdUnit" typeName="Cmd Unit" hidden="false" id="02e1-748e-ed73-a8b9">
+                      <characteristics>
+                        <characteristic name="Cmd" typeId="ct-CmdUnit-Cmd"/>
+                        <characteristic name="Move" typeId="ct-CmdUnit-Move"/>
+                        <characteristic name="Thr-LR" typeId="ct-CmdUnit-Thr-LR"/>
+                        <characteristic name="Thr-SR" typeId="ct-CmdUnit-Thr-SR"/>
+                        <characteristic name="Thr-C" typeId="ct-CmdUnit-Thr-C"/>
+                        <characteristic name="Coh" typeId="ct-CmdUnit-Coh"/>
+                        <characteristic name="Trait" typeId="ct-CmdUnit-Trait"/>
+                        <characteristic name="Availability Formation" typeId="ct-CmdUnit-Avail-Formation"/>
+                        <characteristic name="Force Force" typeId="ct-CmdUnit-Avail-Force"/>
+                        <characteristic name="Availability Army" typeId="ct-CmdUnit-Avail-Army"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Cohesion" typeId="5ef7-3935-7fce-e7f4" value="3"/>
+                    <cost name="Threat" typeId="f92a-621f-b8d3-3020" value="9"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Peerless" id="1ddc-8c16-f584-a460" hidden="false" type="rule" targetId="eee5-e63b-aaf3-e973">
+                      <comment>Peerless (1797-1815);</comment>
+                    </infoLink>
+                    <infoLink name="Charmed Death" id="4e20-7dde-3d6b-b0f8" hidden="false" type="rule" targetId="aa54-af6b-495c-ff26"/>
+                    <infoLink name="Dispatch ADCs" id="fbae-37d9-1396-df69" hidden="false" type="rule" targetId="59d6-4129-6e78-ff87"/>
+                    <infoLink name="Grand Battery" id="5a2d-7c47-4f6d-346d" hidden="false" type="rule" targetId="708e-451c-8172-299c"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="244d-84c5-65d3-3b20"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink name="Formation Commander" hidden="false" id="c8d0-7d26-cf2d-b33a" targetId="29a8-716b-03d0-81b6" primary="false"/>
+                    <categoryLink name="Army Commander" hidden="false" id="7a5d-845e-a6ca-7890" targetId="704e-91a0-972d-afe2" primary="false"/>
+                    <categoryLink name="Force Commander" hidden="false" id="7655-a7c1-3cd6-c0ff" targetId="b77d-993e-0ee9-095b" primary="false"/>
+                  </categoryLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="6-pdr Artillerie à Pied" hidden="false" id="e9ef-fad8-42f2-53e9">
+    <selectionEntry type="model" import="true" name="6 pdr Artillerie à Pied" hidden="false" id="e9ef-fad8-42f2-53e9">
       <profiles>
-        <profile name="6-pdr Artillerie à Pied" typeId="e0eb-2d4b-bae2-f65f" typeName="Unit" hidden="false" id="4c3d-a959-7ae9-364e">
+        <profile name="6 pdr Artillerie à Pied" typeId="e0eb-2d4b-bae2-f65f" typeName="Unit" hidden="false" id="4c3d-a959-7ae9-364e">
           <characteristics>
             <characteristic name="Cmd" typeId="b9be-71aa-da61-8ae2">-</characteristic>
             <characteristic name="Ploy" typeId="5907-b644-bbd5-6d2f">10 | 5 | 5</characteristic>
@@ -282,7 +331,7 @@
   </selectionEntries>
   <sharedRules>
     <rule name="Marechal d&apos;Empire" id="783d-f637-18c1-c980" hidden="false">
-      <description> Subtract, not add, his Command if Issuer is another Maréchal (dates)</description>
+      <description>Subtract, not add, his Command if Issuer is another Maréchal (dates)</description>
     </rule>
     <rule name="Dispatch ADCs" id="59d6-4129-6e78-ff87" hidden="false">
       <description>May replace Commanders and Harmed Maréchals with ADCs.</description>

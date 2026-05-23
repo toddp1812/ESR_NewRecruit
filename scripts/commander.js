@@ -1,144 +1,206 @@
-
+/*
+ * ESR Commander load script
+ * This script loads a file from the New Recruit game folder
+ */
 function toCommanderProfiles(Data) {
+
     const model = {
         parentKey: "profiles",
         name: Data.Commander,
         typeName: "Commander",
-        typeId: "pt-commander",
+        typeId: "pt-CmdUnit",
         characteristics: [
-            {typeId: "ct-availability-formation", $text: Data.AvailabilityFormation},
-            {typeId: "ct-availability-force", $text: Data.AvailabilityForce},
-            {typeId: "ct-availability-army", $text: Data.AvailabilityArmy},
-            {typeId: "ct-command", $text: Data.Command},
-            {typeId: "ct-ranged-far", $text: Data.RangedFar},
-            {typeId: "ct-ranged-near", $text: Data.RangedNear},
-            {typeId: "ct-contact", $text: Data.Contact},
-            {typeId: "ct-cohesion" ,$text: Data.Cohesion}
+            {typeId: "ct-CmdUnit-Avail-Formation", $text: Data.AvailabilityFormation},
+            {typeId: "ct-CmdUnit-Avail-Force", $text: Data.AvailabilityForce},
+            {typeId: "ct-CmdUnit-Avail-Army", $text: Data.AvailabilityArmy},
+            {typeId: "ct-CmdUnit-Cmd", $text: Data.Command},
+            {typeId: "ct-CmdUnit-Thr-LR", $text: Data.RangedFar},
+            {typeId: "ct-CmdUnit-Thr-SR", $text: Data.RangedNear},
+            {typeId: "ct-CmdUnit-Thr-C", $text: Data.Contact},
+            {typeId: "ct-CmdUnit-Coh" ,$text: Data.Cohesion},
+            {typeId: "ct-CmdUnit-Move", $text: "24 | 18 | 9"}
         ],
     }
 
-    const traits = Data.Traits?.map(Trait => ({
-        parentKey: "profiles",
-        name: Trait.name,
-        typeId: "pt-traits",
-        typeName: "Traits",
-        hidden: false,
-        characteristics: [
-            {
-                typeId: "ct-trait-desc",
-                $text: Trait.desc
-            }
-        ],
-}))
-    return [model, ...traits]  
-}
-function lastItem(array) {
-  return array[array.length - 1];
+    const entry = {
+        parentKey: "selectionEntries",
+        name: Data.Commander,
+        profiles: [ model ]
+    }
+    
+    return [entry]  
+
+    //    return [model, ...traits]  
 }
 
+function addCategoryIfNotExists(gst, catName) {
+  const existing = gst.categoryEntries.find((elt) => elt.name === catName);
+  if (existing) {
+    return existing;
+  }
+  const newNode = {
+    hidden: true,
+    name: catName,
+  };
+
+  return $store.add_node("categoryEntries", gst, newNode);
+}
+
+//
+// returns the number of successfully converted elements
+//
+function tokenizeLine ( line, results ) {
+
+  const tokens = [ "Card", "Name", "AvailabilityFormation", "AvailabilityForce", "AvailabilityArmy", "Command", 
+    "RangedLR", "RangedSR","Contact", "Cohesion" ];
+
+  let count = 0;
+  let items = [];
+
+
+  items = line.value.split(/\t/);
+
+  tokens.map( (token) => { 
+    //console.log( token );
+    results[ token ] = items[ count++];
+    //results.token = items[count++]; 
+    } );
+
+  if( results.Name == "" ) {
+    count = -1;
+  } else if( results.AvailabilityArmy == "Rated 3" ) {
+    count = -1;
+  } else if ( results.AvailabilityFormation == "Availability") {
+    count = -1;
+  }
+
+  return count;
+}
+
+let commanderResults = [];
+
 export default {
-  name: "[ESR 1] Paste Commander",
+
+  name: "ESR Cmdr 1",
+  arguments: [
+    {
+      type: "catalogue[]",
+    },
+  ],
   hooks: {
     paste(e, payload) {
       if (typeof payload !== "string") return
-        const re = /^\s*(.+?)\s+([\s\S]+?)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\b([\s\S]*)/m;
-        const m = re.exec(payload);
-        if (!m) return;
+      const selected = $store.get_selected();
+      if (selected.parentKey !== "sharedSelectionEntries") {
+        notify({ text: "Select the (top-level) Commander selectionEntry", type: "error" });
+        return;
+      }
+      if (selected.name !== "Commander") {
+        notify({ text: "Select the Commander selectionEntry", type: "error"})
+        return;
+      }
+      if ( commanderResults.length == 0) {
+        notify({ text: "Run this script first before attempting to paste commanders", type: "error"})
+        return;
+      }
+      console.log( selected );
 
-        const [_, Commander, RawAvailability, Command, RangedFar, RangedNear, Contact, Cohesion, RawTraits] = m;
-        const [AvailabilityFormation, AvailabilityForce, AvailabilityArmy] = splitAvailability(RawAvailability)
-        const Traits = parseTraits(RawTraits)
-        console.log(RawTraits, Traits)
-        const Data = {
-            Commander, AvailabilityFormation, AvailabilityForce, AvailabilityArmy, Command, RangedFar, RangedNear, Contact, Cohesion, Traits
-        }
-        return toCommanderProfiles(Data);
+      // get a reference to the Historical commanders
+      let historicalCommander = selected.selectionEntryGroups;
 
-        function splitAvailability(s) {
-            const TOKENS = [
-                "Revolution","Early","Early War","Early Wars",
-                "Mid","Mid War","Mid Wars",
-                "Late","Late War","Late Wars","-"
-            ];
-
-            function tokenize(text) {
-                text = String(text || '').replace(/^[\r\n]+/, '').replace(/[\r\n]+/g, ' ').trim();
-                if (!text) return [];
-                const sorted = TOKENS.slice().sort((a, b) => b.length - a.length);
-                const esc = t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                const re = new RegExp(sorted.map(esc).join('|'), 'gi');
-                const map = new Map(TOKENS.map(t => [t.toLowerCase(), t]));
-                const out = [];
-                let m;
-                while ((m = re.exec(text)) !== null) out.push(map.get(m[0].toLowerCase()) || m[0]);
-                return out;
-            }
-
-            function isFollowing(prevIdx, idx) {
-                return idx > prevIdx;
-            }
-
-            const tokens = tokenize(s);
-            if (!tokens.length) return [null, null, null];
-
-            const cols = [[], [], []];
-            let col = 0;
-            let lastIdx = -1;
-
-            for (const tok of tokens) {
-                const idx = TOKENS.indexOf(tok);
-                if (isFollowing(lastIdx, idx)) {
-                cols[col].push(tok);
-                } else {
-                col = Math.min(col + 1, 2);
-                cols[col].push(tok);
-                }
-                lastIdx = idx;
-            }
-
-            return cols.map(c => (c.length ? c.join(', ') : null));
-        }
+      // for each line of the file, process the commander
 
 
-        function parseTraits(raw) {
-            if (!raw) return [];
+      // at the end clear the commander results to set up for the next file
+      commanderResults = [];
 
-            const cleanName = s => String(s || '')
-                .replace(/^[\s"']+|[\s"']+$/g, '') 
-                .replace(/\s+/g, ' ')
-                .trim();
+    },
+  },
+  async run(catalogues) {
 
-            const cleanDesc = s => {
-                let d = String(s || '').replace(/\r/g, ''); // normalize CRLF
-                // preserve internal newlines but trim leading/trailing whitespace/newlines
-                d = d.replace(/^\s+/, '').replace(/\s+$/, '');
-                // replace newlines with spaces
-                d = d.replace(/\n{1,}/g, ' ');
-                return d;
-            };
 
-            // Find all "name;" occurrences that start at beginning or right after a newline.
-            const nameRe = /(?:^|\n)\s*([^\n;]{1,120}?)\s*;\s*/g;
-            const matches = [...raw.matchAll(nameRe)];
-            if (!matches.length) return [];
+    const gst = catalogues[0];
 
-            const results = [];
-            for (let i = 0; i < matches.length; i++) {
-                const m = matches[i];
-                const nameRaw = m[1];
-                const name = cleanName(nameRaw);
-                if (!name) continue;
+    let faction = "";
+    let fileName = "";
 
-                const descStart = m.index + m[0].length;
-                const nextMatch = matches[i + 1];
-                const descEnd = nextMatch ? nextMatch.index : raw.length;
-                const descRaw = raw.slice(descStart, descEnd);
-                const desc = cleanDesc(descRaw);
-
-                results.push({ name, desc });
-            }
-            return results;
-        }
+    if ( catalogues.length !== 1) {
+      console.error( "Select one catalog only" );
+      return;
+    } else if (catalogues[0].name == 'ESR' ){
+      console.error( "Do not select the ESR catalog"); 
+      return;
+    } else {
+      faction = catalogues[0].name;
     }
+
+    switch (faction) {
+      case "French":
+        fileName = "ESR Command Cards-French Commanders.txt";
+      break;
+
+      case "Russian":
+        fileName = "ESR Command Cards-Russian Commanders.txt";
+      break;
+
+      case "English":
+        fileName = "ESR Command Cards-English Commanders.txt";
+        break;
+
+      case "Austrian":
+        fileName = "ESR Command Cards-English Commanders.txt";
+        break;
+
+      default:
+        console.error( "Faction: ", faction, "does not have a valid file mapping.");
+        return;
+        break;
+    }
+
+    commanderResults = []; 
+
+    const workingPath = import.meta.url.replace( /^file:\/\/\//,"" );
+    const dirName = workingPath.split('/').slice(0, -2).join('/');
+    const filePath = `${dirName}/${fileName}`;
+    const fileData = await $node.readFile( filePath );
+    
+    if( fileData.data == undefined) {
+      console.error( "Could not open file ", filePath);
+      return;
+    }
+    console.log( "Processing: ", filePath );
+      
+    // if we get to here, we have the data from the file
+    // loop over every line and load the commanders into a structure
+    // 
+    let lineByLine = fileData.data.split( '\r\n');
+    const dataIterator = lineByLine.values();
+    let line;
+    let results = [];
+
+    line = dataIterator.next();
+    let number = 0;
+    while ( !line.done ) {
+      
+      if (line.value == ""){
+        line = dataIterator.next();
+        continue;
+      }
+      let num = tokenizeLine ( line, results );
+      if ((num > 0) && (results.Name !== "")) {
+        console.log( "Processed: ", results.Name );
+      }
+      //console.log( line );
+
+      commanderResults.push(line);
+      number ++; 
+      line = dataIterator.next();
+    }
+
+    return "Queued " + number + " " + faction + " commanders.";
   }
+  
 }
+
+
+

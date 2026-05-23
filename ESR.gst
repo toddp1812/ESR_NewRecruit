@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ae43-676e-ac1e-c7a8" name="ESR" battleScribeVersion="2.03" revision="9" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Todd Pressley">
+<gameSystem id="ae43-676e-ac1e-c7a8" name="ESR" battleScribeVersion="2.03" revision="15" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Todd Pressley">
   <categoryEntries>
-    <categoryEntry name="Force Units" id="1e1a-f413-82fb-9b4b" hidden="false">
+    <categoryEntry name="Formations" id="1e1a-f413-82fb-9b4b" hidden="false">
       <description>Main subordinate organization within a Force</description>
     </categoryEntry>
     <categoryEntry name="Infantry" id="1271-fdfe-9bcf-e1f3" hidden="false"/>
@@ -20,7 +20,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8300-0ad4-0649-bb57-min-max"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Force Units" hidden="false" id="4ef8-354d-bcdf-287b" targetId="1e1a-f413-82fb-9b4b">
+        <categoryLink name="Formations" hidden="false" id="4ef8-354d-bcdf-287b" targetId="1e1a-f413-82fb-9b4b">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4988-3c44-a64c-e0d1"/>
           </constraints>
@@ -46,64 +46,6 @@
     <costType name="Threat" id="f92a-621f-b8d3-3020" defaultCostLimit="-1"/>
   </costTypes>
   <profileTypes>
-    [
-  {
-    "parentKey": "profileTypes",
-    "characteristicTypes": [
-      {
-        "name": "AvailabilityFormation",
-        "id": "ct-availability-formation"
-      },
-      {
-        "name": "AvailabilityForce",
-        "id": "ct-availability-force"
-      },
-      {
-        "name": "AvailabilityArmy",
-        "id": "ct-availability-army"
-      },
-      {
-        "name": "Command",
-        "id": "ct-command"
-      },
-      {
-        "name": "RangedFar",
-        "id": "ct-ranged-far"
-      },
-      {
-        "name": "RangedNear",
-        "id": "ct-ranged-near"
-      },
-      {
-        "name": "Contact",
-        "id": "ct-contact"
-      },
-      {
-        "name": "Cohesion",
-        "id": "ct-cohesion"
-      }
-    ],
-    "name": "Commander",
-    "id": "pt-commander",
-    "hidden": false,
-    "kind": "model"
-  },
-  {
-    "parentKey": "profileTypes",
-    "characteristicTypes": [
-      {
-        "name": "Descriptions",
-        "id": "ct-trait-desc",
-        "kind": "longText"
-      }
-    ],
-    "name": "Traits",
-    "id": "pt-traits",
-    "hidden": false,
-    "kind": "rule"
-  }
-]
-
     <profileType name="Unit" id="e0eb-2d4b-bae2-f65f" hidden="false">
       <characteristicTypes>
         <characteristicType name="Cmd" id="b9be-71aa-da61-8ae2"/>
@@ -122,15 +64,18 @@
         <characteristicType name="Trait" id="f101-c743-4d53-896b" kind="longText"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Cmd Unit" id="6987-694f-f295-dfcc" hidden="false">
+    <profileType name="Cmd Unit" id="pt-CmdUnit" hidden="false">
       <characteristicTypes>
-        <characteristicType name="Cmd" id="3f6f-22a9-cefd-3241"/>
-        <characteristicType name="Move" id="c8a2-e021-6111-0985"/>
-        <characteristicType name="Thr-LR" id="0900-c08b-8d47-0cce"/>
-        <characteristicType name="Thr-SR" id="ebdb-1995-0d62-f20c"/>
-        <characteristicType name="Thr-C" id="8d4f-1b05-bf2f-5cc8"/>
-        <characteristicType name="Coh" id="b551-4153-d995-ab03"/>
-        <characteristicType name="Trait" id="41df-24a7-8a0a-76b9" kind="longText"/>
+        <characteristicType name="Cmd" id="ct-CmdUnit-Cmd"/>
+        <characteristicType name="Move" id="ct-CmdUnit-Move"/>
+        <characteristicType name="Thr-LR" id="ct-CmdUnit-Thr-LR"/>
+        <characteristicType name="Thr-SR" id="ct-CmdUnit-Thr-SR"/>
+        <characteristicType name="Thr-C" id="ct-CmdUnit-Thr-C"/>
+        <characteristicType name="Coh" id="ct-CmdUnit-Coh"/>
+        <characteristicType name="Trait" id="ct-CmdUnit-Trait" kind="longText"/>
+        <characteristicType name="Availability Formation" id="ct-CmdUnit-Avail-Formation" kind="longText"/>
+        <characteristicType name="Force Force" id="ct-CmdUnit-Avail-Force" kind="longText"/>
+        <characteristicType name="Availability Army" id="ct-CmdUnit-Avail-Army" kind="longText"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -157,7 +102,7 @@
       <description>-1 to Leader Fate, +2 if Harmed</description>
     </rule>
     <rule name="A Date with Death" id="1892-f4ae-e81a-5012" hidden="false">
-      <description> -2 in Leader Fate (date)</description>
+      <description>-2 in Leader Fate (date)</description>
     </rule>
     <rule name="Peerless" id="eee5-e63b-aaf3-e973" hidden="false">
       <description>If present, must be Army Commander (dates)</description>
