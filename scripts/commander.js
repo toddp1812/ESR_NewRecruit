@@ -4,9 +4,9 @@
  */
 function toCommanderProfiles(Data) {
 
-    const model = {
+    let model = {
         parentKey: "profiles",
-        name: Data.Commander,
+        name: Data.Name,
         typeName: "Commander",
         typeId: "pt-CmdUnit",
         characteristics: [
@@ -14,37 +14,44 @@ function toCommanderProfiles(Data) {
             {typeId: "ct-CmdUnit-Avail-Force", $text: Data.AvailabilityForce},
             {typeId: "ct-CmdUnit-Avail-Army", $text: Data.AvailabilityArmy},
             {typeId: "ct-CmdUnit-Cmd", $text: Data.Command},
-            {typeId: "ct-CmdUnit-Thr-LR", $text: Data.RangedFar},
-            {typeId: "ct-CmdUnit-Thr-SR", $text: Data.RangedNear},
+            {typeId: "ct-CmdUnit-Thr-LR", $text: Data.RangedLR},
+            {typeId: "ct-CmdUnit-Thr-SR", $text: Data.RangedSR},
             {typeId: "ct-CmdUnit-Thr-C", $text: Data.Contact},
             {typeId: "ct-CmdUnit-Coh" ,$text: Data.Cohesion},
-            {typeId: "ct-CmdUnit-Move", $text: "24 | 18 | 9"}
+            {typeId: "ct-CmdUnit-Move", $text: "24 | 18 | 9"},
+            {typeId: "ct-CmdUnit-Trait", $text: Data.Traits }
         ],
     }
 
-    const entry = {
+
+    //
+    // calculate the threat and Cohesion
+    //
+    const Threat = +Data.RangedLR + +Data.RangedSR + +Data.Contact;
+    const Cohesion = +Data.Cohesion;
+
+
+    // 
+    // entry for the commander unit entry
+    // 
+  
+    let entry = {
         parentKey: "selectionEntries",
-        name: Data.Commander,
-        profiles: [ model ]
-    }
-    
-    return [entry]  
+        name: Data.Name,
+        type: "model",
+        profiles: [model],
+        costs: [
+        {typeId: "esr-ct-Cohesion", $text: Cohesion,
+          typeId: "esr-ct-Threat", $text: Threat}
+        ]
+
+      }
+
+    return entry;
 
     //    return [model, ...traits]  
 }
 
-function addCategoryIfNotExists(gst, catName) {
-  const existing = gst.categoryEntries.find((elt) => elt.name === catName);
-  if (existing) {
-    return existing;
-  }
-  const newNode = {
-    hidden: true,
-    name: catName,
-  };
-
-  return $store.add_node("categoryEntries", gst, newNode);
-}
 
 //
 // returns the number of successfully converted elements
@@ -52,7 +59,7 @@ function addCategoryIfNotExists(gst, catName) {
 function tokenizeLine ( line, results ) {
 
   const tokens = [ "Card", "Name", "AvailabilityFormation", "AvailabilityForce", "AvailabilityArmy", "Command", 
-    "RangedLR", "RangedSR","Contact", "Cohesion" ];
+    "RangedLR", "RangedSR","Contact", "Cohesion", "Traits" ];
 
   let count = 0;
   let items = [];
@@ -77,45 +84,69 @@ function tokenizeLine ( line, results ) {
   return count;
 }
 
-let commanderResults = [];
+function processCommander(commandElement) {
+    
+  if (commandElement.name !== "Commander") {
+    notify({ text: "Select the Commander selectionEntry", type: "error"})
+    return;
+  }
+  if ( commanderResults.length == 0) {
+    notify({ text: "Commander file did not proces correctly", type: "error"})
+    return;
+  }
+
+  let historicalCommander;
+  // get a reference to the Historical commanders
+  
+  for (const element of commandElement.selectionEntryGroups[0].selectionEntryGroups) {
+    if( element.name == "Historical Commander") {
+      historicalCommander = element;
+      break;
+    }
+  }
+
+  // for each line of the commanderResult, process the commander
+
+  const commander = commanderResults[0];
+  
+  let entryTest = {
+    parentKey: "selectionEntries",
+    name: commander.Name, 
+    type: "model"
+  } 
+
+  let profile = toCommanderProfiles( commander );
+
+  
+  //historicalCommander.selectionEntries[3] = entryTest;
+  $store.add_node( "selectionEntries", historicalCommander, profile );
+  
+  
+  /*
+  for ( const commander of commanderResults ) {
+    historicalCommander.selectionEntries.push(toCommanderProfiles( commander ));
+  }*/
+
+  // at the end clear the commander results to set up for the next file
+  commanderResults.length = 0;
+
+  return null;
+}
+
+
+
+const commanderResults = [];
 
 export default {
 
-  name: "ESR Cmdr 1",
+  name: "ESR Cmdr Test",
   arguments: [
     {
       type: "catalogue[]",
     },
   ],
-  hooks: {
-    paste(e, payload) {
-      if (typeof payload !== "string") return
-      const selected = $store.get_selected();
-      if (selected.parentKey !== "sharedSelectionEntries") {
-        notify({ text: "Select the (top-level) Commander selectionEntry", type: "error" });
-        return;
-      }
-      if (selected.name !== "Commander") {
-        notify({ text: "Select the Commander selectionEntry", type: "error"})
-        return;
-      }
-      if ( commanderResults.length == 0) {
-        notify({ text: "Run this script first before attempting to paste commanders", type: "error"})
-        return;
-      }
-      console.log( selected );
-
-      // get a reference to the Historical commanders
-      let historicalCommander = selected.selectionEntryGroups;
-
-      // for each line of the file, process the commander
 
 
-      // at the end clear the commander results to set up for the next file
-      commanderResults = [];
-
-    },
-  },
   async run(catalogues) {
 
 
@@ -157,7 +188,8 @@ export default {
         break;
     }
 
-    commanderResults = []; 
+    // zero out results if there is anything in it now.
+    commanderResults.length = 0; 
 
     const workingPath = import.meta.url.replace( /^file:\/\/\//,"" );
     const dirName = workingPath.split('/').slice(0, -2).join('/');
@@ -176,28 +208,40 @@ export default {
     let lineByLine = fileData.data.split( '\r\n');
     const dataIterator = lineByLine.values();
     let line;
-    let results = [];
+
 
     line = dataIterator.next();
     let number = 0;
     while ( !line.done ) {
-      
+      let results = []; // scope, need to create new entries for EACH commander
       if (line.value == ""){
         line = dataIterator.next();
         continue;
       }
       let num = tokenizeLine ( line, results );
       if ((num > 0) && (results.Name !== "")) {
+        commanderResults[number] = results;
+        number ++; 
         console.log( "Processed: ", results.Name );
       }
       //console.log( line );
 
-      commanderResults.push(line);
-      number ++; 
+ 
       line = dataIterator.next();
     }
 
-    return "Queued " + number + " " + faction + " commanders.";
+    // Get a reference to the 
+    // faction catalog
+    let entry;
+    for ( entry of gst.sharedSelectionEntries ) {
+      if ( entry.name == "Commander") {
+        processCommander( entry );
+        break;
+      }
+    }
+
+    return "Processed " + number + " " + faction + " commanders.";
+
   }
   
 }

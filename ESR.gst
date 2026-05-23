@@ -42,8 +42,8 @@
     <publication name="New Publication" id="0e06-41dc-0230-b188" hidden="false"/>
   </publications>
   <costTypes>
-    <costType name="Cohesion" id="5ef7-3935-7fce-e7f4" defaultCostLimit="-1"/>
-    <costType name="Threat" id="f92a-621f-b8d3-3020" defaultCostLimit="-1"/>
+    <costType name="Cohesion" id="esr-ct-Cohesion" defaultCostLimit="-1"/>
+    <costType name="Threat" id="esr-ct-Threat" defaultCostLimit="-1"/>
   </costTypes>
   <profileTypes>
     <profileType name="Unit" id="e0eb-2d4b-bae2-f65f" hidden="false">
