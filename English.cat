@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="1dc5-9a82-de60-f939" name="English" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Commander" hidden="false" id="48f6-945b-8be3-d89b">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Generic or Historical Commander" id="65b8-7074-5755-2513" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Generic" id="ec0f-1546-4992-6691" hidden="false"/>
+            <selectionEntryGroup name="Historical Commander" id="0a90-2e0a-87b7-994a" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Moore" hidden="false" id="5378-ead2-6198-db38">
+                  <profiles>
+                    <profile name="Moore" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution, Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Revolution, Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">A Date with Death; Moore is mortally wounded by artillery fire at Coruña and dies shortly after the battle ends. Once the British vacated Coruña, Maréchal Soult orders the French army  to build a monument over Moore’s grave to honor their opponent, -2 to Leader Fate, 1809. Unavailable after January 1809.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Wellington" hidden="false" id="1030-a038-ff43-1ec1">
+                  <profiles>
+                    <profile name="Wellington" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution, Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Charmed Death; +2 to Leader Fate, 1808-1815.
+Peerless; If present, must be Army Commander, 1809-1815.
+Limited Delegation; Wellington’s Army is limited to a maximum of two English Forces: the first must be commanded by Wellington, a second must be a Cavalry Force, any additional Forces must be Spanish, 1809-1812.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="6"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Charmed Death" hidden="false" type="rule" targetId="aa54-af6b-495c-ff26"/>
+                    <infoLink name="Peerless" hidden="false" type="rule" targetId="eee5-e63b-aaf3-e973"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Hill" hidden="false" id="4235-2d5d-9946-fd8a">
+                  <profiles>
+                    <profile name="Hill" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Late War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Daddy Hill; If in Personal Command roll 1D6 during Recovery, on a ‘6’, the Formation Recovers -2 instead of -1 Fatigue.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="5"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Craufurd" hidden="false" id="b1fe-51f3-6ef9-c9b0">
+                  <profiles>
+                    <profile name="Craufurd" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;By Popular Demand; Craufurd must command the Light Division, 1810-1812. Black Bob; The Light Division gains Rapid Deployment and either Enthusiastic or Stoic, the controlling player must choose at the start of the game.
+Outpost Duty; French Forces within 1 mile (12”) of Light Division may not use dummy Objective markers.
+A Date with Death; Craufurd is mortally wounded at Ciudad Rodrigo, dying four days later. -2 to Leader Fate, 1812. Unavailable after January 1812.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="7"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Beresford" hidden="false" id="67d3-0912-a1b2-c5ee">
+                  <profiles>
+                    <profile name="Beresford" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Marechal-general de Portugal; May issue orders to Portuguese Forces and Formations even if not commanding them, 1810-1814.
+Flirts with Death; -1 to Leader Fate, +2 if Harmed, 1812.
+Chosen Successor; If Wellington is removed by Leader Fate, Beresford must take command of the Army, after March 1812.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Graham" hidden="false" id="ae6d-46f1-6b7f-b108">
+                  <profiles>
+                    <profile name="Graham" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Chosen Successor; If Wellington is removed by Leader Fate, Graham must take command of the Army, January to March 1812.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Picton" hidden="false" id="1ff0-166c-c3f1-f769">
+                  <profiles>
+                    <profile name="Picton" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Otherwise Engaged; Picton is unavailable until 1810.
+Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1812.
+A Date with Death; Picton is the most senior British oﬃcer killed at Waterloo.
+-2 to Leader Fate, 1815.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Cotton" hidden="false" id="e062-fe89-38ee-2bd5">
+                  <profiles>
+                    <profile name="Cotton" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1812.
+Preferred Assignment; May only command Cavalry.
+Mass Cavalry; May Convert Cavalry Formations in additional Combats.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="1"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Packenham" hidden="false" id="ed37-d531-7fd0-8120">
+                  <profiles>
+                    <profile name="Packenham" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Otherwise Engaged; Pakenham accepts command of British forces in North America at the end of the War of 1812. At the Battle of New Orleans, Pakenham is wounded by short range munitions from American artillery which explodes his knee, while being helped up by an aide, he is struck again in the arm. Once mounted on the aide’s horse he is struck a third time, this time in the spine. He dies shortly thereafter, after directing his second-in-command to take command and commit the reserves. Unavailable after August 1814.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Leith" hidden="false" id="2b2f-6f9c-a001-4a85">
+                  <profiles>
+                    <profile name="Leith" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Otherwise Engaged; Appointed governor of the Leeward Islands in 1814, Leith is focused on suppressing Napoléon’s supporters there through 1815. Unavailable after January 1814.
+Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1812, 1813.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Cole" hidden="false" id="caa2-6234-8ed1-e69a">
+                  <profiles>
+                    <profile name="Cole" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1811-1812.
+Otherwise Engaged; Appointed to command the Northern Military District in 1815, Cole misses the Waterloo Campaign. Unavailable 1815.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="5"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Uxbridge" hidden="false" id="f6fa-99ea-f657-24eb">
+                  <profiles>
+                    <profile name="Uxbridge" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Preferred Assignment; May only command Cavalry.
+Mass Cavalry; May Convert Cavalry Formations in additional Combats.
+Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1815.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="2"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Hope" hidden="false" id="5462-1101-3e89-9584">
+                  <profiles>
+                    <profile name="Hope" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Chosen Successor; If Moore is removed by Leader Fate, Hope must take command of the Army, 1808-1809.
+Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1814.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>

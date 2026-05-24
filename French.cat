@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7df3-9d67-8662-2400" name="French" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="3" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7df3-9d67-8662-2400" name="French" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="3" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Infanterie de Ligne" hidden="false" id="ef1d-38d5-e0bb-c21c" sortIndex="0">
       <profiles>
@@ -66,7 +66,7 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a6c-c8f4-518b-0aad" includeChildSelections="false"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Generic or Historical Figure" id="27db-842e-8541-9f28" hidden="false">
+        <selectionEntryGroup name="Generic or Historical Commander" id="27db-842e-8541-9f28" hidden="false">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ff8-1948-827f-3f3d" includeChildSelections="false"/>
           </constraints>
@@ -161,106 +161,2129 @@
             </selectionEntryGroup>
             <selectionEntryGroup name="Historical Commander" id="2db8-2f1c-5107-691a" hidden="false" sortIndex="2">
               <selectionEntries>
-                <selectionEntry type="model" import="true" name="Arrighi" hidden="false" id="339d-8a56-d50a-bc71">
+                <selectionEntry type="model" import="true" name="Napoléon" hidden="false" id="cd04-7af4-c8e6-23e5">
                   <profiles>
-                    <profile name="Arrighi" typeId="pt-CmdUnit" typeName="Cmd Unit" hidden="false" id="6169-1ac6-f485-86c1">
+                    <profile name="Napoléon" typeName="Commander" typeId="pt-CmdUnit">
                       <characteristics>
-                        <characteristic name="Cmd" typeId="ct-CmdUnit-Cmd"/>
-                        <characteristic name="Move" typeId="ct-CmdUnit-Move"/>
-                        <characteristic name="Thr-LR" typeId="ct-CmdUnit-Thr-LR"/>
-                        <characteristic name="Thr-SR" typeId="ct-CmdUnit-Thr-SR"/>
-                        <characteristic name="Thr-C" typeId="ct-CmdUnit-Thr-C"/>
-                        <characteristic name="Coh" typeId="ct-CmdUnit-Coh"/>
-                        <characteristic name="Trait" typeId="ct-CmdUnit-Trait"/>
-                        <characteristic name="Availability Formation" typeId="ct-CmdUnit-Avail-Formation"/>
-                        <characteristic name="Force Force" typeId="ct-CmdUnit-Avail-Force"/>
-                        <characteristic name="Availability Army" typeId="ct-CmdUnit-Avail-Army"/>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Revolution, Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Peerless; If present, must be Army Commander, 1797-1815.
+Les Grognards; At least one Garde des Consuls/Garde Impériale Formation is required, 1799-1815.
+Charmed Death; +2 to Leader Fate.
+Dispatch ADCs; May replace Commanders and Harmed Maréchals with ADCs.
+Grand Battery; May command Grand Batteries.
+Fate of an Empire; If Napoléon dies, the French lose, 1805-1815.&quot;</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="Cohesion" typeId="5ef7-3935-7fce-e7f4" value="2"/>
-                    <cost name="Threat" typeId="f92a-621f-b8d3-3020" value="3"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a82d-47c7-3c82-a979"/>
-                  </constraints>
-                  <categoryLinks>
-                    <categoryLink name="Force Commander" hidden="false" id="038a-953e-e885-fccb" targetId="b77d-993e-0ee9-095b" primary="false"/>
-                    <categoryLink name="Army Commander" hidden="false" id="63b6-2ece-2b98-ab40" targetId="704e-91a0-972d-afe2" primary="false"/>
-                    <categoryLink name="Formation Commander" hidden="false" id="b17f-5d86-3b38-b302" targetId="29a8-716b-03d0-81b6" primary="false"/>
-                  </categoryLinks>
-                </selectionEntry>
-                <selectionEntry type="model" import="true" name="Augereau" hidden="false" id="165a-6f66-e098-8c52">
-                  <profiles>
-                    <profile name="Augereau" typeId="pt-CmdUnit" typeName="Cmd Unit" hidden="false" id="9021-a2f3-c0f8-f4d7">
-                      <characteristics>
-                        <characteristic name="Cmd" typeId="ct-CmdUnit-Cmd"/>
-                        <characteristic name="Move" typeId="ct-CmdUnit-Move"/>
-                        <characteristic name="Thr-LR" typeId="ct-CmdUnit-Thr-LR"/>
-                        <characteristic name="Thr-SR" typeId="ct-CmdUnit-Thr-SR"/>
-                        <characteristic name="Thr-C" typeId="ct-CmdUnit-Thr-C"/>
-                        <characteristic name="Coh" typeId="ct-CmdUnit-Coh"/>
-                        <characteristic name="Trait" typeId="ct-CmdUnit-Trait"/>
-                        <characteristic name="Availability Formation" typeId="ct-CmdUnit-Avail-Formation"/>
-                        <characteristic name="Force Force" typeId="ct-CmdUnit-Avail-Force"/>
-                        <characteristic name="Availability Army" typeId="ct-CmdUnit-Avail-Army"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="Cohesion" typeId="5ef7-3935-7fce-e7f4" value="2"/>
-                    <cost name="Threat" typeId="f92a-621f-b8d3-3020" value="2"/>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="9"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Marechal d&apos;Empire" id="860c-ebbc-6fc0-a9e1" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                    <infoLink name="Dispatch ADCs" hidden="false" type="rule" targetId="59d6-4129-6e78-ff87"/>
+                    <infoLink name="Grand Battery" hidden="false" type="rule" targetId="708e-451c-8172-299c"/>
+                    <infoLink name="Charmed Death" hidden="false" type="rule" targetId="aa54-af6b-495c-ff26"/>
+                    <infoLink name="Peerless" hidden="false" type="rule" targetId="eee5-e63b-aaf3-e973"/>
                   </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3794-f74b-f10e-c1e4"/>
-                  </constraints>
-                  <categoryLinks>
-                    <categoryLink name="Army Commander" hidden="false" id="5998-944d-43da-2004" targetId="704e-91a0-972d-afe2" primary="false"/>
-                    <categoryLink name="Force Commander" hidden="false" id="ca57-abfa-678a-dfa5" targetId="b77d-993e-0ee9-095b" primary="false"/>
-                    <categoryLink name="Formation Commander" hidden="false" id="8b45-02d7-ed3c-0182" targetId="29a8-716b-03d0-81b6" primary="false"/>
-                  </categoryLinks>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="Napoleon" hidden="false" id="a787-f633-1263-fe89">
+                <selectionEntry type="model" import="true" name="Arrighi" hidden="false" id="5d36-c184-4122-cc70">
                   <profiles>
-                    <profile name="Napoleon" typeId="pt-CmdUnit" typeName="Cmd Unit" hidden="false" id="02e1-748e-ed73-a8b9">
+                    <profile name="Arrighi" typeName="Commander" typeId="pt-CmdUnit">
                       <characteristics>
-                        <characteristic name="Cmd" typeId="ct-CmdUnit-Cmd"/>
-                        <characteristic name="Move" typeId="ct-CmdUnit-Move"/>
-                        <characteristic name="Thr-LR" typeId="ct-CmdUnit-Thr-LR"/>
-                        <characteristic name="Thr-SR" typeId="ct-CmdUnit-Thr-SR"/>
-                        <characteristic name="Thr-C" typeId="ct-CmdUnit-Thr-C"/>
-                        <characteristic name="Coh" typeId="ct-CmdUnit-Coh"/>
-                        <characteristic name="Trait" typeId="ct-CmdUnit-Trait"/>
-                        <characteristic name="Availability Formation" typeId="ct-CmdUnit-Avail-Formation"/>
-                        <characteristic name="Force Force" typeId="ct-CmdUnit-Avail-Force"/>
-                        <characteristic name="Availability Army" typeId="ct-CmdUnit-Avail-Army"/>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Aide-de-Camp; ADC to Napoléon, 1796-1799; ADC to Berthier, 1805. Mass Cavalry; May Convert Cavalry Formations in additional Combats. Charmed Death; +2 to Leader Fate.
+Flirts with Death; -1 to Leader Fate, +2 if Harmed, 1799.&quot;</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="Cohesion" typeId="5ef7-3935-7fce-e7f4" value="3"/>
-                    <cost name="Threat" typeId="f92a-621f-b8d3-3020" value="9"/>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Peerless" id="1ddc-8c16-f584-a460" hidden="false" type="rule" targetId="eee5-e63b-aaf3-e973">
-                      <comment>Peerless (1797-1815);</comment>
-                    </infoLink>
-                    <infoLink name="Charmed Death" id="4e20-7dde-3d6b-b0f8" hidden="false" type="rule" targetId="aa54-af6b-495c-ff26"/>
-                    <infoLink name="Dispatch ADCs" id="fbae-37d9-1396-df69" hidden="false" type="rule" targetId="59d6-4129-6e78-ff87"/>
-                    <infoLink name="Grand Battery" id="5a2d-7c47-4f6d-346d" hidden="false" type="rule" targetId="708e-451c-8172-299c"/>
+                    <infoLink name="Charmed Death" hidden="false" type="rule" targetId="aa54-af6b-495c-ff26"/>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
                   </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="244d-84c5-65d3-3b20"/>
-                  </constraints>
-                  <categoryLinks>
-                    <categoryLink name="Formation Commander" hidden="false" id="c8d0-7d26-cf2d-b33a" targetId="29a8-716b-03d0-81b6" primary="false"/>
-                    <categoryLink name="Army Commander" hidden="false" id="7a5d-845e-a6ca-7890" targetId="704e-91a0-972d-afe2" primary="false"/>
-                    <categoryLink name="Force Commander" hidden="false" id="7655-a7c1-3cd6-c0ff" targetId="b77d-993e-0ee9-095b" primary="false"/>
-                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Augereau" hidden="false" id="42a1-d2b0-23e2-5058">
+                  <profiles>
+                    <profile name="Augereau" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Some Very Good Years; During the Revolution Augereau’s Command is +2, 1792-1803.
+Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, 1804-1815.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="2"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Bernadotte" hidden="false" id="0c47-2f5e-85e7-ed77">
+                  <profiles>
+                    <profile name="Bernadotte" typeName="Cmd Unit" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, 1804-1810.
+Preferred Assignment; A Saxon Force must be commanded by Bernadotte, 1809.
+Traitor to the Emperor; Unavailable, 1810-1815.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Berthier" hidden="false" id="aeaa-131b-09ec-6161">
+                  <profiles>
+                    <profile name="Berthier" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Revolution, Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Maréchal d’Empire; 1804-1815.
+Dispatch ADCs; May replace Commanders and Harmed Maréchals with ADCs.
+Major-général; If present, must act as chief-of-staﬀ to Napoléon, providing a
++1 to Napoléon’s Command when in contact, maximum of Command +4, 1796-1814.
+Chosen Successor; If Napoléon is not present, or is removed by Leader Fate, Berthier must command the Army, does not suﬀer or trigger Maréchal penalties, 1796-1811.
+An Inconvenient Death; He suspiciously falls from a window on 1 June, preventing him from participating in the final act of the Napoleonic Wars. Unavailable, 1815.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="2"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                    <infoLink name="Dispatch ADCs" hidden="false" type="rule" targetId="59d6-4129-6e78-ff87"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Bertrand" hidden="false" id="fc88-4cd6-853b-20af">
+                  <profiles>
+                    <profile name="Bertrand" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Aide-de-Camp; ADC to Napoléon, 1799-1812.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Bessières" hidden="false" id="f349-359e-99e6-8e28">
+                  <profiles>
+                    <profile name="Bessières" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, 1804-1813.
+Captain of the Guard; May Command Garde Impériale Forces &amp; Formations, 1798-1813.
+Mass Cavalry; May Convert Cavalry Formations in additional Combats. An Untimely Death; Bessières is killed by a cannonball on 1 May while scouting a defile at Poserna-Rippach. Unavailable after April 1813.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="5"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Bordesoulle" hidden="false" id="f2f4-5f3b-239e-9fc4">
+                  <profiles>
+                    <profile name="Bordesoulle" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Aide-de-Camp; ADC to Napoléon, 1804-1812.
+Captain of the Guard; May command Garde Impériale Cavalry Formations, 1814.
+Mass Cavalry; May Convert Cavalry Formations in additional Combats.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Brune" hidden="false" id="3708-c933-9133-e493">
+                  <profiles>
+                    <profile name="Brune" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Early War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, 1804-1815.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="1"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Caﬀarelli" hidden="false" id="d029-7c3d-628c-7367">
+                  <profiles>
+                    <profile name="Caﬀarelli" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Aide-de-Camp; ADC to Napoléon 1800-1806 &amp; 1813-1815.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Caulaincourt" hidden="false" id="b75d-c230-15e3-0243">
+                  <profiles>
+                    <profile name="Caulaincourt" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Aide-de-Camp; ADC to Napoléon, 1804-1807, 1812-1815.
+Mass Cavalry; May Convert Cavalry Formations in add’l Combats.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="2"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Custine" hidden="false" id="3677-ae05-3b71-1628">
+                  <profiles>
+                    <profile name="Custine" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Treason by Failure; Unavailable after July 1793.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="d’Hillers" hidden="false" id="3850-8c0d-3a84-8d1d">
+                  <profiles>
+                    <profile name="d’Hillers" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;An Untimely Death; During the retreat from Russia in 1812 one of d’Hiller’s brigades surrenders to the Russians. He is removed from command and sent to France for an inquiry into his conduct, but falls ill and dies in Germany.
+Unavailable after 1812.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Dampierre" hidden="false" id="5d28-fa9b-33bf-b90b">
+                  <profiles>
+                    <profile name="Dampierre" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">A Date with Death; Wounded by artillery at the Battle of Raismes, Dampierre dies the following day. -2 to Leader Fate, 1793. Unavailable after May 1793.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Davout" hidden="false" id="b601-a49a-fd71-226d">
+                  <profiles>
+                    <profile name="Davout" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, 1804-1815.
+Charmed Death; +2 to Leader Fate.
+The Iron Marshal &amp; His Immortals; Davout requires: Morand, Friant &amp; Gudin, 1804-1811.
+Xeme Légion; Infantry Formations are Enthusiastic [EN] &amp; Stoic [ST] 1804-1812.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="7"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                    <infoLink name="Charmed Death" hidden="false" type="rule" targetId="aa54-af6b-495c-ff26"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Drouet" hidden="false" id="a7bd-24a7-6847-2d80">
+                  <profiles>
+                    <profile name="Drouet" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Aide-de-Camp; ADC to Lefebvre, 1794-1796.
+Chosen Successor; As Lefebvre’s chief-of-staﬀ after the Spring Campaign in Bavaria, Drouet will take command of the VIIeme (Bavarian) Corps d’armée if Lefebvre is removed by Leader Fate, 1809.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Drouot" hidden="false" id="543f-c1fa-0260-c37c">
+                  <profiles>
+                    <profile name="Drouot" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Aide-de-Camp; ADC to Napoléon, 1813.
+Particular Specialty; If commanding an Artillery Formation, all of Drouot’s bonuses are +3.
+Grand Battery; May command Grand Batteries.
+Captain of the Guard; May command Garde Impériale Formations, 1813; or an Garde Impériale Force if Mortier is not present, 1813-1815.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="5"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Grand Battery" hidden="false" type="rule" targetId="708e-451c-8172-299c"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Dumouriez" hidden="false" id="8d97-5841-f4c5-f7cd">
+                  <profiles>
+                    <profile name="Dumouriez" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Traitor to the Révolution; Unavailable after April 1793.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="2"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Dupont" hidden="false" id="eb54-c4ff-fe92-a71d">
+                  <profiles>
+                    <profile name="Dupont" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Otherwise Engaged; Unavailable after 1808.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Espagne" hidden="false" id="91bb-c25d-19b4-ea38">
+                  <profiles>
+                    <profile name="Espagne" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Mass Cavalry; May Convert Cavalry in add’l Combats.
+A Date with Death; Severely wounded while leading a series of cavalry charges to protect Lannes’ infantry at Aspern-Essling, d’Espagne dies later that day on Lobau Island. -2 to Leader Fate, 1809. Unavailable after 1809.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Eugène" hidden="false" id="baa7-facb-b1de-8c88">
+                  <profiles>
+                    <profile name="Eugène" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Aide-de-Camp; ADC to Napoléon, 1796-1798.
+Dispatch ADCs; May replace Commanders with Aides-de-Camp.
+Chosen Successor; If neither Napoléon nor Murat is present and Eugène is, he must command the Army, 1812-1814.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Dispatch ADCs" hidden="false" type="rule" targetId="59d6-4129-6e78-ff87"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Exelmans" hidden="false" id="90a3-13a0-a53e-7a6f">
+                  <profiles>
+                    <profile name="Exelmans" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Aide-de-Camp; ADC to Murat, 1801-1808 &amp; 1811-1813.
+Captain of the Guard; May command Garde Impériale Cavalry Formations, 1812.
+Mass Cavalry; May Convert Cavalry in add’l Combats.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="2"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Friant" hidden="false" id="de34-b6b7-b22d-41e3">
+                  <profiles>
+                    <profile name="Friant" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Davout’s Immortals; Required Formation Commander for Davout’s IIIeme Corps d’armée, 1804-1811.
+Flirts with Death; -1 to Leader Fate, +2 if Harmed, 1807, 1809, 1812 &amp; 1815. Captain of the Guard; May command Garde Impériale Infantry Formations, 1813-1815.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="9"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Gérard" hidden="false" id="9d38-0854-87fe-c48f">
+                  <profiles>
+                    <profile name="Gérard" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Aide-de-Camp; ADC to Bernadotte, 1795.
+Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1813.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="5"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Gourgaud" hidden="false" id="087a-b68a-9053-e0c6">
+                  <profiles>
+                    <profile name="Gourgaud" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Aide-de-Camp; ADC to Napoléon, 1812-1815.
+Flirts with Death; -1 to Leader Fate, +2 if Harmed, 1814.
+Particular Specialty; May only command Artillery Formations, 1812-1815.
+Grand Battery; May command Grand Batteries.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Grand Battery" hidden="false" type="rule" targetId="708e-451c-8172-299c"/>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Grouchy" hidden="false" id="90c2-2778-db90-c0d3">
+                  <profiles>
+                    <profile name="Grouchy" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Late War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, 1815.
+Mass Cavalry; May Convert Cavalry in add’l Combats.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="5"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Gudin" hidden="false" id="43df-80d8-e29a-5555">
+                  <profiles>
+                    <profile name="Gudin" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Davout’s Immortals; Required Formation Commander for Davout’s IIIeme Corps d’armée, 1804-1811.
+Flirts with Death; -1 to Leader Fate, +2 if Harmed, 1806.
+A Date with Death; Gudin is killed in Russia during the pursuit action at Loubino, following the Battle of Smolensk. -2 Leader Fate, 1812. Unavailable after 1812.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="6"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Guyot" hidden="false" id="cbf1-5a4b-92a3-a197">
+                  <profiles>
+                    <profile name="Guyot" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Mass Cavalry; May Convert Cavalry Formations in additional Combats.
+Preferred Assignment; May only command Cavalry Formations.
+Captain of the Guard; May command Garde Impériale Cavalry Formations, 1802-1815.
+Flirts with Death; -1 to Leader Fate, +2 if Harmed, 1813 &amp; 1815.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Houchard" hidden="false" id="3ff2-fb47-d0f9-c6eb">
+                  <profiles>
+                    <profile name="Houchard" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Mass Cavalry; May convert Cavalry in add’l Combats.
+Promoted to the Guillotine; Unavailable after September 1793.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Jérôme-Napoléon" hidden="false" id="b420-ab43-923d-67d8">
+                  <profiles>
+                    <profile name="Jérôme-Napoléon" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Late War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;By Popular Demand; Jérôme is required to command the VIIIeme (Westphalian) Corps d’armée, 1812.
+Lack of Commitment; At the game’s start, roll 2D6, on a result of 8+ Jérôme abandons his command and Junot takes his place, 1812.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="1"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Jordan" hidden="false" id="c8ba-ad88-f63e-0bf8">
+                  <profiles>
+                    <profile name="Jordan" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution, Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Revolution, Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, 1804-1815.
+Major-général; May act as chief-of-staﬀ to Joseph-Napoléon, providing a +1 to Joseph’s Command when in contact (maximum Command Bonus 3),
+1806-1811.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Joseph" hidden="false" id="a1c1-7fd5-33f8-2be1">
+                  <profiles>
+                    <profile name="Joseph" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Chosen Successor; Joseph must command the Army in Spain if Napoléon or Masséna are not present or if either are removed due to Leader Fate,
+1808-1813.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="1"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Junot" hidden="false" id="fcfd-58c2-77a1-3dbd">
+                  <profiles>
+                    <profile name="Junot" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">?</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">?</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">?</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">?</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">?</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Aide-de-Camp; ADC to Napoléon, 1793-1798.
+Erratic Talent; After receiving a head wound in 1796 Junot’s performance becomes inconsistent. At the start of the game, roll 1D6 for each Junot’s Command, Threat, Combat, and Cohesion:
+1805-1808 1: +1, 2-5: +2, 6: +3
+1809-1811 1-2: +1, 3-6: +2
+1812 1-4: +1, 5-6; +2
+An Untimely Death; Junot suﬀers from severe depression as the period wore on. After the invasion of Russia he becomes the governor of Illyrian Provinces. In 1813 he dies suddenly, and is widely believed to have committed suicide, thus Junot is unavailable after 1812.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="6"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Kellermann" hidden="false" id="e014-1105-8f6b-4cc9">
+                  <profiles>
+                    <profile name="Kellermann" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Mass Cavalry; May Convert Cavalry in add’l Combats.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="2"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Kellermann the Older" hidden="false" id="2e17-772f-5599-3eac">
+                  <profiles>
+                    <profile name="Kellermann the Older" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, 1804-1814.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="5"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="La Houssaye" hidden="false" id="98f3-7262-9229-fb25">
+                  <profiles>
+                    <profile name="La Houssaye" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Mass Cavalry; May Convert Cavalry in add’l Combats.
+Flirts with Death; -1 to Leader Fate, +2 if Harmed, 1812.
+Unfortunate Captured; Captured by the Russians, unavailable after 1812.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="La Tour-Maubourg" hidden="false" id="81b5-36da-47be-2ea0">
+                  <profiles>
+                    <profile name="La Tour-Maubourg" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Mass Cavalry; May Convert Cavalry in add’l Combats.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Lannes" hidden="false" id="74c6-b918-6f6e-414a">
+                  <profiles>
+                    <profile name="Lannes" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution, Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, 1804-1809.
+A Date with Death; At the Battle of Aspern-Essling, Lannes’ legs are taken by Austrian artillery just minutes after he witnesses the death of his friend, Général Pouzet. His right leg is amputated, but he dies eight days later, -2 to Leader Fate, 1809. Unavailable after 1809.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="8"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Lariboisière" hidden="false" id="fd54-c4f4-015b-81dc">
+                  <profiles>
+                    <profile name="Lariboisière" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Captain of the Guard; May command Garde Impériale Artillery Formations, 1806-1807.
+Grand Battery; May command Grand Batteries.
+An Untimely Death; Following the retreat out of Russia, Riboisière arrives in Königsberg where he dies of fatigue in December of 1812. Unavailable after 1812.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Grand Battery" hidden="false" type="rule" targetId="708e-451c-8172-299c"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Lasalle" hidden="false" id="def3-0313-26bc-4ddc">
+                  <profiles>
+                    <profile name="Lasalle" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Mass Cavalry; May Convert Cavalry in add’l Combats.
+A Date with Death; At the Battle of Wagram, separated from his own division while charging the Austrians, Lasalle leads the 1er Cuirassiers  forward, is wounded in the chest, and then shot in the head. Born in 1775, he dies at 34,
+-2 to Leader Fate, 1809. Unavailable after 1809.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Lauriston" hidden="false" id="212d-edcd-712f-1c13">
+                  <profiles>
+                    <profile name="Lauriston" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Aide-de-Camp; ADC to Napoléon, 1800-1809.
+Grand Battery; May command Grand Batteries.
+Captain of the Guard; May command Garde Impériale Artillery Forces and Formations, 1809.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Grand Battery" hidden="false" type="rule" targetId="708e-451c-8172-299c"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Lefebvre" hidden="false" id="b3c4-8c98-5a41-aeef">
+                  <profiles>
+                    <profile name="Lefebvre" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution, Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, 1804-1815.
+Dispatch ADCs; May replace Commanders with ADCs.
+Captain of the Guard; May Command Garde Impériale Forces and Infantry Formations, 1804-1815.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                    <infoLink name="Dispatch ADCs" hidden="false" type="rule" targetId="59d6-4129-6e78-ff87"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Lefèbvre-Desnoëttes" hidden="false" id="e878-6d85-e187-2ec8">
+                  <profiles>
+                    <profile name="Lefèbvre-Desnoëttes" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Aide-de-Camp; ADC to Napoléon 1798-1800.
+Mass Cavalry; May Convert Cavalry Formations in additional Combats. Captain of the Guard; May command Garde Impériale Cavalry Formations, 1813-1815.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="5"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Lobau" hidden="false" id="f2ae-8351-3582-be12">
+                  <profiles>
+                    <profile name="Lobau" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Aide-de-Camp; ADC to Napoléon, 1809-1813.
+Grand Battery; May Command Grand Batteries.
+Unfortunate Capture; Serving with Gouvion-Saint-Cyr in Dresden when the city is compelled to capitulate Mouton is captured. Unavailable in 1814.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="6"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Grand Battery" hidden="false" type="rule" targetId="708e-451c-8172-299c"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Louis Napoléon" hidden="false" id="109e-d523-91b1-4fc5">
+                  <profiles>
+                    <profile name="Louis Napoléon" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Late Arrival; Louis is not available until he becomes King of Holland in 1806. Konijn van ‘Olland; Louis strives to learn Dutch, mistakenly referring to himself as “The rabbit of Holland”, and oversees broad domestic improvements. Appreciating his eﬀorts, people call him “Louis the Good”.
+Louis’s Armies and Forces must include Dutch Units, when his command is a majority Dutch, Louis’s Cohesion becomes +3.
+Unfortunate Exile; Louis is not available after 1810.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="2"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Luckner" hidden="false" id="eefe-c722-7627-8eeb">
+                  <profiles>
+                    <profile name="Luckner" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">An Untimely Death; Unavailable after 1793.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="MacDonald" hidden="false" id="4ce8-ff4b-9443-e24a">
+                  <profiles>
+                    <profile name="MacDonald" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Late War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Aide-de-Camp; ADC to Dumouriez 1792-1793 and Eugene, 1809. Maréchal d’Empire; Subtract, not add, his Command if Issuer is another Maréchal, 1810-1814.
+Charmed Death; +2 to Leader Fate, 1813.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                    <infoLink name="Charmed Death" hidden="false" type="rule" targetId="aa54-af6b-495c-ff26"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Marmont" hidden="false" id="646e-96a0-39e2-a5d9">
+                  <profiles>
+                    <profile name="Marmont" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Aide-de-Camp; ADC to Napoléon, 1796-1800.
+Grand Battery; May Command Grand Batteries.
+Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, 1810-1814.
+Traitor to the Emperor; Unavailable after 1814.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="5"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                    <infoLink name="Grand Battery" hidden="false" type="rule" targetId="708e-451c-8172-299c"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Marulaz" hidden="false" id="d568-e396-3e89-e304">
+                  <profiles>
+                    <profile name="Marulaz" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Mass Cavalry; May Convert Cavalry Formations in additional Combats.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="1"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Masséna" hidden="false" id="026f-657f-7e84-caef">
+                  <profiles>
+                    <profile name="Masséna" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution, Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, 1804-1815.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="7"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Milhaud" hidden="false" id="c909-19a7-c8fd-119b">
+                  <profiles>
+                    <profile name="Milhaud" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Aide-de-Camp; ADC to Napoléon, 1812.
+Mass Cavalry; May Convert Cavalry Formations in additional Combats.
+Preferred Assignment; May only command Cavalry Forces and Formations.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Molitor" hidden="false" id="83b3-c73d-08cf-f0ac">
+                  <profiles>
+                    <profile name="Molitor" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Flirts with Death; -1 to Leader Fate, +2 if Harmed, 1795.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Montbrun" hidden="false" id="d8a2-9d3b-fb9b-c7c4">
+                  <profiles>
+                    <profile name="Montbrun" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Mass Cavalry; May Convert Cavalry in add’l Combats.
+Preferred Assignment; May only command Cavalry Forces and Formations. A Date with Death; -2 to Leader Fate, 1812. Unavailable after September 1812.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Morand" hidden="false" id="9526-3e4b-9fb5-8409">
+                  <profiles>
+                    <profile name="Morand" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Davout’s Immortals; Required Formation Commander for Davout’s IIIeme Corps d’armée, 1804-1812.
+Flirts with Death; -1 to Leader Fate, +2 if Harmed, 1805-1807, 1809 &amp; 1812. Captain of the Guard; May command Garde Impériale Infantry Formations, 1815.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="6"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Moreau" hidden="false" id="cfdc-8d00-b354-8951">
+                  <profiles>
+                    <profile name="Moreau" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Unfortunate Exile; Despite assisting Napoléon in the coup d’état of 18 Brumaire and retiring in 1801, his wife’s collection of political supporters makes him a credible rival of Napoléon. Premier Consul arranges his banishment from France and exile to the United States with the false claim of Royalist support. Unavailable after 1800.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Mortier" hidden="false" id="03d3-054d-5092-c00b">
+                  <profiles>
+                    <profile name="Mortier" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution, Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, 1804-1815.
+Captain of the Guard; May Command Garde Impériale Forces and Infantry Formations, 1812-1815.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Murat" hidden="false" id="3f78-8820-4c8c-51fd">
+                  <profiles>
+                    <profile name="Murat" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution, Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, 1804-1815.
+Aide-de-Camp; ADC to Napoléon, 1796-1800.
+Dispatch ADCs; May replace Commanders with ADCs.
+Chosen Successor; If Murat is present but Napoléon and Berthier are not, Murat must command the Army and will trigger Maréchal penalties,
+1805-1813.
+Mass Cavalry; May Convert Cavalry Formations in additional Combats. Particular Specialty; When targeting Cavalry Forces or Formations Murat has Command +3.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                    <infoLink name="Dispatch ADCs" hidden="false" type="rule" targetId="59d6-4129-6e78-ff87"/>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Nansouty" hidden="false" id="c36b-b591-9b98-b23d">
+                  <profiles>
+                    <profile name="Nansouty" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Mass Cavalry; May Convert Cavalry Formations in additional Combats. Captain of the Guard; May command Garde Impériale Cavalry Forces or Formations, 1813-1815.
+Preferred Assignment; Must command a Cavalry Force or Formation.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="6"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Ney" hidden="false" id="8e27-e968-2964-dc63">
+                  <profiles>
+                    <profile name="Ney" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Maréchal d’Empire; Subtract, not add, double his Command if Issuer is another Maréchal, 1804-1815.
+Charmed Death; +2 to Leader Fate.
+Bravest of the Brave; When in Personal Command Ney has Command +3, except when attempting to Abandon Personal Command, then Command -3. Mass Cavalry; May Convert Cavalry in add’l Combats.
+Specific Talent; Cohesion is +5 when Personally Commanding a Formation with an active Withdrawal [W] Directive.
+Captain of the Guard; May command Garde Impériale Forces and Formations, 1813-1815.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="7"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                    <infoLink name="Charmed Death" hidden="false" type="rule" targetId="aa54-af6b-495c-ff26"/>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Ornano" hidden="false" id="c646-9f6f-f2a6-2fc0">
+                  <profiles>
+                    <profile name="Ornano" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Mass Cavalry; May Convert Cavalry in additional Combats.
+Captain of the Guard; May command Garde Impériale Cavalry Formations, 1813.
+Unfortunate Exile; Exiled by the restored Bourbons, Ornano is not in France upon Napoléon’s return and is unavailable in 1815.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Oudinot" hidden="false" id="946c-deaa-3a58-56e9">
+                  <profiles>
+                    <profile name="Oudinot" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Father of Grenadiers; May command Grenadier Formations 1805-1807.
+Flirts with Death; -1 to Leader Fate but +2 if Harmed.
+Suddenly Stupid; Command is +1 as a Force or Army Commander, 1809-1815.
+Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, 1810-1814.
+Captain of the Guard; May command Garde Impériale  Forces &amp; Formations, 1813.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Pajol" hidden="false" id="2d7f-c0ef-412e-59c8">
+                  <profiles>
+                    <profile name="Pajol" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Mass Cavalry; May Convert Cavalry Formations in additional Combats.
+Preferred Assignment; May only command Cavalry Forces and Formations.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="2"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Pérignon" hidden="false" id="abc5-a102-796e-437c">
+                  <profiles>
+                    <profile name="Pérignon" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution, Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, 1804-1814.
+Traitor to the Emperor; In 1814 Pérignon rallies to the restored Bourbon King and remains with him. He is stricken from the Marshalate during The Hundred Days and is therefore unavailable after 1814.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Poniatowski" hidden="false" id="9b0c-26e2-45ce-0a43">
+                  <profiles>
+                    <profile name="Poniatowski" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, October 1813.
+Mass Cavalry; May Convert Cavalry in add’l Combats.
+By Popular Demand; A Polish Force must be commanded by Poniatowski, 1792-1813.
+A Date with Death; At Leipzig Poniatowski’s Poles form the rearguard, but the bridge is blown prematurely. Cut oﬀ, and half of his corps destroyed, Poniatowski attempts to swim the Weiße Elster on his horse, but is shot numerous times and drowns, the only foreign Maréchal d’Empire, -2 to Leader Fate, 1813. Unavailable after October 1813.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="5"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Rapp" hidden="false" id="64fd-7307-e8e5-b863">
+                  <profiles>
+                    <profile name="Rapp" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Aide-de-Camp; ADC to Desaix, 1798-1800; ADC to Napoléon 1800-1814. Captain of the Guard; May command Garde Impériale Formations, 1805 &amp; 1809.
+Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1806 &amp; 1812.
+Mass Cavalry; May Convert Cavalry Formations in additional Combats.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Reille" hidden="false" id="8948-39d0-9513-7206">
+                  <profiles>
+                    <profile name="Reille" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Aide-de-Camp; ADC to Napoléon, 1807-1809.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="5"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Reynier" hidden="false" id="8666-eeec-6dba-7280">
+                  <profiles>
+                    <profile name="Reynier" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Preferred Assignment; A Saxon Force must be commanded by Reynier, 1812-1813.
+An Untimely Death; Captured at Leipzig after the last bridge is blown, Reynier is eventually exchanged and returns to France but dies shortly thereafter.
+Unavailable after 1813.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Saint-Cyr" hidden="false" id="1161-1d82-d519-8cce">
+                  <profiles>
+                    <profile name="Saint-Cyr" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Maréchal d’Empire; Subtract, not add, double his Command if Issuer is another Maréchal, 1812-1815.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="6"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Saint-Hilaire" hidden="false" id="f6d5-6605-9e7b-34b6">
+                  <profiles>
+                    <profile name="Saint-Hilaire" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Flirts with Death; -1 in Leader Fate, but +2 if Harmed, 1805.
+A Date with Death; Struck at Aspern-Essling by an Austrian cannonball which removes his left leg, he dies two weeks later, -2 in Leader Fate, 1809.
+Unavailable after 1809.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="7"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Savary" hidden="false" id="3c25-bd35-984d-c7a5">
+                  <profiles>
+                    <profile name="Savary" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Aide-de-Camp; ADC to Napoléon, 1798-1809.
+Captain of the Guard; May command Directory Guide Cavalry Formations, 1801-1804.
+Mass Cavalry; May Convert Cavalry in add’l Combats.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Sébastiani" hidden="false" id="3385-70ea-b9dc-4ef5">
+                  <profiles>
+                    <profile name="Sébastiani" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Mass Cavalry; May Convert Cavalry Formations in additional Combats.
+Flirts with Death; -1 in Leader Fate, but +2 if Harmed, 1813.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Ségur" hidden="false" id="8fb1-0cb1-2974-cb4c">
+                  <profiles>
+                    <profile name="Ségur" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Aide-de-Camp; ADC to Napoléon, 1804-1812.
+Captain of the Guard; May command Garde Impériale Cavalry Formations, 1814.
+Mass Cavalry; May Convert Cavalry in add’l Combats.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Sérurier" hidden="false" id="07b5-1b85-fcaf-f61a">
+                  <profiles>
+                    <profile name="Sérurier" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, 1804-1815.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Souham" hidden="false" id="c4da-e868-3f33-8f7a">
+                  <profiles>
+                    <profile name="Souham" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1813.
+Traitor to the Emperor; Remaining loyal to the restored Bourbon King, Souham is unavailable after 1814.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="3"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Soult" hidden="false" id="1071-2a5c-7a0b-c91b">
+                  <profiles>
+                    <profile name="Soult" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution, Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, 1804-1815.
+Major-général; May act as chief-of-staﬀ if Berthier is not present, providing a
++1 to Napoléon’s Command when in contact, max of Command +4, 1813-1815.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="6"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Suchet" hidden="false" id="3656-5999-9053-d911">
+                  <profiles>
+                    <profile name="Suchet" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, 1811-1815.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="6"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Tharreau" hidden="false" id="e79e-d1d4-e536-3ccb">
+                  <profiles>
+                    <profile name="Tharreau" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1809.
+A Date with Death; -2 to Leader Fate, 1812. Unavailable after 1812.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
+                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Vandamme" hidden="false" id="0d3f-812a-4c92-88de">
+                  <profiles>
+                    <profile name="Vandamme" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Needs the Right Supervisor; Unless reporting directly to Napoléon, roll 1D6 for his Command: 1-3 +1, 4-5 +2, 6 +3.
+Specific Talent; Vandamme’s Threat is +1|+3 |+3 if Personally Commanding a Formation with an active Attack [A] Directive.
+Chosen Successor; If Jérôme is removed due to Leader Fate, Vandamme will take command of the VIIIeme Corps d’armée, 1812.
+Unfortunate Capture; Unavailable in 1814.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Victor" hidden="false" id="ea0e-b3db-1cec-b6b6">
+                  <profiles>
+                    <profile name="Victor" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Maréchal d’Empire; Subtract, not add, his Command if Issuer is another
+Maréchal, 1807-1815.
+Traitor to the Emperor; Victor abandons Napoléon for the Bourbons after being rebuked for his failure at the Battle of Montereau. Unavailable after February 1814.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="5"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Walther" hidden="false" id="2941-d3e6-08db-1069">
+                  <profiles>
+                    <profile name="Walther" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Mass Cavalry; May Convert Cavalry Formations in additional Combats. Captain of the Guard; May command Garde Impériale Cavalry Formations, 1809-1813.
+Preferred Assignment; May only command Cavalry Formations.
+An Untimely Death; Walther dies in the fall of 1813, reports diﬀer as to the cause, either exhaustion or typhus, in either case, unavailable after 1813.&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="2"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="2"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -330,7 +2353,7 @@
     </selectionEntry>
   </selectionEntries>
   <sharedRules>
-    <rule name="Marechal d&apos;Empire" id="783d-f637-18c1-c980" hidden="false">
+    <rule name="Maréchal d’Empire" id="783d-f637-18c1-c980" hidden="false">
       <description>Subtract, not add, his Command if Issuer is another Maréchal (dates)</description>
     </rule>
     <rule name="Dispatch ADCs" id="59d6-4129-6e78-ff87" hidden="false">

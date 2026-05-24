@@ -2,7 +2,7 @@
  * ESR Commander load script
  * This script loads a file from the New Recruit game folder
  */
-function toCommanderProfiles(Data) {
+function toCommanderProfiles(Data, Rules) {
 
     let model = {
         parentKey: "profiles",
@@ -27,9 +27,29 @@ function toCommanderProfiles(Data) {
     //
     // calculate the threat and Cohesion
     //
-    const Threat = +Data.RangedLR + +Data.RangedSR + +Data.Contact;
-    const Cohesion = +Data.Cohesion;
+    let Threat = +Data.RangedLR + +Data.RangedSR + +Data.Contact;
+    let Cohesion = +Data.Cohesion;
 
+    if ( Number.isNaN(Threat)) {
+      Threat = 6;
+    }
+    
+    if (Number.isNaN(Cohesion)) {
+      Cohesion = 2;
+    }
+
+    const ruleLinks = [];
+    //
+    // loop over rules and see what needs to be included and linked
+    // 
+    for ( const rule of Rules ) {
+      const expression = rule.name+";";
+      const regexp = new RegExp(expression);
+      const testString = Data.Traits;
+      if ( testString.match( regexp ) ) {
+        ruleLinks.push( {name: rule.name, hidden: "false", type: "rule", targetId: rule.id } );
+      }
+    }
 
     // 
     // entry for the commander unit entry
@@ -41,15 +61,13 @@ function toCommanderProfiles(Data) {
         type: "model",
         profiles: [model],
         costs: [
-        {typeId: "esr-ct-Cohesion", $text: Cohesion,
-          typeId: "esr-ct-Threat", $text: Threat}
-        ]
-
+          {typeId: "esr-ct-Cohesion", name: "Cohesion", value: Cohesion} ,
+          {typeId: "esr-ct-Threat", name: "Threat", value: Threat}
+        ],
+        infoLinks: ruleLinks
       }
 
     return entry;
-
-    //    return [model, ...traits]  
 }
 
 
@@ -65,12 +83,12 @@ function tokenizeLine ( line, results ) {
   let items = [];
 
 
-  items = line.value.split(/\t/);
+  items = line.split(/\t/);
 
   tokens.map( (token) => { 
     //console.log( token );
     results[ token ] = items[ count++];
-    //results.token = items[count++]; 
+    
     } );
 
   if( results.Name == "" ) {
@@ -84,166 +102,140 @@ function tokenizeLine ( line, results ) {
   return count;
 }
 
-function processCommander(commandElement) {
+function processCommander(CommanderResults, HistoricalCommander, Rules) {
     
-  if (commandElement.name !== "Commander") {
-    notify({ text: "Select the Commander selectionEntry", type: "error"})
-    return;
-  }
-  if ( commanderResults.length == 0) {
-    notify({ text: "Commander file did not proces correctly", type: "error"})
+  if (HistoricalCommander.name !== "Historical Commander" ) {
+    console.error( "The historical commander element reference was not passed, possibly the wrong selection?");
     return;
   }
 
-  let historicalCommander;
-  // get a reference to the Historical commanders
-  
-  for (const element of commandElement.selectionEntryGroups[0].selectionEntryGroups) {
-    if( element.name == "Historical Commander") {
-      historicalCommander = element;
-      break;
-    }
+  //
+  // remove any commanders who are currently there
+  //
+  try { 
+    HistoricalCommander.selectionEntries.length = 0;
+  } catch (e) {
+    // nothing to do, the selectionEntries have not been added yet
   }
-
-  // for each line of the commanderResult, process the commander
-
-  const commander = commanderResults[0];
+    
   
-  let entryTest = {
-    parentKey: "selectionEntries",
-    name: commander.Name, 
-    type: "model"
-  } 
-
-  let profile = toCommanderProfiles( commander );
-
-  
-  //historicalCommander.selectionEntries[3] = entryTest;
-  $store.add_node( "selectionEntries", historicalCommander, profile );
-  
-  
-  /*
-  for ( const commander of commanderResults ) {
-    historicalCommander.selectionEntries.push(toCommanderProfiles( commander ));
-  }*/
-
-  // at the end clear the commander results to set up for the next file
-  commanderResults.length = 0;
+  // loop over all commander results and add them to the Historical commander selections
+  for ( const commander of CommanderResults ) {
+    let profile = toCommanderProfiles( commander, Rules );
+    $store.add_node( "selectionEntries", HistoricalCommander, profile );
+  }
 
   return null;
 }
 
 
 
-const commanderResults = [];
 
 export default {
 
-  name: "ESR Cmdr Test",
-  arguments: [
+  name: "ESR Cmdr Import",
+  /* arguments: [
     {
       type: "catalogue[]",
     },
-  ],
+  ], */
 
+  hooks: 
+  {
+    paste(e, payload) {
 
-  async run(catalogues) {
+      const commanderResults = [];
+      const factionRules = [];
 
-
-    const gst = catalogues[0];
-
-    let faction = "";
-    let fileName = "";
-
-    if ( catalogues.length !== 1) {
-      console.error( "Select one catalog only" );
-      return;
-    } else if (catalogues[0].name == 'ESR' ){
-      console.error( "Do not select the ESR catalog"); 
-      return;
-    } else {
-      faction = catalogues[0].name;
-    }
-
-    switch (faction) {
-      case "French":
-        fileName = "ESR Command Cards-French Commanders.txt";
-      break;
-
-      case "Russian":
-        fileName = "ESR Command Cards-Russian Commanders.txt";
-      break;
-
-      case "English":
-        fileName = "ESR Command Cards-English Commanders.txt";
-        break;
-
-      case "Austrian":
-        fileName = "ESR Command Cards-English Commanders.txt";
-        break;
-
-      default:
-        console.error( "Faction: ", faction, "does not have a valid file mapping.");
+      if (typeof payload !== "string") return
+      const selected = $store.get_selected();
+      if (selected.parentKey !== "sharedSelectionEntries") {
+        notify({ text: "Select the (top-level) Commander selectionEntry", type: "error" });
         return;
-        break;
-    }
-
-    // zero out results if there is anything in it now.
-    commanderResults.length = 0; 
-
-    const workingPath = import.meta.url.replace( /^file:\/\/\//,"" );
-    const dirName = workingPath.split('/').slice(0, -2).join('/');
-    const filePath = `${dirName}/${fileName}`;
-    const fileData = await $node.readFile( filePath );
-    
-    if( fileData.data == undefined) {
-      console.error( "Could not open file ", filePath);
-      return;
-    }
-    console.log( "Processing: ", filePath );
-      
-    // if we get to here, we have the data from the file
-    // loop over every line and load the commanders into a structure
-    // 
-    let lineByLine = fileData.data.split( '\r\n');
-    const dataIterator = lineByLine.values();
-    let line;
-
-
-    line = dataIterator.next();
-    let number = 0;
-    while ( !line.done ) {
-      let results = []; // scope, need to create new entries for EACH commander
-      if (line.value == ""){
-        line = dataIterator.next();
-        continue;
       }
-      let num = tokenizeLine ( line, results );
-      if ((num > 0) && (results.Name !== "")) {
-        commanderResults[number] = results;
-        number ++; 
-        console.log( "Processed: ", results.Name );
+      if (selected.name !== "Commander") {
+        notify({ text: "Select the Commander selectionEntry", type: "error"})
+        return;
       }
-      //console.log( line );
+
+      const cat = selected.catalogue;
+      // game system == gst
+      const gst = cat.gameSystem;
+      const faction = cat.name;
+
+        switch (faction) {
+          case "French":
+          case "Russian":
+          case "English":
+          case "Austrian":
+              // expected faction names
+              // nothing to do
+            break;
+
+          default:
+            console.error( "Faction: ", faction, "does not have a valid file mapping.");
+            return;
+            break;
+        }
 
  
-      line = dataIterator.next();
-    }
-
-    // Get a reference to the 
-    // faction catalog
-    let entry;
-    for ( entry of gst.sharedSelectionEntries ) {
-      if ( entry.name == "Commander") {
-        processCommander( entry );
-        break;
+      factionRules.length = 0;
+      if (cat.sharedRules !== undefined) {
+        for ( const rule of cat.sharedRules ) {
+          factionRules.push(rule);
+        } 
       }
-    }
+      if (gst.sharedRules !== undefined ) {
+        for ( const rule of gst.sharedRules ) {
+            factionRules.push(rule);
+          }
+      }
+ 
+      //console.log( selected );
 
-    return "Processed " + number + " " + faction + " commanders.";
+      let historicalCommander = null;
+      // get a reference to the Historical commanders
+      
+      for (const element of selected.selectionEntryGroups[0].selectionEntryGroups) {
+        if( element.name == "Historical Commander") {
+          historicalCommander = element;
+          break;
+        }
+      }
 
-  }
+      if ( historicalCommander == null ) {
+        console.error( "Commander unit definition is not correct, cannot find Historical Commander" );
+        return;
+      }
+      
+      // if we get to here, we have the data from the file
+      // loop over every line and load the commanders into a structure
+      // 
+      let lineByLine = payload.split( '\r\n');
+      let line;
+      let number = 0;
+      for ( line of lineByLine ) {
+        let results = []; // scope, need to create new entries for EACH commander
+        if (line == ""){
+          continue;
+        }
+        let num = tokenizeLine ( line, results );
+        if ((num > 0) && (results.Name !== "")) {
+          commanderResults[number] = results;
+          number ++; 
+          console.log( "Processed: ", results.Name );
+        }
+        //console.log( line );
   
+      }
+          
+      processCommander( commanderResults, historicalCommander, factionRules );
+      
+      console.log( "Processed " + number + " " + faction + " commanders.");
+      
+      return null;
+    }
+  }  
 }
 
 
