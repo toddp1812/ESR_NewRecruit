@@ -10,18 +10,18 @@
               <selectionEntries>
                 <selectionEntry type="model" import="true" name="Moore" hidden="false" id="5378-ead2-6198-db38">
                   <profiles>
-                    <profile name="Moore" typeName="Commander" typeId="pt-CmdUnit">
+                    <profile name="Moore" typeName="Cmd Unit" typeId="pt-CmdUnit">
                       <characteristics>
-                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution, Early War</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution, Early, Mid Wars</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Revolution, Early, Mid Wars</characteristic>
                         <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
                         <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Trait" name="Trait">A Date with Death; Moore is mortally wounded by artillery fire at Coruña and dies shortly after the battle ends. Once the British vacated Coruña, Maréchal Soult orders the French army  to build a monument over Moore’s grave to honor their opponent, -2 to Leader Fate, 1809. Unavailable after January 1809.</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Revolution, Early War</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">Revolution, Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">Revolution, Early, Mid Wars</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -35,20 +35,20 @@
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Wellington" hidden="false" id="1030-a038-ff43-1ec1">
                   <profiles>
-                    <profile name="Wellington" typeName="Commander" typeId="pt-CmdUnit">
+                    <profile name="Wellington" typeName="Cmd Unit" typeId="pt-CmdUnit">
                       <characteristics>
-                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Revolution</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Revolution, Early, Mid, Late Wars</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Mid, Late Wars</characteristic>
                         <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">3</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">3</characteristic>
                         <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Charmed Death; +2 to Leader Fate, 1808-1815.
 Peerless; If present, must be Army Commander, 1809-1815.
 Limited Delegation; Wellington’s Army is limited to a maximum of two English Forces: the first must be commanded by Wellington, a second must be a Cavalry Force, any additional Forces must be Spanish, 1809-1812.&quot;</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Revolution</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">Revolution, Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">Mid, Late Wars</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -63,18 +63,18 @@ Limited Delegation; Wellington’s Army is limited to a maximum of two English F
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Hill" hidden="false" id="4235-2d5d-9946-fd8a">
                   <profiles>
-                    <profile name="Hill" typeName="Commander" typeId="pt-CmdUnit">
+                    <profile name="Hill" typeName="Cmd Unit" typeId="pt-CmdUnit">
                       <characteristics>
-                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid, Late Wars</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid, Late Wars</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Late War</characteristic>
                         <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
                         <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Daddy Hill; If in Personal Command roll 1D6 during Recovery, on a ‘6’, the Formation Recovers -2 instead of -1 Fatigue.</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">Late War</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -85,20 +85,20 @@ Limited Delegation; Wellington’s Army is limited to a maximum of two English F
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Craufurd" hidden="false" id="b1fe-51f3-6ef9-c9b0">
                   <profiles>
-                    <profile name="Craufurd" typeName="Commander" typeId="pt-CmdUnit">
+                    <profile name="Craufurd" typeName="Cmd Unit" typeId="pt-CmdUnit">
                       <characteristics>
-                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid Wars</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
                         <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">3</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">3</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">3</characteristic>
                         <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;By Popular Demand; Craufurd must command the Light Division, 1810-1812. Black Bob; The Light Division gains Rapid Deployment and either Enthusiastic or Stoic, the controlling player must choose at the start of the game.
 Outpost Duty; French Forces within 1 mile (12”) of Light Division may not use dummy Objective markers.
 A Date with Death; Craufurd is mortally wounded at Ciudad Rodrigo, dying four days later. -2 to Leader Fate, 1812. Unavailable after January 1812.&quot;</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Early, Mid Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -112,20 +112,20 @@ A Date with Death; Craufurd is mortally wounded at Ciudad Rodrigo, dying four da
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Beresford" hidden="false" id="67d3-0912-a1b2-c5ee">
                   <profiles>
-                    <profile name="Beresford" typeName="Commander" typeId="pt-CmdUnit">
+                    <profile name="Beresford" typeName="Cmd Unit" typeId="pt-CmdUnit">
                       <characteristics>
-                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid, Late Wars</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">Mid, Late Wars</characteristic>
                         <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
                         <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Marechal-general de Portugal; May issue orders to Portuguese Forces and Formations even if not commanding them, 1810-1814.
 Flirts with Death; -1 to Leader Fate, +2 if Harmed, 1812.
 Chosen Successor; If Wellington is removed by Leader Fate, Beresford must take command of the Army, after March 1812.&quot;</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">Mid, Late Wars</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -139,18 +139,18 @@ Chosen Successor; If Wellington is removed by Leader Fate, Beresford must take c
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Graham" hidden="false" id="ae6d-46f1-6b7f-b108">
                   <profiles>
-                    <profile name="Graham" typeName="Commander" typeId="pt-CmdUnit">
+                    <profile name="Graham" typeName="Cmd Unit" typeId="pt-CmdUnit">
                       <characteristics>
-                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late Wars</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
                         <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
                         <characteristic typeId="ct-CmdUnit-Coh" name="Coh">3</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Chosen Successor; If Wellington is removed by Leader Fate, Graham must take command of the Army, January to March 1812.</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -161,21 +161,21 @@ Chosen Successor; If Wellington is removed by Leader Fate, Beresford must take c
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Picton" hidden="false" id="1ff0-166c-c3f1-f769">
                   <profiles>
-                    <profile name="Picton" typeName="Commander" typeId="pt-CmdUnit">
+                    <profile name="Picton" typeName="Cmd Unit" typeId="pt-CmdUnit">
                       <characteristics>
-                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late Wars</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
                         <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
                         <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Otherwise Engaged; Picton is unavailable until 1810.
 Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1812.
 A Date with Death; Picton is the most senior British oﬃcer killed at Waterloo.
 -2 to Leader Fate, 1815.&quot;</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -190,20 +190,20 @@ A Date with Death; Picton is the most senior British oﬃcer killed at Waterloo.
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Cotton" hidden="false" id="e062-fe89-38ee-2bd5">
                   <profiles>
-                    <profile name="Cotton" typeName="Commander" typeId="pt-CmdUnit">
+                    <profile name="Cotton" typeName="Cmd Unit" typeId="pt-CmdUnit">
                       <characteristics>
-                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid, Late Wars</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Mid, Late Wars</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
                         <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">0</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
                         <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1812.
 Preferred Assignment; May only command Cavalry.
 Mass Cavalry; May Convert Cavalry Formations in additional Combats.&quot;</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -218,18 +218,18 @@ Mass Cavalry; May Convert Cavalry Formations in additional Combats.&quot;</chara
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Packenham" hidden="false" id="ed37-d531-7fd0-8120">
                   <profiles>
-                    <profile name="Packenham" typeName="Commander" typeId="pt-CmdUnit">
+                    <profile name="Packenham" typeName="Cmd Unit" typeId="pt-CmdUnit">
                       <characteristics>
-                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
                         <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
                         <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Otherwise Engaged; Pakenham accepts command of British forces in North America at the end of the War of 1812. At the Battle of New Orleans, Pakenham is wounded by short range munitions from American artillery which explodes his knee, while being helped up by an aide, he is struck again in the arm. Once mounted on the aide’s horse he is struck a third time, this time in the spine. He dies shortly thereafter, after directing his second-in-command to take command and commit the reserves. Unavailable after August 1814.</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -240,19 +240,19 @@ Mass Cavalry; May Convert Cavalry Formations in additional Combats.&quot;</chara
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Leith" hidden="false" id="2b2f-6f9c-a001-4a85">
                   <profiles>
-                    <profile name="Leith" typeName="Commander" typeId="pt-CmdUnit">
+                    <profile name="Leith" typeName="Cmd Unit" typeId="pt-CmdUnit">
                       <characteristics>
-                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
                         <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
                         <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Otherwise Engaged; Appointed governor of the Leeward Islands in 1814, Leith is focused on suppressing Napoléon’s supporters there through 1815. Unavailable after January 1814.
 Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1812, 1813.&quot;</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -266,19 +266,19 @@ Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1812, 1813.&quot;</character
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Cole" hidden="false" id="caa2-6234-8ed1-e69a">
                   <profiles>
-                    <profile name="Cole" typeName="Commander" typeId="pt-CmdUnit">
+                    <profile name="Cole" typeName="Cmd Unit" typeId="pt-CmdUnit">
                       <characteristics>
-                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Early, Mid, Late Wars</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late Wars</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
                         <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">1</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">2</characteristic>
                         <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1811-1812.
 Otherwise Engaged; Appointed to command the Northern Military District in 1815, Cole misses the Waterloo Campaign. Unavailable 1815.&quot;</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Early, Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -292,20 +292,20 @@ Otherwise Engaged; Appointed to command the Northern Military District in 1815, 
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Uxbridge" hidden="false" id="f6fa-99ea-f657-24eb">
                   <profiles>
-                    <profile name="Uxbridge" typeName="Commander" typeId="pt-CmdUnit">
+                    <profile name="Uxbridge" typeName="Cmd Unit" typeId="pt-CmdUnit">
                       <characteristics>
-                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">Late Wars</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
                         <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
                         <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Preferred Assignment; May only command Cavalry.
 Mass Cavalry; May Convert Cavalry Formations in additional Combats.
 Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1815.&quot;</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -320,19 +320,19 @@ Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1815.&quot;</characteristic>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Hope" hidden="false" id="5462-1101-3e89-9584">
                   <profiles>
-                    <profile name="Hope" typeName="Commander" typeId="pt-CmdUnit">
+                    <profile name="Hope" typeName="Cmd Unit" typeId="pt-CmdUnit">
                       <characteristics>
-                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="Availability Formation">Mid, Late Wars</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="Force Force">–</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="Availability Army">–</characteristic>
                         <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
                         <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
                         <characteristic typeId="ct-CmdUnit-Coh" name="Coh">2</characteristic>
-                        <characteristic typeId="ct-CmdUnit-Move" name="Move">24 | 18 | 9</characteristic>
                         <characteristic typeId="ct-CmdUnit-Trait" name="Trait">&quot;Chosen Successor; If Moore is removed by Leader Fate, Hope must take command of the Army, 1808-1809.
 Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1814.&quot;</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Mid, Late Wars</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -347,8 +347,382 @@ Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1814.&quot;</characteristic>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ee1-a095-0f2d-ad99-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ee1-a095-0f2d-ad99-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba27-fce7-d2c6-fc48-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba27-fce7-d2c6-fc48-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Foot Guards" hidden="false" id="e2dd-f776-3814-a9ab">
+      <profiles>
+        <profile name="Foot Guards" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">4</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1 1/2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Shock: Threat is not reduced vs Built-up-Areas, Strong Points, or Walls.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1.5"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="4.5"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Shock" hidden="false" type="rule" targetId="ff54-e2c4-8419-4718"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Life Guards" hidden="false" id="80ba-dcef-28ad-8ac7">
+      <profiles>
+        <profile name="Life Guards" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">4</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Cavalry" primary="true" targetId="ct-Cavalry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Royal Horse Guards" hidden="false" id="1176-40f9-993f-c05c">
+      <profiles>
+        <profile name="Royal Horse Guards" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">4</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Cavalry" primary="true" targetId="ct-Cavalry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Light Infantry" hidden="false" id="c63e-036a-db92-5293">
+      <profiles>
+        <profile name="Light Infantry" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">3</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terrain or at range vs Built-up-Areas.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Lights" hidden="false" type="rule" targetId="d557-936b-57a3-c4f5"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Foot Infantry" hidden="false" id="f935-a115-1882-5d7c">
+      <profiles>
+        <profile name="Foot Infantry" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">3</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="3.5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Highland Foot Inf" hidden="false" id="aa00-a7f5-f40b-84cb">
+      <profiles>
+        <profile name="Highland Foot Inf" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">3</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Shock: Threat is not reduced vs Built-up-Areas, Strong Points, or Walls.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="3.5"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Shock" hidden="false" type="rule" targetId="ff54-e2c4-8419-4718"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Fusilier Foot Infantry" hidden="false" id="0271-7f11-829a-7508">
+      <profiles>
+        <profile name="Fusilier Foot Infantry" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">3</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Shock: Threat is not reduced vs Built-up-Areas, Strong Points, or Walls.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="3.5"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Shock" hidden="false" type="rule" targetId="ff54-e2c4-8419-4718"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Rifles" hidden="false" id="6bbc-9483-295f-5324">
+      <profiles>
+        <profile name="Rifles" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terrain or at range vs Built-up-Areas.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="0.5"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="0.75"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Lights" hidden="false" type="rule" targetId="d557-936b-57a3-c4f5"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Dragoon Guards" hidden="false" id="ce45-53ff-9531-fa7d">
+      <profiles>
+        <profile name="Dragoon Guards" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">3</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Cavalry" primary="true" targetId="ct-Cavalry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Dragoons" hidden="false" id="577c-dfc4-5977-69a8">
+      <profiles>
+        <profile name="Dragoons" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">3</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Cavalry" primary="true" targetId="ct-Cavalry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Light Dragoons" hidden="false" id="652a-9043-ac4d-f4b5">
+      <profiles>
+        <profile name="Light Dragoons" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terrain.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="2"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Lights" hidden="false" type="rule" targetId="d557-936b-57a3-c4f5"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Cavalry" primary="true" targetId="ct-Cavalry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Hussars" hidden="false" id="f6b1-dcac-4702-f168">
+      <profiles>
+        <profile name="Hussars" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terrain.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="2"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Lights" hidden="false" type="rule" targetId="d557-936b-57a3-c4f5"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Cavalry" primary="true" targetId="ct-Cavalry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="9-pdr Royal Artillery" hidden="false" id="9c71-8137-782f-384b">
+      <profiles>
+        <profile name="9-pdr Royal Artillery" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">3</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="7"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Artillery" primary="true" targetId="ct-Artillery"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="6-pdr Royal Artillery" hidden="false" id="fdd7-5281-f2d8-8dc8">
+      <profiles>
+        <profile name="6-pdr Royal Artillery" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="6"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Artillery" primary="true" targetId="ct-Artillery"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="6-pdr Royal Horse Artillery" hidden="false" id="572f-2240-e797-0544">
+      <profiles>
+        <profile name="6-pdr Royal Horse Artillery" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="6"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Artillery" primary="true" targetId="ct-Artillery"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

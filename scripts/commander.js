@@ -1,6 +1,18 @@
 /*
  * ESR Commander load script
- * This script loads a file from the New Recruit game folder
+ * This script loads a pasted record from the New Recruit game folder.
+ * The paste needs to be activated on the Commander shareSelectionEntry 
+ * in the faction catalog. The pasted text must be in the format of the 
+ * commander spreadsheet, all columns. Each row should be one Commander.
+ * 
+ * Commander has an assumed structure:
+ * * Commander
+ * -- Generic or Historical Commander
+ * -- * Generic
+ * -- * -- all generic comamnders go here
+ * -- * Historical Commander
+ * -- * -- all historical commanders go here
+ * 
  */
 function toCommanderProfiles(Data, Rules) {
 
@@ -173,7 +185,7 @@ export default {
             break;
 
           default:
-            console.error( "Faction: ", faction, "does not have a valid file mapping.");
+            console.error( "Faction: ", faction, "does not have a valid commander mapping.");
             return;
             break;
         }
