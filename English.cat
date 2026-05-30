@@ -795,405 +795,589 @@ Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1814.&quot;</characteristic>
     </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
-    <selectionEntry type="unit" import="true" name="Brigade" hidden="false" id="2d80-b509-5b73-10c9" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Brigade" hidden="false" id="48a8-37d2-d43b-783d" subType="unit-group">
       <categoryLinks>
         <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink name="Foot Infantry" targetId="f935-a115-1882-5d7c" type="selectionEntry" hidden="false"/>
-        <entryLink name="Commander" targetId="48f6-945b-8be3-d89b" type="selectionEntry" hidden="false"/>
+        <entryLink name="Foot Infantry" id="17bc7112-0aa1-49c0-9270-48209fa29fce" targetId="f935-a115-1882-5d7c" type="selectionEntry" hidden="false" sortIndex="6"/>
+        <entryLink name="Commander" id="abecc948-4f27-4ecd-8da4-daa8a9486ad4" targetId="48f6-945b-8be3-d89b" type="selectionEntry" hidden="false" sortIndex="1"/>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Scenario Rules" hidden="false">
+        <selectionEntryGroup name="Scenario Rules" hidden="false" id="8e0f028c-f753-4269-88db-14ec58df266c">
           <selectionEntries>
-            <selectionEntry name="Big Battalions" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Big Battalions" hidden="false" type="rule" targetId="c570-38f5-5494-2b60"/>
-              </categoryLinks>
+            <selectionEntry name="Big Battalions" id="543c3573-53d7-469f-baa6-3b214a47d1f8" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Big Battalions" import="true" hidden="false" type="rule" targetId="c570-38f5-5494-2b60" id="d5bae962-7959-4b20-8590-e4b499fa7872"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="3ac96580-e086-414a-aee9-b407e076f777"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Brittle" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Brittle" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d"/>
-              </categoryLinks>
+            <selectionEntry name="Brittle" id="99777b4b-689b-4c2f-a3cf-c614274ccba1" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Brittle" import="true" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d" id="304b0d19-061d-4f6d-bac7-117b09e34598"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="781f2514-aca4-40c2-bffe-048164c9abe1"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Determined" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Determined" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0"/>
-              </categoryLinks>
+            <selectionEntry name="Determined" id="a76fffea-9912-439a-b227-07c70c4db5a6" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Determined" import="true" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0" id="b36fd561-7beb-4d3b-b3e2-e14d80b9cdff"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="10f94702-dfca-40fb-a29d-db733f2fa896"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Enthusiastic" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Enthusiastic" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22"/>
-              </categoryLinks>
+            <selectionEntry name="Enthusiastic" id="4e9b6b6c-4e75-4229-a339-f361992afc39" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Enthusiastic" import="true" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22" id="a69dec56-c4d9-4663-b325-de410614ae4c"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="f41eeb84-eb8f-49b9-9aed-36badd04ccae"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Impetuous" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Impetuous" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd"/>
-              </categoryLinks>
+            <selectionEntry name="Impetuous" id="09bde5e7-af44-4e50-897e-335cd3bd638e" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Impetuous" import="true" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd" id="ed5d92fd-1881-4705-b57c-701cfb1b7bfd"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="f583dd5f-5d02-4037-b838-f96727f0d042"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Parallel Deployment" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Parallel Deployment" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61"/>
-              </categoryLinks>
+            <selectionEntry name="Parallel Deployment" id="4de53cf0-0d25-4da1-9179-5aefb84072c7" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Parallel Deployment" import="true" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61" id="2f6d466c-a6c2-43c5-8e2a-ed4077b6f6be"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="e20fe49c-be7f-42c9-9487-d2b7af97f9df"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Rapid Deployment" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Rapid Deployment" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
-              </categoryLinks>
+            <selectionEntry name="Rapid Deployment" id="0201d3fd-e0df-4e35-8462-147e090b9b85" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Rapid Deployment" import="true" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d" id="e853a16b-e407-4adf-ab25-8cb05cced5e6"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="7cabbd2f-fab9-4cda-8c32-eb7ea02f43c8"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Stoic" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Stoic" hidden="false" type="rule" targetId="66f8-5090-b257-5150"/>
-              </categoryLinks>
+            <selectionEntry name="Stoic" id="95839c0a-58c3-440e-b2e7-1fe41a0a996f" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Stoic" import="true" hidden="false" type="rule" targetId="66f8-5090-b257-5150" id="cbcbdc2d-acec-4b93-8575-84e398e29915"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="44c59106-ef92-47de-8d04-a6468a885465"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Infantry Division" hidden="false" id="6e76-ce54-4553-3bd9" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Infantry Division" hidden="false" id="27ec-6cc0-656e-0206" subType="unit-group">
       <categoryLinks>
         <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink name="Foot Infantry" targetId="f935-a115-1882-5d7c" type="selectionEntry" hidden="false"/>
-        <entryLink name="9-pdr Royal Artillery" targetId="9c71-8137-782f-384b" type="selectionEntry" hidden="false"/>
-        <entryLink name="6-pdr Royal Artillery" targetId="fdd7-5281-f2d8-8dc8" type="selectionEntry" hidden="false"/>
-        <entryLink name="Commander" targetId="48f6-945b-8be3-d89b" type="selectionEntry" hidden="false"/>
+        <entryLink name="Foot Infantry" id="fe5faee3-1ad6-49bd-b7e4-f6bcb017022d" targetId="f935-a115-1882-5d7c" type="selectionEntry" hidden="false" sortIndex="6"/>
+        <entryLink name="9-pdr Royal Artillery" id="ebb66d57-2bb4-4f37-989a-532ea4142593" targetId="9c71-8137-782f-384b" type="selectionEntry" hidden="false" sortIndex="14"/>
+        <entryLink name="6-pdr Royal Artillery" id="ca60cfc4-894a-49af-a428-4b81360432f0" targetId="fdd7-5281-f2d8-8dc8" type="selectionEntry" hidden="false" sortIndex="15"/>
+        <entryLink name="Commander" id="bde55dcf-b05c-4285-ae31-1103c8befa57" targetId="48f6-945b-8be3-d89b" type="selectionEntry" hidden="false" sortIndex="1"/>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Scenario Rules" hidden="false">
+        <selectionEntryGroup name="Scenario Rules" hidden="false" id="49daba6f-307f-4f3f-86ac-48a41a276de1">
           <selectionEntries>
-            <selectionEntry name="Big Battalions" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Big Battalions" hidden="false" type="rule" targetId="c570-38f5-5494-2b60"/>
-              </categoryLinks>
+            <selectionEntry name="Big Battalions" id="eaae1b58-0e08-4b7d-bddc-70b57eb9ae41" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Big Battalions" import="true" hidden="false" type="rule" targetId="c570-38f5-5494-2b60" id="eb3c2fad-4acc-4844-b7c8-b51aefb375c3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="0f1c42cb-2f0b-446b-a3d5-f2abf539bed2"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Brittle" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Brittle" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d"/>
-              </categoryLinks>
+            <selectionEntry name="Brittle" id="385faadf-5d6b-4176-8a07-a257a24d9371" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Brittle" import="true" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d" id="c4a9ae0a-4313-4699-b559-b81a531c988a"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="4363bae7-373d-4718-b2ad-48ca3660e115"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Determined" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Determined" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0"/>
-              </categoryLinks>
+            <selectionEntry name="Determined" id="902ace2f-2cb0-4b87-83e0-b639d4f9e0ad" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Determined" import="true" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0" id="9f0c90fe-be5b-4860-a652-8f3a93af457f"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="3c45d65b-dcc0-4598-8c31-5318557efb1c"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Enthusiastic" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Enthusiastic" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22"/>
-              </categoryLinks>
+            <selectionEntry name="Enthusiastic" id="c938c067-2d83-43f9-8395-d42f24835fa7" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Enthusiastic" import="true" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22" id="ad1f7171-031b-4b4a-865a-66ef800c750a"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="ba441a84-7897-45f2-b6e2-c09b6fdd729f"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Impetuous" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Impetuous" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd"/>
-              </categoryLinks>
+            <selectionEntry name="Impetuous" id="160f2e2c-8832-4d4c-b199-21a1a385af33" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Impetuous" import="true" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd" id="baa4895f-2998-4a98-81dc-c0a22c5d9bfc"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="7e509f17-9872-4557-a8a2-c6dd54fc243d"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Parallel Deployment" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Parallel Deployment" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61"/>
-              </categoryLinks>
+            <selectionEntry name="Parallel Deployment" id="4723ad9a-15ae-4af8-a0c1-1a25d3ab962f" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Parallel Deployment" import="true" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61" id="4912e263-b1fd-45e4-9b8e-5aa7b405d799"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="76067181-ee4b-4bf6-8ac5-3b9c0e14ca4f"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Rapid Deployment" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Rapid Deployment" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
-              </categoryLinks>
+            <selectionEntry name="Rapid Deployment" id="9a09c285-498c-4d9b-8cc7-fd58ea94bdce" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Rapid Deployment" import="true" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d" id="c82f1398-477a-4240-bc8f-8c9189a741d8"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="cd294d06-6d80-47c0-9f16-c4df8c12a606"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Stoic" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Stoic" hidden="false" type="rule" targetId="66f8-5090-b257-5150"/>
-              </categoryLinks>
+            <selectionEntry name="Stoic" id="d35d3e6b-a475-4850-b23b-71506612891a" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Stoic" import="true" hidden="false" type="rule" targetId="66f8-5090-b257-5150" id="e733c796-c5a3-44ac-a165-eecb574a9ea1"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="84edc773-b4ae-4ecd-bc48-25961ed41e99"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="1st Division" hidden="false" id="83ce-0753-4328-8065" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="1st Division" hidden="false" id="a3bc-df66-f359-1f47" subType="unit-group">
       <categoryLinks>
         <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink name="Foot Guards" targetId="e2dd-f776-3814-a9ab" type="selectionEntry" hidden="false"/>
-        <entryLink name="Life Guards" targetId="80ba-dcef-28ad-8ac7" type="selectionEntry" hidden="false"/>
-        <entryLink name="Foot Infantry" targetId="f935-a115-1882-5d7c" type="selectionEntry" hidden="false"/>
-        <entryLink name="Highland Foot Inf" targetId="aa00-a7f5-f40b-84cb" type="selectionEntry" hidden="false"/>
-        <entryLink name="9-pdr Royal Artillery" targetId="9c71-8137-782f-384b" type="selectionEntry" hidden="false"/>
-        <entryLink name="6-pdr Royal Artillery" targetId="fdd7-5281-f2d8-8dc8" type="selectionEntry" hidden="false"/>
-        <entryLink name="Commander" targetId="48f6-945b-8be3-d89b" type="selectionEntry" hidden="false"/>
+        <entryLink name="Foot Guards" id="5d9f50d9-1f0e-4daa-b284-d2790e7656ca" targetId="e2dd-f776-3814-a9ab" type="selectionEntry" hidden="false" sortIndex="2"/>
+        <entryLink name="Life Guards" id="f66d5e92-9b37-443d-ba56-971766de1fd9" targetId="80ba-dcef-28ad-8ac7" type="selectionEntry" hidden="false" sortIndex="3"/>
+        <entryLink name="Foot Infantry" id="2231ebcd-ede1-4c72-9df6-84a3a5a14de7" targetId="f935-a115-1882-5d7c" type="selectionEntry" hidden="false" sortIndex="6"/>
+        <entryLink name="Highland Foot Inf" id="aa138547-ee21-47d2-91ec-d57e8632124d" targetId="aa00-a7f5-f40b-84cb" type="selectionEntry" hidden="false" sortIndex="7"/>
+        <entryLink name="9-pdr Royal Artillery" id="6b61ded3-6802-4e89-b7ac-a645e90469d6" targetId="9c71-8137-782f-384b" type="selectionEntry" hidden="false" sortIndex="14"/>
+        <entryLink name="6-pdr Royal Artillery" id="ad41517d-afb1-4f02-b0ca-ea1f60920d51" targetId="fdd7-5281-f2d8-8dc8" type="selectionEntry" hidden="false" sortIndex="15"/>
+        <entryLink name="Commander" id="7a572356-53e0-49aa-9598-3e7dec328b74" targetId="48f6-945b-8be3-d89b" type="selectionEntry" hidden="false" sortIndex="1"/>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Scenario Rules" hidden="false">
+        <selectionEntryGroup name="Scenario Rules" hidden="false" id="a4d6abd8-4123-4386-9d20-6a1d53f12cd4">
           <selectionEntries>
-            <selectionEntry name="Big Battalions" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Big Battalions" hidden="false" type="rule" targetId="c570-38f5-5494-2b60"/>
-              </categoryLinks>
+            <selectionEntry name="Big Battalions" id="8211f246-6897-4c45-a70a-7d07f453a95e" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Big Battalions" import="true" hidden="false" type="rule" targetId="c570-38f5-5494-2b60" id="00577b93-9086-4ae2-a255-f2fc7491647f"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="0ba2ae3d-8070-4020-9d18-28e89f84af7f"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Brittle" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Brittle" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d"/>
-              </categoryLinks>
+            <selectionEntry name="Brittle" id="050fe2b2-d637-45d7-91fe-17f568ed5bb5" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Brittle" import="true" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d" id="65a87382-dd2d-4589-b18e-f3103cdcb967"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="9d80611e-077e-4e8b-8ca2-5620dfe129c7"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Determined" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Determined" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0"/>
-              </categoryLinks>
+            <selectionEntry name="Determined" id="d934d85f-c7da-45e5-8692-8837dca93a7d" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Determined" import="true" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0" id="bf7bd107-147e-4c0b-86b2-7aec3c7487d4"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="1fb2dad8-2527-4684-b20f-fde3d50681af"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Enthusiastic" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Enthusiastic" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22"/>
-              </categoryLinks>
+            <selectionEntry name="Enthusiastic" id="0a92dff2-16fc-41e7-ad67-940a5a723d79" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Enthusiastic" import="true" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22" id="556a98e5-5d0a-4a28-a7a0-7af364c8892d"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="6e4e53ff-eba7-494e-bc18-635088ba1b09"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Impetuous" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Impetuous" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd"/>
-              </categoryLinks>
+            <selectionEntry name="Impetuous" id="49171ebc-80a1-423e-b510-b290faccb1cc" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Impetuous" import="true" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd" id="cce4df6a-b438-428b-8370-b515dfd52043"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="cf82fe5f-1db0-4207-b502-7e920dc92d55"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Parallel Deployment" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Parallel Deployment" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61"/>
-              </categoryLinks>
+            <selectionEntry name="Parallel Deployment" id="5e58b42f-5292-4be3-9508-aecb6dd5e644" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Parallel Deployment" import="true" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61" id="6268c45d-9fc1-472f-aba9-f43dbb5fcff9"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="e73fd0dc-0df5-4f92-adb0-b2ec33f8ac19"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Rapid Deployment" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Rapid Deployment" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
-              </categoryLinks>
+            <selectionEntry name="Rapid Deployment" id="df776a84-e875-4f04-99d6-7a6f6d95da2b" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Rapid Deployment" import="true" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d" id="ac996431-7230-4f41-b529-c3fa3494fd17"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="ae86b8b0-fd99-497a-af5a-3bec249bf06e"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Stoic" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Stoic" hidden="false" type="rule" targetId="66f8-5090-b257-5150"/>
-              </categoryLinks>
+            <selectionEntry name="Stoic" id="dadfe835-0ea3-4a5a-858e-60b069203a90" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Stoic" import="true" hidden="false" type="rule" targetId="66f8-5090-b257-5150" id="67107f3e-ed9b-48db-9e84-0170b5de1242"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="9dbfc099-6bc4-4f64-8e9e-700c2a1c5ec9"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Light Division" hidden="false" id="61f7-da32-4c2a-04d8" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Light Division" hidden="false" id="bc00-3ab4-f250-625c" subType="unit-group">
       <categoryLinks>
         <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink name="Light Infantry" targetId="c63e-036a-db92-5293" type="selectionEntry" hidden="false"/>
-        <entryLink name="Rifles" targetId="6bbc-9483-295f-5324" type="selectionEntry" hidden="false"/>
-        <entryLink name="9-pdr Royal Artillery" targetId="9c71-8137-782f-384b" type="selectionEntry" hidden="false"/>
-        <entryLink name="6-pdr Royal Artillery" targetId="fdd7-5281-f2d8-8dc8" type="selectionEntry" hidden="false"/>
-        <entryLink name="6-pdr Royal Horse Artillery" targetId="572f-2240-e797-0544" type="selectionEntry" hidden="false"/>
-        <entryLink name="Commander" targetId="48f6-945b-8be3-d89b" type="selectionEntry" hidden="false"/>
+        <entryLink name="Light Infantry" id="719d7a98-2ec5-413a-91f6-314c22dd00ab" targetId="c63e-036a-db92-5293" type="selectionEntry" hidden="false" sortIndex="5"/>
+        <entryLink name="Rifles" id="94db53d7-fda6-43aa-8e55-0f3fcf66a618" targetId="6bbc-9483-295f-5324" type="selectionEntry" hidden="false" sortIndex="9"/>
+        <entryLink name="9-pdr Royal Artillery" id="3cf10940-d560-4efc-8bd8-96099397991e" targetId="9c71-8137-782f-384b" type="selectionEntry" hidden="false" sortIndex="14"/>
+        <entryLink name="6-pdr Royal Artillery" id="789a01f8-f9ce-42da-8c79-fea5912d82dc" targetId="fdd7-5281-f2d8-8dc8" type="selectionEntry" hidden="false" sortIndex="15"/>
+        <entryLink name="6-pdr Royal Horse Artillery" id="a990df26-7be2-43b7-9792-da856dad5ec9" targetId="572f-2240-e797-0544" type="selectionEntry" hidden="false" sortIndex="16"/>
+        <entryLink name="Commander" id="acf8e55d-8d4d-4e57-8aa5-a7500bbec7c9" targetId="48f6-945b-8be3-d89b" type="selectionEntry" hidden="false" sortIndex="1"/>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Scenario Rules" hidden="false">
+        <selectionEntryGroup name="Scenario Rules" hidden="false" id="24a610dc-8335-45fd-b5c0-20e0ac5f26e9">
           <selectionEntries>
-            <selectionEntry name="Big Battalions" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Big Battalions" hidden="false" type="rule" targetId="c570-38f5-5494-2b60"/>
-              </categoryLinks>
+            <selectionEntry name="Big Battalions" id="012db78c-5f30-4483-829c-5fe99872aba1" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Big Battalions" import="true" hidden="false" type="rule" targetId="c570-38f5-5494-2b60" id="a72a4fd4-b64b-4583-b663-771c65e2a8c7"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="f3e7a692-a412-4494-a7f1-25c6c2e1ca46"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Brittle" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Brittle" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d"/>
-              </categoryLinks>
+            <selectionEntry name="Brittle" id="582efe82-f37a-48ac-9088-431ea11e785f" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Brittle" import="true" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d" id="2a7b632e-b2f1-4dbe-a5df-3eaa94b689f3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="b0088736-9701-4713-9eec-700dae7e4b4d"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Determined" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Determined" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0"/>
-              </categoryLinks>
+            <selectionEntry name="Determined" id="e82ed45d-d33f-41b5-b134-1ab508e36917" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Determined" import="true" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0" id="7d3550a3-5777-4952-b532-09f3690198fd"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="413ab407-81cb-4aba-b3b6-6db57df21f5f"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Enthusiastic" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Enthusiastic" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22"/>
-              </categoryLinks>
+            <selectionEntry name="Enthusiastic" id="7aefc8ef-462a-4344-bfcb-7ea01f50e617" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Enthusiastic" import="true" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22" id="3c4afaee-368b-4a63-bde5-b30a962dd83c"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="d148947a-2330-49e9-816c-88bab6d5a07a"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Impetuous" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Impetuous" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd"/>
-              </categoryLinks>
+            <selectionEntry name="Impetuous" id="879f0c28-b905-4452-9e4e-3390f0e35df3" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Impetuous" import="true" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd" id="0f7b2af7-0dfd-4841-bc02-bbb41572b6dc"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="dae2ac8c-47ab-48ed-8b41-69c3a372c2ac"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Parallel Deployment" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Parallel Deployment" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61"/>
-              </categoryLinks>
+            <selectionEntry name="Parallel Deployment" id="58c3a809-3ef5-447f-ab97-d9848aeff045" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Parallel Deployment" import="true" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61" id="920ebc3b-b863-471e-9899-3805779dc6a1"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="e5d17566-a9ec-45f5-8c48-fe6336025115"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Rapid Deployment" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Rapid Deployment" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
-              </categoryLinks>
+            <selectionEntry name="Rapid Deployment" id="05001d5c-8526-4779-ae06-ef430848c7ca" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Rapid Deployment" import="true" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d" id="aec3a4c1-c59f-4c34-bdd8-af37821356db"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="044a9c61-29b1-4be3-819a-7fb6b225c56d"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Stoic" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Stoic" hidden="false" type="rule" targetId="66f8-5090-b257-5150"/>
-              </categoryLinks>
+            <selectionEntry name="Stoic" id="0084cd6f-5fd1-4f68-ba24-56356e64e072" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Stoic" import="true" hidden="false" type="rule" targetId="66f8-5090-b257-5150" id="22f0d77e-b5f1-4dab-8f72-798572bf8b64"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="a7844e0a-6fe7-4bd3-8ea7-f7d5bc2e58d2"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Light Cavalry Brigade" hidden="false" id="f486-e954-dd2d-af60" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Light Cavalry Brigade" hidden="false" id="7831-c1f6-8ba7-206f" subType="unit-group">
       <categoryLinks>
         <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Impetuous" id="7d1c2bfa-2320-44d0-b541-ceefd8fd7e71" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd"/>
+        <infoLink name="Rapid Deployment" id="5ac9a7dd-29bb-4a56-b04f-9d85a80cc935" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
+      </infoLinks>
       <entryLinks>
-        <entryLink name="Light Dragoons" targetId="652a-9043-ac4d-f4b5" type="selectionEntry" hidden="false"/>
-        <entryLink name="6-pdr Royal Horse Artillery" targetId="572f-2240-e797-0544" type="selectionEntry" hidden="false"/>
-        <entryLink name="Commander" targetId="48f6-945b-8be3-d89b" type="selectionEntry" hidden="false"/>
+        <entryLink name="Light Dragoons" id="cb44eebe-f698-48aa-b6e8-2ec07c40a2b6" targetId="652a-9043-ac4d-f4b5" type="selectionEntry" hidden="false" sortIndex="12"/>
+        <entryLink name="6-pdr Royal Horse Artillery" id="4bea8eba-a4ab-42e7-bfe4-25341ca851a1" targetId="572f-2240-e797-0544" type="selectionEntry" hidden="false" sortIndex="16"/>
+        <entryLink name="Commander" id="2200642f-a580-4d46-9a03-597abed646c8" targetId="48f6-945b-8be3-d89b" type="selectionEntry" hidden="false" sortIndex="1"/>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Scenario Rules" hidden="false">
+        <selectionEntryGroup name="Scenario Rules" hidden="false" id="77423659-28aa-45b0-97f8-641b842b4a5c">
           <selectionEntries>
-            <selectionEntry name="Big Battalions" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Big Battalions" hidden="false" type="rule" targetId="c570-38f5-5494-2b60"/>
-              </categoryLinks>
+            <selectionEntry name="Big Battalions" id="4f8e06c6-fca2-42fb-95f7-9407adfdc87c" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Big Battalions" import="true" hidden="false" type="rule" targetId="c570-38f5-5494-2b60" id="5054fc0a-0078-478e-b9e7-b94a891802fc"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="3c02934a-a604-43f1-bb38-8fc156449933"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Brittle" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Brittle" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d"/>
-              </categoryLinks>
+            <selectionEntry name="Brittle" id="2439dc10-3313-4fb0-abbe-d20875011455" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Brittle" import="true" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d" id="0a00a77c-c677-472e-98b6-768783eb911c"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="1d95a67b-2973-4205-b43e-9c79b4bdd0a8"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Determined" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Determined" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0"/>
-              </categoryLinks>
+            <selectionEntry name="Determined" id="2b56e2c0-a2d6-4703-b50f-b06cc4dc334b" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Determined" import="true" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0" id="d0c4b1ab-c663-40d3-8032-7f4a0b6ac879"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="d7ece016-12e7-4bfd-9a6e-47d566405767"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Enthusiastic" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Enthusiastic" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22"/>
-              </categoryLinks>
+            <selectionEntry name="Enthusiastic" id="32e4440f-b064-4d32-8b37-bb48ae8677f1" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Enthusiastic" import="true" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22" id="b7c3f0e0-46d3-444f-8c61-7c320de35b90"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="6e9c7400-9be3-4ffd-b282-7707c6350060"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Impetuous" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Impetuous" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd"/>
-              </categoryLinks>
+            <selectionEntry name="Impetuous" id="8d9313a0-2e4c-4d5b-b6a7-087f6e11bcb3" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Impetuous" import="true" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd" id="477d2b8f-f78c-4625-8c9e-31fe5ecd8ff3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="eb03c2ef-b5ee-4313-b6f9-df3846d6d31a"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Parallel Deployment" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Parallel Deployment" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61"/>
-              </categoryLinks>
+            <selectionEntry name="Parallel Deployment" id="2eddabfd-d6e6-4c9f-87e2-e734de3674f1" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Parallel Deployment" import="true" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61" id="2d1dcd6e-fa12-4ea4-bc61-1e84690d7877"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="b324054c-c05b-4410-9c52-a24442b3dfdf"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Rapid Deployment" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Rapid Deployment" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
-              </categoryLinks>
+            <selectionEntry name="Rapid Deployment" id="d707fcc9-da76-46bc-a988-1d53456f9723" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Rapid Deployment" import="true" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d" id="c7657c45-1e2c-434f-8e2c-f58f78b9c1ee"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="4f269e38-1b94-4235-ac89-7d55c6cc5f00"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Stoic" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Stoic" hidden="false" type="rule" targetId="66f8-5090-b257-5150"/>
-              </categoryLinks>
+            <selectionEntry name="Stoic" id="c73309f8-06c3-4c99-a79a-dbc1f5f0f7ca" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Stoic" import="true" hidden="false" type="rule" targetId="66f8-5090-b257-5150" id="5c41028f-c714-48ba-bd90-51350010fd90"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="c9775b35-17ff-47f4-a248-b3d4d6a2ba06"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="[Heavy] Cavalry Brigade" hidden="false" id="7fb9-ca96-94ea-7dce" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="[Heavy] Cavalry Brigade" hidden="false" id="c98a-228e-4e91-c28b" subType="unit-group">
       <categoryLinks>
         <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Impetuous" id="ce9f40b2-11ea-41c3-9fbb-04419309bc5f" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd"/>
+        <infoLink name="Rapid Deployment" id="a7665bc6-1577-46ad-8bdf-253b8e89070d" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
+      </infoLinks>
       <entryLinks>
-        <entryLink name="Dragoons" targetId="577c-dfc4-5977-69a8" type="selectionEntry" hidden="false"/>
-        <entryLink name="6-pdr Royal Horse Artillery" targetId="572f-2240-e797-0544" type="selectionEntry" hidden="false"/>
-        <entryLink name="Commander" targetId="48f6-945b-8be3-d89b" type="selectionEntry" hidden="false"/>
+        <entryLink name="Dragoons" id="cb0411d7-9ce6-4585-a538-f3f0e3439e4f" targetId="577c-dfc4-5977-69a8" type="selectionEntry" hidden="false" sortIndex="11"/>
+        <entryLink name="6-pdr Royal Horse Artillery" id="527fb9de-1096-438b-9720-56bdb8fe9892" targetId="572f-2240-e797-0544" type="selectionEntry" hidden="false" sortIndex="16"/>
+        <entryLink name="Commander" id="dd7ef3c0-3098-4146-bf7b-edff38780d30" targetId="48f6-945b-8be3-d89b" type="selectionEntry" hidden="false" sortIndex="1"/>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Scenario Rules" hidden="false">
+        <selectionEntryGroup name="Scenario Rules" hidden="false" id="9ba7fa62-f041-4f71-9055-66789678103b">
           <selectionEntries>
-            <selectionEntry name="Big Battalions" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Big Battalions" hidden="false" type="rule" targetId="c570-38f5-5494-2b60"/>
-              </categoryLinks>
+            <selectionEntry name="Big Battalions" id="4993ba07-6677-4235-b17a-641d5dbad727" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Big Battalions" import="true" hidden="false" type="rule" targetId="c570-38f5-5494-2b60" id="3dc18d55-eec8-4815-8aca-7a4303837949"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="89da9964-e049-4770-a3a4-373f728e60a7"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Brittle" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Brittle" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d"/>
-              </categoryLinks>
+            <selectionEntry name="Brittle" id="0d60bab5-2133-475e-89db-345217dfcb1c" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Brittle" import="true" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d" id="62e1706a-c8ca-4b25-b1de-ffaf21c36aa3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="b2e4c4d5-be52-4152-98ae-d12a7fba6920"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Determined" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Determined" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0"/>
-              </categoryLinks>
+            <selectionEntry name="Determined" id="7dd8b82c-7069-4a47-8650-b7c1c0176fcd" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Determined" import="true" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0" id="4690ea84-2cab-4c31-913e-57372a0d192a"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="87dda484-cf4c-4363-a847-90eac1e56d7e"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Enthusiastic" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Enthusiastic" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22"/>
-              </categoryLinks>
+            <selectionEntry name="Enthusiastic" id="accefed2-9c8f-4d9d-9a6d-1750974b3bf7" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Enthusiastic" import="true" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22" id="278f852e-d909-4b6f-b714-60df151428ff"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="11aebda4-ba8f-4781-9d28-1551e0cf9090"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Impetuous" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Impetuous" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd"/>
-              </categoryLinks>
+            <selectionEntry name="Impetuous" id="902d19b9-aa77-47f4-8cd5-1b0e36308534" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Impetuous" import="true" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd" id="de654d4a-9533-4922-8cfb-2d595c0d888a"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="bf0317f4-720f-43fd-8e91-cc688f498089"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Parallel Deployment" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Parallel Deployment" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61"/>
-              </categoryLinks>
+            <selectionEntry name="Parallel Deployment" id="3c0e95bd-b348-45e2-9058-1c615160456e" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Parallel Deployment" import="true" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61" id="bc23a62c-0aaa-4e7c-b106-8ff9b45bc28c"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="fdff8b45-e081-4e04-b617-744498d3b98f"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Rapid Deployment" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Rapid Deployment" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
-              </categoryLinks>
+            <selectionEntry name="Rapid Deployment" id="d8694df5-999b-44d5-852c-f3fecea71970" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Rapid Deployment" import="true" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d" id="fa3279fd-03c1-4141-931f-fc18a52c4349"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="197ac0ef-48a4-436b-9add-6eeae2df6b4d"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Stoic" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Stoic" hidden="false" type="rule" targetId="66f8-5090-b257-5150"/>
-              </categoryLinks>
+            <selectionEntry name="Stoic" id="397ac993-aca4-4298-95e1-564eb43017f3" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Stoic" import="true" hidden="false" type="rule" targetId="66f8-5090-b257-5150" id="21f35399-c6fb-4bac-bdb9-e257d06327d0"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="4a981d86-4c0f-4cf7-87b9-57a5bbf9a7d2"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Artillery Park" hidden="false" id="bf86-301b-ac48-b056" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Artillery Park" hidden="false" id="4e4a-559a-ba69-9df8" subType="unit-group">
       <categoryLinks>
         <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink name="9-pdr Royal Artillery" targetId="9c71-8137-782f-384b" type="selectionEntry" hidden="false"/>
-        <entryLink name="6-pdr Royal Artillery" targetId="fdd7-5281-f2d8-8dc8" type="selectionEntry" hidden="false"/>
-        <entryLink name="6-pdr Royal Horse Artillery" targetId="572f-2240-e797-0544" type="selectionEntry" hidden="false"/>
-        <entryLink name="Commander" targetId="48f6-945b-8be3-d89b" type="selectionEntry" hidden="false"/>
+        <entryLink name="9-pdr Royal Artillery" id="7a0e25bb-9198-4807-b2bb-9f69e7102989" targetId="9c71-8137-782f-384b" type="selectionEntry" hidden="false" sortIndex="14"/>
+        <entryLink name="6-pdr Royal Artillery" id="f5cb6f25-e03e-48aa-a635-08401422f6c2" targetId="fdd7-5281-f2d8-8dc8" type="selectionEntry" hidden="false" sortIndex="15"/>
+        <entryLink name="6-pdr Royal Horse Artillery" id="d009e2b8-c76a-4cab-8889-8daca79d4a4f" targetId="572f-2240-e797-0544" type="selectionEntry" hidden="false" sortIndex="16"/>
+        <entryLink name="Commander" id="e9300bf0-ad8e-4b9b-83d8-9700e97d10c0" targetId="48f6-945b-8be3-d89b" type="selectionEntry" hidden="false" sortIndex="1"/>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Scenario Rules" hidden="false">
+        <selectionEntryGroup name="Scenario Rules" hidden="false" id="9d4b1bf9-7f95-45f9-bf8f-9c470d1c15fe">
           <selectionEntries>
-            <selectionEntry name="Big Battalions" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Big Battalions" hidden="false" type="rule" targetId="c570-38f5-5494-2b60"/>
-              </categoryLinks>
+            <selectionEntry name="Big Battalions" id="9525ee2d-4353-4ced-8545-75fc0a3902c3" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Big Battalions" import="true" hidden="false" type="rule" targetId="c570-38f5-5494-2b60" id="132e6ae5-dbdb-4cea-ab8b-8265ae82a8c9"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="eec7072b-20b4-4ea2-a8fb-685f4c9b31d6"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Brittle" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Brittle" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d"/>
-              </categoryLinks>
+            <selectionEntry name="Brittle" id="a035f4c6-a91b-4fa1-9344-5577b7b1c15b" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Brittle" import="true" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d" id="e7e174b9-6fa0-4308-b79e-ec532f16b01c"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="b9a3faf5-b862-4e5f-9ac7-fed5b5e8b095"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Determined" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Determined" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0"/>
-              </categoryLinks>
+            <selectionEntry name="Determined" id="ab4c392c-0c75-43b1-91a7-27d653aba84d" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Determined" import="true" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0" id="6b7b43ee-ce91-4735-8e51-a76bd061b12e"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="68c2ab8f-092b-476e-8777-40f3e5a14483"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Enthusiastic" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Enthusiastic" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22"/>
-              </categoryLinks>
+            <selectionEntry name="Enthusiastic" id="9e84a515-b997-4842-839d-d21da366529a" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Enthusiastic" import="true" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22" id="7c606ade-c0d7-4cc8-be4e-cc5176b3dce5"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="09b59dd6-0ef8-452e-a397-a2411887d030"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Impetuous" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Impetuous" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd"/>
-              </categoryLinks>
+            <selectionEntry name="Impetuous" id="c6899d05-96e5-4b89-bcc6-93689e22a877" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Impetuous" import="true" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd" id="336dcf83-5bca-4e08-bd45-dd07ebba9da7"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="b3e11d89-894a-4234-b491-26bb678a2602"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Parallel Deployment" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Parallel Deployment" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61"/>
-              </categoryLinks>
+            <selectionEntry name="Parallel Deployment" id="0c277c41-6413-4146-a40b-0f54e9fb6648" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Parallel Deployment" import="true" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61" id="736cd4c1-0076-44a3-885b-161876a94182"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="0619ba41-8b46-44e1-bb01-43bafcc95b6a"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Rapid Deployment" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Rapid Deployment" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
-              </categoryLinks>
+            <selectionEntry name="Rapid Deployment" id="643cc8c9-32f6-4014-8fe2-803621dbf97d" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Rapid Deployment" import="true" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d" id="d9dd2d21-6eaa-4d59-bbb9-f8d6d800e984"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="b99c8bf3-f007-40d0-a8ff-123b1b334a49"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry name="Stoic" type="upgrade" hidden="false">
-              <categoryLinks>
-                <categoryLink name="Stoic" hidden="false" type="rule" targetId="66f8-5090-b257-5150"/>
-              </categoryLinks>
+            <selectionEntry name="Stoic" id="b12d7d05-ae73-4fd1-af78-68f6da7e5239" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Stoic" import="true" hidden="false" type="rule" targetId="66f8-5090-b257-5150" id="72cdfc22-a17f-4f3f-b035-f6a51d6d47ae"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="78c93890-d992-48d2-8a8c-46875e12abea"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Force Commander" hidden="false" id="5a0a-34a8-339f-d0c4" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Force Commander" primary="true" targetId="ct-ForceCommander" id="61f6e8ac-a179-42b9-996b-c0f765987ac4"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink name="Commander" id="4985923b-1ea7-47de-99ca-ea13c0a3dbcf" targetId="48f6-945b-8be3-d89b" type="selectionEntry" hidden="false"/>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>

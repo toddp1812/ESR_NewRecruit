@@ -62,7 +62,7 @@ function generateID () {
 
 
 
-function getNextUnit( _unit, _factionUnits ) {
+function getNextUnit( _unit, _factionUnits, _sortIndex ) {
 
   let factionUnit;
   let found = false;
@@ -83,7 +83,8 @@ function getNextUnit( _unit, _factionUnits ) {
     id: generateID(),
     targetId: factionUnit.id,
     type: "entryLink",
-    hidden: "false"
+    hidden: "false",
+    sortIndex: _sortIndex
   };
 
 return( thisUnit );
@@ -160,12 +161,13 @@ function processNextLine ( _line, _units, _catalog, _factionUnits, _factionRules
     if( formationUnitList[i] !== "" ){
       // if this unit is selected, add it to the Formation
       
-      myUnitList.push(getNextUnit( _units[i], _factionUnits ));
+      // add 2. The first index is for the commander, and the index is 1 based
+      myUnitList.push(getNextUnit( _units[i], _factionUnits, i + 2 ));
     }
   }
 
   // add in the formation commander
-  myUnitList.push(getNextUnit( "Commander", _factionUnits));
+  myUnitList.push(getNextUnit( "Commander", _factionUnits, 1));
   
   /* 
    * add in the Scenario Rules section
