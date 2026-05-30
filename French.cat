@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7df3-9d67-8662-2400" name="French" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="3" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7df3-9d67-8662-2400" name="French" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="3" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Commander" hidden="false" id="e385-c540-71e4-325e" step="0" defaultAmount="1" collective="true">
       <constraints>
@@ -15,89 +15,149 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Generic" id="84e0-ee3e-62bc-ec3d" hidden="false" sortIndex="1">
               <selectionEntries>
-                <selectionEntry type="model" import="true" name="General de Brigade Cavalerie" hidden="false" id="2e0d-6e0c-4ae3-3e06">
-                  <categoryLinks>
-                    <categoryLink targetId="ct-FormationCommander" id="d361-84c0-a9d7-9bb3" primary="true" name="Formation Commander"/>
-                  </categoryLinks>
+                <selectionEntry type="model" import="true" name="Général de Division" hidden="false" id="f3bf-f57e-06d5-4af1">
                   <profiles>
-                    <profile name="General de Brigade/de Division Cavalerie" typeId="pt-CmdUnit" typeName="Cmd Unit" hidden="false" id="c697-223e-2944-ad93">
+                    <profile name="Général de Division" typeName="Cmd Unit" typeId="pt-CmdUnit">
                       <characteristics>
-                        <characteristic name="Cmd" typeId="ct-CmdUnit-Cmd"/>
-                        <characteristic name="___Move___" typeId="ct-CmdUnit-Move"/>
-                        <characteristic name="Thr-LR" typeId="ct-CmdUnit-Thr-LR"/>
-                        <characteristic name="Thr-SR" typeId="ct-CmdUnit-Thr-SR"/>
-                        <characteristic name="Thr-C" typeId="ct-CmdUnit-Thr-C"/>
-                        <characteristic name="Coh" typeId="ct-CmdUnit-Coh"/>
-                        <characteristic name="Trait" typeId="ct-CmdUnit-Trait"/>
-                        <characteristic name="AvForm" typeId="ct-CmdUnit-Avail-Formation"/>
-                        <characteristic name="AvForce" typeId="ct-CmdUnit-Avail-Force"/>
-                        <characteristic name="AvArmy" typeId="ct-CmdUnit-Avail-Army"/>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">N/A</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait"/>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Division d’Infanterie</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="Cohesion" typeId="5ef7-3935-7fce-e7f4" value="1"/>
-                    <cost name="Threat" typeId="f92a-621f-b8d3-3020" value="1"/>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
                   </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2272-38e9-b9ff-deab"/>
-                  </constraints>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="General de Brigade Parc d&apos;Artillerie" hidden="false" id="79e3-6b45-126d-c610">
-                  <categoryLinks>
-                    <categoryLink targetId="ct-FormationCommander" id="fd14-cbe9-ead6-47cc" primary="true" name="Formation Commander"/>
-                  </categoryLinks>
+                <selectionEntry type="model" import="true" name="Général de Brigade" hidden="false" id="90ba-f17c-cc12-575d">
                   <profiles>
-                    <profile name="General de Brigade Parc d&apos;Artillerie" typeId="pt-CmdUnit" typeName="Cmd Unit" hidden="false" id="2443-f1a6-c351-8107">
+                    <profile name="Général de Brigade" typeName="Cmd Unit" typeId="pt-CmdUnit">
                       <characteristics>
-                        <characteristic name="Cmd" typeId="ct-CmdUnit-Cmd"/>
-                        <characteristic name="___Move___" typeId="ct-CmdUnit-Move"/>
-                        <characteristic name="Thr-LR" typeId="ct-CmdUnit-Thr-LR"/>
-                        <characteristic name="Thr-SR" typeId="ct-CmdUnit-Thr-SR"/>
-                        <characteristic name="Thr-C" typeId="ct-CmdUnit-Thr-C"/>
-                        <characteristic name="Coh" typeId="ct-CmdUnit-Coh"/>
-                        <characteristic name="Trait" typeId="ct-CmdUnit-Trait"/>
-                        <characteristic name="AvForm" typeId="ct-CmdUnit-Avail-Formation"/>
-                        <characteristic name="AvForce" typeId="ct-CmdUnit-Avail-Force"/>
-                        <characteristic name="AvArmy" typeId="ct-CmdUnit-Avail-Army"/>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">N/A</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Mass Cavalry; May Convert Cavalry Formations in additional Combats.</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Brigade de Cavalerie Légère</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="Cohesion" typeId="5ef7-3935-7fce-e7f4" value="1"/>
-                    <cost name="Threat" typeId="f92a-621f-b8d3-3020" value="3"/>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="1"/>
                   </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cf3-ebef-aa74-0f1a"/>
-                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="General de Division" hidden="false" id="0c2a-00ba-07bd-4959">
-                  <categoryLinks>
-                    <categoryLink targetId="ct-FormationCommander" id="78ee-6c20-054c-4dd6" primary="true" name="Formation Commander"/>
-                  </categoryLinks>
+                <selectionEntry type="model" import="true" name="Général de Division" hidden="false" id="1fbf-59d8-5014-760d">
                   <profiles>
-                    <profile name="General de Division" typeId="pt-CmdUnit" typeName="Cmd Unit" hidden="false" id="f98f-6b5f-32d6-69e9">
+                    <profile name="Général de Division" typeName="Cmd Unit" typeId="pt-CmdUnit">
                       <characteristics>
-                        <characteristic name="Cmd" typeId="ct-CmdUnit-Cmd"/>
-                        <characteristic name="___Move___" typeId="ct-CmdUnit-Move"/>
-                        <characteristic name="Thr-LR" typeId="ct-CmdUnit-Thr-LR"/>
-                        <characteristic name="Thr-SR" typeId="ct-CmdUnit-Thr-SR"/>
-                        <characteristic name="Thr-C" typeId="ct-CmdUnit-Thr-C"/>
-                        <characteristic name="Coh" typeId="ct-CmdUnit-Coh"/>
-                        <characteristic name="Trait" typeId="ct-CmdUnit-Trait"/>
-                        <characteristic name="AvForm" typeId="ct-CmdUnit-Avail-Formation"/>
-                        <characteristic name="AvForce" typeId="ct-CmdUnit-Avail-Force"/>
-                        <characteristic name="AvArmy" typeId="ct-CmdUnit-Avail-Army"/>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">N/A</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Mass Cavalry; May Convert Cavalry Formations in additional Combats.</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Division de Cavalerie Légère</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="Cohesion" typeId="5ef7-3935-7fce-e7f4" value="1"/>
-                    <cost name="Threat" typeId="f92a-621f-b8d3-3020" value="3"/>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="1"/>
                   </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f60a-c599-8c1a-2b5b"/>
-                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Général de Division" hidden="false" id="b7c0-b986-2598-6e3d">
+                  <profiles>
+                    <profile name="Général de Division" typeName="Cmd Unit" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">N/A</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Mass Cavalry; May Convert Cavalry Formations in additional Combats.</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Division de Dragons/Cavalerie</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="1"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Général de Division" hidden="false" id="c4cc-4290-f9b3-9228">
+                  <profiles>
+                    <profile name="Général de Division" typeName="Cmd Unit" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">N/A</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait">Mass Cavalry; May Convert Cavalry Formations in additional Combats.</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Division de Grosse Cavalerie</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="1"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Général de Brigade" hidden="false" id="3c0a-0e13-0ab4-c7ec">
+                  <profiles>
+                    <profile name="Général de Brigade" typeName="Cmd Unit" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">N/A</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">2</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait"/>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Corps Réserve/Parc d’Artillerie</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -469,7 +529,7 @@ Unavailable after 1812.&quot;</characteristic>
                     <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                    <infoLink name="Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Davout" hidden="false" id="b601-a49a-fd71-226d">
@@ -621,7 +681,7 @@ A Date with Death; Severely wounded while leading a series of cavalry charges to
                   </costs>
                   <infoLinks>
                     <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
-                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                    <infoLink name="Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Eugène" hidden="false" id="baa7-facb-b1de-8c88">
@@ -812,7 +872,7 @@ A Date with Death; Gudin is killed in Russia during the pursuit action at Loubin
                   </costs>
                   <infoLinks>
                     <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
-                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                    <infoLink name="Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Guyot" hidden="false" id="cbf1-5a4b-92a3-a197">
@@ -1100,7 +1160,7 @@ A Date with Death; At the Battle of Aspern-Essling, Lannes’ legs are taken by 
                   </costs>
                   <infoLinks>
                     <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
-                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                    <infoLink name="Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Lariboisière" hidden="false" id="fd54-c4f4-015b-81dc">
@@ -1155,7 +1215,7 @@ A Date with Death; At the Battle of Wagram, separated from his own division whil
                   </costs>
                   <infoLinks>
                     <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
-                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                    <infoLink name="Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Lauriston" hidden="false" id="212d-edcd-712f-1c13">
@@ -1497,7 +1557,7 @@ Preferred Assignment; May only command Cavalry Forces and Formations. A Date wit
                   </costs>
                   <infoLinks>
                     <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
-                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                    <infoLink name="Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Morand" hidden="false" id="9526-3e4b-9fb5-8409">
@@ -1804,7 +1864,7 @@ A Date with Death; At Leipzig Poniatowski’s Poles form the rearguard, but the 
                   <infoLinks>
                     <infoLink name="Maréchal d’Empire" hidden="false" type="rule" targetId="783d-f637-18c1-c980"/>
                     <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
-                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                    <infoLink name="Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Rapp" hidden="false" id="64fd-7307-e8e5-b863">
@@ -1931,7 +1991,7 @@ Unavailable after 1809.&quot;</characteristic>
                   </costs>
                   <infoLinks>
                     <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
-                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                    <infoLink name="Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Savary" hidden="false" id="3c25-bd35-984d-c7a5">
@@ -2145,7 +2205,7 @@ A Date with Death; -2 to Leader Fate, 1812. Unavailable after 1812.&quot;</chara
                   </costs>
                   <infoLinks>
                     <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
-                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                    <infoLink name="Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Vandamme" hidden="false" id="0d3f-812a-4c92-88de">
@@ -2992,24 +3052,691 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
     </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
-    <selectionEntry type="unit" import="true" name="Force Commander" hidden="false" id="c43a-79f4-6645-d04c" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Division d’Infanterie" hidden="false" id="75b6-5b64-9113-552e" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="a11d-2e61-1083-0e83" type="selectionEntry" targetId="e385-c540-71e4-325e"/>
+        <entryLink name="Infanterie Légère" id="25d822f6-9d7d-4cff-b331-9737848f94f5" targetId="609a-4666-b997-3407" type="selectionEntry" hidden="false"/>
+        <entryLink name="Infanterie de Ligne" id="bc689e86-ae99-4824-bb3a-def51c689ec6" targetId="beab-c67f-380e-4ae2" type="selectionEntry" hidden="false"/>
+        <entryLink name="Sapeurs" id="0dac1ac2-5c1d-4278-8a55-0f39f2bdb0a6" targetId="459a-dc80-bb91-b903" type="selectionEntry" hidden="false"/>
+        <entryLink name="12-pdr Réserve d’Artillerie" id="e51e9bb3-e316-439b-b0ba-535d99789e67" targetId="4fcd-c651-0a8e-f10e" type="selectionEntry" hidden="false"/>
+        <entryLink name="6-pdr Artillerie à Pied" id="0b5a4458-95c4-4502-ae1b-912ddd9668a8" targetId="2c10-0291-555b-e254" type="selectionEntry" hidden="false"/>
+        <entryLink name="6-pdr Artillerie à Cheval" id="0556e71b-68ec-47b5-9a40-ddb1f4404505" targetId="9092-d1a4-2419-db19" type="selectionEntry" hidden="false"/>
+        <entryLink name="Commander" id="f8b3e83f-2378-4640-bd56-84bf65161677" targetId="e385-c540-71e4-325e" type="selectionEntry" hidden="false"/>
       </entryLinks>
-      <categoryLinks>
-        <categoryLink targetId="ct-ForceCommander" id="5161-04cc-07d3-a8c7" primary="true" name="Force Commander"/>
-      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Scenario Rules" hidden="false" id="057ed97c-e939-4343-b46e-63b534423f8e">
+          <selectionEntries>
+            <selectionEntry name="Big Battalions" id="397783a3-cfff-45d1-b2a2-e4ca71a606c1" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Big Battalions" import="true" hidden="false" type="rule" targetId="c570-38f5-5494-2b60" id="6d68904c-8364-4596-b66f-3e61edffab35"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="2104fd93-3189-4186-a283-46148b283af4"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Brittle" id="746637ad-b651-47dd-b5ac-2d882ebfd12e" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Brittle" import="true" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d" id="342f1a6d-064b-4d72-8089-c6a03a983690"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="a47e26e1-c6f1-44a1-b5ee-423aa90441ba"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Determined" id="5e59c41e-71d9-4e70-b5c3-50ec5c3e8dc2" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Determined" import="true" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0" id="b89c09ee-e1fe-4936-aeb1-bf04942f64f9"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="5c7622c5-2919-42d3-bde6-36aa76ea42fa"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Enthusiastic" id="2def7d07-bcc6-4ce6-ad74-7c91abb64a24" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Enthusiastic" import="true" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22" id="798f617f-e522-458a-a550-47c059f63dbf"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="0f0aeb8b-595c-465c-961a-3ae21d284d49"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Impetuous" id="b9c1c304-138c-4fa1-819f-c76b11976470" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Impetuous" import="true" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd" id="f2f877cd-e19b-4f7b-a4b5-afce21ac8538"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="3018e2c1-bca4-4dc1-adae-b2c695fd4edf"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Parallel Deployment" id="915bd189-3dd0-4bf3-8611-a018178e5435" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Parallel Deployment" import="true" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61" id="91fadedb-bfef-471c-b559-2c1e1e40356e"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="20b640ea-d4a3-4d93-bde2-af20d89c44e6"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Rapid Deployment" id="1663f4cb-09b8-4b3c-a514-1da2b2f0f0da" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Rapid Deployment" import="true" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d" id="c9aac651-3b43-4a84-b5dc-fa23bb72a0bb"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="40a9d233-ef2f-4790-b599-fd21b5173eb4"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Stoic" id="7229955c-1734-4e76-b469-5c34bd7a2003" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Stoic" import="true" hidden="false" type="rule" targetId="66f8-5090-b257-5150" id="08e61171-01d0-422c-9769-3167b8446bfd"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="0c5265cb-83fe-4482-878d-aac2fecdffeb"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Division d’Infanterie" hidden="false" id="42d2-5b2b-298a-6c95" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Brigade de Cavalerie Légère" hidden="false" id="7784-8e42-798d-cc7a" subType="unit-group">
       <categoryLinks>
-        <categoryLink targetId="ct-Formation" id="a7c4-eeb8-dd66-2a71" primary="true" name="Formation"/>
+        <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Rapid Deployment" id="222a1028-6c08-4945-95a7-09234b795d25" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink name="Chasseurs à Cheval" id="274df71c-6844-4542-b826-312ff79273b8" targetId="9452-f108-83b1-9ba6" type="selectionEntry" hidden="false"/>
+        <entryLink name="6-pdr Artillerie à Cheval" id="7eba9a08-3c5e-441d-b525-82e5b581996a" targetId="9092-d1a4-2419-db19" type="selectionEntry" hidden="false"/>
+        <entryLink name="Commander" id="a64987c2-1900-40c2-a298-3a739922aa5b" targetId="e385-c540-71e4-325e" type="selectionEntry" hidden="false"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Scenario Rules" hidden="false" id="8955537b-65c1-4764-b07a-5b1591d0f84f">
+          <selectionEntries>
+            <selectionEntry name="Big Battalions" id="bfc02f86-9863-45ea-a661-30fb1639fb0a" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Big Battalions" import="true" hidden="false" type="rule" targetId="c570-38f5-5494-2b60" id="478b630e-5e07-4356-b933-4d1bd6043921"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="dec93dbe-8183-4679-a874-add58333d614"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Brittle" id="eb8a83e7-62a4-479f-ad11-9c30872d1cba" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Brittle" import="true" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d" id="e3b82792-ffdf-4c0c-95b8-3a832dd726b9"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="03a6846c-a08c-459f-a8df-05936fc2c4c1"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Determined" id="55222bdc-6376-4683-aa3b-d95ec8e8e9ef" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Determined" import="true" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0" id="105194d0-c021-4655-ac62-6ca89285734f"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="202ef3d4-3e0a-4879-a0f8-9365aaf39307"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Enthusiastic" id="bb7dc6ea-34b7-4f97-83a9-b41594b957c3" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Enthusiastic" import="true" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22" id="288cbbe2-9212-4756-a0ec-911261bfe38c"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="89508365-2745-4fab-89c9-865a08fe0a6f"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Impetuous" id="1036f3c7-4b5a-46b6-8f59-ebd4b1c07c3f" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Impetuous" import="true" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd" id="98e9be8b-b251-4360-86f5-67051096d3b1"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="0d5bc384-74d5-4b38-a2c0-c2c2ed6424c7"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Parallel Deployment" id="e08db48b-0be4-4ab3-b0da-ddd886a8a1f9" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Parallel Deployment" import="true" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61" id="faedff8d-6232-487f-afcf-e6466f3fbd1f"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="603535c6-e01b-447d-bd01-3529fd164f36"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Rapid Deployment" id="7bc66b4c-a3e7-4710-bfe0-742372b5b678" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Rapid Deployment" import="true" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d" id="5851a072-4301-43ed-a39e-bdf85d754b10"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="6b2bb992-974d-4f98-84a8-a40ff5f776e1"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Stoic" id="1bc73157-7283-4c8f-b85c-861a8176a6b6" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Stoic" import="true" hidden="false" type="rule" targetId="66f8-5090-b257-5150" id="b3e3c44c-3784-4aa4-b12e-a37b439fbbf5"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="cca8cd35-7ffd-40c3-9d01-4de580027b54"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Division de Cavalerie Légère" hidden="false" id="965c-5bef-44e2-7922" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Rapid Deployment" id="d679e535-aea6-423c-ac72-c3d2e5239303" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink name="Chevau-Légèr-Lanciers" id="b96ffb4d-724d-46e6-94e7-fec9ceac923b" targetId="b1c5-3fdb-d6d6-dddf" type="selectionEntry" hidden="false"/>
+        <entryLink name="Chasseurs à Cheval" id="282d8cf9-e2c3-456b-b02d-1af0ce2785e6" targetId="9452-f108-83b1-9ba6" type="selectionEntry" hidden="false"/>
+        <entryLink name="Hussards" id="9eb43138-954f-4958-af00-e88391c4bdfe" targetId="5b4f-7d2c-00a5-2c7d" type="selectionEntry" hidden="false"/>
+        <entryLink name="6-pdr Artillerie à Cheval" id="33a4c650-dabd-4eda-9e75-70152130f81d" targetId="9092-d1a4-2419-db19" type="selectionEntry" hidden="false"/>
+        <entryLink name="Commander" id="db16123c-0fd1-4059-8528-69fcc02dfa27" targetId="e385-c540-71e4-325e" type="selectionEntry" hidden="false"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Scenario Rules" hidden="false" id="ebc9e172-dec8-46d9-a758-51e8571beb76">
+          <selectionEntries>
+            <selectionEntry name="Big Battalions" id="6e30993f-6a6d-4e4f-9c59-9a134ef41c4d" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Big Battalions" import="true" hidden="false" type="rule" targetId="c570-38f5-5494-2b60" id="cdcf91f9-25d7-4a5b-b07f-bd21685adb50"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="c0bf74a8-cb17-4b31-81ab-397009446c40"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Brittle" id="345316d9-4e1b-443b-9f3d-bb2b6ca60005" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Brittle" import="true" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d" id="51d1b6e9-cc2d-4342-8aa2-26cb981ed53a"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="85db8129-f302-40b9-8bb0-50aad1ed5cb4"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Determined" id="bb870191-82f5-4ce1-9dce-9c6839c6fedc" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Determined" import="true" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0" id="71c5f03e-ce85-4312-a20c-f0bd34bf7f7b"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="e222ae62-07b2-4485-ae9a-abf0a08b6a39"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Enthusiastic" id="f1152d04-817f-44b4-974f-a3986620a90a" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Enthusiastic" import="true" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22" id="95de4472-dae1-4736-ac07-98c62855f8f8"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="1c3b735a-84ba-4243-a4d8-0eac77db6f9d"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Impetuous" id="10bdc6ea-01bb-44f1-bee3-a9692715663d" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Impetuous" import="true" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd" id="9ddf6e34-6f33-42ea-800f-47525b0b1015"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="151c0a03-86cb-4369-b5ad-126aa9bdef41"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Parallel Deployment" id="5fcc896f-a60b-46ef-ba6c-9ebd5b8ef4a5" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Parallel Deployment" import="true" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61" id="2db9a584-8c22-40f8-a52a-11506bcaca1a"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="f865b298-b937-47f8-88fc-59b1ecd128a0"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Rapid Deployment" id="c4ce690f-db54-4809-8efb-c91106fea881" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Rapid Deployment" import="true" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d" id="032df51b-97cb-4ba9-8802-17c5b059c2b2"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="337195d7-ba92-4c4b-b1f2-be1f834fd967"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Stoic" id="bd56096b-5511-477b-9801-c40d0d38abdf" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Stoic" import="true" hidden="false" type="rule" targetId="66f8-5090-b257-5150" id="37fedd13-599f-484d-b095-fccc195c15d7"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="b9172ab7-00e9-4886-a8ff-042d6259b8ed"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Division de Cavalerie/Dragons" hidden="false" id="d46e-b765-57b5-0c0c" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Rapid Deployment" id="9415ed19-2dea-4103-a0dd-dd6758062dae" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink name="Dragons" id="eb02af27-0365-4259-b17b-7c8bf81accf0" targetId="0318-c596-fe3d-2e1e" type="selectionEntry" hidden="false"/>
+        <entryLink name="6-pdr Artillerie à Cheval" id="1026b4a0-f8f5-4103-8ff9-8ab9ca2f952a" targetId="9092-d1a4-2419-db19" type="selectionEntry" hidden="false"/>
+        <entryLink name="Commander" id="6be26227-73d6-4f39-96ad-de52a66f787f" targetId="e385-c540-71e4-325e" type="selectionEntry" hidden="false"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Scenario Rules" hidden="false" id="e10a6c4b-d95f-4e1d-854d-f0beb027d02a">
+          <selectionEntries>
+            <selectionEntry name="Big Battalions" id="4d5a12e0-aa28-44dc-9fcf-3f68fa1ba288" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Big Battalions" import="true" hidden="false" type="rule" targetId="c570-38f5-5494-2b60" id="1f81857d-e4f0-4238-80fa-12f7fbd9ecd8"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="ada4635a-2c8f-421d-b247-df47de808589"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Brittle" id="3ddec72c-3288-4835-8ca8-9ab74041233f" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Brittle" import="true" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d" id="d3ee4ef9-dc62-42ba-b3d9-1dc3106a9402"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="885f0e30-4fd8-42ee-be1f-96d5e31aaf70"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Determined" id="486188bd-eb1f-4aed-bceb-0fab3dda7398" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Determined" import="true" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0" id="953344f9-2748-43ed-ba60-50a778a67898"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="6a2b045d-b22f-423d-abe8-f392bd60f400"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Enthusiastic" id="b75024af-2cda-4a98-8ed8-88845361a5c1" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Enthusiastic" import="true" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22" id="331ccf57-feee-4f75-9820-5e9a574ebca7"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="aaf6d7e9-26d8-4dbf-a046-a005d0c80431"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Impetuous" id="72e9d226-d3c3-4599-acd2-8061cb99c02b" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Impetuous" import="true" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd" id="35150b7c-9e2a-428f-ab48-2bbd514e219a"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="d45f062e-0dda-472c-8275-c9b1b63ac786"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Parallel Deployment" id="b521cc94-5eeb-46e2-84f2-6cc4791b410c" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Parallel Deployment" import="true" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61" id="8a43218c-c168-4a4e-bd09-a9d578a51752"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="9464e3cd-57bd-4001-8699-64db5d394986"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Rapid Deployment" id="9ceff9a3-53ab-49c1-8c00-5d80c6cb87bb" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Rapid Deployment" import="true" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d" id="dde1e37a-811b-4063-92c4-b10176758871"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="5e0e2b74-35ea-417f-a825-ac4c3b6819ca"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Stoic" id="40cbe186-fd17-41a1-8d51-4fa1ead1652f" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Stoic" import="true" hidden="false" type="rule" targetId="66f8-5090-b257-5150" id="c66867d9-0210-42d5-ad04-33966e150554"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="4be9abde-ad83-442b-9a42-f0d2c4eb88e2"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Division de Grosse Cavalerie" hidden="false" id="162b-dffb-a1a0-3b69" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Rapid Deployment" id="81a47bda-2ce5-4b35-ada9-4a6b13a1a0fe" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink name="Carabiniers à Cheval" id="82e609f2-0fb3-4ba9-8c3a-1717335f7881" targetId="577f-062b-164c-7dac" type="selectionEntry" hidden="false"/>
+        <entryLink name="Cuirassiers" id="0a2bf55f-098b-4bb0-9bdd-aa13b42177ab" targetId="c974-b981-a697-4a8c" type="selectionEntry" hidden="false"/>
+        <entryLink name="Chevau-Légèr-Lanciers" id="fc523174-e817-41ef-9e9c-21353c239519" targetId="b1c5-3fdb-d6d6-dddf" type="selectionEntry" hidden="false"/>
+        <entryLink name="6-pdr Artillerie à Cheval" id="49c6f549-9d74-46c3-89ea-162da4171955" targetId="9092-d1a4-2419-db19" type="selectionEntry" hidden="false"/>
+        <entryLink name="Commander" id="1786f005-a6fd-46df-b00b-16f222e3d5cf" targetId="e385-c540-71e4-325e" type="selectionEntry" hidden="false"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Scenario Rules" hidden="false" id="b80745dd-aa0a-4b2b-9e9b-8d72d94abea9">
+          <selectionEntries>
+            <selectionEntry name="Big Battalions" id="949497ad-a011-47a9-a8d2-aeb7bc777c4c" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Big Battalions" import="true" hidden="false" type="rule" targetId="c570-38f5-5494-2b60" id="4e559ccb-ddf2-428c-8758-81aca3df35fc"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="781ada91-18bb-4ce0-af37-a033d8fb103c"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Brittle" id="1417b87c-34f7-401e-b224-7328aabc433d" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Brittle" import="true" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d" id="c2c3b8d3-3140-40ca-bfe6-8566f2f5c22f"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="2e74df74-7136-4a8c-885b-b1e271c6be8a"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Determined" id="da11b190-9e09-438d-a68a-ba771ee8bbb0" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Determined" import="true" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0" id="70223398-1520-42b4-87a1-9150198c1b2a"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="8f1ff6a0-b884-436f-b439-532b4d1a2318"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Enthusiastic" id="f854c10a-8ac3-4c31-94d0-8d908dbfba8d" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Enthusiastic" import="true" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22" id="bca3dff4-ee58-4b49-94ae-f17d95fa0eb2"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="fefa12ee-caf7-44db-90b7-7272eaa925e2"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Impetuous" id="c18ab93c-1941-4ec4-90b4-2e36cf04c1e5" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Impetuous" import="true" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd" id="a7f919e5-6e9f-41e2-87f3-37ff108f125a"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="65c0da87-bc52-4f4c-b42d-cece2ab0327b"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Parallel Deployment" id="a6f3a329-d551-491e-b942-676ca89149bb" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Parallel Deployment" import="true" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61" id="f2f4dec7-1b22-4f97-a7e2-b41aafce78dc"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="043124e4-5529-44fb-b01b-8eb8479a901c"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Rapid Deployment" id="8978b3f0-da7c-48d4-b419-a603196e5832" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Rapid Deployment" import="true" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d" id="8d94529e-e28f-4c0c-8108-b15cf2f8fc26"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="84fcd6a9-b1fd-4999-8b11-88408261cf89"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Stoic" id="d3c128ad-0f69-48ec-8073-c871c0f01529" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Stoic" import="true" hidden="false" type="rule" targetId="66f8-5090-b257-5150" id="8df92643-e6a2-4c35-88cc-71af81565ca0"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="5d7eac9f-35be-40a0-a8aa-3cb6d129031c"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Corps Réserve/Parc d’Artillerie" hidden="false" id="2a75-e2d1-9110-0931" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="b0cb-af4c-4076-a8f8" type="selectionEntry" targetId="e385-c540-71e4-325e" sortIndex="1"/>
-        <entryLink import="true" name="Infanterie Légère" hidden="false" id="5bef-23a3-acef-11e9" type="selectionEntry" targetId="609a-4666-b997-3407" sortIndex="2"/>
-        <entryLink import="true" name="Infanterie de Ligne" hidden="false" id="847f-9c5a-5c3f-b180" type="selectionEntry" targetId="beab-c67f-380e-4ae2" sortIndex="3"/>
-        <entryLink import="true" name="6-pdr Artillerie à Pied" hidden="false" id="ded3-e503-85e8-54d3" type="selectionEntry" targetId="2c10-0291-555b-e254" sortIndex="4"/>
-        <entryLink import="true" name="6-pdr Artillerie à Cheval" hidden="false" id="f134-0192-0b5b-69d2" type="selectionEntry" targetId="9092-d1a4-2419-db19" sortIndex="5"/>
+        <entryLink name="12-pdr Réserve d’Artillerie" id="bf45c7b3-5903-4e10-b83e-6b52469f4b79" targetId="4fcd-c651-0a8e-f10e" type="selectionEntry" hidden="false"/>
+        <entryLink name="6-pdr Artillerie à Pied" id="410e8a4f-a867-4955-9f1f-9c18b8fa3f57" targetId="2c10-0291-555b-e254" type="selectionEntry" hidden="false"/>
+        <entryLink name="6-pdr Artillerie à Cheval" id="ad4f07e1-7b58-446f-b434-1fe59f7a3761" targetId="9092-d1a4-2419-db19" type="selectionEntry" hidden="false"/>
+        <entryLink name="Commander" id="cf02bf40-6c91-4289-86e4-ba6cd6cc44bf" targetId="e385-c540-71e4-325e" type="selectionEntry" hidden="false"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Scenario Rules" hidden="false" id="6e3d3b39-f082-48ca-aec4-63ae0697fe66">
+          <selectionEntries>
+            <selectionEntry name="Big Battalions" id="ecf7dbeb-88e8-4de4-b0f4-3997c93766d9" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Big Battalions" import="true" hidden="false" type="rule" targetId="c570-38f5-5494-2b60" id="af6dbaa9-1d43-4f05-b7a7-a6244cbf84d0"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="ebded687-f10b-4da2-ab13-e5dff64e0904"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Brittle" id="c243b3f3-e09d-4b9c-a0b1-5002fff976ef" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Brittle" import="true" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d" id="f9bcfa03-c84e-403c-a9cd-ee045ffbccc5"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="b987d41f-f6d5-4e06-956d-3757b8156bb2"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Determined" id="a6d94a28-109e-4ab0-a076-64a6c53d39b3" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Determined" import="true" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0" id="e7bce81a-1e75-4413-8d4d-0e757d39a6f0"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="390e4ed5-0a40-41ce-b558-81797e447a2c"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Enthusiastic" id="5a0aa65b-0ec8-4e5b-b774-497bba66e8b0" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Enthusiastic" import="true" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22" id="41e24988-4520-460b-b28c-97695c3632d7"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="aa884ac8-0930-4239-957e-05a6b51cc234"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Impetuous" id="a6420ad1-85e9-4189-ad57-143de9477b35" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Impetuous" import="true" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd" id="77f56795-6de1-4fcf-a877-402ad83902e6"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="6ffa911e-9aa2-40d6-968a-42bbcf11ce3c"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Parallel Deployment" id="c7de0921-27c8-42ef-b29a-6771e29bac2c" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Parallel Deployment" import="true" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61" id="1a967f07-504f-4d6e-8fb4-9f1b00473600"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="f87ec223-9213-428d-a05a-5be1a858c691"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Rapid Deployment" id="4de5b3ca-34a6-480f-ab97-2073544b6e5d" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Rapid Deployment" import="true" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d" id="cf7a228f-91ad-4240-9844-dd68cfe5c56c"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="227d03e7-0ce4-409f-b6bc-9982f7ca8ad5"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Stoic" id="49bb5a8b-33e8-402e-85ae-0b00c72c4c29" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Stoic" import="true" hidden="false" type="rule" targetId="66f8-5090-b257-5150" id="2827840c-b406-4f5d-895c-2cf4e6eb2de6"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="c3e908f0-d12a-4d9f-9126-35ef192c2d6d"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Division d’Infanterie de la Garde Impériale" hidden="false" id="806d-d4a2-3055-7fd7" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink name="1er &amp; 2eme Grenadiers à Pied de la Garde Impériale" id="34cdc314-2a9c-4b14-a261-586c24d5ec40" targetId="f3ed-0599-c749-9f5d" type="selectionEntry" hidden="false"/>
+        <entryLink name="1er &amp; 2eme Chasseurs à Pied de la Garde Impériale" id="792397e2-c7b0-42a1-8943-7cd15eb13d43" targetId="2c04-281e-e741-35b2" type="selectionEntry" hidden="false"/>
+        <entryLink name="3eme (Dutch) Grenadiers à Pied de la Garde Impériale" id="2a1872ec-a1bd-4135-953e-e227f3153a30" targetId="5ce1-1c23-382e-8cb7" type="selectionEntry" hidden="false"/>
+        <entryLink name="Fusilier-Grenadiers à Pied de la Garde Impériale" id="8a30f789-bb12-43e2-ae99-913c6c92de2a" targetId="c3b9-eb26-3fc7-f818" type="selectionEntry" hidden="false"/>
+        <entryLink name="Fusilier-Chasseurs à Pied de la Garde Impériale" id="3347c5e1-3084-4cab-ae96-f69de9a798f2" targetId="d255-3ed2-1aca-e884" type="selectionEntry" hidden="false"/>
+        <entryLink name="Tirailleurs de la Garde Impériale" id="62c88cdb-7ed1-4b11-9e95-54a556f944f9" targetId="c183-5a2e-f671-2eb4" type="selectionEntry" hidden="false"/>
+        <entryLink name="Voltigeurs de la Garde Impériale" id="2528196d-5187-43e2-9b8e-29cd9900ed83" targetId="68ad-348f-f6b6-4e0e" type="selectionEntry" hidden="false"/>
+        <entryLink name="Réserve Artillerie de la Vieille Garde" id="592743e0-b5bd-4355-ad10-1b0da4a2bd3d" targetId="7ff8-d063-f7d7-921a" type="selectionEntry" hidden="false"/>
+        <entryLink name="Artillerie à Cheval de la Vieille Garde" id="c070d535-4042-4330-9ef8-d2123908d96d" targetId="aeb8-7a74-582b-6458" type="selectionEntry" hidden="false"/>
+        <entryLink name="Artillerie à Pied de la Vieille Garde" id="8e4c13c6-39dc-4d88-8100-4ab60e24c116" targetId="b568-8087-9d02-0b6d" type="selectionEntry" hidden="false"/>
+        <entryLink name="Artillerie à Pied de la Jeune Garde" id="fc92ed18-ae07-444f-b1ef-b28c04452fb3" targetId="937c-8eab-8da8-b99f" type="selectionEntry" hidden="false"/>
+        <entryLink name="Commander" id="6845df12-9be4-49d1-98a5-4678cbcb949f" targetId="e385-c540-71e4-325e" type="selectionEntry" hidden="false"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Scenario Rules" hidden="false" id="4479744a-0b4d-4b5c-84ee-43011b5ac927">
+          <selectionEntries>
+            <selectionEntry name="Big Battalions" id="1b3f8ed1-ed8f-47bf-b03f-9f0d2da12447" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Big Battalions" import="true" hidden="false" type="rule" targetId="c570-38f5-5494-2b60" id="92f673d3-00b7-4715-b7b6-7c0676d6b9c0"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="7bd4499c-29b7-4ed5-bd90-e3fca32b9ac7"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Brittle" id="4e8596ab-c1df-44b6-b16b-974875c57c31" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Brittle" import="true" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d" id="292ca943-c868-4d50-a07e-20290c9da1d1"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="9881c359-5d8b-4814-a934-0605cfaf7dd7"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Determined" id="79cca36b-7218-4adb-a49a-1562fac04acb" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Determined" import="true" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0" id="f8f97b0c-ef01-4d25-8eac-153d9b1200a6"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="27861334-d642-4759-9c88-59e7c42abb77"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Enthusiastic" id="8f3cc87a-50fd-43b4-b44c-b8b666728fec" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Enthusiastic" import="true" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22" id="01351847-b3ed-4881-8d1e-dcb9ea04c679"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="f06ab34d-db6f-4c94-8441-094a4709e6cc"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Impetuous" id="d67d6386-7580-4622-87a9-7f6fe4bacde5" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Impetuous" import="true" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd" id="082fab46-a2fe-422e-8660-43bdd1ac1aa2"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="b337773c-3bbd-434e-a79c-cad8e1be9902"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Parallel Deployment" id="49e90114-af2e-4e0a-b18c-ec229312f67b" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Parallel Deployment" import="true" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61" id="9eba5336-dacc-4661-836d-d3427fd8cc6b"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="0f672dab-105a-487b-9d23-7fb911cd2584"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Rapid Deployment" id="65c084f7-f5b7-409e-b956-dc7e1c48912e" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Rapid Deployment" import="true" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d" id="2611a560-4abf-4273-9b37-f6f45630be69"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="13a46511-e5b3-4666-885f-087a9a0fdd2b"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Stoic" id="a05ea1c6-6ed5-4e0b-9536-2bac78b247d5" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Stoic" import="true" hidden="false" type="rule" targetId="66f8-5090-b257-5150" id="c7cdce0b-7571-45e6-84a8-18dc62f941fb"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="e36796df-80de-4b23-aaa9-cbc884f5aea4"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Brigade de Cavalerie de la Garde Impériale" hidden="false" id="2efa-058d-5acb-8f1b" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Rapid Deployment" id="41048e1b-0ed9-43c8-9ed0-382945efa1bb" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink name="Grenadiers à Cheval de la Garde Impériale" id="f83e50e4-a398-4686-873c-e2e458ee5764" targetId="bb92-ab6b-cad9-83c4" type="selectionEntry" hidden="false"/>
+        <entryLink name="Gendarmes d’élite de la Garde Impériale" id="2c779220-3a0f-4795-abcc-d5a2bdccaf1d" targetId="f647-d16e-1125-c4a2" type="selectionEntry" hidden="false"/>
+        <entryLink name="Dragons de la Garde Impériale" id="6f63fe36-3d52-40ef-bce5-41cf7a7efeec" targetId="53bb-ec73-ad30-29b9" type="selectionEntry" hidden="false"/>
+        <entryLink name="Chasseurs à Cheval de la Garde Impériale" id="e6f04588-1211-41b9-b5ba-1c6b46e5efc4" targetId="29ee-fe4a-7089-4cca" type="selectionEntry" hidden="false"/>
+        <entryLink name="Mameluks de la Garde Impériale" id="0d9fe356-680e-4009-a62d-7e02c5fccad9" targetId="694a-5e7c-f925-4f3d" type="selectionEntry" hidden="false"/>
+        <entryLink name="Chevau-Légèr-Lanciers Polonais de la Garde Impériale" id="682c63fd-0181-46f6-8529-f048da62a2e3" targetId="1862-4a0e-a4a3-c4c0" type="selectionEntry" hidden="false"/>
+        <entryLink name="Chevau-Légèr-Lanciers Hollandais de la Garde Impériale" id="3032f7c0-8918-4b25-b049-4980cd97f660" targetId="41d9-4cb5-7f72-9dd7" type="selectionEntry" hidden="false"/>
+        <entryLink name="Artillerie à Cheval de la Vieille Garde" id="15e976f6-1a9f-4ec2-a767-1729d5c2587f" targetId="aeb8-7a74-582b-6458" type="selectionEntry" hidden="false"/>
+        <entryLink name="Commander" id="0eb4c9c3-ef4b-4705-8929-66588bff0f79" targetId="e385-c540-71e4-325e" type="selectionEntry" hidden="false"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Scenario Rules" hidden="false" id="4043e079-520d-48de-97c6-54ea34ea4314">
+          <selectionEntries>
+            <selectionEntry name="Big Battalions" id="498fa96f-45c6-46c9-af06-47ec92e80537" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Big Battalions" import="true" hidden="false" type="rule" targetId="c570-38f5-5494-2b60" id="91069211-f358-447d-90c0-1ec19f71e900"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="4a088d7f-8d9d-485b-b4a8-db42a7b420e6"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Brittle" id="a63c90d0-e654-49bb-b70e-8ad255d6bcde" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Brittle" import="true" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d" id="54228bc3-7dba-4eae-abb5-6bd049e31626"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="6f6c4f04-2488-4f36-bda3-7b5213e8c5ea"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Determined" id="c642e72d-c28e-4429-9bff-9037514f8ffa" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Determined" import="true" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0" id="5907ece3-3547-40aa-8fa3-f01567096732"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="e9cd888a-6574-4a58-9d25-b2d115efe20a"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Enthusiastic" id="7a63e926-a283-4ba2-97f4-d10a706fa62b" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Enthusiastic" import="true" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22" id="d6683761-3fe0-4def-82a8-f058b640c052"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="e7445922-4dde-422d-a022-c9b6832b8763"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Impetuous" id="b0401820-0e34-4b3c-93fc-05d04b652101" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Impetuous" import="true" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd" id="18849857-376c-46e8-b5df-eea511bee550"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="ea71b391-bcf8-41d5-a125-187f234f69ee"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Parallel Deployment" id="1e4ea608-ae5c-4f8b-877b-afe89e3059f9" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Parallel Deployment" import="true" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61" id="db4d8541-a568-4257-a002-39c9d3174613"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="16639268-9d8b-4b0a-849d-0b00b2be983c"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Rapid Deployment" id="10172eea-d604-45ff-8c3b-a7e65b04a66d" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Rapid Deployment" import="true" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d" id="8eb43b60-1306-4482-a6a9-128c88edf2b4"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="9be206fe-1131-4c02-8f68-4e050ab96e73"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Stoic" id="ff12e963-3781-485d-9146-35e141e06b1f" type="upgrade" hidden="false" import="true">
+              <infoLinks>
+                <infoLink name="Stoic" import="true" hidden="false" type="rule" targetId="66f8-5090-b257-5150" id="1c2cb823-f935-4a22-b04a-2242345d0399"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" includeChildSelections="false" id="3a53e367-ad8c-4242-8091-5724defd9792"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Force Commander" hidden="false" id="2261-3b01-b3c4-f91c" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Force Commander" primary="true" targetId="ct-ForceCommander"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink name="Commander" id="e782afa6-3931-4be4-86c2-f1b672a58b9b" targetId="e385-c540-71e4-325e" type="selectionEntry" hidden="false"/>
       </entryLinks>
     </selectionEntry>
   </selectionEntries>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ae43-676e-ac1e-c7a8" name="ESR" battleScribeVersion="2.03" revision="1" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Todd Pressley">
+<gameSystem id="ae43-676e-ac1e-c7a8" name="ESR" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Todd Pressley">
   <categoryEntries>
     <categoryEntry name="Formation" id="ct-Formation" hidden="false">
       <description>Main subordinate organization within a Force</description>
@@ -133,7 +133,7 @@ A Formation may not recover Fatigue during the Combat Phase while it has Irregul
       <description>The Commander&apos;s Bonuses improve when leading a Formation with the specified active Directive.</description>
     </rule>
     <rule name="Big Battalions" id="c570-38f5-5494-2b60" hidden="false" publicationId="0e06-41dc-0230-b188" page="77">
-      <description>These Infantry Formations have larger than normal Units and are able to absorb more losses than the average Formation. For every three deployed Infantry Battalions it receives +1 Cohesion. </description>
+      <description>These Infantry Formations have larger than normal Units and are able to absorb more losses than the average Formation. For every three deployed Infantry Battalions it receives +1 Cohesion.</description>
     </rule>
     <rule name="Brittle" id="b6ff-e568-e70e-2e3d" hidden="false" publicationId="0e06-41dc-0230-b188" page="77">
       <description>These Formations lack the will to stay in the fight, perhaps because they are inexperienced, demoralized, or otherwise expended. The Formation will involuntarily Retreat [RT], not Withdraw [W], at 1/2:1 and Break [BK] at 1:1.</description>
@@ -155,7 +155,7 @@ If this Formation has an active Defend [D] Directive may choose to not Withdraw 
       <description>Formations with this Trait are trained to deploy efficiently, but not dynamically, by marching parallel to their desired frontage and then turning from column into line. The Formation rolls -1D6 when deploying unless all deploying Unites do so by turning 90° left or right and moving 225 yards (1-1/2&quot;) directly forward. All deploying Units must turn the same direction.</description>
     </rule>
     <rule name="Rapid Deployment" id="95a5-06ca-7e40-b11d" hidden="false">
-      <description>A Formation with this Trait is highly proficient in deploying and can do so faster than most. The Formation rolls an additional +1D6 when deploying Unit form a ployed column. </description>
+      <description>A Formation with this Trait is highly proficient in deploying and can do so faster than most. The Formation rolls an additional +1D6 when deploying Unit form a ployed column.</description>
     </rule>
   </sharedRules>
 </gameSystem>

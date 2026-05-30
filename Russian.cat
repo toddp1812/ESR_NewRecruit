@@ -5,7 +5,164 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Generic or Historical Commander" id="eb54-0352-8a7e-624c" hidden="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Generic" id="45dd-c733-d6f0-1cf0" hidden="false"/>
+            <selectionEntryGroup name="Generic" id="45dd-c733-d6f0-1cf0" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="General-Leytenant" hidden="false" id="dd13-f017-5558-90cd">
+                  <profiles>
+                    <profile name="General-Leytenant" typeName="Cmd Unit" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Pehotnaya Diviziya</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">N/A</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="1"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="General-Leytenant" hidden="false" id="dd4e-e0e8-a753-98ac">
+                  <profiles>
+                    <profile name="General-Leytenant" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Grenaderskaya Diviziya</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">N/A</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="1"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="General-Leytenant" hidden="false" id="162c-3358-ee7b-86e5">
+                  <profiles>
+                    <profile name="General-Leytenant" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Svodno-Grenaderskaya Diviziya</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">N/A</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="1"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="General-Mayor" hidden="false" id="3f19-3cc6-47f3-75a3">
+                  <profiles>
+                    <profile name="General-Mayor" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Kirasirskaya Brigada</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">N/A</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="1"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="General-Mayor" hidden="false" id="d036-fcfa-5091-d293">
+                  <profiles>
+                    <profile name="General-Mayor" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Kavaleriyskaya Brigada</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">N/A</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="1"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="General-Mayor" hidden="false" id="4cca-5b1f-85d1-b440">
+                  <profiles>
+                    <profile name="General-Mayor" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Legkaya Kavaleriya</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">N/A</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="1"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="General-Mayor" hidden="false" id="e537-caf9-da85-b0eb">
+                  <profiles>
+                    <profile name="General-Mayor" typeName="Commander" typeId="pt-CmdUnit">
+                      <characteristics>
+                        <characteristic typeId="ct-CmdUnit-Avail-Formation" name="AvForm">Kazachya Brigada</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Force" name="AvForce">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Avail-Army" name="AvArmy">–</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Cmd" name="Cmd">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-LR" name="Thr-LR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-SR" name="Thr-SR">0</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Thr-C" name="Thr-C">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Coh" name="Coh">1</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Move" name="___Move___">N/A</characteristic>
+                        <characteristic typeId="ct-CmdUnit-Trait" name="Trait"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+                    <cost typeId="esr-ct-Threat" name="Threat" value="1"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
             <selectionEntryGroup name="Historical Commander" id="0c11-4365-4a32-f36f" hidden="false">
               <selectionEntries>
                 <selectionEntry type="model" import="true" name="Aleksandr" hidden="false" id="2327-241b-a049-cff3">
@@ -59,7 +216,7 @@ A Date with Death; -2 in Leader Fate, 1812.&quot;</characteristic>
                   <infoLinks>
                     <infoLink name="Close Enough" hidden="false" type="rule" targetId="8a94-8939-f4ca-6472"/>
                     <infoLink name="Flirts with Death" hidden="false" type="rule" targetId="df40-fbb5-fd15-e8e1"/>
-                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                    <infoLink name="Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Bagration" hidden="false" id="57b5-2461-1359-318c">
@@ -87,7 +244,7 @@ A Date with Death; -2 in Leader Fate, 1812.&quot;</characteristic>
                   </costs>
                   <infoLinks>
                     <infoLink name="Chistoi Russkoi" hidden="false" type="rule" targetId="4d70-bb86-8bf6-037b"/>
-                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                    <infoLink name="Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Barclay de Tolly" hidden="false" id="72ee-e52f-c1a8-86dd">
@@ -663,7 +820,7 @@ A Date with Death; Killed while leading forward a counter-attack during the Batt
                   <infoLinks>
                     <infoLink name="Almost like Family" hidden="false" type="rule" targetId="6877-33aa-14d7-a393"/>
                     <infoLink name="Grand Battery" hidden="false" type="rule" targetId="708e-451c-8172-299c"/>
-                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                    <infoLink name="Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Kutuzov" hidden="false" id="4eda-09e8-d642-cb5d">
@@ -769,7 +926,7 @@ A Date with Death; -2 in Leader Fate, 1814. Unavailable after 1814.&quot;</chara
                   <infoLinks>
                     <infoLink name="Chistoi Russkoi" hidden="false" type="rule" targetId="4d70-bb86-8bf6-037b"/>
                     <infoLink name="Mass Cavalry" hidden="false" type="rule" targetId="853c-a696-ee7b-3b9d"/>
-                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                    <infoLink name="Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Lavrov" hidden="false" id="d897-c690-a397-47bb">
@@ -960,7 +1117,7 @@ A Date with Death; -2 in Leader Fate, 1813. Unavailable after 1813.&quot;</chara
                   </costs>
                   <infoLinks>
                     <infoLink name="Chistoi Russkoi" hidden="false" type="rule" targetId="4d70-bb86-8bf6-037b"/>
-                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                    <infoLink name="Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Olsufiev" hidden="false" id="a909-95e8-9182-4268">
@@ -1227,7 +1384,7 @@ Unavailable after 1814.&quot;</characteristic>
                   </costs>
                   <infoLinks>
                     <infoLink name="Not from Around Here" hidden="false" type="rule" targetId="a7f2-1b09-7216-0944"/>
-                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                    <infoLink name="Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Sazonov" hidden="false" id="12c3-c3db-7c7c-971b">
@@ -1433,7 +1590,7 @@ A Date with Death; Mortally wounded at Borodino in September 1812, he dies some 
                   </costs>
                   <infoLinks>
                     <infoLink name="Consummate Professional" hidden="false" type="rule" targetId="3338-fdcb-cabc-3e66"/>
-                    <infoLink name="A Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
+                    <infoLink name="Date with Death" hidden="false" type="rule" targetId="1892-f4ae-e81a-5012"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Uvarov" hidden="false" id="0c4a-f243-953e-fcbc">
@@ -2282,4 +2439,589 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.&quot;</characte
       <description>Neither triggers nor suﬀers Chistoi Russkoi penalties.</description>
     </rule>
   </sharedRules>
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Pehotnaya Diviziya" hidden="false" id="dd46-145d-dbc3-6333" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink name="Yegerskiy" targetId="cfc3-8928-98a4-5278" type="selectionEntry" hidden="false"/>
+        <entryLink name="Pehotniy" targetId="7589-bf97-646e-d8a1" type="selectionEntry" hidden="false"/>
+        <entryLink name="Pionery" targetId="b98c-9a09-a901-2597" type="selectionEntry" hidden="false"/>
+        <entryLink name="Batareynaya Artilleriyskaya" targetId="7e01-2182-4145-ffe8" type="selectionEntry" hidden="false"/>
+        <entryLink name="Legkaya Artilleriyskaya" targetId="2856-3a12-5cfd-1e1a" type="selectionEntry" hidden="false"/>
+        <entryLink name="Commander" targetId="05d5-2a04-8ee7-c761" type="selectionEntry" hidden="false"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Scenario Rules" hidden="false">
+          <selectionEntries>
+            <selectionEntry name="Big Battalions" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Big Battalions" hidden="false" type="rule" targetId="c570-38f5-5494-2b60"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Brittle" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Brittle" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Determined" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Determined" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Enthusiastic" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Enthusiastic" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Impetuous" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Impetuous" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Parallel Deployment" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Parallel Deployment" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Rapid Deployment" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Rapid Deployment" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Stoic" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Stoic" hidden="false" type="rule" targetId="66f8-5090-b257-5150"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Grenaderskaya Diviziya" hidden="false" id="0a66-170b-95f7-3074" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink name="Grenaderskaya" targetId="acdb-809f-56e6-c46b" type="selectionEntry" hidden="false"/>
+        <entryLink name="Pionery" targetId="b98c-9a09-a901-2597" type="selectionEntry" hidden="false"/>
+        <entryLink name="Batareynaya Artilleriyskaya" targetId="7e01-2182-4145-ffe8" type="selectionEntry" hidden="false"/>
+        <entryLink name="Legkaya Artilleriyskaya" targetId="2856-3a12-5cfd-1e1a" type="selectionEntry" hidden="false"/>
+        <entryLink name="Commander" targetId="05d5-2a04-8ee7-c761" type="selectionEntry" hidden="false"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Scenario Rules" hidden="false">
+          <selectionEntries>
+            <selectionEntry name="Big Battalions" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Big Battalions" hidden="false" type="rule" targetId="c570-38f5-5494-2b60"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Brittle" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Brittle" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Determined" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Determined" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Enthusiastic" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Enthusiastic" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Impetuous" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Impetuous" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Parallel Deployment" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Parallel Deployment" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Rapid Deployment" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Rapid Deployment" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Stoic" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Stoic" hidden="false" type="rule" targetId="66f8-5090-b257-5150"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Svodno-Grenaderskaya Divizya" hidden="false" id="4ff5-b3f0-8d29-314d" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink name="Svodno-Grenaderskaya" targetId="3e17-61a2-4cd0-4993" type="selectionEntry" hidden="false"/>
+        <entryLink name="Pionery" targetId="b98c-9a09-a901-2597" type="selectionEntry" hidden="false"/>
+        <entryLink name="Batareynaya Artilleriyskaya" targetId="7e01-2182-4145-ffe8" type="selectionEntry" hidden="false"/>
+        <entryLink name="Legkaya Artilleriyskaya" targetId="2856-3a12-5cfd-1e1a" type="selectionEntry" hidden="false"/>
+        <entryLink name="Commander" targetId="05d5-2a04-8ee7-c761" type="selectionEntry" hidden="false"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Scenario Rules" hidden="false">
+          <selectionEntries>
+            <selectionEntry name="Big Battalions" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Big Battalions" hidden="false" type="rule" targetId="c570-38f5-5494-2b60"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Brittle" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Brittle" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Determined" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Determined" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Enthusiastic" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Enthusiastic" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Impetuous" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Impetuous" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Parallel Deployment" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Parallel Deployment" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Rapid Deployment" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Rapid Deployment" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Stoic" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Stoic" hidden="false" type="rule" targetId="66f8-5090-b257-5150"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legkaya Kavaleriya" hidden="false" id="b0b3-7a14-444e-7e37" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink name="Commander" targetId="05d5-2a04-8ee7-c761" type="selectionEntry" hidden="false"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Scenario Rules" hidden="false">
+          <selectionEntries>
+            <selectionEntry name="Big Battalions" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Big Battalions" hidden="false" type="rule" targetId="c570-38f5-5494-2b60"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Brittle" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Brittle" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Determined" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Determined" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Enthusiastic" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Enthusiastic" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Impetuous" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Impetuous" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Parallel Deployment" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Parallel Deployment" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Rapid Deployment" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Rapid Deployment" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Stoic" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Stoic" hidden="false" type="rule" targetId="66f8-5090-b257-5150"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Kavaleriyskaya Brigada" hidden="false" id="f6a6-9e2a-1977-07aa" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink name="Dragunskiy" targetId="9b16-c323-978a-7105" type="selectionEntry" hidden="false"/>
+        <entryLink name="Ulanskiy" targetId="cfce-9c3e-4daa-f37d" type="selectionEntry" hidden="false"/>
+        <entryLink name="Gusarskiy" targetId="bcaf-bdb2-f583-17ce" type="selectionEntry" hidden="false"/>
+        <entryLink name="Konno-Artilleriyskaya" targetId="a1ba-c077-8d51-c146" type="selectionEntry" hidden="false"/>
+        <entryLink name="Commander" targetId="05d5-2a04-8ee7-c761" type="selectionEntry" hidden="false"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Scenario Rules" hidden="false">
+          <selectionEntries>
+            <selectionEntry name="Big Battalions" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Big Battalions" hidden="false" type="rule" targetId="c570-38f5-5494-2b60"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Brittle" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Brittle" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Determined" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Determined" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Enthusiastic" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Enthusiastic" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Impetuous" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Impetuous" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Parallel Deployment" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Parallel Deployment" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Rapid Deployment" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Rapid Deployment" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Stoic" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Stoic" hidden="false" type="rule" targetId="66f8-5090-b257-5150"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Kirasirskaya Brigada" hidden="false" id="0cc0-0413-e993-56a3" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink name="Kirasirskiy" targetId="af56-6d00-0b59-55ac" type="selectionEntry" hidden="false"/>
+        <entryLink name="Konno-Artilleriyskaya" targetId="a1ba-c077-8d51-c146" type="selectionEntry" hidden="false"/>
+        <entryLink name="Commander" targetId="05d5-2a04-8ee7-c761" type="selectionEntry" hidden="false"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Scenario Rules" hidden="false">
+          <selectionEntries>
+            <selectionEntry name="Big Battalions" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Big Battalions" hidden="false" type="rule" targetId="c570-38f5-5494-2b60"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Brittle" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Brittle" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Determined" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Determined" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Enthusiastic" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Enthusiastic" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Impetuous" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Impetuous" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Parallel Deployment" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Parallel Deployment" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Rapid Deployment" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Rapid Deployment" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Stoic" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Stoic" hidden="false" type="rule" targetId="66f8-5090-b257-5150"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Donskaya Kazachya Brigada" hidden="false" id="64f2-6a95-46c9-f405" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink name="Donskoy Kazachiy" targetId="7816-b75c-f529-a81e" type="selectionEntry" hidden="false"/>
+        <entryLink name="Konno-Tatarskiy" targetId="85a2-7f28-1dc3-30c6" type="selectionEntry" hidden="false"/>
+        <entryLink name="Bugskiy Kazachiy" targetId="e0de-6f52-c015-da45" type="selectionEntry" hidden="false"/>
+        <entryLink name="Bashkirskiy Konnyy" targetId="8cab-f431-0f19-811e" type="selectionEntry" hidden="false"/>
+        <entryLink name="Teptyar Kazachiy" targetId="d660-0632-2626-5705" type="selectionEntry" hidden="false"/>
+        <entryLink name="Donskoy Artilleriyskaya" targetId="eb3f-2302-7f37-e632" type="selectionEntry" hidden="false"/>
+        <entryLink name="Commander" targetId="05d5-2a04-8ee7-c761" type="selectionEntry" hidden="false"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Scenario Rules" hidden="false">
+          <selectionEntries>
+            <selectionEntry name="Big Battalions" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Big Battalions" hidden="false" type="rule" targetId="c570-38f5-5494-2b60"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Brittle" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Brittle" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Determined" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Determined" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Enthusiastic" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Enthusiastic" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Impetuous" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Impetuous" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Parallel Deployment" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Parallel Deployment" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Rapid Deployment" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Rapid Deployment" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Stoic" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Stoic" hidden="false" type="rule" targetId="66f8-5090-b257-5150"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Rezervnaya Artilleriya" hidden="false" id="27fe-5e63-0821-2290" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink name="Batareynaya Artilleriyskaya" targetId="7e01-2182-4145-ffe8" type="selectionEntry" hidden="false"/>
+        <entryLink name="Legkaya Artilleriyskaya" targetId="2856-3a12-5cfd-1e1a" type="selectionEntry" hidden="false"/>
+        <entryLink name="Konno-Artilleriyskaya" targetId="a1ba-c077-8d51-c146" type="selectionEntry" hidden="false"/>
+        <entryLink name="Commander" targetId="05d5-2a04-8ee7-c761" type="selectionEntry" hidden="false"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Scenario Rules" hidden="false">
+          <selectionEntries>
+            <selectionEntry name="Big Battalions" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Big Battalions" hidden="false" type="rule" targetId="c570-38f5-5494-2b60"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Brittle" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Brittle" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Determined" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Determined" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Enthusiastic" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Enthusiastic" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Impetuous" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Impetuous" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Parallel Deployment" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Parallel Deployment" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Rapid Deployment" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Rapid Deployment" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Stoic" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Stoic" hidden="false" type="rule" targetId="66f8-5090-b257-5150"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Leib-Gvardii Diviziya" hidden="false" id="ae2a-130f-d829-5b47" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink name="Leib-Gvardii Yegerskiy" targetId="15db-a0e6-f7df-fc94" type="selectionEntry" hidden="false"/>
+        <entryLink name="Leib-Gvardii Pehotniy" targetId="73b3-58d5-773c-a9d7" type="selectionEntry" hidden="false"/>
+        <entryLink name="Batareynaya Artilleriyskaya" targetId="7e01-2182-4145-ffe8" type="selectionEntry" hidden="false"/>
+        <entryLink name="Legkaya Artilleriyskaya" targetId="2856-3a12-5cfd-1e1a" type="selectionEntry" hidden="false"/>
+        <entryLink name="Konno-Artilleriyskaya" targetId="a1ba-c077-8d51-c146" type="selectionEntry" hidden="false"/>
+        <entryLink name="Commander" targetId="05d5-2a04-8ee7-c761" type="selectionEntry" hidden="false"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Scenario Rules" hidden="false">
+          <selectionEntries>
+            <selectionEntry name="Big Battalions" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Big Battalions" hidden="false" type="rule" targetId="c570-38f5-5494-2b60"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Brittle" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Brittle" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Determined" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Determined" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Enthusiastic" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Enthusiastic" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Impetuous" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Impetuous" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Parallel Deployment" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Parallel Deployment" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Rapid Deployment" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Rapid Deployment" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Stoic" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Stoic" hidden="false" type="rule" targetId="66f8-5090-b257-5150"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Leib-Gvardii Kavaleriya Brigada" hidden="false" id="446c-0661-149c-634d" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink name="Kavalergardskiy" targetId="2c7a-8278-d95e-ebbd" type="selectionEntry" hidden="false"/>
+        <entryLink name="Leib-Gvardii Konnyy" targetId="d243-ba3d-ca6c-82cf" type="selectionEntry" hidden="false"/>
+        <entryLink name="Yego Velichestva Leib-Kirasirskiy" targetId="8757-079c-2d18-5ef8" type="selectionEntry" hidden="false"/>
+        <entryLink name="Yeya Velichestva Kirasirskiy" targetId="bd9e-194c-d088-0230" type="selectionEntry" hidden="false"/>
+        <entryLink name="Leib-Gvardii Dragunskiy" targetId="13ff-e52d-a688-c19f" type="selectionEntry" hidden="false"/>
+        <entryLink name="Leib-Gvardii Ulanskiy" targetId="01ae-2814-cb39-9988" type="selectionEntry" hidden="false"/>
+        <entryLink name="Leib-Gvardii Gusarskiy" targetId="55de-604b-bdbd-db44" type="selectionEntry" hidden="false"/>
+        <entryLink name="Leib-Gvardii Kazachiy" targetId="77e6-f7a6-1326-5af5" type="selectionEntry" hidden="false"/>
+        <entryLink name="Legkaya Artilleriyskaya" targetId="2856-3a12-5cfd-1e1a" type="selectionEntry" hidden="false"/>
+        <entryLink name="Konno-Artilleriyskaya" targetId="a1ba-c077-8d51-c146" type="selectionEntry" hidden="false"/>
+        <entryLink name="Commander" targetId="05d5-2a04-8ee7-c761" type="selectionEntry" hidden="false"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Scenario Rules" hidden="false">
+          <selectionEntries>
+            <selectionEntry name="Big Battalions" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Big Battalions" hidden="false" type="rule" targetId="c570-38f5-5494-2b60"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Brittle" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Brittle" hidden="false" type="rule" targetId="b6ff-e568-e70e-2e3d"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Determined" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Determined" hidden="false" type="rule" targetId="c268-08f7-9fef-83c0"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Enthusiastic" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Enthusiastic" hidden="false" type="rule" targetId="b446-412a-5f4e-fe22"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Impetuous" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Impetuous" hidden="false" type="rule" targetId="d74a-8bc3-3c04-64dd"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Parallel Deployment" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Parallel Deployment" hidden="false" type="rule" targetId="3ad9-1aa8-4ddf-9d61"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Rapid Deployment" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Rapid Deployment" hidden="false" type="rule" targetId="95a5-06ca-7e40-b11d"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Stoic" type="upgrade" hidden="false">
+              <categoryLinks>
+                <categoryLink name="Stoic" hidden="false" type="rule" targetId="66f8-5090-b257-5150"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
