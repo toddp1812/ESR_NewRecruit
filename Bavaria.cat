@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="7d97-1e90-2ee5-5054" name="Bavaria" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="3" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Formations" id="454b-9bda-36c9-59aa" targetId="a7c4-66c8-1490-8a0e"/>
+  </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Administration" hidden="false" id="c032-356f-d9ca-b1e4" exportable="false">
+      <categoryLinks>
+        <categoryLink targetId="ct-Faction-Bavaria" id="c6cb-39a0-0fbd-18a8" primary="false" name="Faction: Bavaria"/>
+        <categoryLink targetId="3ec4-cc2b-ded5-7f95" id="0b24-5e43-1a07-4f69" primary="false" name="Show: Bavaria"/>
+        <categoryLink targetId="78b9-9166-78b4-dc7d" id="47dd-3152-199a-d604" primary="true" name="Force Setup"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="false" id="5d84-13dc-185c-5698-min-min" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="false" id="5d84-13dc-185c-5698-min-max" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Allies Selector" hidden="false" id="892f-f0b7-9d88-9c25" type="selectionEntryGroup" targetId="4987-a768-84fa-de1d" sortIndex="2"/>
+        <entryLink import="true" name="Era Selector" hidden="false" id="e545-e021-09a6-0767" type="selectionEntryGroup" targetId="6a4f-df66-4997-ef80" sortIndex="1"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="BV Infanterie-Division" hidden="false" id="e327-25ed-1a9f-ecd7" type="selectionEntryGroup" targetId="082f-cff9-63d0-f285"/>
+    <entryLink import="true" name="BV Kavallerie-Division" hidden="false" id="9c1a-27c4-6c73-bb01" type="selectionEntryGroup" targetId="00ba-4d86-23bf-1af7"/>
+    <entryLink import="true" name="Force Commander" hidden="false" id="fe99-1860-6a60-41e3" type="selectionEntryGroup" targetId="a0d6-ee05-ad9c-aceb">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="237c-1231-a5be-7299"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cbb3-88d2-c4b3-9179"/>
+      </constraints>
+    </entryLink>
+  </entryLinks>
+</catalogue>

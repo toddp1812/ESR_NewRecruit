@@ -14,6 +14,9 @@
  * Every formation with an 'x' for a unit includes that unit in its selection list.
  * 
  */
+import Utils from "./utils2.js"; 
+const myUtils = new Utils();
+
 function splitLine ( _line ) {
   let returnVal;
   try { returnVal = _line.split( '\t'); 
@@ -38,26 +41,42 @@ function processFirstLine ( _line ) {
   return units;
 }
 
-function parseFactionUnits ( _rawFactionUnits ) {
-  
-  let factionUnits = [];
+function parseFactionUnits ( _catalog ) {
+
+  let myFactionUnits = [];
+  let myFactionRules = [];
   let rawUnit;
 
-  for ( rawUnit of _rawFactionUnits){
-    let unit = {
-      name: rawUnit.name,
-      id: rawUnit.id
-    };
-    factionUnits.push(unit);
-  }
-  return factionUnits;
-}
+  // look through all units defined in the links
+  // there are none in this catalog, all are imported from Units catalog.
+  //
+  let importIterator = _catalog.iterateAllImported();
+  let importData = importIterator.next();
+  while ( importData.done == false ) {
 
+    if( importData.value.isEntry() ) {
+      //console.log( "selection: ", importData.value.name, " id: ", importData.value.id );
+      let unit = {
+        name: importData.value.name,
+        id: importData.value.id
+     };
+     myFactionUnits.push(unit);
+    } else if (importData.value.isRule() ) {
+      let rule = {
+        name: importData.value.name,
+        id: importData.value.id
+      };
+      myFactionRules.push(rule);
+    }
+    
+    importData = importIterator.next();
+    
+  } 
 
-function generateID () {
- 
-  let myID = crypto.randomUUID();
-  return myID;
+  return {
+    units: myFactionUnits, 
+    rules: myFactionRules
+  };
 }
 
 
@@ -80,7 +99,7 @@ function getNextUnit( _unit, _factionUnits, _sortIndex ) {
   // make a record and return it
   const thisUnit = {
     name: factionUnit.name,
-    id: generateID(),
+    id: myUtils.generateID(),
     targetId: factionUnit.id,
     type: "entryLink",
     hidden: "false",
@@ -92,26 +111,37 @@ return( thisUnit );
 } // getNextUnit()
 
 
-function getForceCommander ( _factionUnits ) {
+function getForceCommander ( _factionUnits, _catalog,_faction, _factionType ) {
 
   // add in the formation commander
   const myCommander = getNextUnit( "Commander", _factionUnits);
 
+  const showThisFactionId = myUtils.getShowFactionId( _catalog, _faction );
+  
   const forceCommander = {
     type: "unit",
     name: "Force Commander",
+    hidden: "true",
     subType: "unit-group",
     categoryLinks: [
-      {name: "Force Commander", primary: "true", targetId: "ct-ForceCommander", id: generateID() }
+      {name: "Force Commander", primary: "true", targetId: "ct-ForceCommander", id: myUtils.generateID() },
+      {name: _faction, targetId: _factionType }
     ],
-    entryLinks: [ myCommander ]
+    entryLinks: [ myCommander ],
+    modifiers: [
+      {
+        type: "set", value:"false", field:"hidden", conditions: [
+          {type: "atLeast", value: "1", field: "selections", scope: "force", childId: showThisFactionId, shared: "true", includeChildSelections: "true" }
+        ]
+      }
+    ]
   };
 
   return forceCommander;
 
 } // getForceCommander() 
 
-function processNextLine ( _line, _units, _catalog, _factionUnits, _factionRules ) {
+function processNextLine ( _line, _units, _catalog, _factionUnits, _factionRules, _faction, _factionType ) {
 
   // 
   // get the data for this line
@@ -145,7 +175,7 @@ function processNextLine ( _line, _units, _catalog, _factionUnits, _factionRules
     const regexp = new RegExp(expression);
     const testString = items[2];
     if ( testString.match( regexp ) ) {
-      myRuleLinks.push( {name: rule.name, id: generateID(), hidden: "false", type: "rule", targetId: rule.id } );
+      myRuleLinks.push( {name: rule.name, id: myUtils.generateID(), hidden: "false", type: "rule", targetId: rule.id } );
     }
   }
 
@@ -186,12 +216,12 @@ function processNextLine ( _line, _units, _catalog, _factionUnits, _factionRules
     }
     const selectionEntry = {
       name: factionRule.name,
-      id: generateID(),
+      id: myUtils.generateID(),
       type: "upgrade",
       hidden: "false",
       import: "true",
-      infoLinks: [ {name: factionRule.name, import: "true", hidden: "false", type: "upgrade", targetId: factionRule.id, id: generateID() } ], 
-      constraints: [ { type: "max", value: "1", field: "selections", scope: "force", shared: "true", includeChildSelections: "false", id: generateID() }]
+      infoLinks: [ {name: factionRule.name, import: "true", hidden: "false", type: "upgrade", targetId: factionRule.id, id: myUtils.generateID() } ], 
+      constraints: [ { type: "max", value: "1", field: "selections", scope: "force", shared: "true", includeChildSelections: "false", id: myUtils.generateID() }]
     };
 
     if (found == true) {
@@ -209,8 +239,10 @@ function processNextLine ( _line, _units, _catalog, _factionUnits, _factionRules
       name: "Scenario Rules",
       hidden: "false",
       selectionEntries: factionScenarioRules,
-      id: generateID()
+      id: myUtils.generateID()
     }; 
+  
+  const showThisFactionId = myUtils.getShowFactionId( _catalog, _faction );;
 
 
   const formation = {
@@ -218,36 +250,38 @@ function processNextLine ( _line, _units, _catalog, _factionUnits, _factionRules
     name: items[0],
     subType: "unit-group",
     categoryLinks: [
-      {name: "Formation", primary: "true", targetId: "ct-Formation" }
+      {id: myUtils.generateID(), name: "Formation", primary: "true", targetId: "ct-Formation" },
+      {id: myUtils.generateID(), name: _faction, targetId: _factionType }
     ],
+    hidden: "true",
     infoLinks: myRuleLinks, 
     entryLinks: myUnitList,
-    selectionEntryGroups: [ thisScenarioRuleSelectionGroup ]
-  };
-
+    selectionEntryGroups: [ thisScenarioRuleSelectionGroup ],
+      modifiers: [
+        {
+          type: "set", value:"false", field:"hidden", conditions: [
+            {type: "atLeast", value: "1", field: "selections", scope: "force", childId: showThisFactionId, shared: "true", includeChildSelections: "true" }
+          ]
+        }
+      ]
+  }
+  
   return formation;
 
 }
 
-function  processEachLine( _payload, _catalog, _faction, _factionRules ) {
+function  processEachLine( _payload, _catalog, _faction, _factionType ) {
 
-  let formationArray = [];
-
-  //
-  // if there is currently anything in Selection Entries
-  //
-  try {
-    _catalog.selectionEntries.length = 0;
-  } catch (e) {
-    // there are no selection entries, so keep going
-  }
 
   //
   // get each selection entry (units and commander) into
   // an array we can use to link units into the formation
   //
   let factionUnits = [];
-  factionUnits = parseFactionUnits (_catalog.sharedSelectionEntries);
+  let formationArray = [];
+  let factionRules = [];
+
+  ({units: factionUnits, rules: factionRules} = parseFactionUnits (_catalog));
 
   // loop over each line in the _payload and process each line
   //
@@ -268,7 +302,7 @@ function  processEachLine( _payload, _catalog, _faction, _factionRules ) {
       if ( line == "" ) {
         continue; // skip blank lines
       }
-      let nextFormation = processNextLine( line, units, _catalog, factionUnits, _factionRules);
+      let nextFormation = processNextLine( line, units, _catalog, factionUnits, factionRules, _faction, _factionType);
       if ( nextFormation !== null) {
         formationArray.push( nextFormation);
       }
@@ -276,10 +310,22 @@ function  processEachLine( _payload, _catalog, _faction, _factionRules ) {
     lineCount++;
   }
 
-  // add the force commander
-  formationArray.push(getForceCommander( factionUnits ));
-
-      // make a record and return it
+  // if there is already a force commander, skip this step
+  //
+  let found = false;
+  for ( let mySelectionEntry of _catalog.sharedSelectionEntryGroups ) {
+    if( mySelectionEntry.name == "Force Commander"){
+      found = true;
+      break;
+    }
+  }
+  if (!found) {
+    // add the force commander
+    formationArray.push(getForceCommander( factionUnits, _catalog, _faction, _factionType ));
+  }
+  
+  
+  // make a record and return it
   console.log( "Processed " + (lineCount -1) + " " + _faction + " formations.");
   notify({ text: "Processed " + (lineCount -1) + " " + _faction + " formations.", type: "success" });
 
@@ -294,8 +340,6 @@ export default {
   {
     paste(e, payload) {
 
-      const factionRules = [];
-
       if (typeof payload !== "string") return
 
       const selected = $store.get_selected();
@@ -303,53 +347,51 @@ export default {
       // this should be the Root Selection Entries
       if (selected.parentKey !== "catalogue") {
         notify({ text: "Select the Root Selection Entries item", type: "error" });
+        console.error( "Select the Root Selection Entries item" );
+
         return;
       }
 
 
       const cat = selected;
-      // game system == gst
-      const gst = cat.gameSystem;
-      const faction = cat.name;
+ 
 
-        switch (faction) {
-          case "French":
-          case "Russian":
-          case "English":
-          case "Austrian":
-              // expected faction names
-              // nothing to do
-            break;
-
-          default:
-            console.error( "Faction: ", faction, "does not have a valid commander mapping.");
-            return;
-            break;
-        }
-
-      if (selected.name !== faction) {
-        notify({ text: "Select the Root Selection Entries item", type: "error"})
+      const catalogFile = selected.name;
+      if (catalogFile !== "Formations") {
+        notify({ text: "Select the only the Formations catalog", type: "error" });
+        console.error( "Select the only the Formations catalog" );
         return;
       }
 
-      factionRules.length = 0;
-      if (cat.sharedRules !== undefined) {
-        for ( const rule of cat.sharedRules ) {
-          factionRules.push(rule);
-        } 
+      // 
+      // determine which faction we are pasting in
+      //
+      let myFactionType;
+      let faction;
+
+      // skip first line
+      let pasteLines = payload.split( '\r\n' );
+
+      const factionAbbrevation = myUtils.getFactionAbbreviationFromString( pasteLines[1] );
+      if ( factionAbbrevation == null ) {
+        console.error( "Could not parse first line for faction, line: " + pasteLines[1] );
+        notify({ text: "Could not parse first line for faction.", type: "error" });
+
+        return;
       }
-      if (gst.sharedRules !== undefined ) {
-        for ( const rule of gst.sharedRules ) {
-            factionRules.push(rule);
-          }
+      let factionData = myUtils.getFactionFromAbbreviation( factionAbbrevation );
+      if (!factionData) {
+        return;
       }
- 
-      let formations = processEachLine( payload, selected, faction, factionRules );
+      faction = factionData.faction;
+      myFactionType = factionData.type;
+
+      let formations = processEachLine( payload, selected, faction, myFactionType );
 
       //console.log( selected );
       
       for ( let thisFormation of formations ) {
-        $store.add_node( "selectionEntries", selected, thisFormation );
+        $store.add_node( "sharedSelectionEntryGroups", selected, thisFormation );
       }
 
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7f87-593d-b0cc-5dd8" name="Austrian" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7f87-593d-b0cc-5dd8" name="Austria" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Commander" hidden="false" id="7ba0-3f2a-70da-2817" collective="true">
       <selectionEntryGroups>
@@ -1788,14 +1788,14 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile name="Position-Batterien" typeName="Unit" typeId="pt-Unit">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
-            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
-            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">3</characteristic>
-            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">4</characteristic>
-            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">3</characteristic>
-            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1 1/2</characteristic>
-            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
-            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+            <characteristic name="____Ploy____" typeId="ct-Unit-Ploy">12 | 10 | 5</characteristic>
+            <characteristic name="___Deploy___" typeId="ct-Unit-Deploy">8 | 4 | –</characteristic>
+            <characteristic name="Thr-LR" typeId="ct-Unit-Thr-LR">3</characteristic>
+            <characteristic name="Thr-SR" typeId="ct-Unit-Thr-SR">4</characteristic>
+            <characteristic name="Thr-C" typeId="ct-Unit-Thr-C">3</characteristic>
+            <characteristic name="Coh-O" typeId="ct-Unit-Coh-O">1 1/2</characteristic>
+            <characteristic name="Coh-E" typeId="ct-Unit-Coh-E">1/4</characteristic>
+            <characteristic name="Trait" typeId="ct-Unit-Trait"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1811,14 +1811,14 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile name="Brigade-Batterien" typeName="Unit" typeId="pt-Unit">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
-            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
-            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
-            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
-            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
-            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
-            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
-            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+            <characteristic name="____Ploy____" typeId="ct-Unit-Ploy">12 | 10 | 5</characteristic>
+            <characteristic name="___Deploy___" typeId="ct-Unit-Deploy">8 | 4 | –</characteristic>
+            <characteristic name="Thr-LR" typeId="ct-Unit-Thr-LR">2</characteristic>
+            <characteristic name="Thr-SR" typeId="ct-Unit-Thr-SR">2</characteristic>
+            <characteristic name="Thr-C" typeId="ct-Unit-Thr-C">2</characteristic>
+            <characteristic name="Coh-O" typeId="ct-Unit-Coh-O">1</characteristic>
+            <characteristic name="Coh-E" typeId="ct-Unit-Coh-E">1/4</characteristic>
+            <characteristic name="Trait" typeId="ct-Unit-Trait"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1834,14 +1834,14 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile name="Leitche Artillerie" typeName="Unit" typeId="pt-Unit">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
-            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
-            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">1</characteristic>
-            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
-            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">1/2</characteristic>
-            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
-            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
-            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+            <characteristic name="____Ploy____" typeId="ct-Unit-Ploy">12 | 10 | 5</characteristic>
+            <characteristic name="___Deploy___" typeId="ct-Unit-Deploy">8 | 4 | –</characteristic>
+            <characteristic name="Thr-LR" typeId="ct-Unit-Thr-LR">1</characteristic>
+            <characteristic name="Thr-SR" typeId="ct-Unit-Thr-SR">1</characteristic>
+            <characteristic name="Thr-C" typeId="ct-Unit-Thr-C">1/2</characteristic>
+            <characteristic name="Coh-O" typeId="ct-Unit-Coh-O">1</characteristic>
+            <characteristic name="Coh-E" typeId="ct-Unit-Coh-E">1/4</characteristic>
+            <characteristic name="Trait" typeId="ct-Unit-Trait"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1857,14 +1857,14 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile name="Würst Artillerie" typeName="Unit" typeId="pt-Unit">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
-            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
-            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
-            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
-            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
-            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
-            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
-            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+            <characteristic name="____Ploy____" typeId="ct-Unit-Ploy">15 | 12 | 6</characteristic>
+            <characteristic name="___Deploy___" typeId="ct-Unit-Deploy">10 | 5 | –</characteristic>
+            <characteristic name="Thr-LR" typeId="ct-Unit-Thr-LR">2</characteristic>
+            <characteristic name="Thr-SR" typeId="ct-Unit-Thr-SR">2</characteristic>
+            <characteristic name="Thr-C" typeId="ct-Unit-Thr-C">2</characteristic>
+            <characteristic name="Coh-O" typeId="ct-Unit-Coh-O">1</characteristic>
+            <characteristic name="Coh-E" typeId="ct-Unit-Coh-E">1/4</characteristic>
+            <characteristic name="Trait" typeId="ct-Unit-Trait"/>
           </characteristics>
         </profile>
       </profiles>

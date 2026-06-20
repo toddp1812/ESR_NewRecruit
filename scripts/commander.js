@@ -14,24 +14,42 @@
  * -- * -- all historical commanders go here
  * 
  */
-function toCommanderProfiles(Data, Rules) {
+import Utils from "./utils2.js"; 
+
+const myUtils = new Utils();
+
+function toCommanderProfiles(_data, _historicalCommander, _rules, _factionName, _factionType) {
+
+
+    // remove extra quotes from multiline import from excel
+    
+    let expression = /^\"/;
+    let regexp = new RegExp(expression);
+    let testString = _data.Traits;
+    testString = testString.replace( regexp,"" );
+    expression = /\"$/;
+    regexp = new RegExp(expression);
+    testString = testString.replace( regexp, "");
+    _data.Traits = testString;
+    
 
     let model = {
+        id: myUtils.generateID(),
         parentKey: "profiles",
-        name: Data.Name,
+        name: _data.Name,
         typeName: "Commander",
         typeId: "pt-CmdUnit",
         characteristics: [
-            {typeId: "ct-CmdUnit-Avail-Formation", $text: Data.AvailabilityFormation},
-            {typeId: "ct-CmdUnit-Avail-Force", $text: Data.AvailabilityForce},
-            {typeId: "ct-CmdUnit-Avail-Army", $text: Data.AvailabilityArmy},
-            {typeId: "ct-CmdUnit-Cmd", $text: Data.Command},
-            {typeId: "ct-CmdUnit-Thr-LR", $text: Data.RangedLR},
-            {typeId: "ct-CmdUnit-Thr-SR", $text: Data.RangedSR},
-            {typeId: "ct-CmdUnit-Thr-C", $text: Data.Contact},
-            {typeId: "ct-CmdUnit-Coh" ,$text: Data.Cohesion},
+            {typeId: "ct-CmdUnit-Avail-Formation", $text: _data.AvailabilityFormation},
+            {typeId: "ct-CmdUnit-Avail-Force", $text: _data.AvailabilityForce},
+            {typeId: "ct-CmdUnit-Avail-Army", $text: _data.AvailabilityArmy},
+            {typeId: "ct-CmdUnit-Cmd", $text: _data.Command},
+            {typeId: "ct-CmdUnit-Thr-LR", $text: _data.RangedLR},
+            {typeId: "ct-CmdUnit-Thr-SR", $text: _data.RangedSR},
+            {typeId: "ct-CmdUnit-Thr-C", $text: _data.Contact},
+            {typeId: "ct-CmdUnit-Coh" ,$text: _data.Cohesion},
             {typeId: "ct-CmdUnit-Move", $text: "24 | 18 | 9"},
-            {typeId: "ct-CmdUnit-Trait", $text: Data.Traits }
+            {typeId: "ct-CmdUnit-Trait", $text: _data.Traits }
         ],
     }
 
@@ -39,44 +57,60 @@ function toCommanderProfiles(Data, Rules) {
     //
     // calculate the threat and Cohesion
     //
-    let Threat = +Data.RangedLR + +Data.RangedSR + +Data.Contact;
-    let Cohesion = +Data.Cohesion;
+    let Threat = +_data.RangedLR + +_data.RangedSR + +_data.Contact;
+    let Cohesion = +_data.Cohesion;
 
     if ( Number.isNaN(Threat)) {
       Threat = 6;
+      console.error( "Threat value is hard coded for commander: ", _data.Name, " because of an error in the source data. Check the RangedLR, RangedSR and Contact fields for non-numeric characters." );
+      notify({ text: "Threat value is hard coded for commander: " + _data.Name + " because of an error in the source data. Check the RangedLR, RangedSR and Contact fields for non-numeric characters.", type: "error" });
     }
     
     if (Number.isNaN(Cohesion)) {
       Cohesion = 2;
+      console.error( "Cohesion value is hard coded for commander: ", _data.Name, " because of an error in the source data. Check the Cohesion field for non-numeric characters." );
+      notify({ text: "Cohesion value is hard coded for commander: " + _data.Name + " because of an error in the source data. Check the Cohesion field for non-numeric characters.", type: "error" });
     }
 
     const ruleLinks = [];
     //
     // loop over rules and see what needs to be included and linked
     // 
-    for ( const rule of Rules ) {
+    for ( const rule of _rules ) {
       const expression = rule.name+";";
       const regexp = new RegExp(expression);
-      const testString = Data.Traits;
+      const testString = _data.Traits;
       if ( testString.match( regexp ) ) {
-        ruleLinks.push( {name: rule.name, hidden: "false", type: "rule", targetId: rule.id } );
+        ruleLinks.push( {id: myUtils.generateID(), name: rule.name, hidden: "false", type: "rule", targetId: rule.id } );
       }
     }
 
     // 
     // entry for the commander unit entry
     // 
+    const catalog = _historicalCommander.getCatalogue();
+    const showThisFactionId = myUtils.getShowFactionId( catalog, _factionName );
   
     let entry = {
+        id: myUtils.generateID(),
         parentKey: "selectionEntries",
-        name: Data.Name,
+        name: _data.Name,
         type: "model",
+        hidden: "true",
         profiles: [model],
         costs: [
           {typeId: "esr-ct-Cohesion", name: "Cohesion", value: Cohesion} ,
           {typeId: "esr-ct-Threat", name: "Threat", value: Threat}
         ],
-        infoLinks: ruleLinks
+        infoLinks: ruleLinks,
+        categoryLinks:  [ {id: myUtils.generateID(), name: _factionName, primary: "true", targetId: _factionType } ],
+        modifiers: [
+          {
+            type: "set", value:"false", field:"hidden", conditions: [
+              {type: "atLeast", value: "1", field: "selections", scope: "force", childId: showThisFactionId, shared: "true", includeChildSelections: "true" }
+            ]
+          }
+        ]
       }
 
     return entry;
@@ -86,55 +120,47 @@ function toCommanderProfiles(Data, Rules) {
 //
 // returns the number of successfully converted elements
 //
-function tokenizeLine ( line, results ) {
+function tokenizeLine ( _line, _results ) {
 
-  const tokens = [ "Card", "Name", "AvailabilityFormation", "AvailabilityForce", "AvailabilityArmy", "Command", 
+  const tokens = [ "Nation", "Name", "AvailabilityFormation", "AvailabilityForce", "AvailabilityArmy", "Command", 
     "RangedLR", "RangedSR","Contact", "Cohesion", "Traits" ];
 
   let count = 0;
   let items = [];
 
 
-  items = line.split(/\t/);
+  items = _line.split(/\t/);
 
   tokens.map( (token) => { 
     //console.log( token );
-    results[ token ] = items[ count++];
+    _results[ token ] = items[ count++];
     
     } );
 
-  if( results.Name == "" ) {
+  if( _results.Name == "" ) {
     count = -1;
-  } else if( results.AvailabilityArmy == "Rated 3" ) {
+  } else if( _results.AvailabilityArmy == "Rated 3" ) {
     count = -1;
-  } else if ( results.AvailabilityFormation == "Availability") {
+  } else if ( _results.AvailabilityFormation == "Availability") {
     count = -1;
   }
 
   return count;
 }
 
-function processCommander(CommanderResults, HistoricalCommander, Rules) {
-    
-  if (HistoricalCommander.name !== "Historical Commander" ) {
+function processCommander(_commanderResults, _historicalCommander, _rules, _factionName, _factionType) {
+
+  if (_historicalCommander.name !== "Historical Commander" ) {
     console.error( "The historical commander element reference was not passed, possibly the wrong selection?");
     return;
   }
 
-  //
-  // remove any commanders who are currently there
-  //
-  try { 
-    HistoricalCommander.selectionEntries.length = 0;
-  } catch (e) {
-    // nothing to do, the selectionEntries have not been added yet
-  }
-    
+   
   
   // loop over all commander results and add them to the Historical commander selections
-  for ( const commander of CommanderResults ) {
-    let profile = toCommanderProfiles( commander, Rules );
-    $store.add_node( "selectionEntries", HistoricalCommander, profile );
+  for ( const commander of _commanderResults ) {
+    let profile = toCommanderProfiles( commander, _historicalCommander, _rules, _factionName, _factionType );
+    $store.add_node( "selectionEntries", _historicalCommander, profile );
   }
 
   return null;
@@ -163,34 +189,36 @@ export default {
       const selected = $store.get_selected();
       if (selected.parentKey !== "sharedSelectionEntries") {
         notify({ text: "Select the (top-level) Commander selectionEntry", type: "error" });
+        console.error( "Select the (top-level) Commander selectionEntry" );
         return;
       }
       if (selected.name !== "Commander") {
         notify({ text: "Select the Commander selectionEntry", type: "error"})
+        console.error( "Select the Commander selectionEntry" ); 
         return;
       }
 
       const cat = selected.catalogue;
       // game system == gst
       const gst = cat.gameSystem;
-      const faction = cat.name;
 
-        switch (faction) {
-          case "French":
-          case "Russian":
-          case "English":
-          case "Austrian":
-              // expected faction names
-              // nothing to do
-            break;
 
-          default:
-            console.error( "Faction: ", faction, "does not have a valid commander mapping.");
-            return;
-            break;
-        }
+      if ( cat.name !== "Commanders") {
+        notify({ text: "Designed for use with the Commanders catalog only", type: "error"}); 
+        console.error( "Designed for use with the Commanders catalog only" );
+        return;
+      }
 
- 
+      const factionResults = myUtils.getFactionFromTSVLine( payload );
+      if ( factionResults == null ) {
+        notify({ text: "Could not part faction out of line: " + payload, type: "error" });
+        console.error( "Could not part faction out of line: " + payload );
+        return;
+      }
+        
+      const faction = factionResults.faction;
+      const factionType = factionResults.type;
+
       factionRules.length = 0;
       if (cat.sharedRules !== undefined) {
         for ( const rule of cat.sharedRules ) {
@@ -241,7 +269,7 @@ export default {
   
       }
           
-      processCommander( commanderResults, historicalCommander, factionRules );
+      processCommander( commanderResults, historicalCommander, factionRules, faction, factionType );
       
       console.log( "Processed " + number + " " + faction + " commanders.");
       

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1dc5-9a82-de60-f939" name="English" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1dc5-9a82-de60-f939" name="England" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Commander" hidden="false" id="48f6-945b-8be3-d89b">
       <selectionEntryGroups>
@@ -728,14 +728,14 @@ Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1814.&quot;</characteristic>
       <profiles>
         <profile name="9-pdr Royal Artillery" typeName="Unit" typeId="pt-Unit">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
-            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
-            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
-            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">3</characteristic>
-            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
-            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
-            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
-            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+            <characteristic name="____Ploy____" typeId="ct-Unit-Ploy">12 | 10 | 5</characteristic>
+            <characteristic name="___Deploy___" typeId="ct-Unit-Deploy">8 | 4 | –</characteristic>
+            <characteristic name="Thr-LR" typeId="ct-Unit-Thr-LR">2</characteristic>
+            <characteristic name="Thr-SR" typeId="ct-Unit-Thr-SR">3</characteristic>
+            <characteristic name="Thr-C" typeId="ct-Unit-Thr-C">2</characteristic>
+            <characteristic name="Coh-O" typeId="ct-Unit-Coh-O">1</characteristic>
+            <characteristic name="Coh-E" typeId="ct-Unit-Coh-E">1/4</characteristic>
+            <characteristic name="Trait" typeId="ct-Unit-Trait"/>
           </characteristics>
         </profile>
       </profiles>
@@ -751,14 +751,14 @@ Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1814.&quot;</characteristic>
       <profiles>
         <profile name="6-pdr Royal Artillery" typeName="Unit" typeId="pt-Unit">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
-            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
-            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
-            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
-            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
-            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
-            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
-            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+            <characteristic name="____Ploy____" typeId="ct-Unit-Ploy">12 | 10 | 5</characteristic>
+            <characteristic name="___Deploy___" typeId="ct-Unit-Deploy">8 | 4 | –</characteristic>
+            <characteristic name="Thr-LR" typeId="ct-Unit-Thr-LR">2</characteristic>
+            <characteristic name="Thr-SR" typeId="ct-Unit-Thr-SR">2</characteristic>
+            <characteristic name="Thr-C" typeId="ct-Unit-Thr-C">2</characteristic>
+            <characteristic name="Coh-O" typeId="ct-Unit-Coh-O">1</characteristic>
+            <characteristic name="Coh-E" typeId="ct-Unit-Coh-E">1/4</characteristic>
+            <characteristic name="Trait" typeId="ct-Unit-Trait"/>
           </characteristics>
         </profile>
       </profiles>
@@ -774,14 +774,14 @@ Flirts with Death; -1 in Leader Fate, +2 if Harmed, 1814.&quot;</characteristic>
       <profiles>
         <profile name="6-pdr Royal Horse Artillery" typeName="Unit" typeId="pt-Unit">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
-            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
-            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
-            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
-            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
-            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
-            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
-            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+            <characteristic name="____Ploy____" typeId="ct-Unit-Ploy">15 | 12 | 6</characteristic>
+            <characteristic name="___Deploy___" typeId="ct-Unit-Deploy">10 | 5 | –</characteristic>
+            <characteristic name="Thr-LR" typeId="ct-Unit-Thr-LR">2</characteristic>
+            <characteristic name="Thr-SR" typeId="ct-Unit-Thr-SR">2</characteristic>
+            <characteristic name="Thr-C" typeId="ct-Unit-Thr-C">2</characteristic>
+            <characteristic name="Coh-O" typeId="ct-Unit-Coh-O">1</characteristic>
+            <characteristic name="Coh-E" typeId="ct-Unit-Coh-E">1/4</characteristic>
+            <characteristic name="Trait" typeId="ct-Unit-Trait"/>
           </characteristics>
         </profile>
       </profiles>

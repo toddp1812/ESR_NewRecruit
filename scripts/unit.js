@@ -10,6 +10,11 @@
 //
 // create some helper functions to hold our math and comparisons
 //
+
+import Utils from "./utils2.js"; 
+
+const myUtils = new Utils();
+
 function calcLR (rangeLR){
   let retval;
 
@@ -67,7 +72,9 @@ function calcContact(contact) {
 }
 function calcCohOpen( COHOpen ){
   let retval;
-  if ( COHOpen == "1/2") {
+   if ( COHOpen == "1/4") {
+    retval = .25;
+   } else if ( COHOpen == "1/2") {
     retval = .5;
   } else if ( COHOpen == "1 1/2" ) {
     retval = 1.5;
@@ -124,13 +131,20 @@ function determineType ( UnitName, UnitType ) {
     // if it is artillery is it horse or is it position artillery
     // look for known names of horse artillery
     const knownHorseArtNames = [
-      "Artillería a Caballo",
-      "Konno-Artilleriyskaya",
-      "Donskoy Artilleriyskaya",
-      "Artillerie à Cheval de la Vieille Garde",
-      "6-pdr Artillerie à Cheval",
-      "6-pdr Royal Horse Artillery",
-      "Würst Artillerie"
+      "AU Würst Artillerie",
+      "BV Leichte Artillerie",
+      "BR 6-pdr Royal Horse Artillery",
+      "FR 6-pdr Artillerie à Cheval",
+      "FR Artillerie à Cheval de la Vieille Garde",
+      "PO Artyleria Koni",
+      "PR Artillerie zu Pferd",
+      "RU Konno-Artilleriyskaya",
+      "RU Donskoy Artilleriyskaya",
+      "SX Leichte Artillerie",
+      "SP Artillería a Caballo",
+      "WF Garde Artillerie zu Pferd",
+      "Wü Artillerie zu Pferd"
+
     ];
     // default to position artillery
     retval = UNIT_TYPE.PositionArtilleryType;
@@ -174,18 +188,24 @@ function calcPloyed ( unitName, unitType ){
 }
 
 function calcDeployed (unitName, unitType ){
-  const deployedInfArt = "8 | 4 | 4";
+  const deployedInf = "8 | 4 | 4";
   const deployedCav = "10 | 5 | 5";
+  const deployedArt = "8 | 4 | –";
+  const deployedHrsArt = "10 | 5 | –";
   let retval;
 
   switch ( determineType(unitName, unitType) ) {
     case UNIT_TYPE.InfantryType:
+      retval = deployedInf;
+      break;
     case UNIT_TYPE.PositionArtilleryType:
-      retval = deployedInfArt;
+      retval = deployedArt;
       break;
     case UNIT_TYPE.CavalryType:
-    case UNIT_TYPE.HorseArtilleryType:
       retval = deployedCav;
+      break;
+    case UNIT_TYPE.HorseArtilleryType:
+      retval = deployedHrsArt;
       break;
     default:
       notify({ text: "Unexpected unit type: " + unitType, type: "error" });      
@@ -196,61 +216,74 @@ function calcDeployed (unitName, unitType ){
 }
 
 
-function toUnitProfiles(Data, Rules) {
+function toUnitProfiles(_data, _selection, _rules, _faction, _factionType ) {
     //
     // calculate the threat and Cohesion
     //
-    let rangeLR = calcLR (Data.RangedLR);
-    let rangeSR = calcSR(Data.RangedSR);
-    let rangeContact = calcContact(Data.Contact);
-    let cohOpen = calcCohOpen( Data.CohesionOpen );
-    let cohEmbarrass = calcCohEmbarrass( Data.CohesionEmbarrass );
+    let rangeLR = calcLR (_data.RangedLR);
+    let rangeSR = calcSR(_data.RangedSR);
+    let rangeContact = calcContact(_data.Contact);
+    let cohOpen = calcCohOpen( _data.CohesionOpen );
+    let cohEmbarrass = calcCohEmbarrass( _data.CohesionEmbarrass );
     
-    let ployed = calcPloyed ( Data.Unit, Data.Type );
-    let deployed = calcDeployed (Data.Unit, Data.Type );
+    let ployed = calcPloyed ( _data.Unit, _data.Type );
+    let deployed = calcDeployed ( _data.Unit, _data.Type );
     
 
     let Threat = rangeLR + rangeSR + rangeContact;
     let Cohesion = Math.max( cohOpen, cohEmbarrass );
 
     if ( Number.isNaN(Threat)) {
-      log.error( "unexpected Threat value in : ", Data );
+      log.error( "unexpected Threat value in : ", _data );
       return;
     }
     
     if (Number.isNaN(Cohesion)) {
-      log.error( "unexpected Cohesion value in : ", Data );
+      log.error( "unexpected Cohesion value in : ", _data );
       return;
     }
 
 
+    // remove extra quotes from multiline import from excel
+    
+    let expression = /^\"/;
+    let regexp = new RegExp(expression);
+    let testString = _data.Traits;
+    testString = testString.replace( regexp,"" );
+    expression = /\"$/;
+    regexp = new RegExp(expression);
+    testString = testString.replace( regexp, "");
+    _data.Traits = testString;
+    
     let model = {
+        id: myUtils.generateID(),
         parentKey: "profiles",
-        name: Data.Unit,
+        name: _data.Unit,
         typeName: "Unit",
         typeId: "pt-Unit",
+        hidden: "false",
         characteristics: [
             {typeId: "ct-Unit-Ploy", $text: ployed},
             {typeId: "ct-Unit-Deploy", $text: deployed},
-            {typeId: "ct-Unit-Thr-LR", $text: Data.RangedLR},
-            {typeId: "ct-Unit-Thr-SR", $text: Data.RangedSR},
-            {typeId: "ct-Unit-Thr-C", $text: Data.Contact},
-            {typeId: "ct-Unit-Coh-O" ,$text: Data.CohesionOpen},
-            {typeId: "ct-Unit-Coh-E" ,$text: Data.CohesionEmbarrass},
-            {typeId: "ct-Unit-Trait", $text: Data.Traits }
+            {typeId: "ct-Unit-Thr-LR", $text: _data.RangedLR},
+            {typeId: "ct-Unit-Thr-SR", $text: _data.RangedSR},
+            {typeId: "ct-Unit-Thr-C", $text: _data.Contact},
+            {typeId: "ct-Unit-Coh-O" ,$text: _data.CohesionOpen},
+            {typeId: "ct-Unit-Coh-E" ,$text: _data.CohesionEmbarrass},
+            {typeId: "ct-Unit-Trait", $text: _data.Traits }
         ],
     }
 
     const ruleLinks = [];
     //
-    // loop over rules and see what needs to be included and linked
+    // loop over _rules and see what needs to be included and linked
     // 
-    for ( const rule of Rules ) {
+    for ( const rule of _rules ) {
       const expression = rule.name+":";
       const regexp = new RegExp(expression);
-      const testString = Data.Traits;
+      const testString = _data.Traits;
       if ( testString.match( regexp ) ) {
-        ruleLinks.push( {name: rule.name, hidden: "false", type: "rule", targetId: rule.id } );
+        ruleLinks.push( {id: myUtils.generateID(), name: rule.name, hidden: "false", type: "rule", targetId: rule.id } );
       }
     }
 
@@ -261,7 +294,7 @@ function toUnitProfiles(Data, Rules) {
     let myTargetId;
     let myTypeName;
     
-    switch( determineType (Data.Unit, Data.Type ) ){
+    switch( determineType ( _data.Unit, _data.Type ) ){
 
       case UNIT_TYPE.InfantryType:
         myTargetId = "ct-Infantry";
@@ -277,11 +310,15 @@ function toUnitProfiles(Data, Rules) {
         myTypeName = "Cavalry";
         break;
       default:
-        notify({ text: "Unexpected unit type: " + Data.Type, type: "error" });      
+        notify({ text: "Unexpected unit type: " + _data.Type, type: "error" });      
         return null;
     }
 
     typeLinks.push({name: myTypeName, primary: "true", targetId: myTargetId });
+    typeLinks.push({name: _faction, targetId: _factionType });
+
+    // get the child id of the show faction type
+    const showThisFactionId = myUtils.getShowFactionId( _selection, _faction );
 
     // 
     // entry for the commander unit entry
@@ -289,7 +326,8 @@ function toUnitProfiles(Data, Rules) {
   
     let entry = {
         parentKey: "selectionEntries",
-        name: Data.Unit,
+        id: myUtils.generateID(),
+        name: _data.Unit,
         type: "model",
         profiles: [model],
         costs: [
@@ -297,7 +335,15 @@ function toUnitProfiles(Data, Rules) {
           {typeId: "esr-ct-Threat", name: "Threat", value: Threat}
         ],
         infoLinks: ruleLinks,
-        categoryLinks: typeLinks
+        categoryLinks: typeLinks,
+        hidden: "true",
+        modifiers: [
+          {
+            type: "set", value:"false", field:"hidden", conditions: [
+              {type: "atLeast", value: "1", field: "selections", scope: "force", childId: showThisFactionId, shared: "true", includeChildSelections: "true" }
+            ]
+          }
+        ]
       }
 
     return entry;
@@ -327,33 +373,14 @@ function tokenizeLine ( line, results ) {
   return count;
 }
 
-function processUnit(UnitResults, SharedSelection, Rules) {
-    
-  //
-  // remove any units who are currently in the selection list
-  //
-  try { 
-
-    // skip the commander but delete everything else
-    const numberOfIterations = SharedSelection.sharedSelectionEntries.length;  
-    let deleteIndex = 0;
-    for ( let i =0; i < numberOfIterations; i++){
-      if ( SharedSelection.sharedSelectionEntries[deleteIndex].name !== "Commander") {
-        SharedSelection.sharedSelectionEntries.splice(deleteIndex,1);
-      } else {
-        deleteIndex++;
-      }
-    }
- 
-  } catch (e) {
-    // nothing to do, the selectionEntries have not been added yet
-  }
+function processUnit(_unitResults, _sharedSelection, _rules, _faction, _factionType) {
     
   
-  // loop over all commander results and add them to the Historical commander selections
-  for ( const unit of UnitResults ) {
-    let profile = toUnitProfiles( unit, Rules );
-    $store.add_node( "sharedSelectionEntries", SharedSelection, profile );
+  
+  // loop over all unit results and add them to the Historical commander selections
+  for ( const unit of _unitResults ) {
+    let profile = toUnitProfiles( unit, _sharedSelection, _rules, _faction, _factionType );
+    $store.add_node( "sharedSelectionEntries", _sharedSelection, profile );
   }
 
   return null;
@@ -383,25 +410,33 @@ export default {
 
       // game system == gst
       const gst = sharedSelection.gameSystem;
-      const faction = sharedSelection.name;
+      const catalogFile = sharedSelection.name;
+      if (catalogFile !== "Units") {
+        notify({ text: "Select the only the Units catalog", type: "error" });
+        return;
+      }
 
+      // 
+      // determine which faction we are pasting in
+      //
+      let myFactionType;
+      let faction;
+      const firstline = payload.split( '\r\n')[1];
+      const abbrevation = myUtils.getFactionAbbreviationFromString( firstline ); 
+      if ( !abbrevation ) {
+        console.error( "Could not parse first line for faction, line: " + firstline);
+        notify({ text: "Could not parse first line for faction.", type: "error" });
+        return;
+      } 
+      let factionRef = myUtils.getFactionFromAbbreviation( abbrevation );
+      if ( !factionRef ) {
+        console.error( "Could not parse first line for faction.");
+        notify({ text: "Could not parse first line for faction.", type: "error" });
+        return;
+      }
+      faction = factionRef.faction;
+      myFactionType = factionRef.type;
 
-        switch (faction) {
-          case "French":
-          case "Russian":
-          case "English":
-          case "Austrian":
-              // expected faction names
-              // nothing to do
-            break;
-
-          default:
-            notify( {text: "Item: " + faction + "does not have a valid unit mapping. Select the Shared Selection Entries top-level item.", type: "error"});
-            return;
-            break;
-        }
-
- 
       factionRules.length = 0;
       if (sharedSelection.sharedRules !== undefined) {
         for ( const rule of sharedSelection.sharedRules ) {
@@ -438,7 +473,7 @@ export default {
   
       }
           
-      processUnit( unitResults, sharedSelection, factionRules );
+      processUnit( unitResults, sharedSelection, factionRules, faction, myFactionType );
       
       console.log( "Processed " + number + " " + faction + " units.");
       

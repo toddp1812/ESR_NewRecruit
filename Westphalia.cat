@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="77e4-57a2-d173-f5ae" name="Westphalia" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="3" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="model" import="true" name="Leichtes Infanterie WF" hidden="false" id="1d57-510d-2a6c-7661">
+      <profiles>
+        <profile name="Leichtes Infanterie WF" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terrain or at range vs Built-up-Areas.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Lights" hidden="false" type="rule" targetId="d557-936b-57a3-c4f5"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Linieninfanterie WF" hidden="false" id="1bbc-5ab5-6ad9-8d42">
+      <profiles>
+        <profile name="Linieninfanterie WF" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="2.5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Husaren WF" hidden="false" id="3890-9c49-2e86-11c3">
+      <profiles>
+        <profile name="Husaren WF" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terrain.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="2"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Lights" hidden="false" type="rule" targetId="d557-936b-57a3-c4f5"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Cavalry" primary="true" targetId="ct-Cavalry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name=" Chevauxlégers Gardes WF" hidden="false" id="93ef-b031-3d72-f3f6">
+      <profiles>
+        <profile name=" Chevauxlégers Gardes WF" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">3</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terrain.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Lights" hidden="false" type="rule" targetId="d557-936b-57a3-c4f5"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Cavalry" primary="true" targetId="ct-Cavalry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Garde Jäger WF" hidden="false" id="d68f-e204-4dfa-c4ac">
+      <profiles>
+        <profile name="Garde Jäger WF" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">4</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terrain or at range vs Built-up-Areas.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="5"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Lights" hidden="false" type="rule" targetId="d557-936b-57a3-c4f5"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Jäger Karabinier WF" hidden="false" id="4637-0e33-2e67-1d0f">
+      <profiles>
+        <profile name="Jäger Karabinier WF" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">3</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">&quot;Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terrain or at range vs Built-up-Areas.
+Shock:&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Lights" hidden="false" type="rule" targetId="d557-936b-57a3-c4f5"/>
+        <infoLink name="Shock" hidden="false" type="rule" targetId="ff54-e2c4-8419-4718"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Grenadier Garde WF" hidden="false" id="f410-0533-add0-2299">
+      <profiles>
+        <profile name="Grenadier Garde WF" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">4</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O"/>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Shock:</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Shock" hidden="false" type="rule" targetId="ff54-e2c4-8419-4718"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Reserveartillerie WF" hidden="false" id="1bc6-f26d-0e7b-3a2a">
+      <profiles>
+        <profile name="Reserveartillerie WF" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic name="____Ploy____" typeId="ct-Unit-Ploy">12 | 10 | 5</characteristic>
+            <characteristic name="___Deploy___" typeId="ct-Unit-Deploy">8 | 4 | –</characteristic>
+            <characteristic name="Thr-LR" typeId="ct-Unit-Thr-LR">4</characteristic>
+            <characteristic name="Thr-SR" typeId="ct-Unit-Thr-SR">4</characteristic>
+            <characteristic name="Thr-C" typeId="ct-Unit-Thr-C">3</characteristic>
+            <characteristic name="Coh-O" typeId="ct-Unit-Coh-O">1</characteristic>
+            <characteristic name="Coh-E" typeId="ct-Unit-Coh-E">1/4</characteristic>
+            <characteristic name="Trait" typeId="ct-Unit-Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="11"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Artillery" primary="true" targetId="ct-Artillery"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Fußartillerie WF" hidden="false" id="c6db-33c6-3cbb-b872">
+      <profiles>
+        <profile name="Fußartillerie WF" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic name="____Ploy____" typeId="ct-Unit-Ploy">12 | 10 | 5</characteristic>
+            <characteristic name="___Deploy___" typeId="ct-Unit-Deploy">8 | 4 | –</characteristic>
+            <characteristic name="Thr-LR" typeId="ct-Unit-Thr-LR">2</characteristic>
+            <characteristic name="Thr-SR" typeId="ct-Unit-Thr-SR">2</characteristic>
+            <characteristic name="Thr-C" typeId="ct-Unit-Thr-C">2</characteristic>
+            <characteristic name="Coh-O" typeId="ct-Unit-Coh-O">1</characteristic>
+            <characteristic name="Coh-E" typeId="ct-Unit-Coh-E">1/4</characteristic>
+            <characteristic name="Trait" typeId="ct-Unit-Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="6"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Artillery" primary="true" targetId="ct-Artillery"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Garde Artillerie zu Pferd WF" hidden="false" id="ae61-4a22-3bb2-b79f">
+      <profiles>
+        <profile name="Garde Artillerie zu Pferd WF" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic name="____Ploy____" typeId="ct-Unit-Ploy">15 | 12 | 6</characteristic>
+            <characteristic name="___Deploy___" typeId="ct-Unit-Deploy">10 | 5 | –</characteristic>
+            <characteristic name="Thr-LR" typeId="ct-Unit-Thr-LR">2</characteristic>
+            <characteristic name="Thr-SR" typeId="ct-Unit-Thr-SR">2</characteristic>
+            <characteristic name="Thr-C" typeId="ct-Unit-Thr-C">2</characteristic>
+            <characteristic name="Coh-O" typeId="ct-Unit-Coh-O">1</characteristic>
+            <characteristic name="Coh-E" typeId="ct-Unit-Coh-E">1/4</characteristic>
+            <characteristic name="Trait" typeId="ct-Unit-Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="6"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Artillery" primary="true" targetId="ct-Artillery"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Sapeurs WF" hidden="false" id="94a6-b219-a57c-bba1">
+      <profiles>
+        <profile name="Sapeurs WF" typeName="Unit" typeId="pt-Unit">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">–</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">–</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E"/>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">&quot;Engineers: See Unit Traits.
+Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not reduced. Committing to a Threatened Battery recovers -1 Fatigue.&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="0"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Sapeurs" hidden="false" type="rule" targetId="1155-4386-acc9-f30b"/>
+        <infoLink name="Engineers" hidden="false" type="rule" targetId="e6d7-2276-f328-582e"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>

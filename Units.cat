@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="6290-43d0-a4f4-20f5" name="Units" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="3" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="model" import="true" name="BV Leichtes Infanterie" hidden="true" id="b8f17b9f-2e2e-4af8-8885-4f60454db434">
+      <profiles>
+        <profile id="eef7532c-c603-4bb3-884c-640d368a38fa" name="BV Leichtes Infanterie" typeName="Unit" typeId="pt-Unit" hidden="true">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">3</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terrain or at range vs Built-up-Areas.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+      </costs>
+      <infoLinks>
+        <infoLink id="954dd6e5-2cfd-4415-874c-f45e4008a275" name="Lights" hidden="false" type="rule" targetId="d557-936b-57a3-c4f5"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="false" targetId="ct-Infantry"/>
+        <categoryLink name="Faction: Bavaria" targetId="ct-Faction-Bavaria" primary="false"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3ec4-cc2b-ded5-7f95" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="BV Infanterie" hidden="true" id="dd3d950e-6e91-492e-8264-b95d8f6f8a1c">
+      <profiles>
+        <profile id="f8c4c0c2-889c-4821-96fb-6dbe3eecfa77" name="BV Infanterie" typeName="Unit" typeId="pt-Unit" hidden="true">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">3</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="3.5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+        <categoryLink name="Faction: Bavaria" targetId="ct-Faction-Bavaria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3ec4-cc2b-ded5-7f95" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="BV Dragoner" hidden="true" id="b49c5359-dc82-4101-9fc8-994467cc5f13">
+      <profiles>
+        <profile id="0ca75017-e0c3-4902-80d1-5924f9b7d71b" name="BV Dragoner" typeName="Unit" typeId="pt-Unit" hidden="true">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">3</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Cavalry" primary="true" targetId="ct-Cavalry"/>
+        <categoryLink name="Faction: Bavaria" targetId="ct-Faction-Bavaria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3ec4-cc2b-ded5-7f95" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="BV Chevauleger" hidden="true" id="762bc182-411b-4684-a6d4-c68372ff1ca2">
+      <profiles>
+        <profile id="96f55e8b-9d97-4119-98b6-d62145b01ca7" name="BV Chevauleger" typeName="Unit" typeId="pt-Unit" hidden="true">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terrain or at range vs Built-up-Areas.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="2"/>
+      </costs>
+      <infoLinks>
+        <infoLink id="5e822938-8795-4185-967e-9f9f77788648" name="Lights" hidden="false" type="rule" targetId="d557-936b-57a3-c4f5"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Cavalry" primary="true" targetId="ct-Cavalry"/>
+        <categoryLink name="Faction: Bavaria" targetId="ct-Faction-Bavaria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3ec4-cc2b-ded5-7f95" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="BV Reserveartillerie" hidden="true" id="edd363bd-a84d-477c-8e28-87a8102fcb4a">
+      <profiles>
+        <profile id="7513b04e-7ab2-41d8-9cad-6eaafca40b02" name="BV Reserveartillerie" typeName="Unit" typeId="pt-Unit" hidden="true">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">3</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">3</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Artillery" primary="true" targetId="ct-Artillery"/>
+        <categoryLink name="Faction: Bavaria" targetId="ct-Faction-Bavaria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3ec4-cc2b-ded5-7f95" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="BV Fußartillerie" hidden="true" id="c43455de-3ee2-4245-bf9c-59a0d1d2de8d">
+      <profiles>
+        <profile id="4d152326-aa5c-499b-8aa3-445c7c3ded31" name="BV Fußartillerie" typeName="Unit" typeId="pt-Unit" hidden="true">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="6"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Artillery" primary="true" targetId="ct-Artillery"/>
+        <categoryLink name="Faction: Bavaria" targetId="ct-Faction-Bavaria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3ec4-cc2b-ded5-7f95" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="BV Leichte Artillerie" hidden="true" id="84f4f58e-5b9e-478d-aaea-3ed8b4fd9b10">
+      <profiles>
+        <profile id="e90b50fa-e132-4717-8527-c6333e17b49c" name="BV Leichte Artillerie" typeName="Unit" typeId="pt-Unit" hidden="true">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | –</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="6"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Artillery" primary="true" targetId="ct-Artillery"/>
+        <categoryLink name="Faction: Bavaria" targetId="ct-Faction-Bavaria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3ec4-cc2b-ded5-7f95" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="BV Pioniere" hidden="true" id="2bd41586-630e-4e70-ad98-b5227849ec79">
+      <profiles>
+        <profile id="6c518c74-34b3-41e0-a04a-e907cce3a53e" name="BV Pioniere" typeName="Unit" typeId="pt-Unit" hidden="true">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">–</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">–</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">–</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Engineers: See Unit Traits.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="0"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink id="f1b6c4b6-d9fa-485f-a179-df0ab92326cb" name="Engineers" hidden="false" type="rule" targetId="e6d7-2276-f328-582e"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+        <categoryLink name="Faction: Bavaria" targetId="ct-Faction-Bavaria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3ec4-cc2b-ded5-7f95" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="AU Grenzer" hidden="true" id="76f003d1-788a-400b-97b6-3b0db57d8004">
+      <profiles>
+        <profile id="f201b5f1-00a5-45da-8ae4-66f4a6ce51e1" name="AU Grenzer" typeName="Unit" typeId="pt-Unit" hidden="false">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terrain or at range vs Built-up-Areas.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+      </costs>
+      <infoLinks>
+        <infoLink id="9ac0ad18-ac9c-4bf5-839d-ce5c2d22ec57" name="Lights" hidden="false" type="rule" targetId="d557-936b-57a3-c4f5"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+        <categoryLink name="Faction: Austria" targetId="ct-Faction-Austria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="AU Jägere" hidden="true" id="70ded52c-8c48-4d17-84d6-359f4cd4e9f0">
+      <profiles>
+        <profile id="5e248f2c-f43e-4640-9388-3e8b7dc20372" name="AU Jägere" typeName="Unit" typeId="pt-Unit" hidden="false">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">3</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terrain or at range vs Built-up-Areas.
+Shock: Threat is not reduced vs Built-up-Areas, Strong Points, or Walls.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+      </costs>
+      <infoLinks>
+        <infoLink id="3d8f1baf-d4f1-4cd6-ac14-3c4745b7b1d8" name="Lights" hidden="false" type="rule" targetId="d557-936b-57a3-c4f5"/>
+        <infoLink id="268bb923-6131-47e5-870f-73f348d16aba" name="Shock" hidden="false" type="rule" targetId="ff54-e2c4-8419-4718"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+        <categoryLink name="Faction: Austria" targetId="ct-Faction-Austria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="AU Infanterie" hidden="true" id="666af58f-591d-454d-ae63-8cee0aa28cad">
+      <profiles>
+        <profile id="022097f1-9de4-4ddd-ab62-b38a054fc0ca" name="AU Infanterie" typeName="Unit" typeId="pt-Unit" hidden="false">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">3</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="3.25"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+        <categoryLink name="Faction: Austria" targetId="ct-Faction-Austria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="AU Grenadiere" hidden="true" id="74c61c13-b09f-4e19-9b20-b3b3901d61cb">
+      <profiles>
+        <profile id="d3936fe3-b86d-428c-b555-6189f5d92c3c" name="AU Grenadiere" typeName="Unit" typeId="pt-Unit" hidden="false">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">4</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Shock: Threat is not reduced vs Built-up-Areas, Strong Points, or Walls.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="4.25"/>
+      </costs>
+      <infoLinks>
+        <infoLink id="f1fcbe43-cef1-44e5-b74e-478799ea8e05" name="Shock" hidden="false" type="rule" targetId="ff54-e2c4-8419-4718"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+        <categoryLink name="Faction: Austria" targetId="ct-Faction-Austria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="AU Landwehr" hidden="true" id="bc5ad8a8-e364-4d2f-9034-89c3cfefa2a4">
+      <profiles>
+        <profile id="92d4dbe8-b932-4cfa-aabd-f26a2081550c" name="AU Landwehr" typeName="Unit" typeId="pt-Unit" hidden="false">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">0</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Irregulars: Do not halt for dense terrain &amp; Threat is not reduced vs dense terrain, may not recover Fatigue in Combat Phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="0.5"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="2"/>
+      </costs>
+      <infoLinks>
+        <infoLink id="7c6332ae-a4df-49a0-8191-d73166d1db37" name="Irregulars" hidden="false" type="rule" targetId="aee1-9ced-dc20-75a9"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+        <categoryLink name="Faction: Austria" targetId="ct-Faction-Austria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="AU Pioneere" hidden="true" id="a1f859dd-79e6-4c1c-9da0-3fcbda299503">
+      <profiles>
+        <profile id="545a11fb-fd61-4892-a5f8-58e54a105f98" name="AU Pioneere" typeName="Unit" typeId="pt-Unit" hidden="false">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">–</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">–</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">–</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Engineers: See Unit Traits.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="0"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink id="0decddda-fbf5-4b72-ad5e-25591f6e5af7" name="Engineers" hidden="false" type="rule" targetId="e6d7-2276-f328-582e"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+        <categoryLink name="Faction: Austria" targetId="ct-Faction-Austria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="AU Sapeurs" hidden="true" id="49eddf64-ca68-46d1-8cfe-5457b038885f">
+      <profiles>
+        <profile id="e3b95baf-b2f2-4c46-851c-3865829d9787" name="AU Sapeurs" typeName="Unit" typeId="pt-Unit" hidden="false">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">–</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">–</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">–</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Engineers: See Unit Traits.
+Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not reduced.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="0"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink id="3d95f300-e2ee-49ef-88c8-70f08751ce99" name="Sapeurs" hidden="false" type="rule" targetId="1155-4386-acc9-f30b"/>
+        <infoLink id="18fa0116-31e6-4fb4-a8df-247e8f0fdc6a" name="Engineers" hidden="false" type="rule" targetId="e6d7-2276-f328-582e"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry" primary="true" targetId="ct-Infantry"/>
+        <categoryLink name="Faction: Austria" targetId="ct-Faction-Austria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="AU Kürassiere" hidden="true" id="925ed89f-9692-4447-9fe5-41ebc09e3645">
+      <profiles>
+        <profile id="c43c4b87-5647-4783-81e8-fa1f2d17eafb" name="AU Kürassiere" typeName="Unit" typeId="pt-Unit" hidden="false">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">4</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="4"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Cavalry" primary="true" targetId="ct-Cavalry"/>
+        <categoryLink name="Faction: Austria" targetId="ct-Faction-Austria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="AU Chevaulegers" hidden="true" id="a449cf5a-de58-42fe-b000-069a24ac8347">
+      <profiles>
+        <profile id="aaf27ce3-fe07-4873-8c65-dd401c3f5a27" name="AU Chevaulegers" typeName="Unit" typeId="pt-Unit" hidden="false">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="2"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Cavalry" primary="true" targetId="ct-Cavalry"/>
+        <categoryLink name="Faction: Austria" targetId="ct-Faction-Austria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="AU Dragoner" hidden="true" id="19cdac3e-7506-4d36-88a5-038753b41a55">
+      <profiles>
+        <profile id="292c74b9-d7d9-46b1-8408-4c1633ce76f2" name="AU Dragoner" typeName="Unit" typeId="pt-Unit" hidden="false">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="2"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Cavalry" primary="true" targetId="ct-Cavalry"/>
+        <categoryLink name="Faction: Austria" targetId="ct-Faction-Austria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="AU Husaren" hidden="true" id="8c5861fd-57cd-4829-9693-c3bbfc79b254">
+      <profiles>
+        <profile id="973d86c3-be75-4b5d-b14a-a3aaf621eb19" name="AU Husaren" typeName="Unit" typeId="pt-Unit" hidden="false">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">3</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terrain.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+      </costs>
+      <infoLinks>
+        <infoLink id="aff2514c-869c-46de-9cb6-a629d3afaba4" name="Lights" hidden="false" type="rule" targetId="d557-936b-57a3-c4f5"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Cavalry" primary="true" targetId="ct-Cavalry"/>
+        <categoryLink name="Faction: Austria" targetId="ct-Faction-Austria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="AU Ulanen" hidden="true" id="a4337441-578b-4235-89ac-2f07397e5357">
+      <profiles>
+        <profile id="bd8d7523-44db-40fb-a32b-efce75636351" name="AU Ulanen" typeName="Unit" typeId="pt-Unit" hidden="false">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">3</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait">Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terrain.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="3"/>
+      </costs>
+      <infoLinks>
+        <infoLink id="f14f37d9-c291-4649-bf9e-b4268866f3cf" name="Lights" hidden="false" type="rule" targetId="d557-936b-57a3-c4f5"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Cavalry" primary="true" targetId="ct-Cavalry"/>
+        <categoryLink name="Faction: Austria" targetId="ct-Faction-Austria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="AU Position-Batterien" hidden="true" id="df6b5250-4be9-4ee8-aa97-ac05124642d6">
+      <profiles>
+        <profile id="a4b10a05-dc3f-4d37-83ad-5d2af868d3fb" name="AU Position-Batterien" typeName="Unit" typeId="pt-Unit" hidden="false">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">3</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">4</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">3</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1 1/2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1.5"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Artillery" primary="true" targetId="ct-Artillery"/>
+        <categoryLink name="Faction: Austria" targetId="ct-Faction-Austria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="AU Brigade-Batterien" hidden="true" id="35da6410-0793-4f95-a09b-8846aa2bd5bf">
+      <profiles>
+        <profile id="84ed8443-0b27-4808-896f-2623e10b40b6" name="AU Brigade-Batterien" typeName="Unit" typeId="pt-Unit" hidden="false">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="6"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Artillery" primary="true" targetId="ct-Artillery"/>
+        <categoryLink name="Faction: Austria" targetId="ct-Faction-Austria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="AU Leitche Artillerie" hidden="true" id="490a86a3-8705-454f-9c30-5129ddb45482">
+      <profiles>
+        <profile id="cc1bdf94-7236-4287-b5e3-8cc4d006f00b" name="AU Leitche Artillerie" typeName="Unit" typeId="pt-Unit" hidden="false">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">1</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">1/2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="2.5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Artillery" primary="true" targetId="ct-Artillery"/>
+        <categoryLink name="Faction: Austria" targetId="ct-Faction-Austria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="AU Würst Artillerie" hidden="true" id="c99c1c98-2e56-40e8-8f6a-2734c6ea5669">
+      <profiles>
+        <profile id="c9363f58-d0e7-4d82-a4e6-4c158487d432" name="AU Würst Artillerie" typeName="Unit" typeId="pt-Unit" hidden="false">
+          <characteristics>
+            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | –</characteristic>
+            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
+            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
+            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
+            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
+            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
+            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost typeId="esr-ct-Cohesion" name="Cohesion" value="1"/>
+        <cost typeId="esr-ct-Threat" name="Threat" value="6"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Artillery" primary="true" targetId="ct-Artillery"/>
+        <categoryLink name="Faction: Austria" targetId="ct-Faction-Austria"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>

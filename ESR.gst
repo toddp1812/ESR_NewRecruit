@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ae43-676e-ac1e-c7a8" name="ESR" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Todd Pressley">
+<gameSystem id="ae43-676e-ac1e-c7a8" name="ESR" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Todd Pressley">
   <categoryEntries>
     <categoryEntry name="Formation" id="ct-Formation" hidden="false">
       <description>Main subordinate organization within a Force</description>
@@ -10,29 +10,55 @@
     <categoryEntry name="Army Commander" id="ct-ArmyCommander" hidden="false"/>
     <categoryEntry name="Formation Commander" id="ct-FormationCommander" hidden="false"/>
     <categoryEntry name="Artillery" id="ct-Artillery" hidden="false"/>
+    <categoryEntry name="Faction: Austria" id="ct-Faction-Austria" hidden="false"/>
+    <categoryEntry name="Faction: England" id="ct-Faction-England" hidden="false"/>
+    <categoryEntry name="Faction: France" id="ct-Faction-France" hidden="false"/>
+    <categoryEntry name="Faction: Prussia" id="ct-Faction-Prussia" hidden="false"/>
+    <categoryEntry name="Faction: Russia" id="ct-Faction-Russia" hidden="false"/>
+    <categoryEntry name="Faction: Spain" id="ct-Faction-Spain" hidden="false"/>
+    <categoryEntry name="Faction: Bavaria" id="ct-Faction-Bavaria" hidden="false"/>
+    <categoryEntry name="Faction: Italy" id="ct-Faction-Italy" hidden="false"/>
+    <categoryEntry name="Faction: Poland" id="ct-Faction-Poland" hidden="false"/>
+    <categoryEntry name="Faction: Saxony" id="ct-Faction-Saxony" hidden="false"/>
+    <categoryEntry name="Faction: Westphalia" id="ct-Faction-Westphalia" hidden="false"/>
+    <categoryEntry name="Faction: Württemberg" id="ct-Faction-Württemberg" hidden="false"/>
+    <categoryEntry name="Allies Selector" id="9b1a-98e8-e0ed-a119" hidden="false"/>
+    <categoryEntry name="Show: Bavaria" id="3ec4-cc2b-ded5-7f95" hidden="false"/>
+    <categoryEntry name="Show: England" id="4551-19c6-ebd9-ef3d" hidden="false"/>
+    <categoryEntry name="Show: France" id="a07e-3373-9f8a-d4da" hidden="false"/>
+    <categoryEntry name="Show: Italy" id="2f41-d909-404e-b848" hidden="false"/>
+    <categoryEntry name="Show: Poland" id="5bb4-8e70-27f6-ae3d" hidden="false"/>
+    <categoryEntry name="Show: Prussia" id="a97b-1b72-c619-9dcb" hidden="false"/>
+    <categoryEntry name="Show: Russia" id="cc63-8ca6-0fd0-2682" hidden="false"/>
+    <categoryEntry name="Show: Saxony" id="4f32-2860-a3d6-ac53" hidden="false"/>
+    <categoryEntry name="Show: Spain" id="7b86-e75a-627e-f018" hidden="false"/>
+    <categoryEntry name="Show: Westphalia" id="2579-f130-7874-6505" hidden="false"/>
+    <categoryEntry name="Show: Württemberg" id="a003-14d2-b554-aff8" hidden="false"/>
+    <categoryEntry name="Show: Austria" id="d1f8-f497-a419-5feb" hidden="false"/>
+    <categoryEntry name="Show Revolution!" id="ff61-b884-3bcc-d1a8" hidden="false"/>
+    <categoryEntry name="Show Early War" id="ed31-39ce-cc4e-763c" hidden="false"/>
+    <categoryEntry name="Show Late War" id="734a-e728-e036-8dc7" hidden="false"/>
+    <categoryEntry name="Show Mid War" id="24cc-3040-b915-f72a" hidden="false"/>
+    <categoryEntry name="Force Setup" id="78b9-9166-78b4-dc7d" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="ESR Force" id="esr-force" hidden="false" childForcesLabel="ESR Force">
       <categoryLinks>
+        <categoryLink name="Force Setup" hidden="false" id="d076-fd49-ff01-080f" targetId="78b9-9166-78b4-dc7d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cfba-be44-ecd5-1b11-min-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfba-be44-ecd5-1b11-min-max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink name="Force Commander" hidden="false" id="391e-b38b-7843-5ba8" targetId="ct-ForceCommander">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8300-0ad4-0649-bb57-min-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8300-0ad4-0649-bb57-min-max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8300-0ad4-0649-bb57-min-max-min-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8300-0ad4-0649-bb57-min-max-min-max"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Formation" hidden="false" id="4ef8-354d-bcdf-287b" targetId="ct-Formation">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4988-3c44-a64c-e0d1"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-    <forceEntry name="ESR Army" id="esr-army" hidden="false" childForcesLabel="ESR Force">
-      <categoryLinks>
-        <categoryLink name="Army Commander" hidden="false" id="bef0-51c1-f9ab-c70a" targetId="ct-ArmyCommander">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f5db-0306-10be-1c47-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5db-0306-10be-1c47-max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4988-3c44-a64c-e0d1-min"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -158,4 +184,188 @@ If this Formation has an active Defend [D] Directive may choose to not Withdraw 
       <description>A Formation with this Trait is highly proficient in deploying and can do so faster than most. The Formation rolls an additional +1D6 when deploying Unit form a ployed column.</description>
     </rule>
   </sharedRules>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Allies Selector" id="4987-a768-84fa-de1d" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Show: Austria" hidden="false" id="a20d-fb68-8bc6-60c5" defaultAmount="0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="218c-cc2f-640e-f4e7"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ct-Faction-Austria" shared="true" childName="Faction: Austria"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="d1f8-f497-a419-5feb" id="70ce-e9e1-c819-e42c" primary="false" name="Show: Austria"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Show: Bavaria" hidden="false" id="3352-f2db-32ac-86e7" defaultAmount="0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="086c-e6ad-baf1-14af"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ct-Faction-Bavaria" shared="true" childName="Faction: Bavaria"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="3ec4-cc2b-ded5-7f95" id="bad8-9d93-fd45-06b3" primary="false" name="Show: Bavaria"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Show: England" hidden="false" id="d689-4924-d429-1e96" defaultAmount="0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ab8-69c0-d16c-132b"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ct-Faction-England" shared="true" childName="Faction: England"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Show: France" hidden="false" id="b7f5-78f0-d055-ec14" defaultAmount="0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="626b-ba81-839a-7980"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ct-Faction-France" shared="true" childName="Faction: France"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Show: Italy" hidden="false" id="a85c-5253-4eff-eca6" defaultAmount="0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d05-4a5a-c420-33e0"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ct-Faction-Italy" shared="true" childName="Faction: Italy"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Show: Poland" hidden="false" id="ff09-1639-87c4-79c7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecc9-478c-71ce-3455"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ct-Faction-Poland" shared="true" childName="Faction: Poland"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Show: Prussia" hidden="false" id="4818-efd3-cd25-fd55">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fac-6b50-2ca4-d3dd"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ct-Faction-Prussia" shared="true" childName="Faction: Prussia"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Show: Russia" hidden="false" id="c9c4-2915-3c45-578f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f9a-f4c4-732c-a75d"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ct-Faction-Russia" shared="true" childName="Faction: Russia"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Show: Spain" hidden="false" id="7c90-68b6-6578-99d6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbcb-8cc8-a36d-4c7b"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ct-Faction-Spain" shared="true" childName="Faction: Spain"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Show: Westphalia" hidden="false" id="2d36-915e-2d1f-ee59">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec2f-d595-22f7-1124"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ct-Faction-Westphalia" shared="true" childName="Faction: Westphalia"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Show: Württemberg" hidden="false" id="979b-ef1a-33d3-0308">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f62-d008-6cda-a939"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ct-Faction-Württemberg" shared="true" childName="Faction: Württemberg"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Era Selector" id="6a4f-df66-4997-ef80" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Revolution!" hidden="true" id="d98d-1af3-2eca-eb5b" defaultAmount="0" step="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="085b-54bf-ff27-69d8"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="ff61-b884-3bcc-d1a8" id="2bc0-6f91-6fb9-47e2" primary="false" name="Show Revolution!"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Early War" hidden="false" id="c8ad-fcfa-039d-44b9" defaultAmount="0" step="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e79b-2d97-f327-b6c0"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="ed31-39ce-cc4e-763c" id="fe3e-4382-e0b9-a465" primary="false" name="Show Early War"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mid War" hidden="false" id="b658-8a7b-5f86-02da" defaultAmount="1" step="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d237-ef38-ce37-e4da"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="24cc-3040-b915-f72a" id="e21f-287b-17d3-8cd7" primary="false" name="Show Mid War"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Late War" hidden="true" id="9264-1b7c-cdcf-867a" defaultAmount="0" step="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ffc-a38e-3bbf-a409"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="734a-e728-e036-8dc7" id="df68-13cf-bb28-480d" primary="false" name="Show Late War"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ed4-4fbc-63ef-b7cd-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ed4-4fbc-63ef-b7cd-max"/>
+      </constraints>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </gameSystem>

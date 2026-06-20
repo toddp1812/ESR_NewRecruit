@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3efe-c588-6ea3-ca5e" name="Russian" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="3" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3efe-c588-6ea3-ca5e" name="Russia" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="3" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Commander" hidden="false" id="05d5-2a04-8ee7-c761" defaultAmount="1" step="0" collective="true">
       <selectionEntryGroups>
@@ -2348,14 +2348,14 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.&quot;</characte
       <profiles>
         <profile name="Batareynaya Artilleriyskaya" typeName="Unit" typeId="pt-Unit">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
-            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
-            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">4</characteristic>
-            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">4</characteristic>
-            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">3</characteristic>
-            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1 1/2</characteristic>
-            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
-            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+            <characteristic name="____Ploy____" typeId="ct-Unit-Ploy">12 | 10 | 5</characteristic>
+            <characteristic name="___Deploy___" typeId="ct-Unit-Deploy">8 | 4 | –</characteristic>
+            <characteristic name="Thr-LR" typeId="ct-Unit-Thr-LR">4</characteristic>
+            <characteristic name="Thr-SR" typeId="ct-Unit-Thr-SR">4</characteristic>
+            <characteristic name="Thr-C" typeId="ct-Unit-Thr-C">3</characteristic>
+            <characteristic name="Coh-O" typeId="ct-Unit-Coh-O">1 1/2</characteristic>
+            <characteristic name="Coh-E" typeId="ct-Unit-Coh-E">1/4</characteristic>
+            <characteristic name="Trait" typeId="ct-Unit-Trait"/>
           </characteristics>
         </profile>
       </profiles>
@@ -2371,14 +2371,14 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.&quot;</characte
       <profiles>
         <profile name="Legkaya Artilleriyskaya" typeName="Unit" typeId="pt-Unit">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
-            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
-            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">3</characteristic>
-            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">3</characteristic>
-            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
-            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
-            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
-            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+            <characteristic name="____Ploy____" typeId="ct-Unit-Ploy">12 | 10 | 5</characteristic>
+            <characteristic name="___Deploy___" typeId="ct-Unit-Deploy">8 | 4 | –</characteristic>
+            <characteristic name="Thr-LR" typeId="ct-Unit-Thr-LR">3</characteristic>
+            <characteristic name="Thr-SR" typeId="ct-Unit-Thr-SR">3</characteristic>
+            <characteristic name="Thr-C" typeId="ct-Unit-Thr-C">2</characteristic>
+            <characteristic name="Coh-O" typeId="ct-Unit-Coh-O">1</characteristic>
+            <characteristic name="Coh-E" typeId="ct-Unit-Coh-E">1/4</characteristic>
+            <characteristic name="Trait" typeId="ct-Unit-Trait"/>
           </characteristics>
         </profile>
       </profiles>
@@ -2394,14 +2394,14 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.&quot;</characte
       <profiles>
         <profile name="Konno-Artilleriyskaya" typeName="Unit" typeId="pt-Unit">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
-            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
-            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">3</characteristic>
-            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">3</characteristic>
-            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
-            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
-            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
-            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+            <characteristic name="____Ploy____" typeId="ct-Unit-Ploy">15 | 12 | 6</characteristic>
+            <characteristic name="___Deploy___" typeId="ct-Unit-Deploy">10 | 5 | –</characteristic>
+            <characteristic name="Thr-LR" typeId="ct-Unit-Thr-LR">3</characteristic>
+            <characteristic name="Thr-SR" typeId="ct-Unit-Thr-SR">3</characteristic>
+            <characteristic name="Thr-C" typeId="ct-Unit-Thr-C">2</characteristic>
+            <characteristic name="Coh-O" typeId="ct-Unit-Coh-O">1</characteristic>
+            <characteristic name="Coh-E" typeId="ct-Unit-Coh-E">1/4</characteristic>
+            <characteristic name="Trait" typeId="ct-Unit-Trait"/>
           </characteristics>
         </profile>
       </profiles>
@@ -2417,14 +2417,14 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.&quot;</characte
       <profiles>
         <profile name="Donskoy Artilleriyskaya" typeName="Unit" typeId="pt-Unit">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
-            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
-            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
-            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
-            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">2</characteristic>
-            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1/2</characteristic>
-            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/2</characteristic>
-            <characteristic typeId="ct-Unit-Trait" name="Trait">Irregulars: Do not halt for dense terrain, Threat is not reduced at contact, may not recover Fatigue during the Combat Phase.</characteristic>
+            <characteristic name="____Ploy____" typeId="ct-Unit-Ploy">15 | 12 | 6</characteristic>
+            <characteristic name="___Deploy___" typeId="ct-Unit-Deploy">10 | 5 | –</characteristic>
+            <characteristic name="Thr-LR" typeId="ct-Unit-Thr-LR">2</characteristic>
+            <characteristic name="Thr-SR" typeId="ct-Unit-Thr-SR">2</characteristic>
+            <characteristic name="Thr-C" typeId="ct-Unit-Thr-C">2</characteristic>
+            <characteristic name="Coh-O" typeId="ct-Unit-Coh-O">1/2</characteristic>
+            <characteristic name="Coh-E" typeId="ct-Unit-Coh-E">1/2</characteristic>
+            <characteristic name="Trait" typeId="ct-Unit-Trait">Irregulars: Do not halt for dense terrain, Threat is not reduced at contact, may not recover Fatigue during the Combat Phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>
