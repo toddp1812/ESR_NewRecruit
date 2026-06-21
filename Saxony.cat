@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="6663-6b30-3f85-91f3" name="Saxony" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="6" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Formations" id="0599-acea-7924-79bd" targetId="a7c4-66c8-1490-8a0e"/>
+  </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Administration" hidden="false" id="d407516b-ff5e-439b-ad43-30425b2dfbca" exportable="false">
+      <categoryLinks>
+        <categoryLink name="Force Setup" primary="true" targetId="78b9-9166-78b4-dc7d" id="8b37c134-08ee-435a-b3ff-52089698e9fc"/>
+        <categoryLink name="Show: Saxony" primary="false" targetId="4f32-2860-a3d6-ac53" id="90d6afd4-6c1a-4784-a0be-438f954dbf0c"/>
+        <categoryLink name="Faction: Saxony" primary="false" targetId="ct-Faction-Saxony" id="17156f9b-f64f-4bbc-8691-8e65f251c011"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="false" id="e36b1d3d-c1a3-4e7c-a13d-fff657515c9c" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="false" id="157556f2-8996-41a5-9ee2-2463b97adcf4" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink name="Allies Selector" import="true" hidden="false" id="e308c5dd-b053-4afa-b547-d1a4f6127259" type="selectionEntryGroup" targetId="4987-a768-84fa-de1d" sortIndex="2"/>
+        <entryLink name="Era Selector" import="true" hidden="false" id="dfc8a1c1-089b-4776-98f7-d4bb8bc78037" type="selectionEntryGroup" targetId="6a4f-df66-4997-ef80" sortIndex="1"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Force Commander" hidden="false" id="74b5b70c-89a1-4e06-a52d-98bced7ff948">
+      <categoryLinks>
+        <categoryLink id="d3c17a0b-e09b-4f7d-bab7-121a1bcc0107" name="Force Commander" targetId="ct-ForceCommander" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a557d1ab-dc3f-4fee-8a52-3ef11cee9495" name="Force Commander" import="true" type="selectionEntryGroup" targetId="d7cf-b60c-71f5-4608"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="AU Avant Garde" hidden="false" id="ead368b4-6f06-49c3-9e8e-7cb602a79e3d" type="selectionEntryGroup" targetId="7531-a8b3-2599-9701"/>
+    <entryLink import="true" name="AU Infanterie Division" hidden="false" id="fed96ef2-15da-41e9-9f46-c77bf4041aac" type="selectionEntryGroup" targetId="7545-c936-c022-bf08"/>
+    <entryLink import="true" name="AU Reservieren Division" hidden="false" id="427dffbc-aa1e-4d7b-857e-40f1b9959245" type="selectionEntryGroup" targetId="a0ab-0187-702c-2052"/>
+    <entryLink import="true" name="AU Leichte Kavallerie Brigade" hidden="false" id="48348575-24c9-4249-b6f4-a94b8dd2ddd2" type="selectionEntryGroup" targetId="4135-5953-19d1-6bbd"/>
+    <entryLink import="true" name="AU Kavallerie Brigade/Division" hidden="false" id="cfa0f436-f02d-4350-8e99-b1e4d968ad7b" type="selectionEntryGroup" targetId="a9cd-684c-4fa6-40d2"/>
+    <entryLink import="true" name="AU Kürassier Division" hidden="false" id="bc26fb9b-c8c2-4af3-a9d2-5e0c73eb68ac" type="selectionEntryGroup" targetId="1771-4a68-1c57-dc0a"/>
+    <entryLink import="true" name="AU Korps Reservieren" hidden="false" id="fe279826-2a6a-4ec0-9438-973601842bbe" type="selectionEntryGroup" targetId="0a31-3b2b-97b6-72e6"/>
+    <entryLink import="true" name="BV Infanterie-Division" hidden="false" id="8c79c97f-c2a3-4053-9452-e2d94f077d8d" type="selectionEntryGroup" targetId="b350-f7eb-a5a2-a793"/>
+    <entryLink import="true" name="BV Kavallerie-Division" hidden="false" id="e87bd6fb-3fe2-4246-bf7d-a273db8a498a" type="selectionEntryGroup" targetId="6eb1-6be3-e021-09f7"/>
+    <entryLink import="true" name="BV Leichtes Kavallerie-Division" hidden="false" id="09baf12f-763e-482e-99e9-0d6064f1f79a" type="selectionEntryGroup" targetId="7e24-77d1-0af2-bf64"/>
+    <entryLink import="true" name="BV Korps Reservieren" hidden="false" id="5b6b5962-40ff-4436-aba0-397f25cd52d0" type="selectionEntryGroup" targetId="d826-17ce-5bed-6ec4"/>
+    <entryLink import="true" name="BR Brigade" hidden="false" id="a1d424b0-df32-41ab-a5fd-c2186d64a90c" type="selectionEntryGroup" targetId="65db-5645-8564-554e"/>
+    <entryLink import="true" name="BR Infantry Division" hidden="false" id="1e1b7928-dd3c-427d-8894-8c431f1f75ef" type="selectionEntryGroup" targetId="7168-a998-3c09-534c"/>
+    <entryLink import="true" name="BR 1st Division" hidden="false" id="f28dcae8-d13b-456b-88c9-904820adb195" type="selectionEntryGroup" targetId="0b27-635f-f71d-4cdd"/>
+    <entryLink import="true" name="BR Light Division" hidden="false" id="5cd103d8-0a67-4b2b-b1c9-93847802108e" type="selectionEntryGroup" targetId="ce9f-042c-8915-1542"/>
+    <entryLink import="true" name="BR Light Cavalry Brigade" hidden="false" id="a6bebe67-7941-44c1-ae85-c5c848e9ca5c" type="selectionEntryGroup" targetId="52c4-72fa-1043-921a"/>
+    <entryLink import="true" name="BR Heavy Cavalry Brigade" hidden="false" id="1a70a120-bdf4-4d8e-9954-1168234aa9e2" type="selectionEntryGroup" targetId="b711-ba7f-9ac0-0806"/>
+    <entryLink import="true" name="BR Artillery Park" hidden="false" id="49febe8a-30e4-4646-b9eb-f6430dd00263" type="selectionEntryGroup" targetId="1be4-87b8-8b6a-6c82"/>
+    <entryLink import="true" name="FR Division d’Infanterie" hidden="false" id="2f9a6727-43c3-42f1-b211-7384adfba1aa" type="selectionEntryGroup" targetId="d4ab-26fc-cf1c-cf95"/>
+    <entryLink import="true" name="FR Brigade de Cavalerie Légère" hidden="false" id="d1c13562-6be9-4e98-b544-15c347b69a80" type="selectionEntryGroup" targetId="b26d-1ac7-ee25-51ed"/>
+    <entryLink import="true" name="FR Division de Cavalerie Légère" hidden="false" id="370090c3-119a-4db9-a1f1-61533e68e9bf" type="selectionEntryGroup" targetId="dc8e-064f-ecd0-1025"/>
+    <entryLink import="true" name="FR Division de Cavalerie/Dragons" hidden="false" id="8a97d7c8-0377-423f-911b-8b530cc17ec2" type="selectionEntryGroup" targetId="fa6d-afe0-1fa6-5d4a"/>
+    <entryLink import="true" name="FR Division de Grosse Cavalerie" hidden="false" id="5f89fa8d-ba6a-4535-b566-322e19a76992" type="selectionEntryGroup" targetId="7733-0fb1-a0f9-bec0"/>
+    <entryLink import="true" name="FR Corps Réserve/Parc d’Artillerie" hidden="false" id="fc5ffa60-7db3-4880-95b8-71988dbed6b1" type="selectionEntryGroup" targetId="e9ec-92a3-1083-7cbe"/>
+    <entryLink import="true" name="FR Division d’Infanterie de la Garde Impériale" hidden="false" id="8ff3cb7d-2bc8-4379-bfae-d4e65d24bdf1" type="selectionEntryGroup" targetId="f414-b30c-4de0-bc10"/>
+    <entryLink import="true" name="FR Brigade de Cavalerie de la Garde Impériale" hidden="false" id="6c38dd2d-9a78-4692-aafe-816c64940cea" type="selectionEntryGroup" targetId="15c2-bcf0-f7e1-56a0"/>
+    <entryLink import="true" name="IT Division di Fanteria" hidden="false" id="3d191240-411d-444b-95ad-88430c445b46" type="selectionEntryGroup" targetId="2d88-272e-ae8b-0e82"/>
+    <entryLink import="true" name="IT Brigata di Cavalleria" hidden="false" id="64f79025-f432-43c7-bcc8-066026733c94" type="selectionEntryGroup" targetId="3c98-31ad-c1e8-2ec6"/>
+    <entryLink import="true" name="PO Dywizja" hidden="false" id="afe301d0-7e01-4eca-8ddc-472f8262cedd" type="selectionEntryGroup" targetId="f7c2-ecc5-5d17-777f"/>
+    <entryLink import="true" name="PO Brygada Lekkiej Kawalerii" hidden="false" id="b2de5af7-1802-47bf-b5d6-17fd5e7ae38e" type="selectionEntryGroup" targetId="9ab9-d259-03b9-8130"/>
+    <entryLink import="true" name="RU Pehotnaya Diviziya" hidden="false" id="1546f1e4-8ff1-41c9-8e4a-46f2798362cf" type="selectionEntryGroup" targetId="0670-11f5-fe24-8e95"/>
+    <entryLink import="true" name="RU Grenaderskaya Diviziya" hidden="false" id="06c5719b-de7e-4d92-96a1-445f5d48ea76" type="selectionEntryGroup" targetId="1ae8-93f6-6684-de38"/>
+    <entryLink import="true" name="RU Svodno-Grenaderskaya Divizya" hidden="false" id="c5c83cb2-951b-46a9-beab-a9c5eb9d72da" type="selectionEntryGroup" targetId="eedb-4ec7-fac8-3b18"/>
+    <entryLink import="true" name="RU Legkaya Kavaleriya" hidden="false" id="6480cfbb-ffb2-450d-804a-b393f4881d3a" type="selectionEntryGroup" targetId="759e-39ec-975f-0e98"/>
+    <entryLink import="true" name="RU Kavaleriyskaya Brigada" hidden="false" id="11477de6-16df-4eb8-a1ed-c6c324ab9b91" type="selectionEntryGroup" targetId="c8e2-920b-4f80-e519"/>
+    <entryLink import="true" name="RU Kirasirskaya Brigada" hidden="false" id="ffb25f57-868f-462c-80ad-49edfe1b5139" type="selectionEntryGroup" targetId="607e-46bd-9bae-c363"/>
+    <entryLink import="true" name="RU Donskaya Kazachya Brigada" hidden="false" id="3e4ef274-c774-4a31-a3b1-568ebdb4173b" type="selectionEntryGroup" targetId="2a15-ed68-b0ef-0dca"/>
+    <entryLink import="true" name="RU Rezervnaya Artilleriya" hidden="false" id="93953070-adf8-4505-9552-152d9f79ebb7" type="selectionEntryGroup" targetId="85c2-d83f-4e42-fdbc"/>
+    <entryLink import="true" name="RU Leib-Gvardii Diviziya" hidden="false" id="3f90e7bd-6564-4518-ae0f-6f1e06f20c10" type="selectionEntryGroup" targetId="9148-ed5f-3574-37d4"/>
+    <entryLink import="true" name="RU Leib-Gvardii Kavaleriya Brigada" hidden="false" id="dacdbccf-a984-42f7-9efa-99cfc351f980" type="selectionEntryGroup" targetId="33ff-742c-dbfe-71c0"/>
+    <entryLink import="true" name="SX Infanterie-Division" hidden="false" id="1b628f4a-2cdf-4f68-bf20-73c2926987ac" type="selectionEntryGroup" targetId="d863-e0ac-ccbb-020d"/>
+    <entryLink import="true" name="SX Leichtes Kavallerie-Brigade" hidden="false" id="0979efcd-b255-4327-8a36-1197eae2083e" type="selectionEntryGroup" targetId="80c0-dab5-befe-2f43"/>
+    <entryLink import="true" name="SX Korps Reservieren" hidden="false" id="7778d3a5-2cc8-47c2-849c-0537472a9480" type="selectionEntryGroup" targetId="0b5a-9268-593c-9325"/>
+    <entryLink import="true" name="SP Vanguardia" hidden="false" id="21e30448-27a6-47d4-81df-7b2dc3ebb1e7" type="selectionEntryGroup" targetId="7562-eeb9-c264-9b45"/>
+    <entryLink import="true" name="SP División" hidden="false" id="52f67d49-6b85-4164-b4e3-2eb2de1b5c94" type="selectionEntryGroup" targetId="0b4b-f539-e8c4-e234"/>
+    <entryLink import="true" name="SP Caballería Brigada" hidden="false" id="ab188dec-bd7f-4c54-aaf0-477ca730911e" type="selectionEntryGroup" targetId="f5a6-6d73-cf23-0aa2"/>
+    <entryLink import="true" name="WF Infanterie-Division" hidden="false" id="1a2d003b-e576-4caa-a0fb-20465a74800e" type="selectionEntryGroup" targetId="6408-53d8-d3b2-7ff2"/>
+    <entryLink import="true" name="WF Leichtes Kavallerie-Brigade" hidden="false" id="0fca0fdf-5ff3-482a-a588-10480acb1fc1" type="selectionEntryGroup" targetId="a583-6b97-6b73-3bd9"/>
+    <entryLink import="true" name="Wü Infanterie Division" hidden="false" id="2eb64448-349a-433d-b26a-44fbc2d4be24" type="selectionEntryGroup" targetId="0594-276f-87be-68f5"/>
+    <entryLink import="true" name="Wü Kavallerie Division" hidden="false" id="b1e485ee-0b58-4246-a56c-bad27ee7aca1" type="selectionEntryGroup" targetId="e49f-46f4-5109-2a45"/>
+    <entryLink import="true" name="PR Infanterie Division" hidden="false" id="11deed68-c785-483f-8c1a-28c69fddebe4" type="selectionEntryGroup" targetId="1cf6-8d8a-32bd-3f2e"/>
+    <entryLink import="true" name="PR Kavallerie Division" hidden="false" id="c073036d-5ced-49d5-b72b-9892aecd3147" type="selectionEntryGroup" targetId="1a1f-44c1-1098-dff2"/>
+  </entryLinks>
+</catalogue>

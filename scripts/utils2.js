@@ -203,5 +203,135 @@ export default class Utils {
 
       return {faction: faction, type: myFactionType};
     }
+
+    isValidFaction( _faction ) {
+        let retval = false;
+
+        switch ( _faction) {
+            case "Austria":
+            case "England":
+            case "France":
+            case "Prussia":
+            case "Russia":
+            case "Spain":
+            case "Bavaria":
+            case "Italy":
+            case "Poland":
+            case "Saxony":
+            case "Westphalia":
+            case "Württemberg":
+                retval = true;
+            break;
+
+            case "French":
+            case "Russian":
+            case "English":
+            case "Austrian":
+            default:
+                console.error( "Faction: ", _faction, "does not have a valid commander mapping.");
+            break;
+        }
+
+        return retval;
+    }
+
+    getFactionAbbreviationFromName( _faction ) {
+        let retval = null;
+        switch ( _faction) {
+            case "Austria":
+                retval = "AU";
+                break;
+            case "England":
+                retval = "BR";
+                break;
+            case "France":
+                retval = "FR";
+                break;
+            case "Prussia":
+                retval = "PR";
+                break;
+            case "Russia":
+                retval = "RU";
+                break;
+            case "Spain":
+                retval = "SP";
+                break;
+            case "Bavaria":
+                retval = "BV";
+                break;
+            case "Italy":
+                retval = "IT";
+                break;
+            case "Poland":
+                retval = "PO";
+                break;
+            case "Saxony":
+                retval = "SX";
+                break;
+            case "Westphalia":
+                retval = "WF";
+                break;
+            case "Württemberg":
+                retval = "Wü";
+                break;
+            break;
+
+            case "French":
+            case "Russian":
+            case "English":
+            case "Austrian":
+            default:
+                console.error( "Faction: ", _faction, "does not have a valid commander mapping.");
+            break;
+        }   
+        return retval;
+    }
+
+    getCategoryTag (_catalog, _name ){
+
+        let retval = null;
+        let importIterator = _catalog.iterateAllImported();
+        let importData = importIterator.next();
+        while ( importData.done == false ) {
+
+            if( importData.value.isCategory() ) {
+                if ( importData.value.name == _name ) {
+                    retval = importData.value.id;
+                    break;
+                }
+            }
+            importData = importIterator.next();
+        } 
+        return retval;
+    }
+
+    // getGroupID()
+    // shared Selection Entry Group identifier, not anything that is already linked
+    // under Root Selection Entries
+    getGroupId (_catalog, _name ) {
+
+        let retval = null;
+
+
+        let importIterator = _catalog.iterateAllImported();
+        let importData = importIterator.next();
+        while ( importData.done == false ) {
+            if( importData.value.isGroup() ) {
+                if( importData.value.name == _name ) {
+                        // if this is a link already in the file, skip it
+                        // if importData has a targetId parameter, it is a link in our 
+                        // root selection entries, skip it
+                    if( typeof importData.value.targetId == 'undefined' ){ 
+                        retval = importData.value.id;
+                        break;
+                    }
+                
+                }
+            }
+            importData = importIterator.next();
+        } 
+
+        return retval;
+    }
 }
 

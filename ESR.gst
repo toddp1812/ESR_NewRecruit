@@ -228,6 +228,9 @@ If this Formation has an active Defend [D] Directive may choose to not Withdraw 
               </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="4551-19c6-ebd9-ef3d" id="7bde-31a8-dea5-6c93" primary="false" name="Show: England"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Show: France" hidden="false" id="b7f5-78f0-d055-ec14" defaultAmount="0">
           <constraints>
@@ -240,6 +243,9 @@ If this Formation has an active Defend [D] Directive may choose to not Withdraw 
               </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="a07e-3373-9f8a-d4da" id="aee8-7d1e-7373-5ea0" primary="false" name="Show: France"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Show: Italy" hidden="false" id="a85c-5253-4eff-eca6" defaultAmount="0">
           <constraints>
@@ -252,6 +258,9 @@ If this Formation has an active Defend [D] Directive may choose to not Withdraw 
               </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="2f41-d909-404e-b848" id="ae3d-a0e5-e48a-f9b7" primary="false" name="Show: Italy"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Show: Poland" hidden="false" id="ff09-1639-87c4-79c7">
           <constraints>
@@ -264,6 +273,9 @@ If this Formation has an active Defend [D] Directive may choose to not Withdraw 
               </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="5bb4-8e70-27f6-ae3d" id="b5a5-2683-f448-3ef8" primary="false" name="Show: Poland"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Show: Prussia" hidden="false" id="4818-efd3-cd25-fd55">
           <constraints>
@@ -276,6 +288,9 @@ If this Formation has an active Defend [D] Directive may choose to not Withdraw 
               </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="a97b-1b72-c619-9dcb" id="baf9-21fd-363c-ddb4" primary="false" name="Show: Prussia"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Show: Russia" hidden="false" id="c9c4-2915-3c45-578f">
           <constraints>
@@ -288,6 +303,9 @@ If this Formation has an active Defend [D] Directive may choose to not Withdraw 
               </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="cc63-8ca6-0fd0-2682" id="413c-f88f-6124-fb75" primary="false" name="Show: Russia"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Show: Spain" hidden="false" id="7c90-68b6-6578-99d6">
           <constraints>
@@ -300,6 +318,9 @@ If this Formation has an active Defend [D] Directive may choose to not Withdraw 
               </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="7b86-e75a-627e-f018" id="70ef-9e02-4316-623a" primary="false" name="Show: Spain"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Show: Westphalia" hidden="false" id="2d36-915e-2d1f-ee59">
           <constraints>
@@ -312,6 +333,9 @@ If this Formation has an active Defend [D] Directive may choose to not Withdraw 
               </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="2579-f130-7874-6505" id="9c11-5ca0-6260-e733" primary="false" name="Show: Westphalia"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Show: Württemberg" hidden="false" id="979b-ef1a-33d3-0308">
           <constraints>
@@ -324,6 +348,9 @@ If this Formation has an active Defend [D] Directive may choose to not Withdraw 
               </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="a003-14d2-b554-aff8" id="828e-2768-165d-7c2f" primary="false" name="Show: Württemberg"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>

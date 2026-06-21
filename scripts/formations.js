@@ -313,12 +313,21 @@ function  processEachLine( _payload, _catalog, _faction, _factionType ) {
   // if there is already a force commander, skip this step
   //
   let found = false;
-  for ( let mySelectionEntry of _catalog.sharedSelectionEntryGroups ) {
-    if( mySelectionEntry.name == "Force Commander"){
-      found = true;
-      break;
+  let selectionGroups = _catalog.sharedSelectionEntryGroups;
+  
+  if (selectionGroups.length !== 0) { // if there are no entries, ForceCommander cannot be one
+    for ( let forceData of selectionGroups ) {
+      if( forceData.isUnit() ) {
+          if ( forceData.name == "Force Commander" ) {
+              found = true;
+              break;
+          }
+      }
     }
+
   }
+
+
   if (!found) {
     // add the force commander
     formationArray.push(getForceCommander( factionUnits, _catalog, _faction, _factionType ));
@@ -361,6 +370,17 @@ export default {
         notify({ text: "Select the only the Formations catalog", type: "error" });
         console.error( "Select the only the Formations catalog" );
         return;
+      }
+
+        // make certain we can access all of the data
+      try {
+         let testList = selected.sharedSelectionEntryGroups;
+
+      }
+      catch (e) {
+        notify({ text: "Error processing formations, could not access shareSelectionEntryGroup data, please select the Share Selection Entry Group for paste", type: "error" });
+        console.error( "Error processing formations, could not access shareSelectionEntryGroup data, please select the Share Selection Entry Group for paste, error: ", e );
+        return null;
       }
 
       // 

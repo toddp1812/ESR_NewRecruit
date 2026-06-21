@@ -84,6 +84,7 @@ function toCommanderProfiles(_data, _genericCommander, _rules, _factionName, _fa
         parentKey: "selectionEntries",
         name: _data.Name,
         type: "model",
+        hidden: "true",
         profiles: [model],
         costs: [
           {typeId: "esr-ct-Cohesion", name: "Cohesion", value: Cohesion} ,

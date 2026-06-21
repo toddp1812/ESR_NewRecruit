@@ -422,7 +422,8 @@ export default {
       let myFactionType;
       let faction;
       const firstline = payload.split( '\r\n')[1];
-      const abbrevation = myUtils.getFactionAbbreviationFromString( firstline ); 
+      
+      const abbrevation = myUtils. getFactionAbbreviationFromString ( firstline ); 
       if ( !abbrevation ) {
         console.error( "Could not parse first line for faction, line: " + firstline);
         notify({ text: "Could not parse first line for faction.", type: "error" });
