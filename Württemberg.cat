@@ -81,5 +81,18 @@
     <entryLink import="true" name="Wü Kavallerie Division" hidden="false" id="47c06228-46ff-416f-8092-bee4f2c0aa03" type="selectionEntryGroup" targetId="e49f-46f4-5109-2a45"/>
     <entryLink import="true" name="PR Infanterie Division" hidden="false" id="b5fc9c90-0d4f-4a14-8bc3-d525b7ce3cda" type="selectionEntryGroup" targetId="1cf6-8d8a-32bd-3f2e"/>
     <entryLink import="true" name="PR Kavallerie Division" hidden="false" id="7be4207a-3636-4e7b-8e6e-3815522f8663" type="selectionEntryGroup" targetId="1a1f-44c1-1098-dff2"/>
+    <entryLink import="true" name="Wü Mixed" hidden="false" id="e8d4c06f-1a90-4404-a4de-96d90badb140" type="selectionEntryGroup" targetId="ab2c-f24d-4001-5cf7"/>
+    <entryLink import="true" name="WF Mixed" hidden="false" id="4d80dd3e-2e8d-429b-9622-d2d625fc0ffd" type="selectionEntryGroup" targetId="63f8-dc2a-d6ac-aaec"/>
+    <entryLink import="true" name="SP Mixed" hidden="false" id="6ecf4b07-b9e6-4f5f-9860-f05324af3ca9" type="selectionEntryGroup" targetId="a539-c85c-4938-691f"/>
+    <entryLink import="true" name="SX Mixed" hidden="false" id="c2d60129-da94-4ec8-81eb-2824a103a443" type="selectionEntryGroup" targetId="c1d1-4eca-6597-b587"/>
+    <entryLink import="true" name="RU Mixed" hidden="false" id="99248a25-4f0a-4cee-8f44-732db551fe22" type="selectionEntryGroup" targetId="7026-26c4-7243-ae0e"/>
+    <entryLink import="true" name="PR Mixed" hidden="false" id="f94bb2c8-65c4-4afa-aeba-10ee7075d9c6" type="selectionEntryGroup" targetId="50cd-026c-35e1-badd"/>
+    <entryLink import="true" name="PO Mixed" hidden="false" id="cff5b34f-b1c0-4cd3-a093-ea71384eab3d" type="selectionEntryGroup" targetId="ce43-0f75-6230-f885"/>
+    <entryLink import="true" name="IT Mixed" hidden="false" id="bdc788cd-1bb3-4cb1-ac40-32bb95627c99" type="selectionEntryGroup" targetId="a321-8f18-ca22-3b97"/>
+    <entryLink import="true" name="FR Mixed" hidden="false" id="d1730d0d-eadd-4282-99e4-5820c162e63e" type="selectionEntryGroup" targetId="e594-3441-2a26-3c1c"/>
+    <entryLink import="true" name="BR Mixed" hidden="false" id="88070832-8d0a-42f0-aad7-1190a36a5fd8" type="selectionEntryGroup" targetId="e409-8f4d-565f-87ce"/>
+    <entryLink import="true" name="BV Mixed" hidden="false" id="b9235c3c-3beb-4d00-bd78-7bd7bf7e7ce2" type="selectionEntryGroup" targetId="bc97-e085-1d5c-f56f"/>
+    <entryLink import="true" name="AU Mixed" hidden="false" id="b90a22bb-6edf-4542-afb3-a48ee4b8aeb8" type="selectionEntryGroup" targetId="d072-429d-9f4b-38fc"/>
+    <entryLink import="true" name="Allied Formation" hidden="false" id="ebb8a32f-ce77-419c-a89e-66ddfb4bb539" type="selectionEntryGroup" targetId="4954-42ea-29fb-b5a5"/>
   </entryLinks>
 </catalogue>
