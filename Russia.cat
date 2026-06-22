@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3efe-c588-6ea3-ca5e" name="Russia" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="3" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3efe-c588-6ea3-ca5e" name="Russia" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="3" revision="20" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="Close Enough" id="8a94-8939-f4ca-6472" hidden="false">
       <description>Neither triggers nor suﬀers Chistoi Russkoi penalties.</description>
@@ -98,5 +98,18 @@
     <entryLink import="true" name="Wü Kavallerie Division" hidden="false" id="9b345aa6-3adb-4567-a200-0f4dd3ae149b" type="selectionEntryGroup" targetId="e49f-46f4-5109-2a45"/>
     <entryLink import="true" name="PR Infanterie Division" hidden="false" id="27017951-f62b-4fd1-b3dc-1f6162fdf9ce" type="selectionEntryGroup" targetId="1cf6-8d8a-32bd-3f2e"/>
     <entryLink import="true" name="PR Kavallerie Division" hidden="false" id="d20f1c72-96d1-4652-b28d-535aba116ad4" type="selectionEntryGroup" targetId="1a1f-44c1-1098-dff2"/>
+    <entryLink import="true" name="Wü Mixed" hidden="false" id="5c13fc53-d63a-40b5-aa86-abd9fea9928a" type="selectionEntryGroup" targetId="ab2c-f24d-4001-5cf7"/>
+    <entryLink import="true" name="WF Mixed" hidden="false" id="d6387649-d4b1-4432-af11-60e1b128692f" type="selectionEntryGroup" targetId="63f8-dc2a-d6ac-aaec"/>
+    <entryLink import="true" name="SP Mixed" hidden="false" id="99d9bc56-7f3e-443d-b774-90a82bba7820" type="selectionEntryGroup" targetId="a539-c85c-4938-691f"/>
+    <entryLink import="true" name="SX Mixed" hidden="false" id="6af07e61-4fa1-43e5-9806-627623719c6f" type="selectionEntryGroup" targetId="c1d1-4eca-6597-b587"/>
+    <entryLink import="true" name="RU Mixed" hidden="false" id="da99729f-ec88-4cc8-a690-192666427880" type="selectionEntryGroup" targetId="7026-26c4-7243-ae0e"/>
+    <entryLink import="true" name="PR Mixed" hidden="false" id="c13eae42-7bc3-466a-b8ed-9d5cf1dd0cff" type="selectionEntryGroup" targetId="50cd-026c-35e1-badd"/>
+    <entryLink import="true" name="PO Mixed" hidden="false" id="0c3c64bc-af9a-4771-978d-9345233147eb" type="selectionEntryGroup" targetId="ce43-0f75-6230-f885"/>
+    <entryLink import="true" name="IT Mixed" hidden="false" id="1669d82d-4e02-46a4-8ad4-4bd5d0096a78" type="selectionEntryGroup" targetId="a321-8f18-ca22-3b97"/>
+    <entryLink import="true" name="FR Mixed" hidden="false" id="7644182e-f84f-4c44-a730-c86aeeea9cc9" type="selectionEntryGroup" targetId="e594-3441-2a26-3c1c"/>
+    <entryLink import="true" name="BR Mixed" hidden="false" id="097975ee-87b6-4645-82f7-9fc514e86741" type="selectionEntryGroup" targetId="e409-8f4d-565f-87ce"/>
+    <entryLink import="true" name="BV Mixed" hidden="false" id="3c53c442-2dcb-4857-ba04-5553d93debba" type="selectionEntryGroup" targetId="bc97-e085-1d5c-f56f"/>
+    <entryLink import="true" name="AU Mixed" hidden="false" id="a71b1d79-549a-48e8-bad3-e640c1d09ab9" type="selectionEntryGroup" targetId="d072-429d-9f4b-38fc"/>
+    <entryLink import="true" name="Allied Formation" hidden="false" id="12cc9efe-e11c-4f8c-a41b-5ab5a11d0d23" type="selectionEntryGroup" targetId="4954-42ea-29fb-b5a5"/>
   </entryLinks>
 </catalogue>
