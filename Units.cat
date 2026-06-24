@@ -5,7 +5,7 @@
       <profiles>
         <profile id="f201b5f1-00a5-45da-8ae4-66f4a6ce51e1" name="AU Grenzer" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
@@ -39,7 +39,7 @@
       <profiles>
         <profile id="5e248f2c-f43e-4640-9388-3e8b7dc20372" name="AU Jägere" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
@@ -75,7 +75,7 @@ Shock: Threat is not reduced vs Built-up-Areas, Strong Points, or Walls.</charac
       <profiles>
         <profile id="022097f1-9de4-4ddd-ab62-b38a054fc0ca" name="AU Infanterie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/4</characteristic>
@@ -106,7 +106,7 @@ Shock: Threat is not reduced vs Built-up-Areas, Strong Points, or Walls.</charac
       <profiles>
         <profile id="d3936fe3-b86d-428c-b555-6189f5d92c3c" name="AU Grenadiere" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/4</characteristic>
@@ -140,7 +140,7 @@ Shock: Threat is not reduced vs Built-up-Areas, Strong Points, or Walls.</charac
       <profiles>
         <profile id="92d4dbe8-b932-4cfa-aabd-f26a2081550c" name="AU Landwehr" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">0</characteristic>
@@ -174,7 +174,7 @@ Shock: Threat is not reduced vs Built-up-Areas, Strong Points, or Walls.</charac
       <profiles>
         <profile id="545a11fb-fd61-4892-a5f8-58e54a105f98" name="AU Pioneere" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -208,7 +208,7 @@ Shock: Threat is not reduced vs Built-up-Areas, Strong Points, or Walls.</charac
       <profiles>
         <profile id="e3b95baf-b2f2-4c46-851c-3865829d9787" name="AU Sapeurs" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -244,7 +244,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="c43c4b87-5647-4783-81e8-fa1f2d17eafb" name="AU Kürassiere" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -275,7 +275,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="aaf27ce3-fe07-4873-8c65-dd401c3f5a27" name="AU Chevaulegers" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -306,7 +306,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="292c74b9-d7d9-46b1-8408-4c1633ce76f2" name="AU Dragoner" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -337,7 +337,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="973d86c3-be75-4b5d-b14a-a3aaf621eb19" name="AU Husaren" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -371,7 +371,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="bd8d7523-44db-40fb-a32b-efce75636351" name="AU Ulanen" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -405,7 +405,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="a4b10a05-dc3f-4d37-83ad-5d2af868d3fb" name="AU Position-Batterien" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">3</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">4</characteristic>
@@ -436,7 +436,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="84ed8443-0b27-4808-896f-2623e10b40b6" name="AU Brigade-Batterien" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
@@ -467,7 +467,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="cc1bdf94-7236-4287-b5e3-8cc4d006f00b" name="AU Leitche Artillerie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">1</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
@@ -498,7 +498,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="c9363f58-d0e7-4d82-a4e6-4c158487d432" name="AU Würst Artillerie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
@@ -529,7 +529,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="deb5b02d-ac07-4333-99fd-4cffbcf8d74c" name="BV Leichtes Infanterie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
@@ -563,7 +563,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="d2a80c49-acc5-4682-a735-9661bfe9fcfd" name="BV Infanterie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
@@ -594,7 +594,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="be9552d4-26d5-447a-9a26-923170901dde" name="BV Dragoner" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -625,7 +625,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="5ed376c1-90fb-4f2c-81ac-6df2c310724e" name="BV Chevauleger" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -659,7 +659,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="8074a1f6-27af-4422-840c-768b7cdc269c" name="BV Reserveartillerie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">3</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">4</characteristic>
@@ -690,7 +690,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="6329114e-6e1e-4fce-8506-54a7f6ab4d7b" name="BV Fußartillerie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
@@ -721,7 +721,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="379d73cd-72cb-4cd0-9eb3-e47f2acbf83e" name="BV Leichte Artillerie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
@@ -752,7 +752,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="adcf101e-3687-49c7-b770-1ba4f700966b" name="BV Pioniere" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -786,7 +786,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="063cedd8-16eb-443b-a224-7895356a21e0" name="BR Foot Guards" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
@@ -820,7 +820,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="9e385173-cadc-424f-8ff9-4697227eaaf9" name="BR Life Guards" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -851,7 +851,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="52da0188-687a-4750-b3f6-a35cf3579dd4" name="BR Royal Horse Guards" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -882,7 +882,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="e4587a3f-2958-495c-bc84-4737a8896491" name="BR Light Infantry" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
@@ -916,7 +916,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="37debbfe-0ebb-4642-8043-ba82186b3371" name="BR Foot Infantry" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
@@ -947,7 +947,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="9a2a4c1b-6f29-4059-88fa-885d9336dd7b" name="BR Highland Foot Inf" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
@@ -981,7 +981,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="49d06833-5138-4707-8c34-1370113ccfd9" name="BR Fusilier Foot Infantry" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
@@ -1015,7 +1015,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="9d33d85c-7877-41da-a314-10ff69af7416" name="BR Rifles" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
@@ -1049,7 +1049,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="e864641d-a00d-4e71-804f-eed98849da5a" name="BR Dragoon Guards" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -1080,7 +1080,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="321c995f-3e3a-49ad-818a-782908f63b11" name="BR Dragoons" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -1111,7 +1111,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="1f17b479-9c2b-484b-a11a-451a9be2bd3f" name="BR Light Dragoons" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -1145,7 +1145,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="64d314f6-7dbf-4b5b-9edf-0c6dfb58f636" name="BR Hussars" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -1179,7 +1179,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="d4a27163-7702-4864-92e8-704e56099161" name="BR 9-pdr Royal Artillery" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">3</characteristic>
@@ -1210,7 +1210,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="c288e780-674d-4cb8-aefd-3e8612962dba" name="BR 6-pdr Royal Artillery" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
@@ -1241,7 +1241,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="d400d1c3-76b7-4c68-8388-5664d64b0b9b" name="BR 6-pdr Royal Horse Artillery" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
@@ -1272,7 +1272,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="0f3b385c-1f18-4c6d-8f86-eb9491114af7" name="FR 1er &amp; 2eme Grenadiers à Pied de la Garde Impériale" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
@@ -1308,7 +1308,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
       <profiles>
         <profile id="9ed937d0-9869-4a7a-9ef3-dfb0d57d0266" name="FR 1er &amp; 2eme Chasseurs à Pied de la Garde Impériale" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
@@ -1344,7 +1344,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
       <profiles>
         <profile id="7936ada8-9d0f-4f1b-af4d-a8fdf89dabf4" name="FR 3eme (Dutch) Grenadiers à Pied de la Garde Impériale" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
@@ -1380,7 +1380,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
       <profiles>
         <profile id="ff3f62ee-7e5c-4005-a4ac-1458ab96dde9" name="FR Fusilier-Grenadiers à Pied de la Garde Impériale" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
@@ -1416,7 +1416,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
       <profiles>
         <profile id="845644df-7f52-49ed-bf91-ba57d0bbb939" name="FR Fusilier-Chasseurs à Pied de la Garde Impériale" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
@@ -1452,7 +1452,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
       <profiles>
         <profile id="e02e51c4-581a-4d4e-b4db-d462a849f7bf" name="FR Tirailleurs de la Garde Impériale" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
@@ -1488,7 +1488,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
       <profiles>
         <profile id="d1770ddf-ca1c-4baa-a4ba-897d9eb88f6b" name="FR Voltigeurs de la Garde Impériale" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
@@ -1524,7 +1524,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
       <profiles>
         <profile id="21ee018a-0301-4fac-89e7-650f52ea69bd" name="FR Grenadiers à Cheval de la Garde Impériale" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -1555,7 +1555,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
       <profiles>
         <profile id="86093eab-7efb-431f-933e-5b24688257e2" name="FR Gendarmes d’élite de la Garde Impériale" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -1586,7 +1586,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
       <profiles>
         <profile id="a9bd6a63-a4b2-4330-8b26-e020ed641793" name="FR Dragons de la Garde Impériale" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -1617,7 +1617,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
       <profiles>
         <profile id="39c46ea8-415b-459f-b72f-5693a1fe7a71" name="FR Chasseurs à Cheval de la Garde Impériale" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -1651,7 +1651,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
       <profiles>
         <profile id="da9dd9d4-c679-440d-9ba1-579bd8a471de" name="FR Mameluks de la Garde Impériale" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -1685,7 +1685,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
       <profiles>
         <profile id="73225764-d4a8-4565-8afa-d2572b815f8f" name="FR Chevau-Légèr-Lanciers Polonais de la Garde Impériale" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -1719,7 +1719,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
       <profiles>
         <profile id="845ceb74-41c7-4bbb-9369-d482109aca8d" name="FR Chevau-Légèr-Lanciers Hollandais de la Garde Impériale" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -1753,7 +1753,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
       <profiles>
         <profile id="60e566f3-ff7a-4220-b7d4-8df023594e68" name="FR Réserve Artillerie de la Vieille Garde" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">4</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">4</characteristic>
@@ -1784,7 +1784,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
       <profiles>
         <profile id="104b78c9-6879-420e-99e3-52a4a061d517" name="FR Artillerie à Cheval de la Vieille Garde" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">3</characteristic>
@@ -1815,7 +1815,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
       <profiles>
         <profile id="29ceb470-0a78-4fb7-9da9-7de4e31b9442" name="FR Artillerie à Pied de la Vieille Garde" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">3</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">3</characteristic>
@@ -1846,7 +1846,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
       <profiles>
         <profile id="1143b9dd-d2d2-4a68-a909-df57270f67c2" name="FR Artillerie à Pied de la Jeune Garde" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">3</characteristic>
@@ -1877,7 +1877,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
       <profiles>
         <profile id="2863709e-bcae-4e86-81d0-5320b0db635b" name="FR Infanterie Légère" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
@@ -1913,7 +1913,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
       <profiles>
         <profile id="7d2a7ee9-d3c8-4b56-8397-b00bd5eacbba" name="FR Infanterie de Ligne" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
@@ -1922,6 +1922,23 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
             <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/2</characteristic>
             <characteristic typeId="ct-Unit-Trait" name="Trait"/>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="1" field="ct-Unit-Thr-SR" arg="1/2">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c8ad-fcfa-039d-44b9" shared="true" includeChildSelections="true" childName="Early War"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="ct-Unit-Coh-E" arg="1/2">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c8ad-fcfa-039d-44b9" shared="true" childName="Early War" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terrain or at range vs Built-up-Areas." field="ct-Unit-Trait" join="()">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c8ad-fcfa-039d-44b9" shared="true" includeChildSelections="true" childName="Early War"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <costs>
@@ -1939,12 +1956,23 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terra
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Lights" id="f31e-c9c9-4b2c-02d4" hidden="true" type="rule" targetId="d557-936b-57a3-c4f5">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c8ad-fcfa-039d-44b9" shared="true" includeChildSelections="true" childName="Early War"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="FR Sapeurs" hidden="true" id="5f6a66bc-b0e8-49c0-b40e-14b0197e35ff">
       <profiles>
         <profile id="1e972ace-5177-47db-ad12-79da34f2ab73" name="FR Sapeurs" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -1981,7 +2009,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="7b60103f-ee8d-4920-bef4-056095a1cd74" name="FR Carabiniers à Cheval" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -2012,7 +2040,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="732ab37b-70e0-496e-ac7c-1e6bc6a01ac4" name="FR Cuirassiers" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -2043,7 +2071,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="1b9dd460-8c7d-46b1-9649-14f4e3a56f59" name="FR Dragons" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -2074,7 +2102,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="83fb0073-eecd-446e-b949-fd96d3a44974" name="FR Chevau-Légèr-Lanciers" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -2108,7 +2136,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="f6ed3c14-13e3-407f-8107-5d00f9994262" name="FR Chasseurs à Cheval" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -2142,7 +2170,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="e8559b8f-3cc4-4b1a-82e1-fb712bb92745" name="FR Hussards" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -2176,7 +2204,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="5773e1c4-5775-4d19-a3f9-a7505fc3d097" name="FR 12-pdr Réserve d’Artillerie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">4</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">4</characteristic>
@@ -2207,7 +2235,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="f491bf63-916c-482a-9efd-7cb0dc272d0e" name="FR 6-pdr Artillerie à Pied" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">3</characteristic>
@@ -2238,7 +2266,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="be910719-be38-4b74-81a6-65ee0b253311" name="FR 6-pdr Artillerie à Cheval" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
@@ -2269,7 +2297,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="33da1d40-5a59-45e0-8132-947ef76e1c1d" name="IT Fanteria Leggera" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
@@ -2303,7 +2331,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="b60f8db2-75c6-4dee-9afc-9c6186f6bb6a" name="IT Fanteria di Linea" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">0</characteristic>
@@ -2334,7 +2362,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not red
       <profiles>
         <profile id="4a8a6f52-f9de-4b94-ba38-1b63d7d3a823" name="IT Zappatori" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -2370,7 +2398,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not re
       <profiles>
         <profile id="09d7c7c0-7346-412f-8c33-baf6127e988c" name="IT Dragoni" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -2401,7 +2429,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not re
       <profiles>
         <profile id="975f6bf5-9d63-426b-8483-d05a8f4b4ff6" name="IT Cacciatori a Cavallo" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -2435,7 +2463,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not re
       <profiles>
         <profile id="4bc26351-7554-4f19-aecd-982143486d74" name="IT Artigieria a Piedi" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">3</characteristic>
@@ -2466,7 +2494,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not re
       <profiles>
         <profile id="3ed6b677-dc76-49f2-92fb-94e694d82442" name="PO Piechoty" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
@@ -2500,7 +2528,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not re
       <profiles>
         <profile id="deb8c4fb-3624-441e-ad27-fd8c911b6eb9" name="PO Saperzy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -2536,7 +2564,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="5fa0a49a-4235-4218-b912-cb1cd6f37458" name="PO Kirasjerów" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -2567,7 +2595,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="753bfb43-96fb-432e-b0b4-7f21e2cf2ff2" name="PO Strzelców Koniach" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -2601,7 +2629,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="35117414-8262-40e0-ae92-ee2da3b776b9" name="PO Husarii" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -2635,7 +2663,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="14b1ae4e-7231-41a7-b3f4-d496d84c0a9b" name="PO Ulani" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -2669,7 +2697,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="3de95425-f8ea-4adb-a0b6-87433a582083" name="PO Artyleria Lekkich" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
@@ -2700,7 +2728,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="b0a7f74f-2a95-4461-bb77-6c67d5257691" name="PO Artyleria Koni" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
@@ -2731,7 +2759,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="f3271eb4-5852-4d76-87ea-6e2f08287266" name="PR Füsiliere" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
@@ -2740,6 +2768,18 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
             <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1</characteristic>
             <characteristic typeId="ct-Unit-Trait" name="Trait">Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terrain or at range vs Built-up-Areas.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="1/4" field="ct-Unit-Thr-SR">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c8ad-fcfa-039d-44b9" shared="true" includeChildSelections="true" childName="Early War"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1/4" field="ct-Unit-Coh-E">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c8ad-fcfa-039d-44b9" shared="true" includeChildSelections="true" childName="Early War"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <costs>
@@ -2765,7 +2805,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="050483e3-50a5-4149-9f68-d614380cbaf8" name="PR Jäger" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
@@ -2774,6 +2814,18 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
             <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/4</characteristic>
             <characteristic typeId="ct-Unit-Trait" name="Trait">Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terrain or at range vs Built-up-Areas.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="1/2" field="ct-Unit-Coh-O">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c8ad-fcfa-039d-44b9" shared="true" includeChildSelections="true" childName="Early War"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1/2" field="ct-Unit-Coh-E">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c8ad-fcfa-039d-44b9" shared="true" includeChildSelections="true" childName="Early War"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <costs>
@@ -2799,7 +2851,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="fcd37eef-ce48-406e-b659-d72b169cdb1e" name="PR Infanterie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
@@ -2808,6 +2860,18 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
             <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1</characteristic>
             <characteristic typeId="ct-Unit-Trait" name="Trait"/>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="1/4" field="ct-Unit-Thr-SR">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c8ad-fcfa-039d-44b9" shared="true" includeChildSelections="true" childName="Early War"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1/4" field="ct-Unit-Coh-E">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c8ad-fcfa-039d-44b9" shared="true" includeChildSelections="true" childName="Early War"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <costs>
@@ -2830,7 +2894,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="83d4e7f2-0fd3-4f76-af06-469a462d2782" name="PR Kürassiere" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -2861,7 +2925,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="09ce0c65-a4b5-4c52-8e70-3a2079c3fe54" name="PR Dragoner" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -2892,7 +2956,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="fc121445-0728-4bf2-b1e5-2dc165db2db0" name="PR Husaren" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -2926,7 +2990,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="d4f2e05a-efaf-4b94-9b73-acf302fdf298" name="PR Ulanen" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -2960,7 +3024,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="bbba5aa5-5209-4af4-b2c6-4eb5a9b9ffbd" name="PR Feld-Artillerie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">3</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">4</characteristic>
@@ -2991,7 +3055,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="8be54e1d-c35c-4ee4-b613-a21fbfaf5599" name="PR Leichte Artillerie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">3</characteristic>
@@ -3022,7 +3086,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="b59395e5-e39b-46ac-a9e9-a7dde6829dc5" name="PR Artillerie zu Pferd" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
@@ -3053,7 +3117,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="33d79482-9c82-4874-b07d-82fca460343a" name="RU Leib-Gvardii Yegerskiy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
@@ -3087,7 +3151,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="3ed60cce-4826-444e-8a5f-92a2c993d40b" name="RU Leib-Gvardii Pehotniy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
@@ -3121,7 +3185,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="668e3218-64ff-47bb-96d8-f0f6d6924918" name="RU Kavalergardskiy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -3152,7 +3216,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="3e2656dd-9cb9-45ad-900b-c8c08b805028" name="RU Leib-Gvardii Konnyy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -3183,7 +3247,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="8a7d4f1c-f6fe-420d-a08d-4154dd924adc" name="RU Yego Velichestva Leib-Kirasirskiy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -3214,7 +3278,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="0f587a60-f6b8-4c80-bd9e-14c66020df8c" name="RU Yeya Velichestva Kirasirskiy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -3245,7 +3309,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="f3797ff2-17df-4603-af17-a8001f340773" name="RU Leib-Gvardii Dragunskiy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -3276,7 +3340,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="96e6c561-1a83-430f-867e-293cf3352e92" name="RU Leib-Gvardii Ulanskiy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -3310,7 +3374,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="814e2b2d-41fb-41fe-8171-a8147a4f3fcf" name="RU Leib-Gvardii Gusarskiy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -3344,7 +3408,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="71df455f-0a3a-4061-addd-fa3b7636fbee" name="RU Leib-Gvardii Kazachiy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -3378,7 +3442,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="95f35757-e1f3-47d6-a7b8-ed04ffe965e8" name="RU Yegerskiy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
@@ -3412,7 +3476,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="7680a3e7-6888-4b1c-8e58-012db58a0f0a" name="RU Pehotniy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
@@ -3443,7 +3507,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="4237fe8b-685d-4d11-b1b3-d80cd6475b51" name="RU Grenaderskaya" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
@@ -3477,7 +3541,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="3d9bb2e4-eb4f-4ad6-8e10-9c7f0f352312" name="RU Svodno-Grenaderskaya" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
@@ -3511,7 +3575,7 @@ Sapeurs: Threat vs Built-up-Areas, Strongints, or Walls at contact is not reduc
       <profiles>
         <profile id="53e4a946-bf9e-4033-b445-4d31c67c711c" name="RU Pionery" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -3546,7 +3610,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="3e7540bd-294d-4136-b092-45494e8c3821" name="RU Kirasirskiy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -3577,7 +3641,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="b0ae0609-15d2-482a-b634-0bca2e2a8b29" name="RU Dragunskiy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -3608,7 +3672,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="f730de7e-5059-4e1e-ad32-45f46ec7a91c" name="RU Ulanskiy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -3642,7 +3706,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="6ee1465a-88a5-4bc1-b2a1-606df9774a51" name="RU Gusarskiy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -3676,7 +3740,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="60917e43-1f8d-4196-af13-6d9ff14fbf31" name="RU Donskoy Kazachiy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -3710,7 +3774,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="c18b9f5d-e269-4e16-97c9-2e7df0f96843" name="RU Konno-Tatarskiy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -3744,7 +3808,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="3ee65eac-0d81-4c4e-81b9-9b69c644a0dc" name="RU Bugskiy Kazachiy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -3778,7 +3842,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="ce1190dd-7431-4d87-9feb-ea124ad4d976" name="RU Bashkirskiy Konnyy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -3812,7 +3876,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="59a0d13f-7d7d-47b3-a1fd-8fa97acd47e9" name="RU Teptyar Kazachiy" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -3846,7 +3910,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="88c49c1e-aed8-4bd3-9c6a-f16a09b5f0b8" name="RU Batareynaya Artilleriyskaya" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">4</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">4</characteristic>
@@ -3877,7 +3941,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="48b53076-30a6-4554-9d5b-fde1a9976529" name="RU Legkaya Artilleriyskaya" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">3</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">3</characteristic>
@@ -3908,7 +3972,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="1ad33c7d-1c19-4c3f-ae77-8064a073bce9" name="RU Konno-Artilleriyskaya" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">3</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">3</characteristic>
@@ -3939,7 +4003,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="4da4c457-28f9-4d1a-aa6d-4c74ed2d8526" name="RU Donskoy Artilleriyskaya" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
@@ -3973,7 +4037,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="dc935399-d680-466f-bfdf-c80df73b6194" name="SX Leichtes Infanterie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -4007,15 +4071,27 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="4ba2d3b7-5697-4f85-81ab-5926859b4406" name="SX Infanterie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
-            <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
-            <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
-            <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
-            <characteristic typeId="ct-Unit-Thr-C" name="Thr-C">3</characteristic>
-            <characteristic typeId="ct-Unit-Coh-O" name="Coh-O">1</characteristic>
-            <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/2</characteristic>
-            <characteristic typeId="ct-Unit-Trait" name="Trait"/>
+            <characteristic name="___Ploy___" typeId="ct-Unit-Ploy">12 | 10 | 5</characteristic>
+            <characteristic name="___Deploy___" typeId="ct-Unit-Deploy">8 | 4 | 4</characteristic>
+            <characteristic name="Thr-LR" typeId="ct-Unit-Thr-LR">–</characteristic>
+            <characteristic name="Thr-SR" typeId="ct-Unit-Thr-SR">1/2</characteristic>
+            <characteristic name="Thr-C" typeId="ct-Unit-Thr-C">3</characteristic>
+            <characteristic name="Coh-O" typeId="ct-Unit-Coh-O">1</characteristic>
+            <characteristic name="Coh-E" typeId="ct-Unit-Coh-E">1/2</characteristic>
+            <characteristic name="Trait" typeId="ct-Unit-Trait"/>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="1/4" field="ct-Unit-Thr-SR" arg="1/2">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c8ad-fcfa-039d-44b9" shared="true" childName="Early War" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1/4" field="ct-Unit-Coh-E">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c8ad-fcfa-039d-44b9" shared="true" childName="Early War" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <costs>
@@ -4038,7 +4114,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="628f07ce-1e95-48a9-bffc-c32d1f269131" name="SX Grenadiere" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
@@ -4047,6 +4123,28 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
             <characteristic typeId="ct-Unit-Coh-E" name="Coh-E">1/2</characteristic>
             <characteristic typeId="ct-Unit-Trait" name="Trait">Shock: Threat is not reduced vs Built-up- Areas, Strong Points, or Walls.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="1/4" field="ct-Unit-Thr-SR" arg="1/2">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c8ad-fcfa-039d-44b9" shared="true" childName="Early War" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1 1/2" field="ct-Unit-Coh-O" arg="1">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c8ad-fcfa-039d-44b9" shared="true" childName="Early War" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1/4" field="ct-Unit-Coh-E" arg="1/2">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c8ad-fcfa-039d-44b9" shared="true" childName="Early War" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="ct-Unit-Thr-C" arg="3">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c8ad-fcfa-039d-44b9" shared="true" childName="Early War" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <costs>
@@ -4072,7 +4170,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="010e39e4-6b5d-4ace-b033-e2b73a75b057" name="SX Leib-Garde" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -4103,7 +4201,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="14cc9d86-378c-499c-a172-22498294ee5c" name="SX Kürassieren" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -4134,7 +4232,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="02aa2c6f-8318-46f8-bcbe-d308116f3c7a" name="SX Husaren" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -4168,7 +4266,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="481e997e-5532-4a7c-b809-b7bffc96784b" name="SX Chevauleger" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -4202,7 +4300,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="639b6f52-3d55-420e-910d-0ddf54b94ce8" name="SX Uhlanen" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -4236,7 +4334,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="68e036b6-2462-457f-87bc-ae585dda58af" name="SX Reserveartillerie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">3</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">4</characteristic>
@@ -4267,7 +4365,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="0502e588-964b-42c5-b83f-82f70dd296e8" name="SX Fußartillerie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
@@ -4298,7 +4396,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="24f82c25-ef55-40e0-ad76-c459819e8fed" name="SX Leichte Artillerie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
@@ -4329,7 +4427,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="3de58b9e-b8ce-4410-91ad-9da0227677ff" name="SX Pioniere" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -4363,7 +4461,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="26cc4745-f49b-443c-9104-1f15138063e0" name="SP Guardias de Infantería" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">0</characteristic>
@@ -4397,7 +4495,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="2537eb9d-bf28-4f9a-b36c-dbdd857fb8a9" name="SP El Vieja Ligero/Cazadores/Tiradores" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
@@ -4431,7 +4529,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="eb4cf6d8-b19a-462b-afb1-68c144b28b3a" name="SP El Vieja Tiradores" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/4</characteristic>
@@ -4465,7 +4563,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="11278356-d93a-47a2-a906-3037cbc7d43a" name="SP El Vieja Infantería de Linea" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">0</characteristic>
@@ -4496,7 +4594,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="b5239af0-5113-465d-b7b6-6fc10b44bf4a" name="SP El Vieja Infantería Marina" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">0</characteristic>
@@ -4527,7 +4625,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="e1467a5c-e1dd-4fc6-975d-f187c88a8083" name="SP El Vieja Infantería Extranjera" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">0</characteristic>
@@ -4561,7 +4659,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="049cf4bd-5831-47b4-ab1d-74862fa4d58a" name="SP El Vieja Infantería Colonial" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
@@ -4592,7 +4690,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="b9df1154-fdd6-4345-8750-b24e391890f4" name="SP Milicia Provincial Infantería" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/4</characteristic>
@@ -4623,7 +4721,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="6b820ffb-35e4-4482-a6cd-b1a24018a312" name="SP Milicia Urbanas" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">0</characteristic>
@@ -4657,7 +4755,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="a7c188d2-0c8a-44c4-8e86-a4b533e45f0f" name="SP Tercios Españoles de Tejas" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/4</characteristic>
@@ -4688,7 +4786,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="dd5309cd-9906-4470-9452-cdd8655ab040" name="SP Granaderos del General" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">0</characteristic>
@@ -4722,7 +4820,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="08d9a244-e526-4106-8cd4-44eeedce1d5c" name="SP Granaderos Provinciales" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">0</characteristic>
@@ -4756,7 +4854,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="fc8c128e-da42-4163-b0b5-f93117e25147" name="SP Húsares" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -4790,7 +4888,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="6c593467-e9c0-4845-a3ac-a5d63c248e89" name="SP Cazadores a Caballo" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -4824,7 +4922,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="d3793952-f906-46d3-a760-687d1d1137a4" name="SP Dragones" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -4855,7 +4953,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="e826d408-df7a-4425-9eaa-e5973f67c55a" name="SP Caballería de Línea" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -4886,7 +4984,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="69cc4ab0-76e3-4610-bc1c-ec477c041fcf" name="SP Artillería de Campo" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">3</characteristic>
@@ -4917,7 +5015,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="ffd019d0-d3dc-450d-aeed-5ce0e671d932" name="SP Artillería a Pie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">3</characteristic>
@@ -4948,7 +5046,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="6dbc0f28-4629-4162-95c6-5edd31aab9c7" name="SP Artillería a Caballo" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">1</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
@@ -4979,7 +5077,7 @@ Pionery: Committing to a Threatened Battery recovers -1 Fatigue.</characteristic
       <profiles>
         <profile id="362a80b4-822a-4fe6-8541-0fd636136a9a" name="SP Zapadores" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -5015,7 +5113,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not re
       <profiles>
         <profile id="8de015a7-8265-45d0-8928-673f1d7250a0" name="SP La Nuevo Ligero/Cazadores/Tiradores" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/4</characteristic>
@@ -5049,7 +5147,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not re
       <profiles>
         <profile id="c131a7c5-fa39-4267-98a1-2d9a0dc9e0e6" name="SP La Nuevo Infantería" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">0</characteristic>
@@ -5080,7 +5178,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not re
       <profiles>
         <profile id="8f457cf6-6b3b-4ca3-b1b6-62768e5484e2" name="SP Tercios Migueletes" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/4</characteristic>
@@ -5114,7 +5212,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not re
       <profiles>
         <profile id="a3ead671-bb24-4158-b99b-1dc137117031" name="SP Reclutas Civiles" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">0</characteristic>
@@ -5148,7 +5246,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not re
       <profiles>
         <profile id="f15f0d10-097d-4e8f-8f90-02535f70179d" name="SP Lanceros" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -5182,7 +5280,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not re
       <profiles>
         <profile id="ae01d16a-9647-4857-9e4a-79fc21a231c7" name="WF Leichtes Infanterie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
@@ -5216,7 +5314,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not re
       <profiles>
         <profile id="74ec8cb8-5731-4cb6-826b-fa941023191d" name="WF Linieninfanterie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
@@ -5247,7 +5345,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not re
       <profiles>
         <profile id="f884c496-4b61-402c-9b32-c2d0275b4b47" name="WF Husaren" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -5281,7 +5379,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not re
       <profiles>
         <profile id="f09e7b49-acc2-44a1-bc2f-2149c568eb7c" name="WF Reserveartillerie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">3</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">4</characteristic>
@@ -5312,7 +5410,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not re
       <profiles>
         <profile id="f44c07c7-03dc-4dc8-b6e7-12aff48722bd" name="WF Fußartillerie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
@@ -5343,7 +5441,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not re
       <profiles>
         <profile id="f0cde466-7f56-43fc-b738-d10f58391cc8" name="WF Sapeurs" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -5379,7 +5477,7 @@ Sapeurs: Threat vs Built-up-Areas, Strong Points, or Walls at contact is not re
       <profiles>
         <profile id="d63a5767-b51b-49e4-ab67-9e9841fb12c0" name="Wü Leichtes Infanterie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
@@ -5415,7 +5513,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terr
       <profiles>
         <profile id="242d0d42-98b7-4726-b9b4-d5882ae13ad8" name="Wü Fußjäger" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1</characteristic>
@@ -5451,7 +5549,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terr
       <profiles>
         <profile id="66d7127e-390c-4308-adae-bba7fc6d38cc" name="Wü Infanterie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | 4</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">1/2</characteristic>
@@ -5482,7 +5580,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terr
       <profiles>
         <profile id="27330135-34e8-4f9c-afa8-61fb9bfe1464" name="Wü Chevaulegers" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -5516,7 +5614,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terr
       <profiles>
         <profile id="0d9ab335-18a4-4471-acce-b7a5c69bae40" name="Wü Jäger zu Pferd" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | 5</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">–</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">–</characteristic>
@@ -5550,7 +5648,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terr
       <profiles>
         <profile id="4e024a74-bd4c-4879-9b05-f1ccd926a5da" name="Wü Reserveartillerie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">3</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">4</characteristic>
@@ -5581,7 +5679,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terr
       <profiles>
         <profile id="e947a8a6-756d-4f32-9d09-1b75d0eab545" name="Wü Fußartillerie" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">12 | 10 | 5</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">12 | 10 | 5</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">8 | 4 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
@@ -5612,7 +5710,7 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terr
       <profiles>
         <profile id="3477eff5-b9ed-4b52-90cc-b0b278bb5fae" name="Wü Artillerie zu Pferd" typeName="Unit" typeId="pt-Unit" hidden="false">
           <characteristics>
-            <characteristic typeId="ct-Unit-Ploy" name="____Ploy____">15 | 12 | 6</characteristic>
+            <characteristic typeId="ct-Unit-Ploy" name="___Ploy___">15 | 12 | 6</characteristic>
             <characteristic typeId="ct-Unit-Deploy" name="___Deploy___">10 | 5 | –</characteristic>
             <characteristic typeId="ct-Unit-Thr-LR" name="Thr-LR">2</characteristic>
             <characteristic typeId="ct-Unit-Thr-SR" name="Thr-SR">2</characteristic>
@@ -5635,6 +5733,37 @@ Lights: Do not halt for dense terrain &amp; Threat is not reduced vs dense terr
         <modifier type="set" value="false" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="a003-14d2-b554-aff8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="PR Grenadier" hidden="true" id="a1bb-7afc-ded5-6e13">
+      <categoryLinks>
+        <categoryLink targetId="ct-Faction-Prussia" id="2aa8-34aa-d0a8-7808" primary="false" name="Faction: Prussia"/>
+        <categoryLink targetId="ct-Infantry" id="5680-068b-9863-cbc9" primary="true" name="Infantry"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="PR Grenadier" typeId="pt-Unit" typeName="Unit" hidden="false" id="8cd0-a039-e08d-e8cf">
+          <characteristics>
+            <characteristic name="___Ploy___" typeId="ct-Unit-Ploy">10 | 5 | 5</characteristic>
+            <characteristic name="___Deploy___" typeId="ct-Unit-Deploy">8 | 4 | 4</characteristic>
+            <characteristic name="Thr-LR" typeId="ct-Unit-Thr-LR">–</characteristic>
+            <characteristic name="Thr-SR" typeId="ct-Unit-Thr-SR">1/4</characteristic>
+            <characteristic name="Thr-C" typeId="ct-Unit-Thr-C">4</characteristic>
+            <characteristic name="Coh-O" typeId="ct-Unit-Coh-O">1 1/2</characteristic>
+            <characteristic name="Coh-E" typeId="ct-Unit-Coh-E">1/4</characteristic>
+            <characteristic name="Trait" typeId="ct-Unit-Trait">Shock: Threat is not reduced vs Built-up- Areas, Strong Points, or Walls.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shock" id="ba0d-d21b-6e3f-763d" hidden="false" type="rule" targetId="ff54-e2c4-8419-4718"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c8ad-fcfa-039d-44b9" shared="true" includeChildSelections="true" childName="Early War"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="a97b-1b72-c619-9dcb" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>

@@ -31,72 +31,973 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69d4-10de-7af8-946a-max"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="AU Avant Garde" hidden="true" id="20583d22-650a-4408-a91b-8cce322b0831">
+      <entryLinks>
+        <entryLink id="548555e1-fae8-4df2-b5e0-3673dc8136dc" name="AU Avant Garde" import="true" hidden="false" type="selectionEntryGroup" targetId="7531-a8b3-2599-9701"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="0f3ef715-670e-40f2-8272-2dc8c079e7ee" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="AU Infanterie Division" hidden="true" id="f3c13ece-ed43-4a98-b96b-4c019e21026d">
+      <entryLinks>
+        <entryLink id="4937605a-8975-4ae9-93c8-42ec5f69a0f1" name="AU Infanterie Division" import="true" hidden="false" type="selectionEntryGroup" targetId="7545-c936-c022-bf08"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="cd4cd53c-0bd2-49f8-8cae-8cbba98ad913" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="AU Reservieren Division" hidden="true" id="f0cbb0b6-951b-40ef-a1f7-25c87611b219">
+      <entryLinks>
+        <entryLink id="c84607c0-c3d1-45ed-b705-e955122f80c8" name="AU Reservieren Division" import="true" hidden="false" type="selectionEntryGroup" targetId="a0ab-0187-702c-2052"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="0c173898-3d87-47a4-b598-146afd06e610" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="AU Leichte Kavallerie Brigade" hidden="true" id="22bd138a-c57e-4ce7-aee6-b82bc3bad7bc">
+      <entryLinks>
+        <entryLink id="e0cccb8a-efd2-40ca-9975-44174fb3d2eb" name="AU Leichte Kavallerie Brigade" import="true" hidden="false" type="selectionEntryGroup" targetId="4135-5953-19d1-6bbd"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="546225f4-188e-4aa4-9ccd-6a2e6f912dfc" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="AU Kavallerie Brigade/Division" hidden="true" id="0ab3d338-9ae6-4cbd-b1f9-c2276fb58820">
+      <entryLinks>
+        <entryLink id="f6b82c8f-9467-40a3-9e4f-94d7ba69c049" name="AU Kavallerie Brigade/Division" import="true" hidden="false" type="selectionEntryGroup" targetId="a9cd-684c-4fa6-40d2"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="6be8de85-bb74-4f73-a4bc-69540f6015d2" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="AU Kürassier Division" hidden="true" id="c5f2b503-d450-4608-8313-6f0447e6d25e">
+      <entryLinks>
+        <entryLink id="7d2d02e2-9802-444c-931f-93c9390e8816" name="AU Kürassier Division" import="true" hidden="false" type="selectionEntryGroup" targetId="1771-4a68-1c57-dc0a"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="50607e3b-b36b-4a38-8b7d-b9a577bb8dd3" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="AU Korps Reservieren" hidden="true" id="debf769e-ae6e-4a40-ad9c-4245345e2e54">
+      <entryLinks>
+        <entryLink id="0e922e94-c3b9-4421-b174-6b3fe1298f70" name="AU Korps Reservieren" import="true" hidden="false" type="selectionEntryGroup" targetId="0a31-3b2b-97b6-72e6"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="b763ec5b-f6c7-4d52-a1e3-61cdf7a063cb" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="BV Infanterie-Division" hidden="true" id="83f345a1-9207-4a5c-9e4a-fb6e3862b7ed">
+      <entryLinks>
+        <entryLink id="f37cf037-0c04-40a9-bdcf-b59131979d55" name="BV Infanterie-Division" import="true" hidden="false" type="selectionEntryGroup" targetId="b350-f7eb-a5a2-a793"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="520ce589-ae1e-4665-9752-b9b614defdd5" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3ec4-cc2b-ded5-7f95" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="BV Kavallerie-Division" hidden="true" id="ae0cd9c0-0709-446e-aa6e-6849a595a135">
+      <entryLinks>
+        <entryLink id="8925367e-8809-4ca3-9bc1-465ec098eeec" name="BV Kavallerie-Division" import="true" hidden="false" type="selectionEntryGroup" targetId="6eb1-6be3-e021-09f7"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="d416604e-f851-4778-881c-4cb0cc3c128a" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3ec4-cc2b-ded5-7f95" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="BV Leichtes Kavallerie-Division" hidden="true" id="84198da8-73e9-479d-b0e1-1feb0aad7184">
+      <entryLinks>
+        <entryLink id="baecba24-879b-4e0a-a7e5-f82f4f4b4377" name="BV Leichtes Kavallerie-Division" import="true" hidden="false" type="selectionEntryGroup" targetId="7e24-77d1-0af2-bf64"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="9d8e2d07-6626-4fd5-9ebd-b8b77e911f28" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3ec4-cc2b-ded5-7f95" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="BV Korps Reservieren" hidden="true" id="4e85d4a2-3a8e-49b2-ad03-c387207035ac">
+      <entryLinks>
+        <entryLink id="6197101b-279f-41fa-80f1-ccba4cd556b4" name="BV Korps Reservieren" import="true" hidden="false" type="selectionEntryGroup" targetId="d826-17ce-5bed-6ec4"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="1e88a1d4-3954-44ce-b181-9e5dc8988e4d" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3ec4-cc2b-ded5-7f95" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="BR Brigade" hidden="true" id="57cecd9d-b866-4efe-b9fe-f7d141528734">
+      <entryLinks>
+        <entryLink id="bf5cf23b-28af-4aec-a877-706f5486f067" name="BR Brigade" import="true" hidden="false" type="selectionEntryGroup" targetId="65db-5645-8564-554e"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="1c66306d-9b67-417c-8256-49300f5eac66" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4551-19c6-ebd9-ef3d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="BR Infantry Division" hidden="true" id="57165c46-e588-43c0-a861-66756a6baf39">
+      <entryLinks>
+        <entryLink id="dd18b897-2ab5-432c-bdf8-9e40d2448f9c" name="BR Infantry Division" import="true" hidden="false" type="selectionEntryGroup" targetId="7168-a998-3c09-534c"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="659618a6-ff74-4fb2-b635-15e1fa3321ab" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4551-19c6-ebd9-ef3d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="BR 1st Division" hidden="true" id="29d46d18-790f-430d-bc47-74b2a1f08ea3">
+      <entryLinks>
+        <entryLink id="21decea3-f9f3-4791-8bc5-b038aafb849b" name="BR 1st Division" import="true" hidden="false" type="selectionEntryGroup" targetId="0b27-635f-f71d-4cdd"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="43940b29-817f-4a81-b113-d62510b7a3bc" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4551-19c6-ebd9-ef3d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="BR Light Division" hidden="true" id="d8bcdc86-2fa7-47b7-8623-fb7950a6fe04">
+      <entryLinks>
+        <entryLink id="5e724c4d-4bc7-46b6-96d3-62e972c1a076" name="BR Light Division" import="true" hidden="false" type="selectionEntryGroup" targetId="ce9f-042c-8915-1542"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="1fb16ef0-b2c9-4150-8406-f826253aa05c" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4551-19c6-ebd9-ef3d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="BR Light Cavalry Brigade" hidden="true" id="5213261d-8bf8-4a58-8796-a11c334bdf7f">
+      <entryLinks>
+        <entryLink id="acd09b39-5fca-4a06-b97a-9f8c549f5027" name="BR Light Cavalry Brigade" import="true" hidden="false" type="selectionEntryGroup" targetId="52c4-72fa-1043-921a"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="afdedc8b-d7ba-467b-a6d3-47650f14040a" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4551-19c6-ebd9-ef3d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="BR Heavy Cavalry Brigade" hidden="true" id="4144d64f-5968-4244-bf84-29a0e080889c">
+      <entryLinks>
+        <entryLink id="badc6675-90a2-4c37-a982-b8b5c99f9296" name="BR Heavy Cavalry Brigade" import="true" hidden="false" type="selectionEntryGroup" targetId="b711-ba7f-9ac0-0806"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="410c52b9-4f50-44d6-a56e-97b318360f42" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4551-19c6-ebd9-ef3d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="BR Artillery Park" hidden="true" id="2c6477d3-addf-43bc-a058-184fe9e3d55f">
+      <entryLinks>
+        <entryLink id="ac427342-27eb-45f0-8b2d-1de3cdded247" name="BR Artillery Park" import="true" hidden="false" type="selectionEntryGroup" targetId="1be4-87b8-8b6a-6c82"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="7cbedcde-ec06-4268-a3d8-feb64a31edcc" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4551-19c6-ebd9-ef3d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="FR Division d’Infanterie" hidden="true" id="2d29ee51-120d-4a5c-bff2-fbbe7e750ef0">
+      <entryLinks>
+        <entryLink id="50f808cc-82c9-4f9e-a519-b5cb664f006c" name="FR Division d’Infanterie" import="true" hidden="false" type="selectionEntryGroup" targetId="d4ab-26fc-cf1c-cf95"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="bc5d5516-0131-475b-9a17-0aa7d1b8da76" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="a07e-3373-9f8a-d4da" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="FR Brigade de Cavalerie Légère" hidden="true" id="7c7f13ec-1e51-46f6-b158-a0eb16a724a1">
+      <entryLinks>
+        <entryLink id="77735426-6f69-4868-85fa-8801b50a27e6" name="FR Brigade de Cavalerie Légère" import="true" hidden="false" type="selectionEntryGroup" targetId="b26d-1ac7-ee25-51ed"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="e6c0ab35-52fb-4809-b07b-969931c2facd" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="a07e-3373-9f8a-d4da" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="FR Division de Cavalerie Légère" hidden="true" id="f978731e-222e-4584-9125-7c0babd44a53">
+      <entryLinks>
+        <entryLink id="2d6dda73-889c-453b-9882-de7df8628948" name="FR Division de Cavalerie Légère" import="true" hidden="false" type="selectionEntryGroup" targetId="dc8e-064f-ecd0-1025"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="d8235472-cd61-4fc5-b0f7-9892de4bf229" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="a07e-3373-9f8a-d4da" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="FR Division de Cavalerie/Dragons" hidden="true" id="766ba751-caaa-4040-a637-89dddbb9d1a2">
+      <entryLinks>
+        <entryLink id="17c297a3-4a60-4977-a2c6-ae234b16c620" name="FR Division de Cavalerie/Dragons" import="true" hidden="false" type="selectionEntryGroup" targetId="fa6d-afe0-1fa6-5d4a"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="22992154-4a61-47b4-9ba0-315f1b2bb818" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="a07e-3373-9f8a-d4da" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="FR Division de Grosse Cavalerie" hidden="true" id="873419db-a2b2-4cf3-bcb5-b42cb76cda89">
+      <entryLinks>
+        <entryLink id="e7c69b19-40b7-4573-aba3-2d50182c506d" name="FR Division de Grosse Cavalerie" import="true" hidden="false" type="selectionEntryGroup" targetId="7733-0fb1-a0f9-bec0"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="6dfe3e5f-5d84-4f35-ba15-a9467cfac6a2" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="a07e-3373-9f8a-d4da" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="FR Corps Réserve/Parc d’Artillerie" hidden="true" id="a83b0475-3ec6-4dd1-86d6-63bcd396a4b8">
+      <entryLinks>
+        <entryLink id="f807e829-3c2e-4903-a477-5ebe3711f4f9" name="FR Corps Réserve/Parc d’Artillerie" import="true" hidden="false" type="selectionEntryGroup" targetId="e9ec-92a3-1083-7cbe"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="6714e931-7ff4-49ef-9ca6-372a758c12a5" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="a07e-3373-9f8a-d4da" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="FR Division d’Infanterie de la Garde Impériale" hidden="true" id="07ad3883-5404-4788-bd39-2f92a15ce8eb">
+      <entryLinks>
+        <entryLink id="9e5c0341-c8ef-4a3d-b8a9-299f90121178" name="FR Division d’Infanterie de la Garde Impériale" import="true" hidden="false" type="selectionEntryGroup" targetId="f414-b30c-4de0-bc10"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="5e7e029c-8fe7-4dce-b1a2-d661d45cdbde" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="a07e-3373-9f8a-d4da" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="FR Brigade de Cavalerie de la Garde Impériale" hidden="true" id="ebd04abd-a22d-4ee5-9715-3e713ffb0d77">
+      <entryLinks>
+        <entryLink id="d9614c2c-9940-4e31-b1ba-20f0d5b45b24" name="FR Brigade de Cavalerie de la Garde Impériale" import="true" hidden="false" type="selectionEntryGroup" targetId="15c2-bcf0-f7e1-56a0"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="7f58ce50-27d0-4dc6-bbfc-d6a9d7e51121" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="a07e-3373-9f8a-d4da" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="IT Division di Fanteria" hidden="true" id="bb4b4645-a80d-40f0-b6c4-8a0036aa19b5">
+      <entryLinks>
+        <entryLink id="b0c41ee5-9807-4820-85ad-ddbd0432378f" name="IT Division di Fanteria" import="true" hidden="false" type="selectionEntryGroup" targetId="2d88-272e-ae8b-0e82"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="10d2e3a2-4380-4c06-9fa9-8b8b866a8ac2" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2f41-d909-404e-b848" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="IT Brigata di Cavalleria" hidden="true" id="f79c4e87-4a4e-4148-97ac-d8fd87adc63c">
+      <entryLinks>
+        <entryLink id="0a79e7ca-81a0-4398-ae97-54dfc8e77771" name="IT Brigata di Cavalleria" import="true" hidden="false" type="selectionEntryGroup" targetId="3c98-31ad-c1e8-2ec6"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="0c66aff3-7ad3-42d7-8b88-2c51ad74b9c0" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2f41-d909-404e-b848" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="PO Dywizja" hidden="true" id="0310b4e4-a864-4b18-88f2-278da8de55bb">
+      <entryLinks>
+        <entryLink id="c9b52e42-6248-4264-830b-4ae21290ed85" name="PO Dywizja" import="true" hidden="false" type="selectionEntryGroup" targetId="f7c2-ecc5-5d17-777f"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="76398583-adcb-4f05-88e8-a721d73eabdb" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5bb4-8e70-27f6-ae3d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="PO Brygada Lekkiej Kawalerii" hidden="true" id="e8a580b4-4655-45b3-9680-bc1ae85cd12b">
+      <entryLinks>
+        <entryLink id="39ac2b7f-5fa2-4556-99ae-0acf05df621b" name="PO Brygada Lekkiej Kawalerii" import="true" hidden="false" type="selectionEntryGroup" targetId="9ab9-d259-03b9-8130"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="e15171ae-d1ad-4d1b-8c79-dfdb2509cf3a" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5bb4-8e70-27f6-ae3d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="RU Pehotnaya Diviziya" hidden="true" id="ade3a66b-384a-4fc0-b9e0-0027aa92d4f7">
+      <entryLinks>
+        <entryLink id="8b7ca3ed-42fb-4947-a8be-22649ab04b0a" name="RU Pehotnaya Diviziya" import="true" hidden="false" type="selectionEntryGroup" targetId="0670-11f5-fe24-8e95"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="47bc2818-5fdc-40fa-866c-10bd9ee582bd" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="cc63-8ca6-0fd0-2682" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="RU Grenaderskaya Diviziya" hidden="true" id="15683085-a880-4f8a-869f-4780201b6493">
+      <entryLinks>
+        <entryLink id="40d6432c-82cf-4f58-bbd3-4338855b76ff" name="RU Grenaderskaya Diviziya" import="true" hidden="false" type="selectionEntryGroup" targetId="1ae8-93f6-6684-de38"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="7ebc5434-5f29-476d-b674-6b896eaba3ef" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="cc63-8ca6-0fd0-2682" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="RU Svodno-Grenaderskaya Divizya" hidden="true" id="e5c9b4b4-8af2-43ed-8257-8539349988db">
+      <entryLinks>
+        <entryLink id="d67c030d-dbd7-4d26-a508-53af4e01a59a" name="RU Svodno-Grenaderskaya Divizya" import="true" hidden="false" type="selectionEntryGroup" targetId="eedb-4ec7-fac8-3b18"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="59dd6fda-1e52-4ce3-a490-4d6c4b3c0d28" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="cc63-8ca6-0fd0-2682" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="RU Legkaya Kavaleriya" hidden="true" id="69a17f9d-9443-4464-917a-5b7ee7728de2">
+      <entryLinks>
+        <entryLink id="660bf931-5e08-42d0-b613-132c59f9f957" name="RU Legkaya Kavaleriya" import="true" hidden="false" type="selectionEntryGroup" targetId="759e-39ec-975f-0e98"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="7397f558-de62-4b2d-952c-47c561cd24ee" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="cc63-8ca6-0fd0-2682" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="RU Kavaleriyskaya Brigada" hidden="true" id="876f83d8-009c-4c77-817b-de7d9a01004e">
+      <entryLinks>
+        <entryLink id="8b227509-8f4c-4e9b-8083-688332397ecb" name="RU Kavaleriyskaya Brigada" import="true" hidden="false" type="selectionEntryGroup" targetId="c8e2-920b-4f80-e519"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="315b5be8-2eea-4cdb-8873-c96d41dbbe9e" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="cc63-8ca6-0fd0-2682" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="RU Kirasirskaya Brigada" hidden="true" id="135319a1-da91-41e9-afb6-ccd749932fdc">
+      <entryLinks>
+        <entryLink id="9158bbe0-22f4-441c-8e5b-51160abaa354" name="RU Kirasirskaya Brigada" import="true" hidden="false" type="selectionEntryGroup" targetId="607e-46bd-9bae-c363"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="6bba6822-c7ac-40cf-b521-d058b7f87c42" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="cc63-8ca6-0fd0-2682" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="RU Donskaya Kazachya Brigada" hidden="true" id="36e4a8fb-70b8-40aa-96b1-d3784ce6a508">
+      <entryLinks>
+        <entryLink id="1e847eae-4264-4690-b662-fac981b4c731" name="RU Donskaya Kazachya Brigada" import="true" hidden="false" type="selectionEntryGroup" targetId="2a15-ed68-b0ef-0dca"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="2ddad513-7b7c-4393-9388-580633ae3439" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="cc63-8ca6-0fd0-2682" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="RU Rezervnaya Artilleriya" hidden="true" id="92c57561-f404-4be3-9847-ba683158c385">
+      <entryLinks>
+        <entryLink id="b4e4ba33-643f-48e4-8371-7b87b294adad" name="RU Rezervnaya Artilleriya" import="true" hidden="false" type="selectionEntryGroup" targetId="85c2-d83f-4e42-fdbc"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="0476de83-d447-4299-a3fc-0158716ce692" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="cc63-8ca6-0fd0-2682" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="RU Leib-Gvardii Diviziya" hidden="true" id="1234f46b-394b-4283-b428-e910a8fad988">
+      <entryLinks>
+        <entryLink id="f5546b17-92b5-4446-b0e5-2aeabd8bfa26" name="RU Leib-Gvardii Diviziya" import="true" hidden="false" type="selectionEntryGroup" targetId="9148-ed5f-3574-37d4"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="8ab2efa5-3310-4561-8498-28bdff907d14" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="cc63-8ca6-0fd0-2682" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="RU Leib-Gvardii Kavaleriya Brigada" hidden="true" id="dec91c5b-2ef7-4573-ab75-24c4e1b93164">
+      <entryLinks>
+        <entryLink id="751726c2-00f2-4d1b-8c31-f078ecd4964d" name="RU Leib-Gvardii Kavaleriya Brigada" import="true" hidden="false" type="selectionEntryGroup" targetId="33ff-742c-dbfe-71c0"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="e84d5eea-20eb-41cd-b1ae-25398877e81e" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="cc63-8ca6-0fd0-2682" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="SX Infanterie-Division" hidden="true" id="1a5ab0fe-2b43-415c-95f4-79efbf9a9371">
+      <entryLinks>
+        <entryLink id="d4bcb8b3-3caa-49b6-adbf-5360edb35f96" name="SX Infanterie-Division" import="true" hidden="false" type="selectionEntryGroup" targetId="d863-e0ac-ccbb-020d"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="d8fb6edf-95ac-4f9b-bab8-c40df0bfdea3" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4f32-2860-a3d6-ac53" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="SX Leichtes Kavallerie-Brigade" hidden="true" id="68638693-fb31-4e67-afde-48a0668a4e41">
+      <entryLinks>
+        <entryLink id="f36afb78-d0d8-4056-8882-1a2111344fb3" name="SX Leichtes Kavallerie-Brigade" import="true" hidden="false" type="selectionEntryGroup" targetId="80c0-dab5-befe-2f43"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="407cdf9d-717c-4d35-ba24-999d6a1e991f" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4f32-2860-a3d6-ac53" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="SX Korps Reservieren" hidden="true" id="56119126-fc85-476a-afc9-c09a12c3163b">
+      <entryLinks>
+        <entryLink id="cb15bc03-422f-445e-83eb-ffa782ea891f" name="SX Korps Reservieren" import="true" hidden="false" type="selectionEntryGroup" targetId="0b5a-9268-593c-9325"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="d31f3ca1-591b-43fb-a4f5-d6b1f886ecb7" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4f32-2860-a3d6-ac53" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="SP Vanguardia" hidden="true" id="2fabebdf-1da7-4080-bba8-3ccfdea2b5a7">
+      <entryLinks>
+        <entryLink id="161c1fb0-52b8-4943-97ef-7f3093afb1fd" name="SP Vanguardia" import="true" hidden="false" type="selectionEntryGroup" targetId="7562-eeb9-c264-9b45"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="2ac4a4ec-a72a-49f0-bfa9-65102fd913e9" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7b86-e75a-627e-f018" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="SP División" hidden="true" id="23c516c0-62af-496e-9671-cc98909788a6">
+      <entryLinks>
+        <entryLink id="b0bb00fa-6b4c-45b8-8143-48c7b288a43b" name="SP División" import="true" hidden="false" type="selectionEntryGroup" targetId="0b4b-f539-e8c4-e234"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="ad2c0a46-9fbd-46ea-af48-46be0cc06ff8" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7b86-e75a-627e-f018" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="SP Caballería Brigada" hidden="true" id="30ef6817-4072-4fae-9c09-b94e3cdd16af">
+      <entryLinks>
+        <entryLink id="cbf60623-b396-41f5-8b3a-1f4b56777d09" name="SP Caballería Brigada" import="true" hidden="false" type="selectionEntryGroup" targetId="f5a6-6d73-cf23-0aa2"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="cd431b21-f7c6-4208-a450-bc79f70a4de2" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7b86-e75a-627e-f018" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WF Infanterie-Division" hidden="true" id="318843fc-4229-4537-973d-cfd6d708f5e6">
+      <entryLinks>
+        <entryLink id="38b4e93b-3657-444d-8ec0-a90a7137ec1c" name="WF Infanterie-Division" import="true" hidden="false" type="selectionEntryGroup" targetId="6408-53d8-d3b2-7ff2"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="69ad09af-531f-4eca-8686-a91e2172e89f" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2579-f130-7874-6505" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WF Leichtes Kavallerie-Brigade" hidden="true" id="1d377ffd-1aa0-4161-ad86-f3ec94a4e831">
+      <entryLinks>
+        <entryLink id="4a0dbc3c-4347-4848-a91e-88a32e8688d9" name="WF Leichtes Kavallerie-Brigade" import="true" hidden="false" type="selectionEntryGroup" targetId="a583-6b97-6b73-3bd9"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="c3fd2c11-1400-4917-9260-a4d1ecf6438c" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2579-f130-7874-6505" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Wü Infanterie Division" hidden="true" id="7d32ad04-5629-4d8a-b2f8-cf0ab713733b">
+      <entryLinks>
+        <entryLink id="f57a52fc-25e6-40f1-b5cb-3f14a258cac8" name="Wü Infanterie Division" import="true" hidden="false" type="selectionEntryGroup" targetId="0594-276f-87be-68f5"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="fa7b51cc-50de-490e-8e18-83ea616c5f0e" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="a003-14d2-b554-aff8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Wü Kavallerie Division" hidden="true" id="73bfee0c-023a-4190-a19c-2ff210023036">
+      <entryLinks>
+        <entryLink id="7ae34715-9b99-4402-91b1-21845701f92d" name="Wü Kavallerie Division" import="true" hidden="false" type="selectionEntryGroup" targetId="e49f-46f4-5109-2a45"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="7e946cef-54e3-4815-a42d-3c3c9ae7709a" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="a003-14d2-b554-aff8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="PR Infanterie Division" hidden="true" id="e7e0088b-8a16-41c2-abb4-28d37d387b55">
+      <entryLinks>
+        <entryLink id="eda71be6-4782-4dad-95a5-6c8afa0eeccf" name="PR Infanterie Division" import="true" hidden="false" type="selectionEntryGroup" targetId="1cf6-8d8a-32bd-3f2e"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="09d8b5d1-3454-4620-9979-d40641ce8fe8" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="a97b-1b72-c619-9dcb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="PR Kavallerie Division" hidden="true" id="2d05aa52-dcef-48c8-8ca4-ad63344f7208">
+      <entryLinks>
+        <entryLink id="19c31562-cd76-4413-984f-49013925dceb" name="PR Kavallerie Division" import="true" hidden="false" type="selectionEntryGroup" targetId="1a1f-44c1-1098-dff2"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="98961475-4c69-42d2-8f60-1bab781f0016" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="a97b-1b72-c619-9dcb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Wü Mixed" hidden="true" id="05b486f3-9298-45d5-aa9e-5aecd2f79445">
+      <entryLinks>
+        <entryLink id="b0d828c9-4569-4005-80f8-412fa69da954" name="Wü Mixed" import="true" hidden="false" type="selectionEntryGroup" targetId="ab2c-f24d-4001-5cf7"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="00bfd57e-1596-4fed-8e28-d72846b17066" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="a003-14d2-b554-aff8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WF Mixed" hidden="true" id="788c89d8-b2ce-42fc-8541-559caa45efde">
+      <entryLinks>
+        <entryLink id="5c4c14ed-2953-4e3f-a987-7638ca2fcfbc" name="WF Mixed" import="true" hidden="false" type="selectionEntryGroup" targetId="63f8-dc2a-d6ac-aaec"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="afd7d44b-4aef-4d7c-8b4c-70dbdaeeb1b3" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2579-f130-7874-6505" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="SP Mixed" hidden="true" id="45d313ee-2984-4233-9ba3-f4bb6799f854">
+      <entryLinks>
+        <entryLink id="2109668a-e732-448a-86cb-7a89f04f2e19" name="SP Mixed" import="true" hidden="false" type="selectionEntryGroup" targetId="a539-c85c-4938-691f"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="e7f1c8db-0056-4268-ad1b-ea503f6f9395" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7b86-e75a-627e-f018" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="SX Mixed" hidden="true" id="ddf59253-574f-4b2e-8fd7-937044ebf30a">
+      <entryLinks>
+        <entryLink id="bb5eb82f-fef0-433b-a18b-9c80c8a3f2ac" name="SX Mixed" import="true" hidden="false" type="selectionEntryGroup" targetId="c1d1-4eca-6597-b587"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="fd3a49e8-2761-4e74-8c65-620b7b65fd9b" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4f32-2860-a3d6-ac53" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="RU Mixed" hidden="true" id="4b1ebbf2-8198-48a4-8861-5846780e1187">
+      <entryLinks>
+        <entryLink id="ab73eb9e-5d5f-4e1f-aeac-bac92befd2e0" name="RU Mixed" import="true" hidden="false" type="selectionEntryGroup" targetId="7026-26c4-7243-ae0e"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="4dcb381a-35c0-4131-a527-9ea223df12f2" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="cc63-8ca6-0fd0-2682" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="PR Mixed" hidden="true" id="de492fbb-f522-4bd2-8624-1cdea7be30f8">
+      <entryLinks>
+        <entryLink id="6d4c8bf0-e0ab-4f0e-80f5-4e8aa3daa119" name="PR Mixed" import="true" hidden="false" type="selectionEntryGroup" targetId="50cd-026c-35e1-badd"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="c616bca0-01b9-4be9-bec2-e906d4a63102" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="a97b-1b72-c619-9dcb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="PO Mixed" hidden="true" id="0c8a5655-fbac-458c-8269-b726f8536e86">
+      <entryLinks>
+        <entryLink id="f940f121-2c50-485e-8109-07800946cda4" name="PO Mixed" import="true" hidden="false" type="selectionEntryGroup" targetId="ce43-0f75-6230-f885"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="60d0fbd9-f08e-42e8-9c9a-5617984468d7" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5bb4-8e70-27f6-ae3d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="IT Mixed" hidden="true" id="e3cc54c6-7b57-41ac-8e24-493ca4225290">
+      <entryLinks>
+        <entryLink id="bd1b8741-9d28-49d5-a485-b95e4d39a83e" name="IT Mixed" import="true" hidden="false" type="selectionEntryGroup" targetId="a321-8f18-ca22-3b97"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="131c90fc-f643-4ee0-8ec9-2d8dce77f884" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2f41-d909-404e-b848" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="FR Mixed" hidden="true" id="7fc23c03-5fc0-4ca9-9f90-4e043078dc85">
+      <entryLinks>
+        <entryLink id="a21ef29f-3296-4694-bb18-7ab2dfd88483" name="FR Mixed" import="true" hidden="false" type="selectionEntryGroup" targetId="e594-3441-2a26-3c1c"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="b2291240-62bd-4bdc-847a-08429e4c5b9e" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="a07e-3373-9f8a-d4da" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="BR Mixed" hidden="true" id="7f1ffd06-7798-4b56-a9b5-d57f0103671c">
+      <entryLinks>
+        <entryLink id="71801723-6b35-40c6-9fd5-13b6c7d08e2d" name="BR Mixed" import="true" hidden="false" type="selectionEntryGroup" targetId="e409-8f4d-565f-87ce"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="c6c5743b-2eb9-4fd3-a8cb-2fe332570443" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4551-19c6-ebd9-ef3d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="BV Mixed" hidden="true" id="43396a69-2a48-417c-814f-58336918b3e1">
+      <entryLinks>
+        <entryLink id="65a187f0-4953-40fb-b0dd-88ea4d2459e7" name="BV Mixed" import="true" hidden="false" type="selectionEntryGroup" targetId="bc97-e085-1d5c-f56f"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="71493fef-3f27-422b-8b9f-201cf7dfd937" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3ec4-cc2b-ded5-7f95" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="AU Mixed" hidden="true" id="95a71fe2-5059-4cd5-a1aa-bcdffd54a8ba">
+      <entryLinks>
+        <entryLink id="96343288-fbfa-4b35-bb22-ed442d3f95d5" name="AU Mixed" import="true" hidden="false" type="selectionEntryGroup" targetId="d072-429d-9f4b-38fc"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="934c82cd-c582-4ff5-9d7a-db2bc5d62447" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d1f8-f497-a419-5feb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Allied Formation" hidden="false" id="a795c3f9-39ce-4c5c-98de-798262e8612c">
+      <entryLinks>
+        <entryLink id="224582f3-8acc-4cb4-9e95-f3b5734febe9" name="Allied Formation" import="true" hidden="false" type="selectionEntryGroup" targetId="4954-42ea-29fb-b5a5"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink id="ada9dcf0-a902-4dc9-b4e9-b392db15ff09" name="Formation" primary="true" targetId="ct-Formation"/>
+      </categoryLinks>
+    </selectionEntry>
   </selectionEntries>
-  <entryLinks>
-    <entryLink import="true" name="BV Infanterie-Division" hidden="false" id="127a-405e-def7-a15b" type="selectionEntryGroup" targetId="b350-f7eb-a5a2-a793"/>
-    <entryLink import="true" name="BV Kavallerie-Division" hidden="false" id="8e64-a9b3-5b7c-62e3" type="selectionEntryGroup" targetId="6eb1-6be3-e021-09f7"/>
-    <entryLink import="true" name="AU Avant Garde" hidden="false" id="6ef96946-3030-4f5e-b976-075e0ccac125" type="selectionEntryGroup" targetId="7531-a8b3-2599-9701"/>
-    <entryLink import="true" name="AU Infanterie Division" hidden="false" id="2d2b0dfa-20a9-451d-9ba5-abd00df1c6c9" type="selectionEntryGroup" targetId="7545-c936-c022-bf08"/>
-    <entryLink import="true" name="AU Reservieren Division" hidden="false" id="4a251e6c-2e4a-4ce7-aef8-1b228eeebf36" type="selectionEntryGroup" targetId="a0ab-0187-702c-2052"/>
-    <entryLink import="true" name="AU Leichte Kavallerie Brigade" hidden="false" id="b5cbfd88-ae05-411f-a6f3-8d4d522db0fc" type="selectionEntryGroup" targetId="4135-5953-19d1-6bbd"/>
-    <entryLink import="true" name="AU Kavallerie Brigade/Division" hidden="false" id="7913074a-c741-4d6c-b47e-1733db81d67d" type="selectionEntryGroup" targetId="a9cd-684c-4fa6-40d2"/>
-    <entryLink import="true" name="AU Kürassier Division" hidden="false" id="2116d80e-d839-4bfa-bd6a-658c9194d12b" type="selectionEntryGroup" targetId="1771-4a68-1c57-dc0a"/>
-    <entryLink import="true" name="AU Korps Reservieren" hidden="false" id="778040fb-7c35-4df3-a642-74435491ba14" type="selectionEntryGroup" targetId="0a31-3b2b-97b6-72e6"/>
-    <entryLink import="true" name="BV Leichtes Kavallerie-Division" hidden="false" id="de1642f4-1531-420e-8055-e3c460aa5868" type="selectionEntryGroup" targetId="7e24-77d1-0af2-bf64"/>
-    <entryLink import="true" name="BV Korps Reservieren" hidden="false" id="8913a2eb-04d9-4279-8c17-4a2c33e22aee" type="selectionEntryGroup" targetId="d826-17ce-5bed-6ec4"/>
-    <entryLink import="true" name="BR Brigade" hidden="false" id="725170a5-fcdb-4799-b4b5-62d6f4fc935c" type="selectionEntryGroup" targetId="65db-5645-8564-554e"/>
-    <entryLink import="true" name="BR Infantry Division" hidden="false" id="d231be26-66fb-4eff-9b8a-479eea57ef95" type="selectionEntryGroup" targetId="7168-a998-3c09-534c"/>
-    <entryLink import="true" name="BR 1st Division" hidden="false" id="edfb3378-d256-432e-9d6a-d7048fe624aa" type="selectionEntryGroup" targetId="0b27-635f-f71d-4cdd"/>
-    <entryLink import="true" name="BR Light Division" hidden="false" id="60f445f9-5bb5-4fd4-9417-3698ca4160ed" type="selectionEntryGroup" targetId="ce9f-042c-8915-1542"/>
-    <entryLink import="true" name="BR Light Cavalry Brigade" hidden="false" id="26c5b21e-4d0f-492a-afa2-859b661c66eb" type="selectionEntryGroup" targetId="52c4-72fa-1043-921a"/>
-    <entryLink import="true" name="BR Heavy Cavalry Brigade" hidden="false" id="354ae235-762f-4cf0-8225-1be7d8455688" type="selectionEntryGroup" targetId="b711-ba7f-9ac0-0806"/>
-    <entryLink import="true" name="BR Artillery Park" hidden="false" id="92e92e9f-292b-4f83-8ed1-97209d0d67ea" type="selectionEntryGroup" targetId="1be4-87b8-8b6a-6c82"/>
-    <entryLink import="true" name="FR Division d’Infanterie" hidden="false" id="282d7dd4-3aff-47c0-9648-da1a73fb20e7" type="selectionEntryGroup" targetId="d4ab-26fc-cf1c-cf95"/>
-    <entryLink import="true" name="FR Brigade de Cavalerie Légère" hidden="false" id="f8f9b179-1c5a-432a-8a7e-48e204a6597a" type="selectionEntryGroup" targetId="b26d-1ac7-ee25-51ed"/>
-    <entryLink import="true" name="FR Division de Cavalerie Légère" hidden="false" id="6c969089-47d2-45dd-b5a7-a3160df6b5d7" type="selectionEntryGroup" targetId="dc8e-064f-ecd0-1025"/>
-    <entryLink import="true" name="FR Division de Cavalerie/Dragons" hidden="false" id="fbb8b4c2-4423-4e7f-a1a2-0fa9ede8d7b3" type="selectionEntryGroup" targetId="fa6d-afe0-1fa6-5d4a"/>
-    <entryLink import="true" name="FR Division de Grosse Cavalerie" hidden="false" id="ed299c0a-719b-4d45-a0f5-348381118daf" type="selectionEntryGroup" targetId="7733-0fb1-a0f9-bec0"/>
-    <entryLink import="true" name="FR Corps Réserve/Parc d’Artillerie" hidden="false" id="04d5b561-6ddf-4a6a-9f62-9009866facaf" type="selectionEntryGroup" targetId="e9ec-92a3-1083-7cbe"/>
-    <entryLink import="true" name="FR Division d’Infanterie de la Garde Impériale" hidden="false" id="74f34f05-746f-4bdc-8d99-073ebdb80b73" type="selectionEntryGroup" targetId="f414-b30c-4de0-bc10"/>
-    <entryLink import="true" name="FR Brigade de Cavalerie de la Garde Impériale" hidden="false" id="86ff36c9-8fc7-42e8-8975-1db48f563d69" type="selectionEntryGroup" targetId="15c2-bcf0-f7e1-56a0"/>
-    <entryLink import="true" name="IT Division di Fanteria" hidden="false" id="1a0143a8-d21b-47b0-adf5-829bccf571f1" type="selectionEntryGroup" targetId="2d88-272e-ae8b-0e82"/>
-    <entryLink import="true" name="IT Brigata di Cavalleria" hidden="false" id="70c3be2f-715b-4427-a558-9212fbb07043" type="selectionEntryGroup" targetId="3c98-31ad-c1e8-2ec6"/>
-    <entryLink import="true" name="PO Dywizja" hidden="false" id="8fdadd8b-52ab-457f-b2ea-7803c631f025" type="selectionEntryGroup" targetId="f7c2-ecc5-5d17-777f"/>
-    <entryLink import="true" name="PO Brygada Lekkiej Kawalerii" hidden="false" id="b82a8d2f-a18a-44af-b5df-0b2df05e8b4c" type="selectionEntryGroup" targetId="9ab9-d259-03b9-8130"/>
-    <entryLink import="true" name="RU Pehotnaya Diviziya" hidden="false" id="0c8ff51d-dff4-42f7-8d9b-2b9b22a4cd54" type="selectionEntryGroup" targetId="0670-11f5-fe24-8e95"/>
-    <entryLink import="true" name="RU Grenaderskaya Diviziya" hidden="false" id="baf551e6-eec7-491a-afeb-7c454e4af5f6" type="selectionEntryGroup" targetId="1ae8-93f6-6684-de38"/>
-    <entryLink import="true" name="RU Svodno-Grenaderskaya Divizya" hidden="false" id="7c592cf9-4b59-4e4b-8004-cfa1ee83c72b" type="selectionEntryGroup" targetId="eedb-4ec7-fac8-3b18"/>
-    <entryLink import="true" name="RU Legkaya Kavaleriya" hidden="false" id="4fe78e49-6dfb-4ff9-a5ad-154604030341" type="selectionEntryGroup" targetId="759e-39ec-975f-0e98"/>
-    <entryLink import="true" name="RU Kavaleriyskaya Brigada" hidden="false" id="f7f3b448-67c3-4775-b099-56136d4dddde" type="selectionEntryGroup" targetId="c8e2-920b-4f80-e519"/>
-    <entryLink import="true" name="RU Kirasirskaya Brigada" hidden="false" id="9dcab5ac-ae25-4c14-b2fb-06f7abd2a2c9" type="selectionEntryGroup" targetId="607e-46bd-9bae-c363"/>
-    <entryLink import="true" name="RU Donskaya Kazachya Brigada" hidden="false" id="b3941301-2c1c-46d4-a489-d7d6b444f0aa" type="selectionEntryGroup" targetId="2a15-ed68-b0ef-0dca"/>
-    <entryLink import="true" name="RU Rezervnaya Artilleriya" hidden="false" id="aaf24a6f-3127-4da8-90c9-3e25f6af6e57" type="selectionEntryGroup" targetId="85c2-d83f-4e42-fdbc"/>
-    <entryLink import="true" name="RU Leib-Gvardii Diviziya" hidden="false" id="8c7ccab8-8ab7-4951-824e-de2a98d2c636" type="selectionEntryGroup" targetId="9148-ed5f-3574-37d4"/>
-    <entryLink import="true" name="RU Leib-Gvardii Kavaleriya Brigada" hidden="false" id="62c9812b-cb5e-41d4-b0a3-7eda2f68be17" type="selectionEntryGroup" targetId="33ff-742c-dbfe-71c0"/>
-    <entryLink import="true" name="SX Infanterie-Division" hidden="false" id="4c2f7335-2dcb-4a90-bc02-9a4db8ca0596" type="selectionEntryGroup" targetId="d863-e0ac-ccbb-020d"/>
-    <entryLink import="true" name="SX Leichtes Kavallerie-Brigade" hidden="false" id="9a0184a9-25cd-409c-ab5f-76996b113dac" type="selectionEntryGroup" targetId="80c0-dab5-befe-2f43"/>
-    <entryLink import="true" name="SX Korps Reservieren" hidden="false" id="40a2390c-ed8f-443a-a8ee-49d5b01e01c9" type="selectionEntryGroup" targetId="0b5a-9268-593c-9325"/>
-    <entryLink import="true" name="SP Vanguardia" hidden="false" id="db938f9c-862a-4090-9d30-0aeb144914a8" type="selectionEntryGroup" targetId="7562-eeb9-c264-9b45"/>
-    <entryLink import="true" name="SP División" hidden="false" id="b290adbf-d97b-4476-bfc0-4a9ec54ce04f" type="selectionEntryGroup" targetId="0b4b-f539-e8c4-e234"/>
-    <entryLink import="true" name="SP Caballería Brigada" hidden="false" id="3cf7c490-90c6-47b5-8271-602da8663043" type="selectionEntryGroup" targetId="f5a6-6d73-cf23-0aa2"/>
-    <entryLink import="true" name="WF Infanterie-Division" hidden="false" id="c7ac21e9-6f85-4994-a722-ae6f8ff64ad6" type="selectionEntryGroup" targetId="6408-53d8-d3b2-7ff2"/>
-    <entryLink import="true" name="WF Leichtes Kavallerie-Brigade" hidden="false" id="231396a3-887d-4f4d-b744-51b39029f295" type="selectionEntryGroup" targetId="a583-6b97-6b73-3bd9"/>
-    <entryLink import="true" name="Wü Infanterie Division" hidden="false" id="5ef94e4a-8303-4b55-94a9-9dba0f716268" type="selectionEntryGroup" targetId="0594-276f-87be-68f5"/>
-    <entryLink import="true" name="Wü Kavallerie Division" hidden="false" id="f473e7e1-4f37-4953-a02f-7032be9dfe6a" type="selectionEntryGroup" targetId="e49f-46f4-5109-2a45"/>
-    <entryLink import="true" name="PR Infanterie Division" hidden="false" id="2be419b1-3f33-4dc0-a9f3-ae3fc74a8869" type="selectionEntryGroup" targetId="1cf6-8d8a-32bd-3f2e"/>
-    <entryLink import="true" name="PR Kavallerie Division" hidden="false" id="c79d761e-2e19-4535-92c2-7e1300ee6f37" type="selectionEntryGroup" targetId="1a1f-44c1-1098-dff2"/>
-    <entryLink import="true" name="Wü Mixed" hidden="false" id="ba018c83-b71b-4542-b1c8-50a9dd7e9f86" type="selectionEntryGroup" targetId="ab2c-f24d-4001-5cf7"/>
-    <entryLink import="true" name="WF Mixed" hidden="false" id="9470c4a3-a6a5-41f9-a3b4-26a096bf167d" type="selectionEntryGroup" targetId="63f8-dc2a-d6ac-aaec"/>
-    <entryLink import="true" name="SP Mixed" hidden="false" id="1de0c314-a657-475c-9207-51a1c5cb8dfc" type="selectionEntryGroup" targetId="a539-c85c-4938-691f"/>
-    <entryLink import="true" name="SX Mixed" hidden="false" id="abedb54d-057a-409a-8825-ecb26cb9422e" type="selectionEntryGroup" targetId="c1d1-4eca-6597-b587"/>
-    <entryLink import="true" name="RU Mixed" hidden="false" id="278ab213-9547-4d05-805f-7d42e2b1f8ab" type="selectionEntryGroup" targetId="7026-26c4-7243-ae0e"/>
-    <entryLink import="true" name="PR Mixed" hidden="false" id="e5e695d2-434c-43d3-aa9b-42feb6583884" type="selectionEntryGroup" targetId="50cd-026c-35e1-badd"/>
-    <entryLink import="true" name="PO Mixed" hidden="false" id="e6fd70a1-6e77-4363-8614-cdfa4acdd37a" type="selectionEntryGroup" targetId="ce43-0f75-6230-f885"/>
-    <entryLink import="true" name="IT Mixed" hidden="false" id="8eefc2ee-22cb-4f30-83f7-47a7ba2cd4cd" type="selectionEntryGroup" targetId="a321-8f18-ca22-3b97"/>
-    <entryLink import="true" name="FR Mixed" hidden="false" id="d1500d90-54f8-4882-902e-44e0d2758f75" type="selectionEntryGroup" targetId="e594-3441-2a26-3c1c"/>
-    <entryLink import="true" name="BR Mixed" hidden="false" id="1f2f771d-8f45-49a9-8f0a-a81c0578ba2c" type="selectionEntryGroup" targetId="e409-8f4d-565f-87ce"/>
-    <entryLink import="true" name="BV Mixed" hidden="false" id="c59b7410-0820-437c-bdb9-0ce07ba254be" type="selectionEntryGroup" targetId="bc97-e085-1d5c-f56f"/>
-    <entryLink import="true" name="AU Mixed" hidden="false" id="59f20bbd-2458-49fb-8e1e-abbb2f8dbdad" type="selectionEntryGroup" targetId="d072-429d-9f4b-38fc"/>
-    <entryLink import="true" name="Allied Formation" hidden="false" id="299561c6-ad1e-48dd-9146-2a98e3076d7d" type="selectionEntryGroup" targetId="4954-42ea-29fb-b5a5"/>
-  </entryLinks>
 </catalogue>

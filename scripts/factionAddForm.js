@@ -69,10 +69,26 @@ function linkFormationEntries (_sharedSelection, _formationEntries, _factionName
         }
     }
 
+
+
+
     // from the workList loop over each entry and add to the faction's selection list
     for ( const workItem of workList ) {
+    // find this show faction id
 
-        const entry = {
+        // get the unit faction informatin for this unit.
+        //
+        const unitFactionAbbr = myUtils.getFactionAbbreviationFromString ( workItem.name );
+
+
+        let unitFactionData = null;
+        if ( workItem.name !== "Allied Formation"){
+        
+            unitFactionData = myUtils.getFactionFromAbbreviation( unitFactionAbbr );
+        }
+
+
+        const entryLink = {
             id: myUtils.generateID(),
             name: workItem.name,
             import: "true",
@@ -80,8 +96,49 @@ function linkFormationEntries (_sharedSelection, _formationEntries, _factionName
             type: "selectionEntryGroup",
             targetId: workItem.id
         }
+        const categoryLink = {
+            id: myUtils.generateID(),
+            name: "Formation",
+            primary: "true",
+            targetId: "ct-Formation"
+        }
 
-        $store.add_node( "entryLinks", _sharedSelection, entry );
+        if (workItem.name !== "Allied Formation") {
+
+            const showThisFactionId = myUtils.getShowFactionId( _sharedSelection, unitFactionData.faction );
+
+            const entry = {
+                id: myUtils.generateID(),
+                name: workItem.name,
+                import: "true",
+                hidden: "true",
+                type: "upgrade",
+                entryLinks: [entryLink],
+                categoryLinks: [categoryLink],
+                modifiers: [
+                    {
+                        type: "set", value:"false", field:"hidden", conditions: [
+                        {type: "atLeast", value: "1", field: "selections", scope: "force", childId: showThisFactionId, shared: "true", includeChildSelections: "true" }
+                        ]
+                    }
+                ]
+            }
+            $store.add_node( "selectionEntries", _sharedSelection, entry );
+        } else {  // this is the allied formation
+            const entry = {
+                id: myUtils.generateID(),
+                name: workItem.name,
+                import: "true",
+                hidden: "false",
+                type: "upgrade",
+                entryLinks: [entryLink],
+                categoryLinks: [categoryLink]
+            }
+
+            $store.add_node( "selectionEntries", _sharedSelection, entry );
+        }
+
+
         
     }
 

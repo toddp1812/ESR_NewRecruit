@@ -74,7 +74,7 @@
   <profileTypes>
     <profileType name="Unit" id="pt-Unit" hidden="false">
       <characteristicTypes>
-        <characteristicType name="____Ploy____" id="ct-Unit-Ploy"/>
+        <characteristicType name="___Ploy___" id="ct-Unit-Ploy"/>
         <characteristicType name="___Deploy___" id="ct-Unit-Deploy"/>
         <characteristicType name="Thr-LR" id="ct-Unit-Thr-LR"/>
         <characteristicType name="Thr-SR" id="ct-Unit-Thr-SR"/>
@@ -352,11 +352,26 @@ If this Formation has an active Defend [D] Directive may choose to not Withdraw 
             <categoryLink targetId="a003-14d2-b554-aff8" id="828e-2768-165d-7c2f" primary="false" name="Show: Württemberg"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Show: Saxony" hidden="false" id="3cda-c1d8-8b7d-fd42">
+          <categoryLinks>
+            <categoryLink targetId="4f32-2860-a3d6-ac53" id="267a-6b39-66ca-60fd" primary="false" name="Show: Saxony"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bed-a55d-275e-63f8"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ct-Faction-Saxony" shared="true" childName="Faction: Saxony"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Era Selector" id="6a4f-df66-4997-ef80" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Revolution!" hidden="true" id="d98d-1af3-2eca-eb5b" defaultAmount="0" step="1">
+        <selectionEntry type="upgrade" import="true" name="Revolution!" hidden="true" id="d98d-1af3-2eca-eb5b" defaultAmount="0" step="1" sortIndex="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="085b-54bf-ff27-69d8"/>
           </constraints>
@@ -364,15 +379,15 @@ If this Formation has an active Defend [D] Directive may choose to not Withdraw 
             <categoryLink targetId="ff61-b884-3bcc-d1a8" id="2bc0-6f91-6fb9-47e2" primary="false" name="Show Revolution!"/>
           </categoryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Early War" hidden="false" id="c8ad-fcfa-039d-44b9" defaultAmount="0" step="1">
+        <selectionEntry type="upgrade" import="true" name="Early War" hidden="false" id="c8ad-fcfa-039d-44b9" defaultAmount="0" step="1" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e79b-2d97-f327-b6c0"/>
           </constraints>
           <categoryLinks>
-            <categoryLink targetId="ed31-39ce-cc4e-763c" id="fe3e-4382-e0b9-a465" primary="false" name="Show Early War"/>
+            <categoryLink targetId="ed31-39ce-cc4e-763c" id="e19a-4a13-14b8-5dc1" primary="false" name="Show Early War"/>
           </categoryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Mid War" hidden="false" id="b658-8a7b-5f86-02da" defaultAmount="1" step="1">
+        <selectionEntry type="upgrade" import="true" name="Mid War" hidden="false" id="b658-8a7b-5f86-02da" defaultAmount="1" step="1" sortIndex="3">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d237-ef38-ce37-e4da"/>
           </constraints>
@@ -380,7 +395,7 @@ If this Formation has an active Defend [D] Directive may choose to not Withdraw 
             <categoryLink targetId="24cc-3040-b915-f72a" id="e21f-287b-17d3-8cd7" primary="false" name="Show Mid War"/>
           </categoryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Late War" hidden="true" id="9264-1b7c-cdcf-867a" defaultAmount="0" step="1">
+        <selectionEntry type="upgrade" import="true" name="Late War" hidden="true" id="9264-1b7c-cdcf-867a" defaultAmount="0" step="1" sortIndex="4">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ffc-a38e-3bbf-a409"/>
           </constraints>
