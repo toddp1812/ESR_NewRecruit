@@ -1,5 +1,18 @@
 # ESR_NewRecruit
 ESR Force Database
+**Release 2.1**
+This release corrects:
+1. the early war value for France, Prussia, ans Saxony:
+* FR Infanterie
+* PR Fusiliere
+* PR Grenadier (updated costs)
+* PR Infanterie
+* PR Jager
+* SX Grenadiere
+* SX Infanterie
+
+2. the values for Russian Dragoons
+3. adds other cavalry types to Austrian Avant Garde
 
 **Release 2.0**
 This release re-imagines the architecture with all units, commanders, and formations belonging to separate catalog files. This is to allow for any formation or unit to be included in any faction. While every grouping is not historically accurate, there was a lot of cross lending that it would be more difficult to disallow specifics without a lot of extra rules getting in the way.

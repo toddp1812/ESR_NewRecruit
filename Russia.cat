@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3efe-c588-6ea3-ca5e" name="Russia" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="3" revision="20" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3efe-c588-6ea3-ca5e" name="Russia" gameSystemId="ae43-676e-ac1e-c7a8" gameSystemRevision="3" revision="21" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="Close Enough" id="8a94-8939-f4ca-6472" hidden="false">
       <description>Neither triggers nor suﬀers Chistoi Russkoi penalties.</description>
